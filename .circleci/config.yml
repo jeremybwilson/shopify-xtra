@@ -62,7 +62,7 @@ jobs:
             development:
               password:' $SLATE_PASSWORD '
               theme_id: "live"
-              store: muckboot-dev.myshopify.com
+              store: xtratuf-dev.myshopify.com
               ignore_files:
                 # - settings_data.json #This is commented out so we keep in sync with repo
                 - settings_data.presets-portion.bak.json' > ./config.yml
