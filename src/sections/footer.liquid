@@ -4,7 +4,7 @@
   <div class="row">
     {% for block in section.blocks %}
     {% case block.type %}
-    {% when 'menu' %}    
+    {% when 'link_list' %}    
       <div class="footer-nav">
         <nav>
           <ul>
@@ -183,14 +183,13 @@
   ],
   "blocks":[
     {
-      "type":"menu",
+      "type":"link_list",
       "name":"Menu",
       "settings":[
         {
           "type": "link_list",
           "id": "footer_nav",
-          "label": "Choose a menu",
-          "info":"This menu won't show dropdown items"
+          "label": "Footer Menu"
         }
       ]
     }
