@@ -182,20 +182,20 @@
       "header": {
         "type": "header",
         "blocks": {
-          "1522184323686": {
-            "type": "mega_menu",
-            "settings": {
-              "menu_item": "Women",
-              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-1.jpg",
-              "nav_promo_link": "shopify:\/\/collections\/women"
-            }
-          },
           "1535652898841": {
             "type": "mega_menu",
             "settings": {
               "menu_item": "Men",
-              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-2.jpg",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-1.jpg",
               "nav_promo_link": "shopify:\/\/collections\/men"
+            }
+          },
+          "1522184323686": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Women",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-2.jpg",
+              "nav_promo_link": "shopify:\/\/collections\/women"
             }
           },
           "1535652979932": {
@@ -209,15 +209,15 @@
           "1535653033501": {
             "type": "mega_menu",
             "settings": {
-              "menu_item": "",
-              "nav_image": "",
-              "nav_promo_link": ""
+              "menu_item": "Activities",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-4.jpg",
+              "nav_promo_link": "shopify:\/\/collections\/activities"
             }
           }
         },
         "block_order": [
-          "1522184323686",
           "1535652898841",
+          "1522184323686",
           "1535652979932",
           "1535653033501"
         ],
