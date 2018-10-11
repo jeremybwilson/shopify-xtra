@@ -1,0 +1,38 @@
+<div class="left-nav">
+    <div class="desktop-left-nav">
+        <ul>
+            {% for link in linklists.side-menu.links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+  <div class="mobile-left-nav categories">
+    <div class="category">
+      {% for link in linklists.side-menu.links %}
+        <!-- <div class="category"> -->
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        <!-- </div> -->
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
+
+<script>
+  $('.categories').prepend('<span>select options</span>');
+
+  $('.categories').click(function(){
+    $('div',this).slideToggle();
+    $('.categories span').html('select options');
+  });
+
+  $('.category').click(function(e){
+    e.stopPropagation();
+    $('.category').slideToggle();
+    $('.categories span').html($(this).text());
+  });
+</script>
