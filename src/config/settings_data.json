@@ -1,0 +1,740 @@
+{
+  "presets": {},
+  "current": {
+    "announcement_text_color": "#ffffff",
+    "announcement_bg_one": "#124431",
+    "announcement_bg_two": "#073322",
+    "header_background": "#fefffe",
+    "logo_color": "#000000",
+    "nav_links": "#164632",
+    "nav_links_hover": "#aa5131",
+    "nav_minor_border_color": "#cccccc",
+    "social_links": "#000000",
+    "social_links_hover": "#000000",
+    "background": "#fefffe",
+    "header_color": "#000000",
+    "text_color": "#000000",
+    "link_color": "#000000",
+    "link_hover_color": "#000000",
+    "sale_color": "#bc0000",
+    "dotted_color": "#e5e5e5",
+    "button_color": "#000000",
+    "button_text": "#ffffff",
+    "button_hover": "#000000",
+    "button_text_hover": "#ffffff",
+    "secondary_button_color": "#ddd",
+    "secondary_button_hover": "#ccc",
+    "secondary_button_text": "#000",
+    "error_text": "#f00",
+    "product_badge_square_bg": "#3e3e3e",
+    "product_badge_circle_bg": "#ab5232",
+    "product_badge_diamond_bg": "#164732",
+    "product_badge_text_color": "#fefffe",
+    "filter_bg": "#f4f2ec",
+    "filter_text_color": "#164732",
+    "filter_arrow_color": "#aa5131",
+    "filter_checkbox_bg": "#fefffe",
+    "filter_divider_color": "#d8d8d8",
+    "filter_button_main_bg": "#164732",
+    "filter_button_main_text": "#fefffe",
+    "filter_button_alt_bg": "#aa5131",
+    "filter_button_alt_text": "#fefffe",
+    "catalog_item_text_color": "#164732",
+    "catalog_item_price_color": "#525252",
+    "catalog_item_accent_color": "#aa5131",
+    "collection_seo_footer_bg": "#f4f2ec",
+    "collection_seo_footer_text": "#164732",
+    "collection_load_more_text": "#fefffe",
+    "collection_load_more_bg": "#ab5232",
+    "collection_load_more_bg_hover": "#9b492b",
+    "fancybox_overlay_bg": "0,0,0,0.8",
+    "fancybox_close_color": "#5b5b5b",
+    "fancybox_close_hover_color": "#9b492b",
+    "navigation": "#000000",
+    "nav_color": "#ffffff",
+    "nav_hover_color": "#2c2c2c",
+    "nav_hover_link_color": "#ffffff",
+    "dropdown_background_color": "#000000",
+    "nav_dropdown_color": "#ffffff",
+    "dropdown_hover_background_color": "#282828",
+    "dropdown_hover_link_color": "#ffffff",
+    "directional_background": "#000000",
+    "directional_hover_background": "#ffffff",
+    "directional_color": "#ffffff",
+    "directional_hover_color": "#000000",
+    "swatch_color": "#000000",
+    "swatch_background": "#ffffff",
+    "swatch_border": "#000000",
+    "swatch_selected_color": "#ffffff",
+    "swatch_selected_background": "#000000",
+    "swatch_selected_border": "#000000",
+    "new_background": "#222",
+    "new_text": "#ffffff",
+    "sale_background": "#af0000",
+    "sale_text": "#ffffff",
+    "soldout_background": "#222",
+    "soldout_text": "#ffffff",
+    "icons": "#000000",
+    "icons_hover": "#272727",
+    "footer_background": "#ffffff",
+    "footer_color": "#000000",
+    "footer_border": "#e5e5e5",
+    "main_font": "karla_n4",
+    "nav_font": "karla_n4",
+    "heading_font": "montserrat_n7",
+    "announcement_text_size": 18,
+    "font_size": 13,
+    "h1_size": 24,
+    "h2_size": 20,
+    "h3_size": 18,
+    "h4_size": 16,
+    "h5_size": 14,
+    "nav_size": 13,
+    "dropdown_font_size": 13,
+    "navigation_transform": "uppercase",
+    "dropdown_transform": "uppercase",
+    "link_decoration": "none",
+    "section_title_border": "bottom_only_short",
+    "border_weight": "3px",
+    "breadcrumb": true,
+    "quickview": true,
+    "vendor": false,
+    "show_collection_seo_block": true,
+    "details_align": "center",
+    "secondary_images_hover": "image_flip",
+    "cart_notes_enable": false,
+    "ajax_cart_method": "drawer",
+    "ajax_cart_remove_text": "This will remove the item from your cart. Continue?",
+    "ajax_cart_low_stock_text": "This item does not have enough stock to add to your cart.",
+    "twittername": "",
+    "facebook_url": "\/\/www.facebook.com\/muckbootco\/",
+    "pinterest_url": "",
+    "tumblr_url": "",
+    "youtube_url": "\/\/www.youtube.com\/channel\/UCDojhS0yZvveLz5JlHOwdhQ",
+    "googleplus_url": "",
+    "instagram_id": "muckbootco",
+    "popup": true,
+    "email_image": "",
+    "email_popup_title": "Signup Up & Get 10% Off Your First Order!",
+    "email_popup_text": "",
+    "email_popup_input_placeholder": "Enter Your Email Address",
+    "email_popup_bottom_text": "<p>By providing your email address, you agree to our <a target=\"_blank\" href=\"https:\/\/www.honeywell.com\/privacy-statement\">Privacy Policy<\/a> & <a href=\"\/pages\/terms-conditions\" target=\"_blank\">Terms of Service<\/a>.<\/p>",
+    "email_popup_error": "Please enter a valid e-mail address",
+    "email_popup_success": "<p>You have successfully joined our newsletter<\/p>",
+    "cookie_banner_mobile_text": "<p>We use cookies.<\/p>",
+    "cookie_banner_mobile_button": "http:\/\/www.honeywell.com\/privacy-statement",
+    "cookie_banner_mobile_button_text": "More Info",
+    "cookie_banner_desktop_text": "<p>This site uses cookies to simplify and improve your usage and experience of this website. Cookies are small text files stored on the device you are using to access this website. If you ignore this message and continue without changing your browser settings, we will assume that you are consenting to our use of cookies. For further information on our use of cookies, please see our <a href=\"https:\/\/www.honeywell.com\/privacy-statement\" target=\"_blank\" >Privacy Statement<\/a><\/p>",
+    "cookie_banner_accept_button_text": "Accept",
+    "show_multiple_currencies": false,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
+    "default_currency": "USD",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/checkout-logo.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#0b2f20",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#164632",
+    "checkout_button_color": "#ab5232",
+    "checkout_error_color": "#ff6d6d",
+    "cart_links": "#000000",
+    "cart_links_hover": "#000000",
+    "newsletter_color": "#ffffff",
+    "newsletter_background": "#2f2f2f",
+    "newsletter_hover": "#ffffff",
+    "pre_footer_icon_color": "#e4e4e4",
+    "newsletter_button_color": "#ffffff",
+    "newsletter_button": "#000000",
+    "newsletter_button_hover": "#535353",
+    "alternate_colors": true,
+    "image_flip": true,
+    "font-size": 13,
+    "email_popup_image": false,
+    "megadropdown_link": "",
+    "nav_promo_image": false,
+    "nav_promo_link": "\/collections\/all",
+    "mega_1_show": false,
+    "mega_1_links": "",
+    "mega_2_show": false,
+    "mega_2_links": "",
+    "mega_3_show": false,
+    "mega_3_links": "",
+    "mega_4_show": false,
+    "mega_4_links": "",
+    "nav_center": true,
+    "nav_height": "40",
+    "linklist_breakpoint": "8",
+    "main_nav": "main-menu",
+    "password_bg": "no_password_bg",
+    "max-height": false,
+    "desktop-image-height": "",
+    "tablet-image-height": "",
+    "mobile-image-height": "",
+    "mailchimp": "",
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "1522184323686": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Women",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-1.jpg",
+              "nav_promo_link": "shopify:\/\/collections\/women"
+            }
+          },
+          "1535652898841": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Men",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-2.jpg",
+              "nav_promo_link": "shopify:\/\/collections\/men"
+            }
+          },
+          "1535652979932": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Kids",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-3.jpg",
+              "nav_promo_link": "shopify:\/\/collections\/kids"
+            }
+          },
+          "1535653033501": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "",
+              "nav_image": "",
+              "nav_promo_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1522184323686",
+          "1535652898841",
+          "1535652979932",
+          "1535653033501"
+        ],
+        "settings": {
+          "full_width_header": false,
+          "show_announcement_text": true,
+          "num_of_promo_banners": "1",
+          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING & FREE RETURNS<\/div>",
+          "announcement_link_one": "\/pages\/shipping-returns",
+          "announcement_text_two": "<div class=\"bold\">40% OFF YOUR PURCHASE.<\/div> NO CODE NEEDED.",
+          "announcement_link_two": "http:\/\/google.com",
+          "announcement_height": 60,
+          "announcement_swap_rate": 5,
+          "logo_size": 24,
+          "logo_transform": "uppercase",
+          "logo_weight": "bold",
+          "cart_icon": "cart",
+          "show_site_picker": true,
+          "site_picker_manifest": "US|United States|https:\/\/muckbootcompany.com,EU|European Union|https:\/\/www.muckbootcompany.eu,UK|United Kingdom|https:\/\/www.muckbootcompany.co.uk",
+          "show_search": true,
+          "main_nav": "main-menu",
+          "nav_center": true,
+          "nav_height": 60,
+          "linklist_breakpoint": 10
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1480972996114": {
+            "type": "link_list",
+            "settings": {
+              "footer_nav": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "1480972996114"
+        ],
+        "settings": {
+          "tel_text": "855-377-BOOT (2668)",
+          "tel_number": "18553772668",
+          "show_credit_cards": true,
+          "visit_brand_link_one": "http:\/\/www.xtratuf.com",
+          "visit_brand_image_one": "shopify:\/\/shop_images\/visit-brand-image-1.png",
+          "visit_brand_link_two": "",
+          "visit_brand_image_two": "",
+          "visit_brand_link_three": "http:\/\/www.howardleight.com",
+          "visit_brand_image_three": "shopify:\/\/shop_images\/visit-brand-image-3.png",
+          "trust_icon_image_one": "",
+          "trust_icon_image_two": "",
+          "trust_icon_image_three": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "grid": 3,
+          "rows": 8,
+          "sort_by": true,
+          "filter_1_title": "Filter by X",
+          "sort_a": "",
+          "filter_2_title": "Filter by Y",
+          "sort_b": "",
+          "filter_3_title": "Filter by Z",
+          "sort_c": ""
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "product_nav": false,
+          "vendor": false,
+          "show_quantity": false,
+          "show_sku": false,
+          "product_variants": "swatches",
+          "use_swatch_images": true,
+          "swatch_shape": "circles",
+          "show_payment_button": false,
+          "show_controls": false,
+          "show_zoom": true,
+          "thumbnails": "left",
+          "zoom_image_position": "zoom_over_main",
+          "related_products": "none",
+          "free_shipping_header_text": "Free Shipping & Returns",
+          "free_shipping_text": "<p>FREE Shipping and FREE Returns for all ground orders. Orders placed before 2PM EST Monday &ndash; Friday will ship next day. For additional information, visit our <a href=\"\/pages\/shipping-returns\" title=\"Shipping and Return\">Shipping page<\/a>.<\/p>",
+          "show_social": false,
+          "size_chart_page": "size-chart"
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "image": "",
+          "text": "<p>Add some descriptive text to your Blog page.<\/p>",
+          "show_date": true
+        }
+      },
+      "mobile-navigation": {
+        "type": "mobile-navigation",
+        "settings": {
+          "main_nav": "main-menu"
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_date": true,
+          "show_icons": true
+        }
+      },
+      "search-template": {
+        "type": "search-template",
+        "settings": {
+          "grid": 4,
+          "rows": 6
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "newsletter_details": "<p>Coming Soon<\/p><p>Signup for our newsletter and get updated when we launch our site <a href=\"https:\/\/example.com\/\">see our newsletter policy.<\/a><\/p>",
+          "text_size": 18,
+          "text_color": "#000000",
+          "logo": "",
+          "logo_max_width": "500",
+          "background_color": "#f5f5f5",
+          "background_image": "",
+          "show_overlay_color": true,
+          "background_overlay_color": "#f5f5f5",
+          "overlay_color_opacity": 40,
+          "border_color": "#000000",
+          "button_color": "#000000",
+          "button_text_color": "#ffffff"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "settings": {
+          "heading": "Join Our Newsletter",
+          "newsletter_subheading": "<p>Sign Up Now For Exclusive Offers.<\/p>",
+          "newsletter_placeholder": "Enter Your Email Address",
+          "newsletter_error": "Please enter a valid e-mail address",
+          "newsletter_success": "<p>You have successfully joined our newsletter<\/p>",
+          "social_heading": "Connect With Us"
+        }
+      },
+      "1535728526385": {
+        "type": "slideshow",
+        "blocks": {
+          "1535728526385-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-1.jpg",
+              "heading": "Introducing the New Liberty Collection",
+              "subheading": "100% Waterproof Leather",
+              "cta_one_link": "shopify:\/\/collections\/new-arrivals",
+              "cta_one_button_text": "Shop our New Arrivals",
+              "cta_two_link": "",
+              "cta_two_button_text": "Garden",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#164732",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.2"
+            }
+          },
+          "1537990277479": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-2.jpg",
+              "heading": "Boots That Work Hard for Hardworkers",
+              "subheading": "Built for comfort and tough performance",
+              "cta_one_link": "shopify:\/\/collections\/work",
+              "cta_one_button_text": "Shop Work",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#164732",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
+          "1537990398288": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-3.jpg",
+              "heading": "Ready for all types of weather",
+              "subheading": "Durable & waterproof for every function",
+              "cta_one_link": "\/collections\/all?_=pf&pf_t_feature=feature_100%25 waterproof&pf_t_feature=feature_leather material",
+              "cta_one_button_text": "Shop Waterproof Leather",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#164732",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          }
+        },
+        "block_order": [
+          "1535728526385-0",
+          "1537990277479",
+          "1537990398288"
+        ],
+        "settings": {
+          "full_width": true,
+          "slider_speed": 3
+        }
+      },
+      "1536068961071": {
+        "type": "columns-carousel",
+        "blocks": {
+          "1536068961071-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-1.jpg",
+              "heading": "Cold Weather",
+              "svg_icon": "<svg class=\"icon icon-cold-weather\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 25.31 27.82\"><path fill=\"#ffffff\" d=\"M25.29,16.41a.68.68,0,0,0-.65-.5.47.47,0,0,0-.17,0l-4.76,1.27L14,13.91l5.72-3.3,4.76,1.27a.67.67,0,1,0,.34-1.29l-3.46-.93,3.11-1.79a.71.71,0,0,0,.31-.41A.7.7,0,0,0,24.7,7a.69.69,0,0,0-.91-.24L20.68,8.5,21.61,5a.67.67,0,0,0-.47-.82.68.68,0,0,0-.82.47L19,9.45l-5.72,3.3V6.14L16.8,2.67a.68.68,0,0,0,0-.95.68.68,0,0,0-.94,0L13.32,4.25V.67A.67.67,0,1,0,12,.67V4.25L9.45,1.72a.68.68,0,0,0-.94,0,.63.63,0,0,0-.2.47.67.67,0,0,0,.2.48L12,6.14v6.61L6.26,9.45,5,4.69A.67.67,0,1,0,3.7,5L4.63,8.5,1.52,6.71A.69.69,0,0,0,.61,7a.7.7,0,0,0-.07.51.71.71,0,0,0,.31.41L4,9.66.5,10.59a.67.67,0,1,0,.34,1.29L5.6,10.61l5.72,3.3L5.6,17.21.84,15.94a.69.69,0,0,0-.82.47.7.7,0,0,0,.07.51.68.68,0,0,0,.41.31L4,18.16.85,20a.67.67,0,0,0-.24.91.62.62,0,0,0,.41.31.62.62,0,0,0,.5-.06l3.11-1.79L3.7,22.78A.67.67,0,1,0,5,23.12l1.27-4.75L12,15.07v6.6L8.51,25.15a.66.66,0,0,0,0,1,.68.68,0,0,0,.94,0L12,23.57v3.58a.67.67,0,1,0,1.33,0V23.57l2.54,2.53a.68.68,0,0,0,.94,0,.66.66,0,0,0,0-1l-3.48-3.48v-6.6L19,18.37l1.28,4.75a.67.67,0,1,0,1.29-.34l-.93-3.46,3.11,1.79a.62.62,0,0,0,.5.06.62.62,0,0,0,.41-.31.67.67,0,0,0-.24-.91l-3.11-1.79,3.46-.93a.68.68,0,0,0,.41-.31A.7.7,0,0,0,25.29,16.41Z\"><\/path><\/svg>",
+              "png_icon": "",
+              "link": "shopify:\/\/collections\/cold-snow",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1536068961071-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-2.jpg",
+              "heading": "Work",
+              "svg_icon": "<svg class=\"icon icon-work\" viewbox=\"0 0 33.23 32.99\"><path fill=\"#ffffff\" d=\"M32.93,6.23,27,.3A1,1,0,0,0,25.5.3L23.55,2.24a5.17,5.17,0,0,0-.8,6.32L23,9,9.06,22.8a.85.85,0,0,0,0,1.2.88.88,0,0,0,1.22,0l5.6-5.56,5,5L16.31,28a11.64,11.64,0,0,1-8.14,3.32,10.58,10.58,0,0,1-5-1.2L3,30,3,29.83a11.09,11.09,0,0,1,2.14-13l4.57-4.54,3,3a.85.85,0,0,0,1.2-1.21L10.3,10.49a.89.89,0,0,0-1.28,0L3.87,15.6A12.82,12.82,0,0,0,1.66,31l.11.19.19.12A12.34,12.34,0,0,0,8.17,33a13.38,13.38,0,0,0,9.36-3.83l4.74-4.71a1.46,1.46,0,0,0,0-2.08L17.1,17.23l7.11-7.06.4.24A5.3,5.3,0,0,0,31,9.62l1.94-1.93A1,1,0,0,0,32.93,6.23ZM29.77,8.42a3.6,3.6,0,0,1-5,0,3.5,3.5,0,0,1,0-5L26.23,2l5,5Z\"><\/path><\/svg>",
+              "png_icon": "",
+              "link": "shopify:\/\/collections\/work",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1536068961071-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-3.jpg",
+              "heading": "Outdoor Activity",
+              "svg_icon": "<svg class=\"icon icon-outdoor-activity\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 34.7 25.87\"><path fill=\"#ffffff\" d=\"M34.47,23.26,25.28,6.76a1,1,0,0,0-1.74,0L17.31,18a1,1,0,0,0,.83,1.42,1,1,0,0,0,.83-.49L24.09,9.7a.37.37,0,0,1,.65,0l7.55,13.55a.49.49,0,0,1-.43.73H2.63a.14.14,0,0,1-.12-.22L14,3.14a.33.33,0,0,1,.58,0l3.35,6.42a.94.94,0,1,0,1.66-.9l-4.25-8a1.2,1.2,0,0,0-2.11,0L.15,24.07a1.22,1.22,0,0,0,1.06,1.8H32.94A1.75,1.75,0,0,0,34.47,23.26Z\"><\/path><\/svg>",
+              "png_icon": "",
+              "link": "shopify:\/\/collections\/outdoor-activity",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1536068961071-3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-4.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-4.jpg",
+              "heading": "Equestrian",
+              "svg_icon": "<svg class=\"icon icon-equestrian\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 56.23 37.85\"><path fill=\"#ffffff\" d=\"M37.51,24.88a.77.77,0,0,0-.89.65c0,.29-.08.58-.1.86a4.78,4.78,0,0,1-.11.8,7.36,7.36,0,0,1-.72.81,9.53,9.53,0,0,0-1.41,1.71c-.8,1.23-3,3.87-3.16,4a1.94,1.94,0,0,0-.64,1.48H28.35A5.61,5.61,0,0,1,30,33.48a9.55,9.55,0,0,0,1.29-1.19c.77-1,2.86-4.05,3.24-5.54a2.09,2.09,0,0,0-.22-1.63,3.57,3.57,0,0,1-.43-1.54.8.8,0,0,0-.86-.71.79.79,0,0,0-.7.86,5.28,5.28,0,0,0,.59,2.1c.15.3.16.31.1.53a22,22,0,0,1-3,4.95,8,8,0,0,1-1.05,1c-1,.79-2.07,1.7-2.28,2.94l-.12.66a.8.8,0,0,0,.17.63.76.76,0,0,0,.59.28l.66,0,1.57,0,1.14,0,.65,0A.79.79,0,0,0,32,36.5a.75.75,0,0,0,.17-.62l-.1-.65a.38.38,0,0,1,.13-.32,54.14,54.14,0,0,0,3.41-4.35,9,9,0,0,1,1.22-1.47,7.69,7.69,0,0,0,.87-1,3.22,3.22,0,0,0,.4-1.57c0-.24,0-.5.08-.76A.78.78,0,0,0,37.51,24.88Z\"><\/path><path fill=\"#ffffff\" d=\"M56.2,19.48a.77.77,0,0,0-.52-.52,10.87,10.87,0,0,1-4.91-3.3C48.14,12,46.23,10,43.65,10a7.74,7.74,0,0,0-2.23.49A6.44,6.44,0,0,0,38.76,9a9.79,9.79,0,0,0-2.64-.35,14.67,14.67,0,0,0-4.77,1,20.75,20.75,0,0,1-6.72.57c-3.07-.64-6.15-2.88-8.87-4.86-2.15-1.56-4-2.92-5.54-3.22a4.56,4.56,0,0,0-1.52,0l-.54-.56A9.89,9.89,0,0,0,6.67.16a1.2,1.2,0,0,0-1.19,0,1.18,1.18,0,0,0-.6,1V2.34c0,.57,0,1.31,0,1.58C.21,10,.18,10.06.14,10.13a2.17,2.17,0,0,0,.27,2,4.2,4.2,0,0,0,1.06,1.53h0a2.81,2.81,0,0,0,2,.39,51.22,51.22,0,0,0,5.86-2.89,1,1,0,0,1,.58,0c.23.2.14,1.48.08,2.32-.16,2.22-.37,5.21,1.71,7.49a41.64,41.64,0,0,1-1.42,4c-.25.57-.47,1.17-.73,1.86A17.68,17.68,0,0,1,7,31.9,9.91,9.91,0,0,1,5.93,33a5.84,5.84,0,0,0-2.19,3.19l-.16.74a.79.79,0,0,0,.15.66.81.81,0,0,0,.61.29H8A.79.79,0,0,0,8.79,37l-.08-.67A1.12,1.12,0,0,1,8.77,36c.33-.34,4.89-6.48,5.88-8.07.48-.79,1-1.71,1.53-2.39a13.27,13.27,0,0,0,.08,4.17,4.28,4.28,0,0,0,2.35,1.95l.2.1c2.31,1.22,3.71,1.76,4.53,1.76h.13A3.52,3.52,0,0,0,27,31.26l.31-.69a.78.78,0,0,0-.55-1.09L26,29.32a6.71,6.71,0,0,1-1.55-.43.77.77,0,0,0-.86.08l-.44.35a18.74,18.74,0,0,1-2.54-1.15c.1-.21.33-.64.42-.8a24.27,24.27,0,0,0,1.45-3.07A29.2,29.2,0,0,0,27,23.47c1.27-.37,2.91-.95,4.48-1.59a2.71,2.71,0,0,1,2.26.1l3.94,2c.13.07.44.22.86.41,2.89,1.37,4.5,2.24,4.78,2.59a4.08,4.08,0,0,1,.45,2.36,5.66,5.66,0,0,0,.56,2.93c1.13,2,2.6,2.29,4.45,2.69l.79.16a.78.78,0,0,0,.94-.83l-.06-.82a7.43,7.43,0,0,0-.7-2.67c-.2-.42-.62-.55-1.42-.64A10.67,10.67,0,0,1,48.05,27c0-.35.05-.69.09-1.09A4.17,4.17,0,0,0,47.77,23,2.9,2.9,0,0,0,46,22a4.93,4.93,0,0,1-.48-.14,5.92,5.92,0,0,1-2.24-1.24,19.79,19.79,0,0,0,.54-5.06,7.52,7.52,0,0,0-1.27-3.78,4.54,4.54,0,0,1,1.14-.22c1.9,0,3.52,1.75,5.85,5A11.37,11.37,0,0,0,54,20a5.34,5.34,0,0,1-2.79,1.37,2.54,2.54,0,0,1-2-.66,4.55,4.55,0,0,1-1.22-3c-.23-1.49-.52-3.34-2.68-3.79a.77.77,0,0,0-.92.6.78.78,0,0,0,.6.93c1,.21,1.19.85,1.45,2.5a6,6,0,0,0,1.76,4A4.12,4.12,0,0,0,51,23l.39,0C54,22.7,56,20.23,56.05,20.2A.78.78,0,0,0,56.2,19.48ZM44.91,23.35a4.7,4.7,0,0,0,.67.19,3.66,3.66,0,0,1,.89.3,3.07,3.07,0,0,1,.11,1.95c0,.37-.08.75-.09,1.15,0,.87,0,3.78.94,4.55a1.07,1.07,0,0,0,.81.24l.26,0a5.54,5.54,0,0,1,.4,1.61c-1.59-.34-2.42-.57-3.18-1.88a4.54,4.54,0,0,1-.35-2.17,5.32,5.32,0,0,0-.71-3.21c-.41-.62-1.83-1.44-5.41-3.13l-.81-.39-3.95-2a4.26,4.26,0,0,0-3.56-.16c-1.53.62-3.1,1.19-4.32,1.54a30.36,30.36,0,0,1-4.76.83.82.82,0,0,0-.66.54,19.28,19.28,0,0,1-1.5,3.29,5.88,5.88,0,0,0-.6,1.28,1.55,1.55,0,0,0,.2,1.19c.26.36,3.34,1.92,4.19,1.82a.9.9,0,0,0,.55-.27l.22-.17a11,11,0,0,0,1.26.33c-.3.59-.74,1.08-2.06,1.1h-.11c-.3,0-1.19-.2-3.8-1.57l-.25-.13c-1-.49-1.35-.68-1.61-1.19A31.72,31.72,0,0,1,17.9,24a.81.81,0,0,0-.18-.6.84.84,0,0,0-.55-.28h-.1c-.35-.1-.91-.06-1.53.69a28.85,28.85,0,0,0-2.25,3.34c-1,1.56-5.35,7.43-5.64,7.77a2.07,2.07,0,0,0-.5,1.42H5.32A4.82,4.82,0,0,1,7,34.13a9.25,9.25,0,0,0,1.26-1.25A18.87,18.87,0,0,0,11,27.33c.23-.61.44-1.18.68-1.73A44.42,44.42,0,0,0,13.33,21a.78.78,0,0,0-.22-.79c-1.9-1.8-1.71-4.46-1.56-6.59.12-1.62.21-2.9-.63-3.62a2.24,2.24,0,0,0-2-.31.88.88,0,0,0-.32.16c-.51.33-4.81,2.54-5.37,2.7a1.2,1.2,0,0,1-.79-.12,5.62,5.62,0,0,1-.83-1.57c.54-.71,3-3.94,4.71-6.12a1,1,0,0,0,.14-.29,13.88,13.88,0,0,0,0-2.07V2l.58.6c.9.95,1.11,1.17,1.61,1.07a3.3,3.3,0,0,1,1.27,0c1.2.23,3,1.55,4.93,3,2.84,2.07,6.07,4.42,9.47,5.12a21.89,21.89,0,0,0,7.56-.62,13.28,13.28,0,0,1,4.25-.92,8.42,8.42,0,0,1,2.22.29,4.85,4.85,0,0,1,2.3,1.46.1.1,0,0,1,0,.05,5,5,0,0,1,.42.5,6,6,0,0,1,1.11,3.17,18.85,18.85,0,0,1-.52,4.75C41.4,21.41,42.48,22.4,44.91,23.35Z\"><\/path><\/svg>",
+              "png_icon": "",
+              "link": "shopify:\/\/collections\/horse-stable",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1536068961071-4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-5.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-5.jpg",
+              "heading": "Casual",
+              "svg_icon": "<svg class=\"icon icon-casual\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 27.19 33.21\"><path fill=\"#ffffff\" d=\"M24.59,18.25c3.83-15.41,2.47-17,1.88-17.69A1.59,1.59,0,0,0,25.24,0H12.09a1.26,1.26,0,0,0-1,.5c-.48.62-.46,1.7,0,3.57.78,3.68,2.29,12.68-.52,16.86a4.37,4.37,0,0,1-3.23,2L3,23.53a.56.56,0,0,0-.17,0C1.2,23.9.1,26.22,0,28.26-.07,29.88.52,31,1.59,31.38l.78.25a26.3,26.3,0,0,0,7.4,1.58,6.74,6.74,0,0,0,3.38-.76c1.89-1.07,2.92-.71,3.27-.51a3.78,3.78,0,0,0,1.53.47c1.76.2,4.87.33,6-1,1.57-1.85.75-7.19.46-8.79A10.29,10.29,0,0,1,24.59,18.25ZM3.13,25.09h0l4.41-.58A6,6,0,0,0,11.9,21.8c3-4.51,1.77-13.25.75-18,0,0,0-.07,0-.15a5.65,5.65,0,0,1-.31-2h13c.34.39,1.17,2.72-2.21,16.29a11.75,11.75,0,0,0-.18,5h0a29.73,29.73,0,0,1,.41,3.35.8.8,0,0,0-.23.18c-.6.71-3.42,1.23-4.93,1.06l-.26-.07c-.93-.25-3.38-.91-5.5.31a5.31,5.31,0,0,1-2.61.54,25,25,0,0,1-6.92-1.5l-.79-.25H2A2.36,2.36,0,0,1,3.13,25.09Zm15,5.77a2.63,2.63,0,0,1-.93-.27c-.73-.42-2.33-.92-4.82.51a5.31,5.31,0,0,1-2.61.54,25,25,0,0,1-6.92-1.5l-.79-.25c-.33-.11-.53-.73-.49-1.56,0-.11,0-.23,0-.35l.76.25a26.3,26.3,0,0,0,7.4,1.57,6.74,6.74,0,0,0,3.38-.75,5.85,5.85,0,0,1,4.32-.15A3.93,3.93,0,0,0,18,29a11.14,11.14,0,0,0,5.37-.91,4.21,4.21,0,0,1-.54,2.27C22.32,30.91,20.37,31.11,18.13,30.86Z\"><\/path><\/svg>",
+              "png_icon": "",
+              "link": "shopify:\/\/collections\/lifestyle",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1536068961071-5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-6.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-6.jpg",
+              "heading": "Gardening",
+              "svg_icon": "<svg class=\"icon icon-gardening\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 41.83 29.2\"><path fill=\"#ffffff\" d=\"M41.57,14.27,34.49,7.18A.87.87,0,0,0,33,7.75L32.74,12l-3.92,3.61V8.12a.87.87,0,0,0-.88-.87H26.46A8.32,8.32,0,0,0,10,7.25H2.4A2.39,2.39,0,0,0,.23,10.67l7.2,13.86a.88.88,0,0,0,.19.24v3.56a.87.87,0,0,0,.87.87H27.94a.88.88,0,0,0,.75-.42l7.8-12.86L41,15.76a.88.88,0,0,0,.79-.55A.86.86,0,0,0,41.57,14.27ZM7.62,21.1,1.8,9.91a.64.64,0,0,1,.05-.62A.67.67,0,0,1,2.4,9H7.62ZM18.21,1.75a6.58,6.58,0,0,1,6.48,5.5h-13A6.59,6.59,0,0,1,18.21,1.75ZM36,14.19a.85.85,0,0,0-.72.42L27.45,27.45H9.37V9h17.7v8.62a.88.88,0,0,0,.52.8.89.89,0,0,0,.95-.15l5.65-5.21a1,1,0,0,0,.28-.59l.16-2.67,4.28,4.28Z\"><\/path><\/svg>",
+              "png_icon": "",
+              "link": "shopify:\/\/collections\/garden",
+              "cta_text": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "1536068961071-0",
+          "1536068961071-1",
+          "1536068961071-2",
+          "1536068961071-3",
+          "1536068961071-4",
+          "1536068961071-5"
+        ],
+        "settings": {
+        }
+      },
+      "1536251685211": {
+        "type": "twin-promos",
+        "blocks": {
+          "1536251685211-1": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-1.jpg",
+              "link": "shopify:\/\/collections\/hunting",
+              "heading_text": "For the Hunt",
+              "text": "<p>Stability and support for a full day of comfort.<\/p>\n<p>Our New Summit Boot.<\/p>",
+              "cta_text": "Shop Hunt"
+            }
+          },
+          "1536251685211-0": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-2.jpg",
+              "link": "shopify:\/\/collections\/arctic-ice",
+              "heading_text": "Winter Is Coming",
+              "text": "<p>Shop our warmest boot yet.<\/p>\n<p>Superior wet ice traction.<\/p>",
+              "cta_text": "Shop The Arctic Ice Collection"
+            }
+          }
+        },
+        "block_order": [
+          "1536251685211-1",
+          "1536251685211-0"
+        ],
+        "settings": {
+          "full_width": false
+        }
+      },
+      "1536252750894": {
+        "type": "slideshow",
+        "blocks": {
+          "1536252750894-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-about-promo-desktop-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-about-promo-mobile-1.jpg",
+              "heading": "Our Purpose",
+              "subheading": "Made for work (and life) in the muck",
+              "cta_one_link": "shopify:\/\/pages\/about",
+              "cta_one_button_text": "Our Story",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#164732",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          }
+        },
+        "block_order": [
+          "1536252750894-0"
+        ],
+        "settings": {
+          "full_width": true,
+          "slider_speed": 3
+        }
+      },
+      "1536266098177": {
+        "type": "instagram",
+        "settings": {
+          "heading": "@muckbootco",
+          "text": "<p>Tag your photos with <strong>#MUCKBOOTS<\/strong> to be featured on our feed<\/p>",
+          "link": "http:\/\/www.instagram.com\/muckbootco",
+          "cta_text": "View all",
+          "instagram_access_token": "35479505.1677ed0.258c332c4d82450cb46f1fa05e45a100"
+        }
+      },
+      "1536353642475": {
+        "type": "featured-collection",
+        "settings": {
+          "heading": "Best Sellers",
+          "homepage_collection": "best-sellers",
+          "homepage_product_limit": 8,
+          "homepage_product_display": "carousel",
+          "products_per_row": 4
+        }
+      },
+      "page-about-template": {
+        "type": "page-about-template",
+        "blocks": {
+          "1537319917728": {
+            "type": "html",
+            "settings": {
+              "html_block": "<div style=\"vertical-align: middle;  padding: 15vw 5vw; height: 400px; text-align: center;\"><p style=\"text-transform: uppercase; line-height: 40px;\"><span>every boot in the collection delivers the same <\/span><strong style=\"color:#ab5232;\">100% waterproof quality &amp; comfort<\/strong><span> that inspired the original boots<\/span><\/p><\/div>",
+              "html_block_color": "rgba(0,0,0,0)",
+              "block_order": "2"
+            }
+          },
+          "1537319921572": {
+            "type": "image_picker",
+            "settings": {
+              "image_picker_block": "shopify:\/\/shop_images\/about-image-1.png",
+              "image_offset": "-4%",
+              "block_order": "1"
+            }
+          },
+          "1537470215266": {
+            "type": "html",
+            "settings": {
+              "html_block": "<div style=\"outline: 1px solid #fff; outline-offset: -20px; padding: 10vw 5vw; color: #fff;  line-height: 40px; text-align: center; height: 100%;\">\n<span>Over the last two decades, the line has grown to <\/span><strong style=\"text-transform: capitalize;\">over 60 styles of rubber and leather footwear<\/strong><span>, all designed to stand up to tough conditions, whether on the farm, in the city, or in the great outdoors.<\/span>\n<\/div>",
+              "html_block_color": "#ab5232",
+              "block_order": "4"
+            }
+          },
+          "1537482225047": {
+            "type": "html",
+            "settings": {
+              "html_block": "<div style=\"vertical-align: middle; padding: 15vw 5vw; height: 400px; text-align: center;\">\n<h2 style=\"padding-bottom: 10px; border-bottom: 1px solid #ccc; width: 100px; margin: 0 auto;\">Today<\/h2>\n<p style=\"text-transform: uppercase; line-height: 40px;\"><span>the muck boot brand sets a standard of <\/span><strong style=\"color:#ab5232;\">comfort &amp; quality<\/strong><span> that goes beyond the expectations of customers around the world<\/span><\/p>\n<\/div>",
+              "html_block_color": "",
+              "block_order": "6"
+            }
+          },
+          "1537482252402": {
+            "type": "image_picker",
+            "settings": {
+              "image_picker_block": "shopify:\/\/shop_images\/about-image-3.jpg",
+              "image_offset": "",
+              "block_order": "5"
+            }
+          },
+          "1537483249387": {
+            "type": "image_picker",
+            "settings": {
+              "image_picker_block": "shopify:\/\/shop_images\/about-image-4.png",
+              "image_offset": "-6.5%",
+              "block_order": "7"
+            }
+          },
+          "1537483333044": {
+            "type": "html",
+            "settings": {
+              "html_block": "<div style=\"vertical-align: middle; padding: 10vw 5vw; height: 400px; text-align: center;\"><p style=\"text-transform: uppercase; line-height: 40px;\"><strong style=\"color:#ab5232;\">All Muck® Boot products are 100% waterproof and backed by our 12 month warranty.<\/strong><span> purchase on our website and we offer a 30-day hassle free return guarantee<\/span><\/p><\/div>",
+              "html_block_color": "",
+              "block_order": "8"
+            }
+          },
+          "1538611281678": {
+            "type": "image_picker",
+            "settings": {
+              "image_picker_block": "shopify:\/\/shop_images\/about-image-2.jpg",
+              "image_offset": "",
+              "block_order": "3"
+            }
+          }
+        },
+        "block_order": [
+          "1537319917728",
+          "1537319921572",
+          "1538611281678",
+          "1537470215266",
+          "1537482225047",
+          "1537482252402",
+          "1537483249387",
+          "1537483333044"
+        ],
+        "settings": {
+          "about_text": "<div style=\"outline: 1px solid #fff; outline-offset: -20px; padding: 100px; min-height: 200px; text-align: center; width: 100%;\">\n<h2 style=\"color: #fff; padding-bottom: 10px; text-transform: capitalize; margin: 0 auto;\">we had a single Purpose:<\/h2>\n<hr style=\"width: 200px; margin: 10px auto; color\">\n<br>\n<p style=\"color: #fff; max-width: 500px; margin: 0 auto;\">To build the most protective, most comfortable, most reliable boots possible. So, we created the Original Muck Boot Company, whose sole reason for being is to create footwear that can withstand the harshest conditions.<\/p>\n<\/div>",
+          "about_text_color": "#164632"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "1537562942330": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/about-hero-desktop-slide-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/about-hero-mobile-slide-1.jpg",
+              "heading": "Our Story<hr style=\"width: 100px; margin: 20px auto\">",
+              "subheading": "OVER TWO DECADES OF SETTING <br> THE STANDARD OF COMFORT & QUALITY",
+              "cta_one_link": "",
+              "cta_one_button_text": "Add a button",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#164732",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
+          }
+        },
+        "block_order": [
+          "1537562942330"
+        ],
+        "settings": {
+          "full_width": false,
+          "slider_speed": 5
+        }
+      }
+    },
+    "content_for_index": [
+      "1535728526385",
+      "1536353642475",
+      "1536068961071",
+      "1536251685211",
+      "1536252750894",
+      "1536266098177"
+    ]
+  }
+}
