@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+// note: use @include fontSize(__px) to indicate all font sizes.
+html { 
+  font-size: 16px;
+  padding-bottom: 0 !important; // Cart drawer adds weird padding...
+}
+
+html, body {
+  height: 100%;
+}
+
+body { 
+	font-family: $font-stack--default;
+	letter-spacing: .05em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack--heading;
+}
+
+p {
+  color: $color--gray-1;
+}
+
+{% comment %} Prevent sidways scrolling past page bounds on old iOS devices (9 and earlier){% endcomment %}
+body > .page-wrap {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.gridlock .row {
+  @include mq('phone') {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;    
+  }
+}
+
+.homepage-section {
+  margin-bottom: 40px;
+}
+
+@mixin bgGradient {
+  background: {{ settings.background }};
+  background: -moz-linear-gradient(top, #f8f7f8 140px, {{ settings.background }} 200px);
+  background: -webkit-linear-gradient(top, #f8f7f8 140px,{{ settings.background }} 200px);
+  background: linear-gradient(to bottom, #f8f7f8 140px,{{ settings.background }} 200px);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f7f8', endColorstr='{{ settings.background }}', GradientType=0 );
+}
+
+// Page Background (Design wanted a gradient stylization)
+#PageContainer {
+  @include bgGradient;
+}
+
+#content {
+  position: relative;
+  //padding: 0 0 100px 0;
+  padding: 100px 0;
+
+  // special pages that don't need padding at the top
+
+  body.collection &,
+  body.product & {
+    padding-top: 0;
+  }
+  body.product & {
+    padding-bottom: 20px;
+  }
+}
+
+// Breadcrumbs 
+#breadcrumb {
+  @include h8;
+  @include fontSize( 16px );
+  position: relative;
+  top: 57px;
+  left: 0;
+  margin: 0 auto;
+  padding-left: 20px;
+  z-index: 30;
+
+  @include mq( 'phone' ) {
+    width: 100vw;
+  }
+
+  @include mq( 'tablet-and-up' ) {
+    padding-left: 0;
+  }
+
+  @include mq( 'lap-and-up' ) {
+    padding-left: 170px;
+    top: 38px;
+  }
+
+  @include mq( 'desk-and-up' ) {
+    padding-left: 200px;
+  }
+
+  a {
+    color: $color--gray-2;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .separator {
+    color: $color--gray-2;
+  }
+
+  .page-title {
+    @include h7;
+
+    color: $color--text-1;
+    font-weight: $font-weight--bold;
+  }
+}
+
+
+.animate25 { transition: all 0.25s ease-in-out; }
+.animate50 { transition: all 0.50s ease-in-out; }
+
+.errors {
+  color: $color--error;
+
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+
+// Buttons
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border-radius: 0 !important;
+  font-family: $font-stack--default;
+  font-weight: $font-weight--bold;
+  @include fontSize(14px);
+  letter-spacing: .125em;
+  text-transform: uppercase;
+}
+

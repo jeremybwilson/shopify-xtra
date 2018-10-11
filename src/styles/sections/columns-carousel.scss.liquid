@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.columns-carousel {
+  position: relative;
+
+  .columns-carousel--columns {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    list-style: none;
+  }
+
+  .column-item {
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: .3;
+    z-index: 2;
+    transition: opacity .3s ease;
+  }
+
+  .column-item.hovered .overlay {
+    opacity: .2;
+  }
+  .text-overlay {
+    position: absolute;
+    z-index: 3;
+    top: 33%;
+    left: 0;
+    width: 100%;  
+    padding-left: 30px;
+    padding-right: 30px;
+    color: $color--white;
+    text-align: center;
+
+    @include mq('tablet-and-up') {
+      top: 42%;
+    }
+
+  }
+  .overlay-icon {
+    margin: 0 auto 20px;
+
+    svg {
+      max-height: 36px;
+
+      @include mq('tablet-and-up') {
+        max-height: 30px;
+      }    
+    }
+  }
+  h3 {
+    color: $color--white;
+    @include fontSize(22px);
+    font-weight: $font-weight--bold;
+    letter-spacing: .25em;
+    line-height: 30px / 22px * 1em;
+    text-transform: uppercase;
+
+    @include mq('tablet-and-up') {
+      letter-spacing: .3em;
+    }
+  }
+  .cta {
+    @include fontSize(13px);
+    font-weight: $font-weight--medium;
+    letter-spacing: .125em;
+    text-transform: uppercase;
+
+    @include mq('tablet-and-up') {
+      @include fontSize(16px);
+      letter-spacing: .2em;
+    }
+
+    svg {
+      width: 10px;
+      margin-left: 4px;
+
+      * {
+        fill: $color--white;
+      }
+    }
+  }
+  .owl-dots {
+    display: none;
+  }
+}
+
+.one-image-only .columns-carousel--nav {
+  display: none;
+}
+.columns-carousel--nav {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  left: 50%;
+  width: 100%;
+  max-width: 220px;    
+  transform: translateX(-50%);
+  color: $color--white;
+
+  @include mq('lap-and-up') {
+    bottom: 55px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+
+    * {
+      fill: $color--white;
+    }
+  }    
+
+  // pager
+
+  .pagination {
+    position: relative;
+    color: $color--white;
+    font-weight: $font-weight--medium;
+    @include fontSize(10px);
+
+    @include mq('lap-and-up') {
+      @include fontSize(14px);
+    }
+
+    &:before {
+      content: '';        
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 43px;
+      height: 43px;
+      transform: translate(-50%,-50%) rotate(45deg);
+      border: solid 1px $color--white;
+
+      @include mq('lap-and-up') {
+        width: 56px;
+        height: 56px;
+      }        
+    }
+  }
+}
