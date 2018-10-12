@@ -19,24 +19,23 @@ $color--border-gray: #d7d7d7;
 
 // DARK BACKGROUND
 $color--white: #ffffff;
-$color--light-primary-1: #e63e57; //What dis for?
+$color--light-primary-1: #e63e57; //What dis for? A: Primary color for areas with dark background
 
 // UTILITY + ERROR
 $color--error: {{ settings.error_text }};
 
 // TYPOGRAPHY
-$sans: "Gotham A", "Gotham B", sans-serif;
+$sans: "Museo Sans", sans-serif;
 $font-stack--default: $sans;
 $font-stack--heading: $sans;
 
 // FONT WEIGHTS
-$font-weight--book: 400;
+// $font-weight--book: 400; 
+$font-weight--book: 500; // Museo's 500 serves the same function as 400 for other fonts, so instead of replacing variables we'll just switch out the value
 $font-weight--medium: 500;
 $font-weight--bold: 700;
-$font-weight--black: 800;
-
-
-
+//$font-weight--black: 800; 
+$font-weight--black: 900 // Museo's 900 is equivalent to 800
 
 /* MIXIN : FONT SIZES
  *    EX : @include fontSize( 16px )
