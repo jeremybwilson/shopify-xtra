@@ -7,7 +7,7 @@
 
         {% assign meganav = false %}
         {% for block in section.blocks %}
-          {% if block.settings.menu_item == link.title %}
+          {% if block.settings.menu_item == link.title and block.type == 'mega_menu' %}
             
             {% comment %} :: MEGA-MENU - WRAPPER :: {% endcomment %}
             {% capture megalink %}
@@ -130,7 +130,8 @@
           {% endcomment %}
 
           {% comment %} :: Start math for calculated multi column dropdowns :: {% endcomment %}
-          <li class="dropdown has_sub_menu" aria-haspopup="true" aria-expanded="false">{{ link.title | link_to: link.url }}
+          <li class="nav-primary-link nav-list-simple dropdown has_sub_menu" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-category-header" href="{{ link.url }}" aria-haspopup="true" aria-expanded="false" alt="{{ link.title }}">{{ link.title }}</a>
             
             {% comment %} :: PLAIN DROPDOWN : Multi-Columns :: {% endcomment %}
             {% if link.links.size > num %}
