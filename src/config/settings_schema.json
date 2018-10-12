@@ -188,31 +188,6 @@
         "label": "Error text",
         "default": "#f00"
       },
-      {
-        "type": "color",
-        "id": "product_badge_square_bg",
-        "label": "Square Badge BG",
-        "default": "#3E3E3E"
-      },
-      {
-        "type": "color",
-        "id": "product_badge_circle_bg",
-        "label": "Circle Badge BG",
-        "default": "#AB5232"
-      },
-      {
-        "type": "color",
-        "id": "product_badge_diamond_bg",
-        "label": "Diamond Badge BG",
-        "default": "#164732"
-      },
-      {
-        "type": "color",
-        "id": "product_badge_text_color",
-        "label": "Badge Text Color",
-        "default": "#FEFFFE"
-      },
-
 
 
       {
@@ -275,6 +250,25 @@
       },
       {
         "type": "color",
+        "id": "filter_bar_border_color",
+        "label": "Filter Bar Border Color",
+        "info": "( Color of Filter Bar Wrap border, width setting later on )",
+        "default": "#FEFFFE"
+      },
+      {
+        "type": "color",
+        "id": "quickview_button_bg",
+        "label": "Quickview Button Background",
+        "default": "#e41c39"
+      },
+      {
+        "type": "color",
+        "id": "quickview_button_text",
+        "label": "Quickview Button Text",
+        "default": "#FEFFFE"
+      },
+      {
+        "type": "color",
         "id": "catalog_item_text_color",
         "label": "Catalog Item Text Color",
         "default": "#164732"
@@ -320,6 +314,30 @@
         "id": "collection_load_more_bg_hover",
         "label": "Load More Button BG on Hover",
         "default": "#9b492b"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_square_bg",
+        "label": "Square Badge BG",
+        "default": "#3E3E3E"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_circle_bg",
+        "label": "Circle Badge BG",
+        "default": "#AB5232"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_diamond_bg",
+        "label": "Diamond Badge BG",
+        "default": "#164732"
+      },
+      {
+        "type": "color",
+        "id": "product_badge_text_color",
+        "label": "Badge Text Color",
+        "default": "#FEFFFE"
       },
 
 
@@ -765,7 +783,7 @@
     ]
   },
   {
-    "name": "Product grid",
+    "name": "Product Grid + Filters",
     "settings": [
       {
         "type": "paragraph",
@@ -787,6 +805,16 @@
         "label": "Show SEO Footer",
         "info": "(Only rendered on collections, not on homepage featured collection.)",
         "default": true
+      },
+      {
+        "type": "range",
+        "id": "filter_bar_border_width",
+        "min": 0,
+        "max": 6,
+        "step": 1,
+        "unit": "px",
+        "label": "Filter Bar Border Width",
+        "default": 0
       },
       {
         "type": "select",

@@ -2945,38 +2945,29 @@ $(document).ready(function() {
   - Added to prevent multiple calls, when using an event for resizing
 ==============================================================================*/
 function debounce(fn, wait, immediate) {
-    var timeout;
+  var timeout;
 
-    wait || (wait = 100);
+  wait || (wait = 100);
 
-    return function () {
-      var context = this, args = arguments;
+  return function () {
+    var context = this, args = arguments;
 
-      var later = function() {
-        timeout = null;
+    var later = function() {
+      timeout = null;
 
-        if ( !immediate ) {
-          fn.apply(context, args);
-        }
-      };
-
-      var callNow = immediate && !timeout;
-
-      clearTimeout(timeout);
-
-      timeout = setTimeout(later, wait);
-
-      if ( callNow ) {
+      if ( !immediate ) {
         fn.apply(context, args);
       }
     };
-  }
 
-  /* Log Theme Version */
-  var log = function() {
-      var args = Array.prototype.slice.call(arguments);
-      args.unshift(console);
-      return Function.prototype.bind.apply(console.log, args);
-  }
+    var callNow = immediate && !timeout;
 
-  log("Fashionopolism Version 5.4 by Underground", {bar: 1})();
+    clearTimeout(timeout);
+
+    timeout = setTimeout(later, wait);
+
+    if ( callNow ) {
+      fn.apply(context, args);
+    }
+  };
+}

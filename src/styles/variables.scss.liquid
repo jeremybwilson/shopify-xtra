@@ -306,9 +306,10 @@ $tablet:           "screen and (min-width: 768px) and (max-width: 1023px)";
 $tablet-and-up:    "screen and (min-width: 768px)";
 $tablet-portrait:  "screen and (min-width: 768px) and (max-width: 959px)";
 $tablet-landscape: "screen and (min-width: 960px) and (max-width: 1023px)";
-$lap:              "screen and (min-width: 1024px) and (max-width: 1239px)";
+$lap:              "screen and (min-width: 1024px) and (max-width: 1219px)";
 $lap-and-up:       "screen and (min-width: 1024px)";
 $desk-and-up:      "screen and (min-width: 1220px)";
+$lap-and-desk:     "screen and (min-width: 1024px) and (max-width: 1679px)";
 $wide-and-up:      "screen and (min-width: 1680px)";
 $retina:           "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)";
 
@@ -343,6 +344,10 @@ $retina:           "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)
     }
   } @else if $alias == "desk-and-up" {
     @media #{$desk-and-up} {
+      @content;
+    }
+  } @else if $alias == "lap-and-desk" {
+    @media #{$lap-and-desk} {
       @content;
     }
   } @else if $alias == "wide-and-up" {
