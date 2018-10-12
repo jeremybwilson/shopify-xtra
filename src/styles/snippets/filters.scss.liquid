@@ -30,13 +30,6 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
 
     @include mq( 'lap-and-up' ){
         margin: 65px 0 55px;
-
-        // DENSE MODE : Shrinks various sizes for a more populated filter set (6+)
-        {% if settings.dense_filters_mode == true %}
-            padding: 15px 5px;
-        {% else %}
-            padding: 15px 30px 15px 15px;
-        {% endif %}
     }
 
     @include mq( 'desk-and-up' ) {
@@ -49,11 +42,6 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
         color: $filterTextColor;
         margin-bottom: 0;
         margin-right: 5px; //for 1024 - 1240 spacing
-
-        {% if settings.dense_filters_mode == true %}
-            @include fontSize( 14px );
-            margin-top: 2px;
-        {% endif %}
 
         @include mq( 'desk-and-up' ) {
             @include fontSize( 16px );
@@ -112,14 +100,6 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
                     text-transform: uppercase;
                     font-weight: $font-weight--medium;
                     color: $filterTextColor;
-
-                    {% if settings.dense_filters_mode == true %}
-                        @include fontSize( 12px );
-
-                        @include mq( 'desk-and-up' ) {
-                            @include fontSize( 14px );
-                        }
-                    {% endif %}
                 }
 
                 // SELECTED : Filter is opened by user
@@ -363,36 +343,61 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
                     padding-right: 32px;
                 }
             }
+        }
+    }
 
+    // DENSE MODE : 6+ filter sets, shrink spacing on elements to fit for iPad
+    &[data-total-filter-count="6"],
+    &[data-total-filter-count="7"] {
+        @include mq( 'lap-and-up' ){
+            padding: 15px 5px;
+        }
+        @include mq( 'desk-and-up' ) {
+            padding: 15px 30px;
+        }
 
-            // TOO MANY FILTERS : Shirink Text
-            {% if settings.dense_filters_mode == true %}
-                
-                // HIDE : Visually hide the display of the selection option dislpay,
-                //          and scoot the "SORT" label on top of it so it works as a click point
-                @include mq( 'lap-and-desk' ) {
-                    .sort-label {
-                        @include fontSize( 14px );
-                        position: absolute;
-                        right: 40px;
-                        z-index: 10;
-                        pointer-events: none;
-                        margin-top: 2px;
+        // FILTER : PARENT LABEL : label on iPad in dense filter sets
+        .filter-label {
+            @include fontSize( 14px );
+            margin-top: 2px;
+        }
 
-                        &:after {
-                            right: -24px;
-                        }
-                    }
+        // FILTER : SET HEADER : Shrink font aroud filter set headers
+        .filter-list-desktop .bc-sf-filter-option-block .bc-sf-filter-block-title a span {
+            @include fontSize( 12px );
 
-                    .styled-select {
-                        @include fontSize( 12px );
-                        min-width: 100px;
-                        width: 100px;
-                        color: $filterBg; //Hide text, but still use menu
-                        cursor: pointer;
+            @include mq( 'desk-and-up' ) {
+                @include fontSize( 14px );
+            }
+        }
+
+        // SORT : Visually hide selected option, move label on top for compression
+        .sort-options #bc-sf-filter-top-sorting {
+            @include mq( 'lap-and-desk' ) {
+
+                // SORT : LABEL : Move label on top of click zone for select
+                .sort-label {
+                    @include fontSize( 14px );
+                    position: absolute;
+                    right: 40px;
+                    z-index: 10;
+                    pointer-events: none;
+                    margin-top: 2px;
+
+                    &:after {
+                        right: -24px;
                     }
                 }
-            {% endif %}
+
+                // SORT : LABEL : Hide select label visually so label is click element visually
+                .styled-select {
+                    @include fontSize( 12px );
+                    min-width: 100px;
+                    width: 100px;
+                    color: $filterBg; //Hide text, but still use menu
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
