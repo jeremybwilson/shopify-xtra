@@ -9,7 +9,7 @@ $filterBtnMainText: {{ settings.filter_button_main_text }};
 $filterBtnAltBg: {{ settings.filter_button_alt_bg }};
 $filterBtnAltText: {{ settings.filter_button_alt_text }};
 $filterBorder: 1px solid {{ settings.filter_divider_color }};
-
+$filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.filter_bar_border_color }};
 
 
 /* FILTERS : DESKTOP - WRAPPER 
@@ -24,10 +24,19 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
     background: $filterBg;
     z-index: 25; // Prevent it going on top of navbar when scrolling down long lists of filters
     margin: 0 auto 20px;
+    border-top: $filterBarBorder;
+    border-bottom: $filterBarBorder;
+
 
     @include mq( 'lap-and-up' ){
         margin: 65px 0 55px;
-        padding: 15px 30px 15px 15px;
+
+        // DENSE MODE : Shrinks various sizes for a more populated filter set (6+)
+        {% if settings.dense_filters_mode == true %}
+            padding: 15px 5px;
+        {% else %}
+            padding: 15px 30px 15px 15px;
+        {% endif %}
     }
 
     @include mq( 'desk-and-up' ) {
@@ -41,8 +50,15 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
         margin-bottom: 0;
         margin-right: 5px; //for 1024 - 1240 spacing
 
+        {% if settings.dense_filters_mode == true %}
+            @include fontSize( 14px );
+            margin-top: 2px;
+        {% endif %}
+
         @include mq( 'desk-and-up' ) {
+            @include fontSize( 16px );
             margin-right: 20px;
+            margin-top: 0;
         }
     }
 
@@ -96,6 +112,14 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
                     text-transform: uppercase;
                     font-weight: $font-weight--medium;
                     color: $filterTextColor;
+
+                    {% if settings.dense_filters_mode == true %}
+                        @include fontSize( 12px );
+
+                        @include mq( 'desk-and-up' ) {
+                            @include fontSize( 14px );
+                        }
+                    {% endif %}
                 }
 
                 // SELECTED : Filter is opened by user
@@ -117,6 +141,8 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
                 background: $filterBg;
                 border: none;
                 width: 190px;
+                top: 51px !important; //Has to override inline set style by js
+                border: $filterBarBorder;
 
                 // CLEAR : Hide the in-filter list clear button, desktop has exposed list of filters already
                 .bc-sf-filter-clear {
@@ -337,6 +363,36 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
                     padding-right: 32px;
                 }
             }
+
+
+            // TOO MANY FILTERS : Shirink Text
+            {% if settings.dense_filters_mode == true %}
+                
+                // HIDE : Visually hide the display of the selection option dislpay,
+                //          and scoot the "SORT" label on top of it so it works as a click point
+                @include mq( 'lap-and-desk' ) {
+                    .sort-label {
+                        @include fontSize( 14px );
+                        position: absolute;
+                        right: 40px;
+                        z-index: 10;
+                        pointer-events: none;
+                        margin-top: 2px;
+
+                        &:after {
+                            right: -24px;
+                        }
+                    }
+
+                    .styled-select {
+                        @include fontSize( 12px );
+                        min-width: 100px;
+                        width: 100px;
+                        color: $filterBg; //Hide text, but still use menu
+                        cursor: pointer;
+                    }
+                }
+            {% endif %}
         }
     }
 }
@@ -354,8 +410,8 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
         z-index: 25;
         width: 50%;
         left: 0;
-        top: 0;
-        height: 49px;
+        top: {{ settings.filter_bar_border_width }}px; //Adjust top position for border settings
+        height: 47px;
         padding: 0;
 
         @include mq( 'lap-and-up' ) {
@@ -410,7 +466,7 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
     #bc-sf-filter-tree {
         position: absolute;
         width: 100%;
-        top: 49px; // height - 1px to align edges
+        top: 54px; // height - 1px to align edges
         left: 0;
         margin: 0;
         z-index: 25;
@@ -636,8 +692,10 @@ $filterBorder: 1px solid {{ settings.filter_divider_color }};
     }
 
     // Sort options dropdown from desktop, tricked on mobile lol
-    .sort-options {
-        border-bottom: $filterBorder;
-        border-bottom-left-radius: 3px;
-    }
+    {% if settings.filter_bar_border_width == 0 %}
+        .sort-options {
+            border-bottom: $filterBorder;
+            border-bottom-left-radius: 3px;
+        }
+    {% endif %}
 }
