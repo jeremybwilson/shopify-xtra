@@ -2,12 +2,12 @@
   "presets": {},
   "current": {
     "announcement_text_color": "#ffffff",
-    "announcement_bg_one": "#124431",
-    "announcement_bg_two": "#073322",
+    "announcement_bg_one": "#0153a6",
+    "announcement_bg_two": "#757575",
     "header_background": "#fefffe",
     "logo_color": "#000000",
-    "nav_links": "#164632",
-    "nav_links_hover": "#aa5131",
+    "nav_links": "#0153a6",
+    "nav_links_hover": "#e61533",
     "nav_minor_border_color": "#cccccc",
     "social_links": "#000000",
     "social_links_hover": "#000000",
@@ -26,27 +26,31 @@
     "secondary_button_hover": "#ccc",
     "secondary_button_text": "#000",
     "error_text": "#f00",
-    "product_badge_square_bg": "#3e3e3e",
-    "product_badge_circle_bg": "#ab5232",
-    "product_badge_diamond_bg": "#164732",
+    "product_badge_square_bg": "#757575",
+    "product_badge_circle_bg": "#0153a6",
+    "product_badge_diamond_bg": "#0152a6",
     "product_badge_text_color": "#fefffe",
-    "filter_bg": "#f4f2ec",
-    "filter_text_color": "#164732",
-    "filter_arrow_color": "#aa5131",
-    "filter_checkbox_bg": "#fefffe",
+    "filter_bg": "#ffffff",
+    "filter_text_color": "#000000",
+    "filter_arrow_color": "#0153a6",
+    "filter_checkbox_bg": "#ffffff",
     "filter_divider_color": "#d8d8d8",
-    "filter_button_main_bg": "#164732",
+    "filter_button_main_bg": "#0153a6",
     "filter_button_main_text": "#fefffe",
-    "filter_button_alt_bg": "#aa5131",
-    "filter_button_alt_text": "#fefffe",
-    "catalog_item_text_color": "#164732",
+    "filter_button_alt_bg": "#ffffff",
+    "filter_button_alt_text": "#0153a6",
+    "filter_bar_border_color": "#0153a6",
+    "filter_bar_border_width": 3,
+    "catalog_item_text_color": "#000000",
     "catalog_item_price_color": "#525252",
-    "catalog_item_accent_color": "#aa5131",
-    "collection_seo_footer_bg": "#f4f2ec",
-    "collection_seo_footer_text": "#164732",
+    "catalog_item_accent_color": "#e61533",
+    "collection_seo_footer_bg": "#e6e6e6",
+    "collection_seo_footer_text": "#161616",
     "collection_load_more_text": "#fefffe",
-    "collection_load_more_bg": "#ab5232",
-    "collection_load_more_bg_hover": "#9b492b",
+    "collection_load_more_bg": "#757575",
+    "collection_load_more_bg_hover": "#0153a6",
+    "quickview_button_bg": "#e41c39",
+    "quickview_button_text": "#FEFFFE",
     "fancybox_overlay_bg": "0,0,0,0.8",
     "fancybox_close_color": "#5b5b5b",
     "fancybox_close_hover_color": "#9b492b",
@@ -100,6 +104,7 @@
     "quickview": true,
     "vendor": false,
     "show_collection_seo_block": true,
+    "dense_filters_mode": true,
     "details_align": "center",
     "secondary_images_hover": "image_flip",
     "cart_notes_enable": false,
@@ -631,6 +636,14 @@
               "block_order": "1"
             }
           },
+          "1538611281678": {
+            "type": "image_picker",
+            "settings": {
+              "image_picker_block": "",
+              "image_offset": "",
+              "block_order": "3"
+            }
+          },
           "1537470215266": {
             "type": "html",
             "settings": {
@@ -669,14 +682,6 @@
               "html_block": "<div style=\"vertical-align: middle; padding: 10vw 5vw; height: 400px; text-align: center;\"><p style=\"text-transform: uppercase; line-height: 40px;\"><strong style=\"color:#ab5232;\">All Muck® Boot products are 100% waterproof and backed by our 12 month warranty.<\/strong><span> purchase on our website and we offer a 30-day hassle free return guarantee<\/span><\/p><\/div>",
               "html_block_color": "",
               "block_order": "8"
-            }
-          },
-          "1538611281678": {
-            "type": "image_picker",
-            "settings": {
-              "image_picker_block": "shopify:\/\/shop_images\/about-image-2.jpg",
-              "image_offset": "",
-              "block_order": "3"
             }
           }
         },
