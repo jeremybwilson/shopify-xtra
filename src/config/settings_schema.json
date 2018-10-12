@@ -807,13 +807,6 @@
         "default": true
       },
       {
-        "type": "checkbox",
-        "id": "dense_filters_mode",
-        "label": "Dense Filters Mode",
-        "info": "(Brand using 6+ Filters, enable to make more room.)",
-        "default": false
-      },
-      {
         "type": "range",
         "id": "filter_bar_border_width",
         "min": 0,

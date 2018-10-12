@@ -104,7 +104,6 @@
     "quickview": true,
     "vendor": false,
     "show_collection_seo_block": true,
-    "dense_filters_mode": true,
     "details_align": "center",
     "secondary_images_hover": "image_flip",
     "cart_notes_enable": false,
