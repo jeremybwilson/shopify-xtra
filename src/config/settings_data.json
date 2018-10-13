@@ -26,6 +26,8 @@
     "secondary_button_hover": "#ccc",
     "secondary_button_text": "#000",
     "error_text": "#f00",
+    "homepage_instagram_header": "#fff",
+    "homepage_instagram_text": "#fff",
     "product_badge_square_bg": "#757575",
     "product_badge_circle_bg": "#0153a6",
     "product_badge_diamond_bg": "#0152a6",
@@ -599,9 +601,9 @@
       "1536266098177": {
         "type": "instagram",
         "settings": {
-          "heading": "@muckbootco",
-          "text": "<p>Tag your photos with <strong>#MUCKBOOTS<\/strong> to be featured on our feed<\/p>",
-          "link": "http:\/\/www.instagram.com\/muckbootco",
+          "heading": "@xtratufboots",
+          "text": "<p>Tag your photos with <strong>#XTRATUFBOOTS<\/strong> to be featured on our feed<\/p>",
+          "link": "http:\/\/www.instagram.com\/xtratufboots",
           "cta_text": "View all",
           "instagram_access_token": "35479505.1677ed0.258c332c4d82450cb46f1fa05e45a100"
         }

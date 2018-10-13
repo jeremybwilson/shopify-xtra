@@ -188,7 +188,22 @@
         "label": "Error text",
         "default": "#f00"
       },
-
+      {
+        "type": "header",
+        "content": "Homepage"
+      },
+      {
+        "type": "color",
+        "id": "homepage_instagram_header",
+        "label": "Instagram Feed - Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "homepage_instagram_text",
+        "label": "Instagram Feed - Text",
+        "default": "#ffffff"
+      },
 
       {
         "type": "header",
@@ -543,7 +558,34 @@
         "label": "Social share hover",
         "default": "#000000"
       },
-
+      {
+        "type": "header",
+        "content": "Newsletter & Social Footer"
+      },
+      {
+        "type": "color",
+        "id": "newsletter_footer_background",
+        "label": "Newsletter - Background",
+        "default": "#e41c39"
+      },
+      {
+        "type": "color",
+        "id": "newsletter_footer_text",
+        "label": "Newsletter - Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "social_footer_background",
+        "label": "Social - Background",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "social_footer_header",
+        "label": "Social - Header",
+        "default": "#0a56a4"
+      },   
 
       {
         "type": "header",
@@ -553,19 +595,19 @@
         "type": "color",
         "id": "footer_background",
         "label": "Background",
-        "default": "#fff"
+        "default": "#333333"
       },
       {
         "type": "color",
         "id": "footer_color",
         "label": "Text",
-        "default": "#000"
+        "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "footer_border",
         "label": "Borders",
-        "default": "#fff"
+        "default": "#ccd7d2"
       }
     ]
   },
