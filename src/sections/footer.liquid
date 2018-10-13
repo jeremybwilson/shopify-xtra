@@ -2,20 +2,27 @@
 
 <footer class="site-footer">
   <div class="row">
-    {% for block in section.blocks %}
-    {% case block.type %}
-    {% when 'link_list' %}    
-      <div class="footer-nav">
-        <nav>
-          <ul>
-            {% for link in linklists[block.settings.footer_nav].links %}
-            <li>{{ link.title | link_to: link.url }}</li>
-            {% endfor %}
-          </ul>
-        </nav>
-      </div><!-- .footer-nav -->
-    {% endcase %}
-    {% endfor %}
+    {% if section.blocks %}
+      <div class="footer-blocks">
+
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'link_list' %}    
+              <div class="footer-nav">
+                <nav>
+                  <ul>
+                    <li class="header">{{ linklists[block.settings.footer_nav].title }}</li>
+                    {% for link in linklists[block.settings.footer_nav].links %}
+                    <li>{{ link.title | link_to: link.url }}</li>
+                    {% endfor %}
+                  </ul>
+                </nav>
+              </div><!-- .footer-nav -->
+          {% endcase %}
+        {% endfor %}
+
+      </div><!--.footer-blocks-->      
+    {% endif %}
 
     <div class="visit-our-brands">
       <div class="section-title">
@@ -25,15 +32,15 @@
       <div class="brands--list">
 
         {% unless section.settings.visit_brand_link_one == blank %}
-          <a href="{{ section.settings.visit_brand_link_one }}" title="{{ section.settings.visit_brand_image_one.alt }}"><img src="{{ section.settings.visit_brand_image_one | img_url }}" alt="{{ section.settings.visit_brand_image_one.alt }}"></a>
+          <a href="{{ section.settings.visit_brand_link_one }}" title="{{ section.settings.visit_brand_image_one.alt }}"><img src="{{ section.settings.visit_brand_image_one | img_url: 'x100' }}" alt="{{ section.settings.visit_brand_image_one.alt }}"></a>
         {% endunless %}
 
         {% unless section.settings.visit_brand_link_two == blank %}
-          <a href="{{ section.settings.visit_brand_link_two }}" title="{{ section.settings.visit_brand_image_two.alt }}"><img src="{{ section.settings.visit_brand_image_two | img_url }}" alt="{{ section.settings.visit_brand_image_two.alt }}"></a>
+          <a href="{{ section.settings.visit_brand_link_two }}" title="{{ section.settings.visit_brand_image_two.alt }}"><img src="{{ section.settings.visit_brand_image_two | img_url: 'x100' }}" alt="{{ section.settings.visit_brand_image_two.alt }}"></a>
         {% endunless %}
 
         {% unless section.settings.visit_brand_link_three == blank %}
-          <a href="{{ section.settings.visit_brand_link_three }}" title="{{ section.settings.visit_brand_image_three.alt }}"><img src="{{ section.settings.visit_brand_image_three | img_url }}" alt="{{ section.settings.visit_brand_image_three.alt }}"></a>
+          <a href="{{ section.settings.visit_brand_link_three }}" title="{{ section.settings.visit_brand_image_three.alt }}"><img src="{{ section.settings.visit_brand_image_three | img_url: 'x100' }}" alt="{{ section.settings.visit_brand_image_three.alt }}"></a>
         {% endunless %}                
 
       </div><!-- .brands--list -->

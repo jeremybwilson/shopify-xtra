@@ -553,19 +553,19 @@
         "type": "color",
         "id": "footer_background",
         "label": "Background",
-        "default": "#fff"
+        "default": "#333333"
       },
       {
         "type": "color",
         "id": "footer_color",
         "label": "Text",
-        "default": "#000"
+        "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "footer_border",
         "label": "Borders",
-        "default": "#fff"
+        "default": "#ccd7d2"
       }
     ]
   },
