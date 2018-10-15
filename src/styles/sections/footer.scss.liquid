@@ -3,17 +3,21 @@
 // actual footer
 
 .site-footer {
-  background: $color--primary-2;
+  background: {{ settings.footer_background }};
   padding: 0 0 39px;
 
   @include mq('tablet-and-up') {
-    padding: 96px 40px 39px;
+    padding: 100px 40px 39px;
   }
 
   // repeating elements
 
   .row {
     width: 100%;
+    @include mq('phone') {
+      padding-left: 0;
+      padding-right: 0;
+    }
 
     @include mq('tablet-and-up') {
       @include flexbox;
@@ -21,11 +25,11 @@
       @include justify-content(space-between);
       @include align-items(center);
       max-width: 1100px;
-      margin-bottom: 74px;
+      margin-bottom: 62px;
     }
   }
   h4 {
-  	color: $color--white;
+  	color: {{ settings.footer_color }};
     border-bottom: none;
     text-transform: uppercase;
   }
@@ -41,16 +45,35 @@
 }
 // single elements
 
-.footer-nav {
+.footer-blocks {
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(flex-start);
+  @include align-items(flex-start);
   width: 100%;
   padding: 50px 45px 46px;
-  border-bottom: solid 1px $color--text-1;
+  border-bottom: solid 1px {{ settings.footer_border }};
 
   @include mq('tablet-and-up') {
-    width: 59%;
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    width: 58%;
     padding: 0;
     border-bottom: none;
-    border-right: solid 1px $color--text-1;
+    border-right: solid 1px {{ settings.footer_border }};
+  }
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+
+  @include mq('tablet-and-up') {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 
   .section-title {
@@ -77,14 +100,28 @@
       }
       @include mq('tablet-and-up') {
         display: block;
-        columns: 2;
       }
+    }
+
+    .header {
+      padding: 12px 12px;
+      font-weight: $font-weight--black;
+      text-transform: uppercase;
+
+      @include mq('tablet-and-up') {
+        display: inline-block;
+        padding: 9.5px 12px 9.5px 0;
+      }
+      @include mq('wide-and-up') {
+        padding: 9.5px 0;
+      }
+
     }
 
     a {
       display: block;
-      padding: 7px 12px;
-      color: $color--white;
+      padding: 12px 12px;
+      color: {{ settings.footer_color }};
 
       @include mq('tablet-and-up') {
         display: inline-block;
@@ -97,8 +134,6 @@
   }
 }
 
-  
-
 .visit-our-brands {
   padding: 45px 20px 33px;
   text-align: center;
@@ -108,7 +143,7 @@
     @include flex-direction(column);
     @include justify-content(center);    
     @include align-items(center);
-    margin: 21px -18px 0 auto;
+    margin: 21px 50px 0 auto;
     padding: 0;
   }
 
@@ -122,12 +157,11 @@
 
   .section-title h4 {
     @include fontSize(14px);
-    font-weight: $font-weight--bold;
-    letter-spacing: .3em;
+    font-weight: $font-weight--black;
+    letter-spacing: .04em;
 
     @include mq('tablet-and-up') {
       @include fontSize(16px);
-      letter-spacing: .25em;
     }
   }
   .brands--list {
@@ -136,10 +170,10 @@
     @include align-items(center);
   }
   img {
-    max-height: 40px;
+    max-height: 50px;
 
     @include mq('tablet-and-up') {
-      max-height: 55px;
+      max-height: 70px;
       max-width: none;
       margin: 0 20px;
     }
@@ -150,7 +184,7 @@
     @include flex-direction(column);
     margin-bottom: 0;
     padding-top: 24px;
-    border-top: solid 1px $color--text-1; 
+    border-top: solid 1px {{ settings.footer_border }}; 
   }
   @include mq('lap-and-up') {
     @include flex-direction(row);
@@ -159,7 +193,7 @@
 }
 .brands--telephone {
   padding-bottom: 42px;
-  border-bottom: solid 1px $color--text-1;
+  border-bottom: solid 1px {{ settings.footer_border }};
 
   @include mq('tablet-and-up') {
     margin-top: 7px;
@@ -187,10 +221,11 @@
     margin: 0 7px 0 0;
     padding: 0;
     font-size: inherit;
+    font-weight: $font-weight--black;
     letter-spacing: inherit;
   }
   span {
-    color: $color--white;
+    color: {{ settings.footer_color }};
     font-size: inherit;
     letter-spacing: inherit;
   }
@@ -220,14 +255,15 @@
   }
 
   h4 {
-    color: $color--light-primary-1;
+    color: {{ settings.footer_color }};
     @include fontSize(14px);
-    font-weight: $font-weight--bold;
-    letter-spacing: .2em;
+    font-weight: $font-weight--black;
+    letter-spacing: .1em;
 
     @include mq('tablet-and-up') {
       @include fontSize(15px);
       padding-bottom: 0;
+      letter-spacing: .1em;
     }
   }
 

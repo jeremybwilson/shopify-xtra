@@ -19,7 +19,7 @@
 // newsletter
 
 .newsletter-wrapper {
-  background: $color--accent-1;
+  background: {{ settings.newsletter_footer_background }};
   text-transform: uppercase;
   text-align: center;
   padding: 44px 25px 43px;
@@ -37,30 +37,31 @@
     padding-top: 0;
     background: transparent;
   }
+
+  // heading 
+  
   h2 {
     margin-bottom: 10px;
-    color: $color--white;
-  	@include fontSize(16px);
-    font-weight: $font-weight--bold;
-  	letter-spacing: .15em;
+    color: {{ settings.newsletter_footer_text }};
+    @include fontDim(16px,24px,0);
+    font-weight: $font-weight--black;
   	text-transform: uppercase;
 
     @include mq('tablet-and-up') {
-      margin-bottom: 12px;
+      margin-bottom: 4px;
       @include fontSize(22px);
-      letter-spacing: .1em;
+      
     }
   }
   .newsletter-subheading {
     margin-bottom: 15px;
-    color: $color--white;
-    @include fontSize(14px);
-  	font-weight: $font-weight--book;
-    letter-spacing: .05em;
+    color: {{ settings.newsletter_footer_text }};
+    @include fontDim(14px,22px,0);
+  	font-weight: $font-weight--black;
     text-transform: none;
 
     @include mq('tablet-and-up') {
-      margin-bottom: 17px;
+      margin-bottom: 16px;
       @include fontSize(16px);
     }
     p {
@@ -92,6 +93,7 @@
     border: none;
     border-radius: none;
     color: $color--gray-2;
+    font-weight: $font-weight--bold;
     @include fontSize(14px);
     letter-spacing: .025em;
     text-align: left;
@@ -127,13 +129,9 @@
     }
 
     svg {
-      width: 9px;
-      height: 9px;
+      width: 14px;
+      height: 14px;
 
-      @include mq('tablet-and-up') {
-        width: 12px;
-        height: 12px;
-      }
     }
 
     &:hover {
@@ -169,7 +167,7 @@
 
 .social-wrapper {
   padding: 35px 50px 34px;
-	background: $color--white;
+	background: {{ settings.social_footer_background }};
   text-align: center;
 
   @include mq('tablet-and-up') {
@@ -193,14 +191,13 @@
   }
   .section-title {
     margin-bottom: 0;
-    color: $color--primary-2;
-    @include fontSize(14px);
-    letter-spacing: .2em;
+    color: {{ settings.social_footer_header }};
+    @include fontDim(14px,14px,.2em);
+    font-weight: $font-weight--black;
     text-transform: uppercase;
-
+                                                    
     @include mq('tablet-and-up') {
-      @include fontSize(16px);
-      letter-spacing: .25em;
+      @include fontDim(20px,20px,.04em);
     }
   }	
   ul#social-icons {
@@ -219,7 +216,9 @@
       padding: 0 20px;
     }
     a {
-      color: $color--primary-2;
+      position: relative;
+      top: 2px;
+      color: {{ settings.icons }};
 
       svg {
         width: 22px;
@@ -229,11 +228,15 @@
           width: 20px;
           height: 20px;
         }
+
+        * {
+          fill: {{ settings.icons }};
+        }
       }
 
       &:hover {
         svg * {
-          fill: $color--accent-1;
+          fill: {{ settings.icons_hover }};
         }
       }
     }

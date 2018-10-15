@@ -70,6 +70,26 @@
       },
       {
         "type": "color",
+        "id": "nav_header_color",
+        "label": "Nav Header Color",
+        "info": "(Main nav entries in bar)",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "nav_sub_header_color",
+        "label": "Nav Sub Header Color",
+        "default": "#0153a6"
+      },
+      {
+        "type": "color",
+        "id": "nav_list_item_color",
+        "label": "Nav List Item Color",
+        "info": "(List items in Mega-Menu)",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
         "id": "nav_links_hover",
         "label": "Nav Icons Hover",
         "default": "#AA5131"
@@ -353,6 +373,13 @@
         "id": "product_badge_text_color",
         "label": "Badge Text Color",
         "default": "#FEFFFE"
+      },
+      {
+        "type": "color",
+        "id": "react_swatch_outline_color",
+        "label": "Swatch Outline Color",
+        "info": "(For React Swatches on Collection Views)",
+        "default": "#9a9a9a"
       },
 
 
