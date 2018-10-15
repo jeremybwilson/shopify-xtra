@@ -19,8 +19,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #000;
-    opacity: .3;
+    background: #757575;
+    opacity: .5;
     z-index: 2;
     transition: opacity .3s ease;
   }
@@ -41,6 +41,7 @@
 
     @include mq('tablet-and-up') {
       top: 42%;
+
     }
 
   }
@@ -57,30 +58,32 @@
   }
   h3 {
     color: $color--white;
-    @include fontSize(22px);
-    font-weight: $font-weight--bold;
-    letter-spacing: .25em;
-    line-height: 30px / 22px * 1em;
+    font-weight: $font-weight--black;
+    @include fontDim(22px,25px,0);
     text-transform: uppercase;
 
     @include mq('tablet-and-up') {
-      letter-spacing: .3em;
+      max-width: 200px;
+      margin: 0 auto;
+      @include fontDim(24px,29px,0);
     }
   }
   .cta {
-    @include fontSize(13px);
-    font-weight: $font-weight--medium;
-    letter-spacing: .125em;
+    font-weight: $font-weight--bold;
+    @include fontDim(13px,13px,0);
     text-transform: uppercase;
 
     @include mq('tablet-and-up') {
-      @include fontSize(16px);
-      letter-spacing: .2em;
+      @include fontDim(16px,16px,.06em);
     }
 
     svg {
       width: 10px;
-      margin-left: 4px;
+      margin-left: 20px;
+
+      @include mq('tablet-and-up') {
+        width: 12px;
+      }
 
       * {
         fill: $color--white;
@@ -113,6 +116,12 @@
     bottom: 55px;
   }
 
+  .hide-pagination & {
+    @include mq('tablet-and-up') {
+      display: none;
+    }
+  }
+
   svg {
     width: 20px;
     height: 20px;
@@ -126,29 +135,24 @@
   // pager
 
   .pagination {
+    @include flexbox;
+    @include justify-content(center);
     position: relative;
-    color: $color--white;
-    font-weight: $font-weight--medium;
-    @include fontSize(10px);
+    padding: 10px;
+    background: $color--white;
+    color: $color--accent-1;
+    font-weight: $font-weight--black;
+    @include fontDim(14px,14px,0);
+    text-align: center;
 
     @include mq('lap-and-up') {
       @include fontSize(14px);
     }
 
-    &:before {
-      content: '';        
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 43px;
-      height: 43px;
-      transform: translate(-50%,-50%) rotate(45deg);
-      border: solid 1px $color--white;
-
-      @include mq('lap-and-up') {
-        width: 56px;
-        height: 56px;
-      }        
+    span {
+      display: inline;
+      text-align: center;
+      margin: 0 2px;
     }
   }
 }
