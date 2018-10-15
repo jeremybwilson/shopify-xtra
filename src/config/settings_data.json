@@ -82,11 +82,15 @@
     "sale_text": "#ffffff",
     "soldout_background": "#222",
     "soldout_text": "#ffffff",
-    "icons": "#000000",
-    "icons_hover": "#272727",
-    "footer_background": "#ffffff",
-    "footer_color": "#000000",
-    "footer_border": "#e5e5e5",
+    "icons": "#333333",
+    "icons_hover": "#333333",
+    "newsletter_footer_background": "#e41c39",
+    "newsletter_footer_text": "#ffffff",
+    "social_footer_background": "#ffffff",
+    "social_footer_header": "#0d57a3",
+    "footer_background": "#333333",
+    "footer_color": "#ffffff",
+    "footer_border": "#ccd7d2",
     "main_font": "karla_n4",
     "nav_font": "karla_n4",
     "heading_font": "montserrat_n7",
@@ -258,7 +262,13 @@
             "settings": {
               "footer_nav": "footer"
             }
-          }
+          },
+          "1539461087615": {
+            "type": "link_list",
+            "settings": {
+              "footer_nav": "footer-2"
+            }
+          }         
         },
         "block_order": [
           "1480972996114"
@@ -267,7 +277,7 @@
           "tel_text": "855-377-BOOT (2668)",
           "tel_number": "18553772668",
           "show_credit_cards": true,
-          "visit_brand_link_one": "http:\/\/www.xtratuf.com",
+          "visit_brand_link_one": "https:\/\/www.muckbootcompany.com",
           "visit_brand_image_one": "shopify:\/\/shop_images\/visit-brand-image-1.png",
           "visit_brand_link_two": "",
           "visit_brand_image_two": "",
@@ -364,8 +374,8 @@
         "type": "newsletter",
         "settings": {
           "heading": "Join Our Newsletter",
-          "newsletter_subheading": "<p>Sign Up Now For Exclusive Offers.<\/p>",
-          "newsletter_placeholder": "Enter Your Email Address",
+          "newsletter_subheading": "<p>Sign up now for exclusive offers<\/p>",
+          "newsletter_placeholder": "Enter Email Address",
           "newsletter_error": "Please enter a valid e-mail address",
           "newsletter_success": "<p>You have successfully joined our newsletter<\/p>",
           "social_heading": "Connect With Us"

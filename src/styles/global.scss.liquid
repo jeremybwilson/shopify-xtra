@@ -12,7 +12,9 @@ html, body {
 
 body { 
 	font-family: $font-stack--default;
-	letter-spacing: .05em;
+  color: {{ settings.text_color }};
+  background: {{ settings.background }};
+  @include p;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
@@ -147,3 +149,6 @@ input[type="button"] {
   text-transform: uppercase;
 }
 
+.shopify-section:last-child {
+  margin-bottom: 0px !important;
+}
