@@ -1,7 +1,7 @@
 {% comment %}Used for home page sections only when featured collections is chosen but no content has been selected{% endcomment %}
 {%- assign col_limit = section.settings.homepage_collection_limit -%}
 <div id="{{ block.id }}-tab-{{ forloop.index }}"{{ block.shopify_attributes }}>  
-    <div class="product-collection-carousel">
+    <div class="product-collection-carousel owl-carousel">
 	{% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
        {%- assign placeholder = 'collection-' | append: current -%}
       <div class="product-index onboard" data-alpha="{{ collection.title }}">          

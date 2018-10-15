@@ -4,7 +4,13 @@
 
   {% if section.blocks.size > 0 %}
 
-  <div class="columns-carousel">
+    {% if section.blocks.size > 4 %}
+      {% assign pagination_show = 'show-pagination' %}
+    {% else %}
+      {% assign pagination_show = 'hide-pagination' %}
+    {% endif %}
+
+  <div class="columns-carousel {{ pagination_show }}">
 
     <ul class="owl-carousel columns-carousel--columns">
 
@@ -147,7 +153,7 @@
 
     <div class="columns-carousel--nav">
       <a class="columns-carousel--prev">
-        {% include 'svg-icon-caret-left' %}
+        {% include 'svg-icon-arrow-left' %}
       </a>
       <div class="pagination">
         <span class="columns-carousel--current-slide"></span>
@@ -155,7 +161,7 @@
         <span class="columns-carousel--total-slides"></span>
       </div>
       <a class="columns-carousel--next">
-        {% include 'svg-icon-caret-right' %}
+        {% include 'svg-icon-arrow-right' %}
       </a>
     </div><!-- .slider--nav -->
 

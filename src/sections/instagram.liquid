@@ -30,7 +30,7 @@
       {% if section.settings.cta_text != blank %}
       <div class="cta">
         {% if section.settings.link != blank %}<a href="{{ section.settings.link }}" target="_blank">{% endif %}
-          <span>{{ section.settings.cta_text }}</span> {% include 'svg-icon-caret-right-submit' %}
+          <span>{{ section.settings.cta_text }}</span> {% include 'svg-icon-caret-right' %}
         {% if section.settings.link != blank %}</a>{% endif %}
       </div>
       {% endif %}

@@ -4,12 +4,16 @@
   margin-bottom: 0;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url({{ 'bg-home-instagram.jpg' | asset_url }});
+  background-image: url({{ 'bg-home-instagram-mobile.jpg' | asset_url }});
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   text-align: center;
 
   @include mq('tablet-and-up') {
     padding-top: 115px;
     padding-bottom: 145px;
+    background-image: url({{ 'bg-home-instagram.jpg' | asset_url }});
   }
 
   // text box
@@ -25,17 +29,14 @@
 
   h2 {
     margin-bottom: 15px;
-    color: $color--text-1;
-    @include fontSize(22px);
-    font-weight: $font-weight--bold;
+    color: {{ settings.homepage_instagram_header }};
+    @include fontDim(22px,22px,.04em);
+    font-weight: $font-weight--black;
     text-transform: uppercase;
-    letter-spacing: .2em;
-    line-height: 28px / 22px * 1em;
-
+    
     @include mq('tablet-and-up') {
-      @include fontSize(30px);
-      letter-spacing: .25em;
-      font-weight: $font-weight--black;
+      @include fontSize(42px);
+      letter-spacing: 0;
     }
 
     &:after {
@@ -47,44 +48,49 @@
       margin-top: 12px;
     }
     p {
-      @include fontSize(14px);
-      letter-spacing: .05em;
-      line-height: 22px / 14px * 1em;
+      color: {{ settings.homepage_instagram_text }};
+      font-weight: $font-weight--bold;
+      @include fontDim(14px,22px,0);
 
-      @include fontSize(16px);
-      line-height: 26px / 16px * 1em;
+      @include mq('tablet-and-up') {
+        @include fontDim(16px,26px,0);
+      }
     }
   }
   .cta {
     display: inherit;
     margin-top: 12px;
-    @include fontSize(16px);
-    letter-spacing: .2em;
-    font-weight:  $font-weight--medium;
+    @include fontDim(13px,13px,.06em);
+    font-weight:  $font-weight--bold;
     text-transform: uppercase;
 
     @include mq('tablet-and-up') {
       margin-top: 15px;
+      @include fontSize(16px);
     }
 
     a {
-      color: $color--text-1;
+      color: {{ settings.homepage_instagram_text }};
       text-decoration: none;
       letter-spacing: inherit;
     }
 
     svg {
-      width: 8px;
-      height: 8px;
+      width: 10px;
+      height: 10px;
       margin-left: 4px;
 
       @include mq('tablet-and-up') {
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
+      }
+
+      * {
+        fill: {{ settings.homepage_instagram_text }};
       }
     }
     a:hover svg * {
-      fill: #99482F;
+      fill: {{ settings.homepage_instagram_text }};
     }
   }
 
@@ -99,11 +105,11 @@
 
   .instagram-item {    
     width: 50%;
-    margin-left: 0;
-    margin-right: 0;
+    padding: 5px;
 
     @include mq('tablet-and-up') {
       width: 25%;
+      padding: 3px;
     }
 
     img {

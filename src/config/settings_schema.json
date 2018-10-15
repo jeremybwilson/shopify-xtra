@@ -208,7 +208,22 @@
         "label": "Error text",
         "default": "#f00"
       },
-
+      {
+        "type": "header",
+        "content": "Homepage"
+      },
+      {
+        "type": "color",
+        "id": "homepage_instagram_header",
+        "label": "Instagram Feed - Text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "homepage_instagram_text",
+        "label": "Instagram Feed - Text",
+        "default": "#ffffff"
+      },
 
       {
         "type": "header",
