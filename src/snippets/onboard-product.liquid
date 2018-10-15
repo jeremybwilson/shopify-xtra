@@ -1,6 +1,6 @@
 {% comment %}Used for home page sections only when featured products is chosen but no content has been selected{% endcomment %}
 {% assign products-per-row = section.settings.products_per_row %}
-{% if section.settings.homepage_product_display == 'carousel' %}<div class="product-collection-carousel">{% endif %}
+{% if section.settings.homepage_product_display == 'carousel' %}<div class="product-collection-carousel owl-carousel">{% endif %}
 {% for i in (1..6) %}
 <div class="product-car">
   

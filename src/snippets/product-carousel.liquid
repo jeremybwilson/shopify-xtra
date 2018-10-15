@@ -9,6 +9,10 @@
   {% endfor %}
 </div>
 
+{% else %}
+{% include 'onboard-product' %}
+{% endif %}
+
   <div class="product-carousel--nav">
     <a class="product-carousel--prev">
       {% include 'svg-icon-caret-left' %}
@@ -17,7 +21,3 @@
       {% include 'svg-icon-caret-right' %}
     </a>
   </div>
-
-{% else %}
-{% include 'onboard-product' %}
-{% endif %}
