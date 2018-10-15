@@ -8,6 +8,9 @@
     "logo_color": "#000000",
     "nav_links": "#0153a6",
     "nav_links_hover": "#e61533",
+    "nav_header_color": "#000000",
+    "nav_sub_header_color": "#0153a6",
+    "nav_list_item_color": "#000000",
     "nav_minor_border_color": "#cccccc",
     "social_links": "#000000",
     "social_links_hover": "#000000",
@@ -26,10 +29,6 @@
     "secondary_button_hover": "#ccc",
     "secondary_button_text": "#000",
     "error_text": "#f00",
-    "product_badge_square_bg": "#757575",
-    "product_badge_circle_bg": "#0153a6",
-    "product_badge_diamond_bg": "#0152a6",
-    "product_badge_text_color": "#fefffe",
     "filter_bg": "#ffffff",
     "filter_text_color": "#000000",
     "filter_arrow_color": "#0153a6",
@@ -49,6 +48,11 @@
     "collection_load_more_text": "#fefffe",
     "collection_load_more_bg": "#757575",
     "collection_load_more_bg_hover": "#0153a6",
+    "product_badge_square_bg": "#757575",
+    "product_badge_circle_bg": "#0153a6",
+    "product_badge_diamond_bg": "#0152a6",
+    "product_badge_text_color": "#fefffe",
+    "react_swatch_outline_color": "#0153a6",
     "quickview_button_bg": "#e41c39",
     "quickview_button_text": "#FEFFFE",
     "fancybox_overlay_bg": "0,0,0,0.8",
@@ -56,8 +60,8 @@
     "fancybox_close_hover_color": "#9b492b",
     "navigation": "#000000",
     "nav_color": "#ffffff",
-    "nav_hover_color": "#2c2c2c",
-    "nav_hover_link_color": "#ffffff",
+    "nav_hover_color": "#e61533",
+    "nav_hover_link_color": "#e61533",
     "dropdown_background_color": "#000000",
     "nav_dropdown_color": "#ffffff",
     "dropdown_hover_background_color": "#282828",
@@ -211,11 +215,9 @@
             }
           },
           "1535653033501": {
-            "type": "mega_menu",
+            "type": "simple_menu",
             "settings": {
-              "menu_item": "Activities",
-              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-4.jpg",
-              "nav_promo_link": "shopify:\/\/collections\/activities"
+              "menu_item": "Activities"
             }
           }
         },
