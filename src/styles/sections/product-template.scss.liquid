@@ -270,7 +270,7 @@
 .product-description--area {
   padding-top: 50px;
   padding-bottom: 40px;
-  background-color: $color--primary-1;
+  background-color: $color--light-gray;
 
   @include mq('tablet-and-up') {
     padding-top: 100px;
@@ -281,6 +281,11 @@
     @include flexbox;
     @include flex-direction(column);
     max-width: 1200px;
+
+    @include mq('phone') {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
     @include mq('tablet-and-up') {
       @include flex-direction(row);
@@ -293,16 +298,14 @@
 
     width: 100%;
     margin-bottom: 15px;
-    color: $color--white;
-    @include fontSize(18px);
+    color: $color--primary-1;
+    @include fontDim(22px,38px,0);
     font-weight: $font-weight--black;
-    letter-spacing: .25em;
     text-align: center;
     text-transform: uppercase;
 
     @include mq('tablet-and-up') {
       padding-left: 120 / 1200 * 100%; // line up with p below
-      @include fontSize(22px);
       text-align: left;
     }
   }
@@ -310,13 +313,13 @@
   // Paragraph
 
   .rte, .rte p {
-    color: $color--white;
-    @include fontDim(14px,24px,.025em);
+    color: $color--primary-2;
+    font-weight: $font-weight--bold;
+    @include fontDim(14px,24px,0em);
     text-align: center;
 
     @include mq('tablet-and-up') {
-      @include fontSize(16px);
-      line-height: 30px / 16px * 1em;
+      @include fontDim(16px,30px,0);
       text-align: left;
     }
   } 
@@ -335,7 +338,7 @@
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background-color: $color--accent-1;
+      background-color: $color--primary-2;
     }
   }
 }
@@ -387,7 +390,8 @@
     margin: 0 auto 12px;
   }
   span {
-    color: $color--light-gray;
+    color: $color--primary-2;
+    font-weight: $font-weight--bold;
     @include fontDim(13px,18px,.025em);
   }
 }
@@ -413,9 +417,9 @@
   padding: 20px;
   margin-top: 20px;
   margin-bottom: -20px;
-  color: $color--white;
-  font-weight: $font-weight--bold;
-  @include fontDim(14px,14px,.125em);
+  color: $color--primary-1;
+  font-weight: $font-weight--black;
+  @include fontDim(14px,14px,0);
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -427,9 +431,13 @@
   svg {
     width: 10px;
     height: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     transition: transform .25s ease;
     transform-origin: center;
+
+    * {
+      fill: $color--accent-1;
+    }
   }
 
   .open-text {
