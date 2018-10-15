@@ -1,24 +1,25 @@
+{% assign width = '44px' %}
+{% assign height = '37px' %}
+
 .swatch {
   @include flexbox;
   @include flex-wrap(wrap);
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 
   // swatch header
 
   .swatch-header {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   h5, .current-option {
     display: inline;
     color: $color--primary-2;    
-    @include fontSize(14px);
-    letter-spacing: .225em;
+    @include fontDim(16px,16px,0);
     text-transform: uppercase;
 
     @include mq('tablet-and-up') {
       @include fontSize(16px);
-      letter-spacing: .25em;
     }
   }
   // swatch main label
@@ -28,45 +29,57 @@
   // swatch current option 
   .current-option { 
     margin-left: .5em;
-    font-weight: $font-weight--medium;
+    font-weight: $font-weight--bold;
   }
 
   // swatch loop
 
-  label { // actual visible swatch
-    height: 37px !important;
-    margin-left: 0 !important;
-    margin-right: 5px !important;
-    margin-bottom: 5px;
-    border: solid 1px $color--border-gray;
-    color: $color--gray-3;
-    @include fontSize(15px);
-    font-weight: $font-weight--book;
-    letter-spacing: .025em;
-    line-height: 37px !important;
-  }
-  label:hover {
-    background-color: $color--primary-1;
-    border-color: $color--primary-1;
-    color: $color--white;
-  }
-  input:checked + label {
-    background-color: $color--primary-1;
-    border-color: $color--primary-1;
-    color: $color--white;
+  .swatch-element {
+    display: inline-block;
+    -webkit-transform:translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing:antialiased; /* webkit text rendering fix */
+    position:relative;    
+
+    input {
+      display: none;
+    }
+
+    & > label { // actual visible swatch
+      display:-moz-inline-stack;
+      display:inline-block;
+      zoom:1;
+      *display:inline;
+      position: relative;
+      min-width: {{ width }};
+      height: {{ height }};
+      margin: 0 5px 5px 0;
+      padding:0;
+      border: solid 1px $color--primary-2;
+      color: $color--primary-2;
+      @include fontDim(16px,16px,.025em);
+      font-weight: $font-weight--bold;
+      line-height: {{ height }};
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    label:hover,
+    input:checked + label {
+      background-color: $color--primary-1;
+      border-color: $color--primary-1;
+      color: $color--white;
+    }
+
   }
 
   // soldout 
 
   .swatch-element.soldout {
-    label:hover {
-      background-color: inherit;
-      border-color: $color--border-gray;
-      color: $color--gray-3;      
-    }
+    label,
+    label:hover,
     input:checked + label {
-      background-color: inherit;
-      border-color: $color--primary-1;
+      background-color: $color--white;
+      border-color: $color--light-gray;
       color: $color--gray-3;
     }
   }
@@ -74,16 +87,16 @@
   // Color Swatches
 
   .swatch-element.color {
-    label {
+    & > label {
       position: relative;
-      width: 23px !important;
-      height: 23px !important;
-      min-width: 0 !important;
-      border: solid 1px $color--white;
+      width: 30px;
+      height: 30px;
+      min-width: 0;
+      border: solid 2px $color--white;
       border-radius: 50%;
       background-color: $color--light-gray; // shows a default color until we get swatch images up
-      margin-right: 16px !important;
-      margin-bottom: 16px !important;
+      margin-right: 16px;
+      margin-bottom: 16px;
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -92,19 +105,19 @@
         content: '';
         display: block;
         position: absolute;
-        width: 35px;
-        height: 35px;
+        width: 34px;
+        height: 34px;
         border-radius: 50%;
-        left: -7px;
-        top: -7px;
-        border: solid 1px transparent;
+        left: -4px;
+        top: -4px;
+        border: solid 2px transparent;
       }
     }
     label:hover {
       background-color: inherit;
 
       &:after {
-        border-color: $color--border-gray;
+        border-color: $color--primary-1;
       }
     }
     input:checked + label {
@@ -112,16 +125,51 @@
       box-shadow: none;
 
       &:after {
-        border-color: $color--border-gray;  
+        border-color: $color--primary-1;  
       }
     }
   }
   .swatch-element.color[data-swatch-value="White"],
   .swatch-element.color[data-swatch-value="white"] {
     label {
-      border: solid 1px $color--border-gray;
-
+      border-color: $color--border-gray;
     }
+  }
+
+  // image with cross
+
+  .crossed-out {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }  
+  .swatch-element.soldout .crossed-out {
+    display: block;
+  }
+
+  // error state 
+
+  &.error {
+    background-color: #E8D2D2 !important;
+    color: #333 !important;
+    padding: 1em;
+    border-radius: 5px;
+
+    p {
+      margin: 0.7em 0;
+    }
+    p:first-child {
+      margin-top: 0;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+    code {
+      font-family: monospace;
+    }    
   }
 
   // Tooltip
@@ -212,7 +260,7 @@ input.add {
   width: 100%;
   height: 48px;
   margin-top: 0;
-  background: $color--accent-1;
+  background: $color--primary-1;
 
   @include mq('tablet-and-up') {
     height: 55px;

@@ -55,8 +55,8 @@
   }  
 
   .product-title {
-    color: $color--primary-1;
-    @include fontDim(15px,20px,.125em);
+    color: $color--primary-2;
+    @include fontDim(15px,16px,0);
     font-weight: $font-weight--black;
     text-transform: uppercase;
   }
@@ -106,10 +106,8 @@
   #content {
     h1 {
       color: $color--primary-2;
-      @include fontSize(16px);
+      @include fontDim(15px,16px,0);
       font-weight: $font-weight--black;
-      letter-spacing: .125em;
-      line-height: 25px / 16px * 1em;
       text-align: center;
       text-transform: uppercase;
 
@@ -119,9 +117,7 @@
 
       @include mq('tablet-and-up') {
         max-width: 400px;
-        @include fontSize(25px);
-        letter-spacing: .25em;
-        line-height: 34px / 25px * 1em;
+        @include fontDim(25px,34px,0);
         text-align: left;
       }
     }
@@ -135,10 +131,9 @@
 
 #product-price {
   border-bottom: none;
-  color: $color--dark-gray;
-  @include fontSize(16px);
-  font-weight: $font-weight--book;
-  letter-spacing: .125em;
+  color: $color--primary-2;
+  font-weight: $font-weight--bold;
+  @include fontDim(16px,16px,0);
   text-align: center;
 
   @include mq('phone') {
@@ -147,7 +142,6 @@
 
   @include mq('tablet-and-up') {
     @include fontSize(18px);
-    letter-spacing: .075em;
     text-align: left;
   }
 
@@ -156,7 +150,7 @@
       color: {{ settings.sale_color }}
     }
     .was {
-      color: $color--primary-1;      
+      color: $color--primary-2;      
     }
   }
 }
@@ -214,17 +208,21 @@
         height: 36px;
         margin-right: 12px;
       }
+
+      * {
+        fill: $color--primary-1;
+      }
     }
     h3 {
       margin-top: 3px;
       color: $color--primary-1;
-      @include fontDim(14px,14px,.05em);
-      font-weight: $font-weight--bold;
+      @include fontDim(14px,14px,0);
+      font-weight: $font-weight--black;
       text-transform: uppercase;
 
       @include mq('tablet-and-up') {
         margin-top: 5px;
-        @include fontDim(16px,16px,.15em);
+        @include fontDim(16px,16px,0);
       }
     }
     .opener {
@@ -235,6 +233,10 @@
         height: 10px;
         transition: transform .25s ease;
         transform-origin: center;
+
+        * {
+          fill: $color--accent-1;
+        }
       }
     }
   }
@@ -255,11 +257,7 @@
       padding-right: 24px;
     }
     p {
-      @include fontDim(14px,24px,.025em);
-
-      @include mq('tablet-and-up') {
-        @include fontDim(16px,26px,.025em);
-      }
+      @include fontDim(16px,25px,.025em);
     }
   }
 }
