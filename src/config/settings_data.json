@@ -132,13 +132,13 @@
     "email_popup_title": "Signup Up & Get 10% Off Your First Order!",
     "email_popup_text": "",
     "email_popup_input_placeholder": "Enter Your Email Address",
-    "email_popup_bottom_text": "<p>By providing your email address, you agree to our <a target=\"_blank\" href=\"https:\/\/www.honeywell.com\/privacy-statement\">Privacy Policy<\/a> & <a href=\"\/pages\/terms-conditions\" target=\"_blank\">Terms of Service<\/a>.<\/p>",
+    "email_popup_bottom_text": "<p>By providing your email address, you agree to our <a target=\"_blank\" href=\"https:\/\/www.honeywell.com\/privacy-statement\">Privacy Policy<\/a> &amp; <a href=\"\/pages\/terms-conditions\" target=\"_blank\">Terms of Service<\/a>.<\/p>",
     "email_popup_error": "Please enter a valid e-mail address",
     "email_popup_success": "<p>You have successfully joined our newsletter<\/p>",
     "cookie_banner_mobile_text": "<p>We use cookies.<\/p>",
     "cookie_banner_mobile_button": "http:\/\/www.honeywell.com\/privacy-statement",
     "cookie_banner_mobile_button_text": "More Info",
-    "cookie_banner_desktop_text": "<p>This site uses cookies to simplify and improve your usage and experience of this website. Cookies are small text files stored on the device you are using to access this website. If you ignore this message and continue without changing your browser settings, we will assume that you are consenting to our use of cookies. For further information on our use of cookies, please see our <a href=\"https:\/\/www.honeywell.com\/privacy-statement\" target=\"_blank\" >Privacy Statement<\/a><\/p>",
+    "cookie_banner_desktop_text": "<p>This site uses cookies to simplify and improve your usage and experience of this website. Cookies are small text files stored on the device you are using to access this website. If you ignore this message and continue without changing your browser settings, we will assume that you are consenting to our use of cookies. For further information on our use of cookies, please see our <a href=\"https:\/\/www.honeywell.com\/privacy-statement\" target=\"_blank\">Privacy Statement<\/a><\/p>",
     "cookie_banner_accept_button_text": "Accept",
     "show_multiple_currencies": false,
     "currency_format": "money_with_currency_format",
@@ -146,17 +146,17 @@
     "default_currency": "USD",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/checkout-logo.png",
-    "checkout_logo_position": "center",
+    "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_image": "",
-    "checkout_sidebar_background_color": "#0b2f20",
-    "checkout_heading_font": "Open Sans",
-    "checkout_body_font": "Open Sans",
-    "checkout_accent_color": "#164632",
-    "checkout_button_color": "#ab5232",
+    "checkout_sidebar_background_color": "#e6e6e6",
+    "checkout_heading_font": "Source Sans Pro",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#e41c39",
+    "checkout_button_color": "#0a56a4",
     "checkout_error_color": "#ff6d6d",
     "cart_links": "#000000",
     "cart_links_hover": "#000000",
@@ -265,15 +265,16 @@
               "footer_nav": "footer"
             }
           },
-          "1539461087615": {
+          "1539632090505": {
             "type": "link_list",
             "settings": {
               "footer_nav": "footer-2"
             }
-          }         
+          }
         },
         "block_order": [
-          "1480972996114"
+          "1480972996114",
+          "1539632090505"
         ],
         "settings": {
           "tel_text": "855-377-BOOT (2668)",
@@ -350,8 +351,6 @@
       "search-template": {
         "type": "search-template",
         "settings": {
-          "grid": 4,
-          "rows": 6
         }
       },
       "password-template": {
@@ -391,66 +390,24 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-1.jpg",
-              "heading": "Introducing the New Liberty Collection",
-              "subheading": "100% Waterproof Leather",
+              "heading": "Xtratuf <br>X<br> Salmon Sisters",
+              "subheading": "",
               "cta_one_link": "shopify:\/\/collections\/new-arrivals",
-              "cta_one_button_text": "Shop our New Arrivals",
+              "cta_one_button_text": "Shop now",
               "cta_two_link": "",
               "cta_two_button_text": "Garden",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#164732",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.2"
-            }
-          },
-          "1537990277479": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-2.jpg",
-              "heading": "Boots That Work Hard for Hardworkers",
-              "subheading": "Built for comfort and tough performance",
-              "cta_one_link": "shopify:\/\/collections\/work",
-              "cta_one_button_text": "Shop Work",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#164732",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
-          "1537990398288": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-3.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-3.jpg",
-              "heading": "Ready for all types of weather",
-              "subheading": "Durable & waterproof for every function",
-              "cta_one_link": "\/collections\/all?_=pf&pf_t_feature=feature_100%25 waterproof&pf_t_feature=feature_leather material",
-              "cta_one_button_text": "Shop Waterproof Leather",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#164732",
               "caption_horizontal": "center",
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
+              "caption_opacity": "0.2"
             }
           }
         },
         "block_order": [
-          "1535728526385-0",
-          "1537990277479",
-          "1537990398288"
+          "1535728526385-0"
         ],
         "settings": {
           "full_width": true,
@@ -526,10 +483,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-1.jpg",
-              "link": "shopify:\/\/collections\/hunting",
-              "heading_text": "For the Hunt",
-              "text": "<p>Stability and support for a full day of comfort.<\/p>\n<p>Our New Summit Boot.<\/p>",
-              "cta_text": "Shop Hunt"
+              "link": "#",
+              "heading_text": "Summer Closeout",
+              "text": "<p>Lorem ipsum dolor sit amet, cons ec tetur adipiscing elit<\/p>",
+              "cta_text": "Shop Now"
             }
           },
           "1536251685211-0": {
@@ -537,10 +494,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-2.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-2.jpg",
-              "link": "shopify:\/\/collections\/arctic-ice",
-              "heading_text": "Winter Is Coming",
-              "text": "<p>Shop our warmest boot yet.<\/p>\n<p>Superior wet ice traction.<\/p>",
-              "cta_text": "Shop The Arctic Ice Collection"
+              "link": "#",
+              "heading_text": "Shop our Elite Collection",
+              "text": "<p>Lorem ipsum dolor sit amet, cons ec tetur adipiscing elit<\/p>",
+              "cta_text": "Shop Now"
             }
           }
         },
@@ -560,9 +517,9 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-about-promo-desktop-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-about-promo-mobile-1.jpg",
-              "heading": "Our Purpose",
-              "subheading": "Made for work (and life) in the muck",
-              "cta_one_link": "shopify:\/\/pages\/about",
+              "heading": "From Bermuda to the Bering Sea",
+              "subheading": "Lorem ipsum dolor sit amet, cons ec tetur adipiscing elit",
+              "cta_one_link": "#",
               "cta_one_button_text": "Our Story",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
