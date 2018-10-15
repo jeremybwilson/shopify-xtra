@@ -6,7 +6,7 @@
   @incldue justify-content(space-between);
 
   h3 {
-    @include fontDim(18px,18px,.15em);
+    @include fontDim(18px,18px,0);
     font-weight: $font-weight--black;
     text-transform: uppercase;
     color: $color--primary-1;
@@ -39,12 +39,13 @@
   }
 }
 .ajaxcart__product-name {
-  @include fontDim(14px,14px,.025em);
+  @include fontDim(14px,14px,0);
   font-weight: $font-weight--black;
-  color: $color--primary-1;
+  color: $color--primary-2;
+  text-transform: uppercase;
 }
 .ajaxcart__product-meta {
-  color: $color--primary-1;
+  color: $color--primary-2;
   display: block;
 }
 
@@ -83,17 +84,19 @@
 }
 
 .ajaxcart__remove {
+  display: block;
+  clear: both;
   cursor: pointer;
-  color: $color--primary-1;
+  color: $color--primary-2;
   text-decoration: underline;
   @include h7;
 }
 
 .ajaxcart__footer {
   p {
-    @include fontDim(14px,14px,.025em);
-    font-weight: $font-weight--book;
-    color: $color--primary-1;
+    @include fontDim(14px,14px,0);
+    font-weight: $font-weight--bold;
+    color: $color--primary-2;
 
     strong {
       font-weight: $font-weight--bold;
@@ -104,7 +107,7 @@
 // Checkout
 
 button.cart__checkout {
-  background: $color--accent-1;
+  background: $color--primary-1;
   border-radius: 0 !important;
   font-family: $font-stack--default;
   font-weight: $font-weight--bold;
