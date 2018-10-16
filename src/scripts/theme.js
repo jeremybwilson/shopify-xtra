@@ -1665,6 +1665,15 @@ $(document).ready(function() {
       }
     });
 
+    // CONTENT PAGES - Sidebar navigation
+
+    $('div.left-nav--categories .opener').click(function(){
+      if ($('div', this).length) {
+        $(this).toggleClass('is-on');
+        $('.left-nav--categories .dropdown').slideToggle();        
+      }
+    });
+
 
     /*============================================================================
     Shopify Section Load
