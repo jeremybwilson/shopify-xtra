@@ -1,193 +1,238 @@
 @charset "UTF-8";
 
 #subpage {
-	margin-right: 27px;
-	margin-left: 27px;
+  margin-right: 27px;
+  margin-left: 27px;
 
-	@include p;
-  	font-size: 14px;
-  	line-height: 2;
+  @include p;
+  font-size: 14px;
+  line-height: 2;
 
-	@include mq('tablet-and-up') {
-		margin: 0;
-  	}
+  @include mq("tablet-and-up") {
+    margin: 0;
+  }
 
   p {
-  	@include p;
-  	font-size: 14px;
-  	line-height: 2;
+    color: $color--primary-2;
+    @include fontDim(14px,24px,0);
+    margin-bottom: 20px;
+
+    @include mq( 'tablet-and-up' ) {
+      @include fontDim(16px,36px,0);
+    }
   }
   h1 {
-  	@include h1;
-  	color: $color--primary-1;
-  	font-size: 24px;
-  	padding-bottom: 20px;
-  	border-bottom: none;
+    @include h1;
+    color: $color--primary-1;
+    @include fontSize(22px);
+    text-transform: uppercase;
+    border-bottom: none;
+
+    @include mq("tablet-and-up") {
+      @include fontSize(30px);
+    }
+  }
+  h2 {
+    color: $color--primary-1;
+    font-weight: $font-weight--black;
+    @include fontSize(17px);
+
+    @include mq('tablet-and-up') {
+      @include fontSize(22px);
+    }
+  }
+  h3 {
+    color: $color--primary-1;
+    font-weight: $font-weight--black;
+    @include fontSize(14px);
+
+    @include mq('tablet-and-up') {
+      @include fontSize(18px);
+    }
   }
   h4 {
-  	color: $color--primary-1;
-  	text-transform: capitalize;
+    @include fontSize(14px);
+    font-weight: $font-weight--black;
+    color: $color--primary-1;
+    text-transform: uppercase;
+
+    @include mq("tablet-and-up") {
+      @include fontSize(16px);
+    }
   }
   h5 {
-  	@include h5;
-  	color: $color--primary-1;
-  	text-transform: uppercase;
-  	letter-spacing: 0 !important;
-  	margin: 15px 0;
+    @include fontDim(17px,24px,0);
+    color: $color--primary-2;
+    margin: 15px 0;
+    @include mq("tablet-and-up") {
+      @include fontDim(25px,34px,0);
+    }
+  }
+  table {
+    margin-bottom: 30px;
   }
   ul > li {
-  		list-style: none;
-	  	font-size: 14px;
-	  	color: $color--gray-1;
-	  	padding-bottom: 10px;
-	  	line-height: 2;
+    list-style: none;
+    color: $color--primary-2;
+    padding-bottom: 10px;
+    @include fontDim(14px,24px,0);
 
-	  	&:before {
-	  		content: "•";
-	  		color: $color--accent-2;
-	  		margin-right: 10px;
-	  	}
+    @include mq( 'tablet-and-up' ) {
+      @include fontDim(16px,36px,0);
+    }
 
-	  	&:last-child {
-	  		padding-bottom: 0;
-	  	}
-	}
-	ol > li {
-		list-style-type: decimal;
-		content: " ";
-		padding-bottom: 10px;
-		padding-left: 40px;
+    &:before {
+      content: "•";
+      color: $color--primary-1;
+      margin-right: 10px;
+    }
+  }
+  ol > li {
+    list-style-type: decimal;
+    content: " ";
+    padding-bottom: 10px;
+    padding-left: 40px;
 
-		&:last-child {
-			padding-bottom: 0;
-		}
-	}
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
 
-	div.left-nav {
+  // SUBPAGE : Left-nav
 
-	    float: left;
-	    width: 100%;
-	    margin: 0 0 25px 0;
+  div.left-nav {
+    float: left;
+    width: 100%;
+    margin: 0 0 25px 0;
 
-	    @include mq('tablet-and-up') {
-	    	width: auto !important;	
-	    }
+    @include mq("tablet-and-up") {
+      width: auto !important;
+    }
 
-		div.desktop-left-nav {
-			display: none;
+    div.desktop-left-nav {
+      display: none;
 
-			@include mq('tablet-and-up') {
-				display: block;
-				float: left;
-				width: 100%;
-				padding-left: 200px;
-			}
+      @include mq("tablet-and-up") {
+        display: block;
+        float: left;
+        width: 100%;
+        padding-left: 168px;
+      }
+      @include mq("wide-and-up") {
+        padding-left: 200px;
+      }
 
-			@include mq('tablet') {
-				padding-left: 0;
-			}
+      @include mq("tablet") {
+        padding-left: 0;
+      }
 
-			ul > li {
+      ul > li {
+        margin-bottom: 0px;
 
-				&:before {
-					content: " ";
-					margin-right: 0;
-				}
+        &:before {
+          content: " ";
+          margin-right: 0;
+        }
 
-				a {
-					font-size: 16px;
-					color: $color--primary-2;
-					line-height: 1.6875em;
-	    			letter-spacing: .025em;
-	    			font-weight: 700;
-				}
-			}
-		}
-	}
+        a {
+          color: $color--primary-2;
+        }
+      }
+    }
+  }
 
-	div.categories {
-		float: left;
-		width: 100%;
-    	font-size: 16px;
-    	font-weight: 700;
-    	text-transform: capitalize;
+  .left-nav--categories {
+    .opener {
+      @include flexbox;
+      @include justify-content(space-between);
+      @include align-items(center);
+      width: 100%;
+      padding: 10px 15px;
+      background: $color--gray-1;
+      color: $color--white;
+      font-weight: $font-weight--book;
+      @include fontSize(14px);
 
-    	span {
-    		float: left;
-    		width: 100%;
-    		color: #fff;
-			background: $color--accent-1;
-			padding: 15px;
-    	}
+      svg {
+        width: 10px;
+        transition: transform .25s ease;
+        * {
+          fill: $color--white;
+        }
+      }
 
-		div.category {
-			display: none;
-			float: left;
-			width: 100%;
-			background: #f9f7f4;
-			padding: 25px;
+      &.is-on {
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+    }
 
-			a {
-				float: left;
-				width: 100%;
-				color: $color--primary-2;
-				margin-bottom: 15px;
-			}
-		}
+    div.dropdown {
+      display: none;
+      float: left;
+      width: 100%;
+      background: $color--light-gray;
+      padding: 10px 15px;
 
-		@include mq('tablet-and-up') {
-			display: none;
-		}
-	}
+      a {
+        float: left;
+        width: 100%;
+        color: $color--primary-2;
+        margin-bottom: 15px;
+      }
+    }
 
-	div.page-content-field {
+    @include mq("tablet-and-up") {
+      display: none;
+    }
+  }
 
-		float: left;
+  div.page-content-field {
+    float: left;
 
-		@include mq('tablet-and-up') {
-			float: right;
-			width: 65%;
-		}
+    @include mq("tablet-and-up") {
+      float: right;
+      width: 65%;
+    }
 
-		a {
-    		color: $color--accent-1;
-  		}
-	}
+    a {
+      color: $color--accent-1;
+    }
+  }
 
+  // SUBPAGE : Content : Columns for Shipping
 
-	div.col {
-		width: 100%;
-		float: left;
-	    background: linear-gradient(to top, rgb(38, 92, 77) 0%, rgb(52, 127, 105) 100%);
-	    color: rgb(255, 255, 255);
-	    border: 1px dotted rgb(255, 255, 255);
-	    margin: 10px 0 20px 0;
-	    text-align: center;
-	    height: 270px;
-	    padding: 2%;
+  div.col {
+    width: 100%;
+    float: left;
+    background: $color--primary-1;
+    color: $color--white;
+    border: 1px dotted $color--white;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    height: 200px;
+    padding: 2%;
 
-		@include mq('tablet-and-up') {
-			width: 33%;
-		}
+    @include mq("tablet-and-up") {
+      width: 33%;
+    }
 
-		img {
-			padding-top: 7%;
+    img {
+      padding-top: 7%;
 
-			@include mq('tablet-and-up') {
-				padding-top: 0;
-			}
-		}
-	}
+      @include mq("tablet-and-up") {
+        padding-top: 0;
+      }
+    }
+  }
 
-	table {
-		tr:first-child {
-
-		}
-		td {
-			border: 1px solid #ccc;
-			padding: 5px 10px;
-		}
-	}
+  table {
+    tr:first-child {
+    }
+    td {
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+    }
+  }
 }
-
-
