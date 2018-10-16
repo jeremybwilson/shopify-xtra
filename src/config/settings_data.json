@@ -564,84 +564,56 @@
       "page-about-template": {
         "type": "page-about-template",
         "blocks": {
-          "1537319917728": {
-            "type": "html",
+          "1539644589684": {
+            "type": "text_block",
             "settings": {
-              "html_block": "<div style=\"vertical-align: middle;  padding: 15vw 5vw; height: 400px; text-align: center;\"><p style=\"text-transform: uppercase; line-height: 40px;\"><span>every boot in the collection delivers the same <\/span><strong style=\"color:#ab5232;\">100% waterproof quality &amp; comfort<\/strong><span> that inspired the original boots<\/span><\/p><\/div>",
-              "html_block_color": "rgba(0,0,0,0)",
-              "block_order": "2"
+              "module_image": "shopify:\/\/shop_images\/about-image-1.jpg",
+              "module_html": "<p>We've earned the <strong>Respect, Loyalty and trust<\/strong> of people who can't afford to take trust lightly.<\/p>",
+              "module_image_color_scheme": "light",
+              "module_image_position_desktop": "image_right",
+              "module_image_position_mobile": "image_top"
             }
           },
-          "1537319921572": {
-            "type": "image_picker",
+          "1539646800597": {
+            "type": "text_block",
             "settings": {
-              "image_picker_block": "shopify:\/\/shop_images\/about-image-1.png",
-              "image_offset": "-4%",
-              "block_order": "1"
+              "module_image": "shopify:\/\/shop_images\/about-image-2.jpg",
+              "module_html": "<p>We make essential gear <strong>engineered to withstand the world's toughest conditions<\/strong> and to protect people who put their lives on the line to live and work on the water.<\/p>",
+              "module_image_color_scheme": "dark",
+              "module_image_position_desktop": "image_left",
+              "module_image_position_mobile": "image_top"
             }
           },
-          "1538611281678": {
-            "type": "image_picker",
+          "1539646807998": {
+            "type": "text_block",
             "settings": {
-              "image_picker_block": "",
-              "image_offset": "",
-              "block_order": "3"
+              "module_image": "shopify:\/\/shop_images\/about-image-3.jpg",
+              "module_html": "<p> We're part of a marine lifestyle that values <strong>authenticity, performance and hard work<\/strong> whether you \nfish to live or live to fish.<\/p>",
+              "module_image_color_scheme": "light",
+              "module_image_position_desktop": "image_right",
+              "module_image_position_mobile": "image_top"
             }
           },
-          "1537470215266": {
-            "type": "html",
+          "1539646813012": {
+            "type": "text_block",
             "settings": {
-              "html_block": "<div style=\"outline: 1px solid #fff; outline-offset: -20px; padding: 10vw 5vw; color: #fff;  line-height: 40px; text-align: center; height: 100%;\">\n<span>Over the last two decades, the line has grown to <\/span><strong style=\"text-transform: capitalize;\">over 60 styles of rubber and leather footwear<\/strong><span>, all designed to stand up to tough conditions, whether on the farm, in the city, or in the great outdoors.<\/span>\n<\/div>",
-              "html_block_color": "#ab5232",
-              "block_order": "4"
-            }
-          },
-          "1537482225047": {
-            "type": "html",
-            "settings": {
-              "html_block": "<div style=\"vertical-align: middle; padding: 15vw 5vw; height: 400px; text-align: center;\">\n<h2 style=\"padding-bottom: 10px; border-bottom: 1px solid #ccc; width: 100px; margin: 0 auto;\">Today<\/h2>\n<p style=\"text-transform: uppercase; line-height: 40px;\"><span>the muck boot brand sets a standard of <\/span><strong style=\"color:#ab5232;\">comfort &amp; quality<\/strong><span> that goes beyond the expectations of customers around the world<\/span><\/p>\n<\/div>",
-              "html_block_color": "",
-              "block_order": "6"
-            }
-          },
-          "1537482252402": {
-            "type": "image_picker",
-            "settings": {
-              "image_picker_block": "shopify:\/\/shop_images\/about-image-3.jpg",
-              "image_offset": "",
-              "block_order": "5"
-            }
-          },
-          "1537483249387": {
-            "type": "image_picker",
-            "settings": {
-              "image_picker_block": "shopify:\/\/shop_images\/about-image-4.png",
-              "image_offset": "-6.5%",
-              "block_order": "7"
-            }
-          },
-          "1537483333044": {
-            "type": "html",
-            "settings": {
-              "html_block": "<div style=\"vertical-align: middle; padding: 10vw 5vw; height: 400px; text-align: center;\"><p style=\"text-transform: uppercase; line-height: 40px;\"><strong style=\"color:#ab5232;\">All Muck® Boot products are 100% waterproof and backed by our 12 month warranty.<\/strong><span> purchase on our website and we offer a 30-day hassle free return guarantee<\/span><\/p><\/div>",
-              "html_block_color": "",
-              "block_order": "8"
+              "module_image": "shopify:\/\/shop_images\/about-image-4.jpg",
+              "module_html": "<p><strong>XTRATUF<\/strong> is chosen not only by fisherman on the Bering Sea, but by commercial, sport and water-enthusiasts everywhere.<\/p>",
+              "module_image_color_scheme": "light",
+              "module_image_position_desktop": "image_left",
+              "module_image_position_mobile": "image_top"
             }
           }
         },
         "block_order": [
-          "1537319917728",
-          "1537319921572",
-          "1538611281678",
-          "1537470215266",
-          "1537482225047",
-          "1537482252402",
-          "1537483249387",
-          "1537483333044"
+          "1539644589684",
+          "1539646800597",
+          "1539646807998",
+          "1539646813012"
         ],
         "settings": {
-          "about_text": "<div style=\"outline: 1px solid #fff; outline-offset: -20px; padding: 100px; min-height: 200px; text-align: center; width: 100%;\">\n<h2 style=\"color: #fff; padding-bottom: 10px; text-transform: capitalize; margin: 0 auto;\">we had a single Purpose:<\/h2>\n<hr style=\"width: 200px; margin: 10px auto; color\">\n<br>\n<p style=\"color: #fff; max-width: 500px; margin: 0 auto;\">To build the most protective, most comfortable, most reliable boots possible. So, we created the Original Muck Boot Company, whose sole reason for being is to create footwear that can withstand the harshest conditions.<\/p>\n<\/div>",
-          "about_text_color": "#164632"
+          "about_text": "<h2>Choose Your Footwear<\/h2>\n<p>We have a variety of footwear to fit your marine lifestyle.<\/p>",
+          "about_text_color": "#e6e6e6"
         }
       },
       "slideshow": {
@@ -652,8 +624,8 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/about-hero-desktop-slide-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/about-hero-mobile-slide-1.jpg",
-              "heading": "Our Story<hr style=\"width: 100px; margin: 20px auto\">",
-              "subheading": "OVER TWO DECADES OF SETTING <br> THE STANDARD OF COMFORT & QUALITY",
+              "heading": "We Come From Alaska",
+              "subheading": "Where nothing is forgiven and no compromise goes unpunished. <br> Where 50-foot seas swallow the slightest missteps.",
               "cta_one_link": "",
               "cta_one_button_text": "Add a button",
               "cta_two_link": "",
@@ -672,8 +644,69 @@
           "1537562942330"
         ],
         "settings": {
-          "full_width": false,
+          "full_width": true,
           "slider_speed": 5
+        }
+      },
+      "columns-carousel": {
+        "type": "columns-carousel",
+        "blocks": {
+          "1539638126458": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-1.jpg",
+              "heading": "Commercial Fishing",
+              "svg_icon": "",
+              "png_icon": "",
+              "link": "#",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1539642501764": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-2.jpg",
+              "heading": "Sport Fishing",
+              "svg_icon": "",
+              "png_icon": "",
+              "link": "#",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1539642513779": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-3.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-3.jpg",
+              "heading": "Water Sports",
+              "svg_icon": "",
+              "png_icon": "",
+              "link": "",
+              "cta_text": "Shop Now"
+            }
+          },
+          "1539642524127": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-4.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-4.jpg",
+              "heading": "Lifestyle",
+              "svg_icon": "",
+              "png_icon": "",
+              "link": "#",
+              "cta_text": "Shop Now"
+            }
+          }
+        },
+        "block_order": [
+          "1539638126458",
+          "1539642501764",
+          "1539642513779",
+          "1539642524127"
+        ],
+        "settings": {
         }
       }
     },
