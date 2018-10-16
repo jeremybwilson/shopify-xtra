@@ -408,6 +408,79 @@
       },
 
 
+
+      {
+        "type": "header",
+        "content": "GDPR Banner"
+      },
+      {
+        "type": "color",
+        "id": "gdpr_bg",
+        "label": "GDPR Popup BG",
+        "default": "#e6e6e6"
+      },
+      {
+        "type": "color",
+        "id": "gdpr_text",
+        "label": "GDPR Body Text Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "gdpr_border_color",
+        "label": "GDPR Border Color",
+        "default": "#0b56a3"
+      },
+      {
+        "type": "range",
+        "id": "gdpr_border_width",
+        "min": 0,
+        "max": 8,
+        "step": 1,
+        "unit": "px",
+        "label": "GDPR Border Width",
+        "default": 0
+      },
+      {
+        "type": "color",
+        "id": "gdpr_button_bg",
+        "label": "GDPR Button BG",
+        "default": "#0b56a3",
+      },
+      {
+        "type": "color",
+        "id": "gdpr_button_text",
+        "label": "GDPR Button Text",
+        "default": "#ffffff",
+      },
+      {
+        "type": "color",
+        "id": "gdpr_button_bg_hover",
+        "label": "GDPR Button BG Hover",
+        "default": "#0e4781",
+      },
+      {
+        "type": "color",
+        "id": "gdpr_alt_button_bg",
+        "label": "GDPR Alt Button BG",
+        "default": "#ffffff",
+      },
+      {
+        "type": "color",
+        "id": "gdpr_alt_button_text",
+        "label": "GDPR Alt Button Text",
+        "default": "0b56a3",
+      },
+      {
+        "type": "color",
+        "id": "gdpr_alt_button_bg_hover",
+        "label": "GDPR Alt Button Hover",
+        "default": "#d6d6d6"
+      },
+
+
+
+
       {
         "type": "header",
         "content": "Navigation"
