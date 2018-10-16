@@ -1,51 +1,71 @@
 <div class="about-container">
-	<div class="about-block" style="background-color:{{ section.settings.about_text_color }}">
-		{{ section.settings.about_text }}
-	</div>
-
 
 	{% for block in section.blocks %}
-	  <div class="block {% if block.type == 'image_picker' %}image-block{% endif %}{% if block.type == 'video_url' %}video-url{% endif %} " style="order:{{ block.settings.block_order }}; {% if block.type == 'html' %}background-color:{{ block.settings.html_block_color }}{% elsif block.type == 'image_picker' %}margin-top:{{ block.settings.image_offset }}{% endif %}">
-	   	{% if block.type == 'image_picker' %}
-	    <img src="{{ block.settings.image_picker_block | img_url: '800x' }}" />
-	  	{% elsif block.type == 'html' %}
-	  	{{ block.settings.html_block }}
-	  	{% else %} 
-	      {% if block.settings.video_url_block.type == "youtube" %}
-	        <a class="fancybox" data-type="iframe" href="//www.youtube.com/embed/{{ block.settings.video_url_block.id }}?rel=0&showinfo=0&vq=720" title="youtube">
-		  		<img src="{{ block.settings.video_image_block | img_url: '800x' }}" />
-			  	<div class="columns-carousel--nav">
-			      <div class="pagination">
-			        PLAY
-			      </div>
-			    </div>
-		    </a>
-	      {% elsif block.settings.video_url_block.type == "vimeo" %}
-	      <a class="fancybox" data-type="iframe" href="//player.vimeo.com/video/{{ block.settings.video_url_block.id }}?byline=0&portrait=0&badge=0" title="youtube">
-		  		<img src="{{ block.settings.video_image_block | img_url: '800x' }}" />
-			  	<div class="columns-carousel--nav">
-			      <div class="pagination">
-			        PLAY
-			      </div>
-			    </div>		  		
-		  	</a>      
-	      {% endif %}	  	
-	  	{% endif %}
-	  </div>
+
+		{% comment %} CONTENT MODULE - Paired text & images {% endcomment %}
+
+		{% if block.type == 'text_block' %}
+
+		<div class="content-module layout-desk--{{ block.settings.module_image_position_desktop }} layout-mob--{{ block.settings.module_image_position_mobile }} color-scheme--{{ block.settings.module_image_color_scheme }}">
+
+			<div class="text-box">
+				{{ block.settings.module_html }}
+			</div>
+
+			<div class="image-box">
+				<img src="{{ block.settings.module_image | img_url: '800x' }}" />
+
+			</div>
+		</div><!-- .content-module -->
+
+		{% else %}
+
+			{% comment %} ALL OTHER BLOCKS {% endcomment %}
+
+		  <div class="block {% if block.type == 'image_picker' %}image-block{% endif %}{% if block.type == 'video_url' %}video-url{% endif %} " style="order:{{ block.settings.block_order }}; {% if block.type == 'html' %}background-color:{{ block.settings.html_block_color }}{% elsif block.type == 'image_picker' %}margin-top:{{ block.settings.image_offset }}{% endif %}">
+		   	{% if block.type == 'image_picker' %}
+		    <img src="{{ block.settings.image_picker_block | img_url: '800x' }}" />
+		  	{% elsif block.type == 'html' %}
+		  	{{ block.settings.html_block }}
+		  	{% else %} 
+		      {% if block.settings.video_url_block.type == "youtube" %}
+		        <a class="fancybox" data-type="iframe" href="//www.youtube.com/embed/{{ block.settings.video_url_block.id }}?rel=0&showinfo=0&vq=720" title="youtube">
+			  		<img src="{{ block.settings.video_image_block | img_url: '800x' }}" />
+				  	<div class="columns-carousel--nav">
+				      <div class="pagination">
+				        PLAY
+				      </div>
+				    </div>
+			    </a>
+		      {% elsif block.settings.video_url_block.type == "vimeo" %}
+		      <a class="fancybox" data-type="iframe" href="//player.vimeo.com/video/{{ block.settings.video_url_block.id }}?byline=0&portrait=0&badge=0" title="youtube">
+			  		<img src="{{ block.settings.video_image_block | img_url: '800x' }}" />
+				  	<div class="columns-carousel--nav">
+				      <div class="pagination">
+				        PLAY
+				      </div>
+				    </div>		  		
+			  	</a>      
+		      {% endif %}	  	
+		  	{% endif %}
+		  </div>
+
+		{% endif %}		  
 	{% endfor %}
+
 </div>
 
+<div class="about-block" style="background-color:{{ section.settings.about_text_color }}">
+	{{ section.settings.about_text }}
+</div>
+
+
 <style>
-	.gridlock .row {
+	#content.row {
 		width: 100%;
 	}
 	.video-url {
 		position: relative;
-	}
-	.columns-carousel--nav {
-		left: 50%;
-		bottom: 50%;
-		width: 40px;
 	}
 	#breadcrumb {
 		display: none;
@@ -120,7 +140,7 @@
 {% schema %}  
   {
     "name": "Collection page", 
-    "max_blocks": 8,
+    "max_blocks": 12,
     "settings": [
       {
         "type": "html",
@@ -134,6 +154,67 @@
       }   
     ],
     "blocks":[
+    {
+      "type": "text_block",
+      "name": "Content Module",
+      "settings":[
+      	{
+      		 "type": "image_picker",
+      		   "id": "module_image",
+					"label": "Image"
+      	},
+      	{
+      		 "type": "html",
+      		   "id": "module_html",
+      		"label": "HTML Content"
+      	},
+      	{
+	  		   "type": "select",
+	  		     "id": "module_image_color_scheme",
+	  		  "label": "Color Scheme",
+	  		"options": [
+	  			{
+	  				"value": "light",
+	  				"label": "Light Background"
+	  			},
+	  			{
+	  				"value": "dark",
+	  				"label": "Dark Background"
+	  			}
+	  		]
+      	},      	
+      	{
+	  		   "type": "select",
+	  		     "id": "module_image_position_desktop",
+	  		  "label": "Image Position (Desktop)",
+	  		"options": [
+	  			{
+	  				"value": "image_left",
+	  				"label": "Image Left"
+	  			},
+	  			{
+	  				"value": "image_right",
+	  				"label": "Image Right"
+	  			}
+	  		]
+      	},
+      	{
+      		   "type": "select",
+        		 "id": "module_image_position_mobile",
+      		  "label": "Image Position (Mobile)",
+      		"options": [
+      			{
+      				"value": "image_top",
+      				"label": "Image Top"
+      			},
+      			{
+      				"value": "image_bottom",
+      				"label": "Image Bottom"
+      			}
+      		]
+      	}
+      ]
+    },
     {
       "type":"html",
       "name":"HTML Block",
