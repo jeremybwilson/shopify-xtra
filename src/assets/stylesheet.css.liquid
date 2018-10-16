@@ -1219,59 +1219,6 @@ hr {
   text-align: center;
 }
 
-/* Primary Buttons
-================================================== */
-
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  background: {{ settings.button_color }};
-  color: {{ settings.button_text }};
-  font-size: {{ settings.font-size }}px;
-  font-weight: {{ main_font.weight }};
-  font-family: {{ main_font.family }};
-  border: 0;
-  border-radius: 3px! important;
-  transition: all .25s ease-in-out;
-  -webkit-appearance: none;
-  display: inline-block;
-  width: auto;
-  padding: 0 15px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  cursor: pointer;
-  margin-bottom: 10px;
-  height: 44px;
-  line-height: 44px;
-}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
-  color: {{ settings.button_text_hover }};
-  background: {{ settings.button_hover }};
-}
-
-.secondary-button {
-  color: {{ settings.secondary_button_text }}! important;
-  background: {{ settings.secondary_button_color }}! important;
-}
-
-.secondary-button:hover {
-  color: {{ settings.secondary_button_text_hover }}! important;
-  background: {{ settings.secondary_button_hover }}! important;
-}
-
-
-a.button:visited {
-  background: {{ settings.button_color }};
-  color: {{ settings.button_text }};
-}
-
 /* #Forms
 ================================================== */
 
@@ -2581,37 +2528,6 @@ ul#sortme li.current a {
   padding-top: 20px;
 }
 
-.product-modal {
-  display:none;
-  background: {{ settings.button_color }};
-  color: {{ settings.button_text }};
-  padding: 10px 20px;
-  transition: all .25s ease-in-out;
-  position: absolute;
-  width: 60%;
-  top: 50%;
-  left: 50%;
-  z-index: 5;
-  margin-top: -15px;
-  margin-left: -30%;
-  text-align: center;
-  letter-spacing: 1px;
-  border-radius: 3px;
-  font-size: 11px;
-}
-
-.product-modal:hover {
-  color: {{ settings.button_text_hover }};
-  background: {{ settings.button_hover }};
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.product-modal:visited {
-  background: {{ settings.button_color }};
-  color: {{ settings.button_text }};
-}
-
 .product-index:hover>.product-modal {
   display: block;
 }
@@ -2926,54 +2842,6 @@ ul#popups li.last {
     float: left;
     width: 100%;
   }
-
-
-@media screen and ( min-width: 981px ) {
-   .shopify-payment-button {
-     margin-top: 0;
-     margin-left: 3%;
-   }
-}
-@media screen and ( max-width: 980px ) {
-  .add, .shopify-payment-button, .single-option-selector {
-    width: 100%! important;
-    margin-left: 0;
-    clear: left;
-  }
-}
-.shopify-payment-button.hide { display: none; }
-.shopify-payment-button__button--branded, .shopify-payment-button__button--unbranded {
-  border-radius: 3px! important;
-  line-height: 44px !important;
-  min-height: 44px! important;
-  padding: 0! important;
-  margin-bottom: 15px! important;
-}
-
-.shopify-payment-button__button--unbranded {
-    color: {{ settings.button_text }}! important;
-    background: {{ settings.button_color }}! important;
-    font-size: {{ settings.font-size }}px! important;
-    font-weight: {{ main_font.weight }}! important;
-    font-family: {{ main_font.family }}! important;
-}
-
-.shopify-payment-button__button--unbranded:hover {
-    color: {{ settings.button_text }}! important;
-    background: {{ settings.button_hover }}! important;
-}
-
-button.shopify-payment-button__more-options, button.shopify-payment-button__more-options:hover {
-    background: transparent! important;
-    color: #000! important;
-    padding: 0! important;
-
-}
-
-button.shopify-payment-button__more-options {
-    height: initial;
-    line-height: initial;
-}
 
 .desc {
   float: left;
@@ -3502,26 +3370,6 @@ dd {
   margin: 20px 0;
 }
 
-.readmore {
-  clear: left;
-  text-align: left;
-  margin: 20px auto 30px;
-}
-
-.readmore a {
-  background: {{ settings.button_color }};
-  color: {{ settings.button_text }};
-  padding: 10px 20px;
-  transition: all .25s ease-in-out;
-  letter-spacing: 1px;
-  border-radius: 3px;
-}
-
-.readmore a:hover {
-  color: {{ settings.button_text_hover }};
-  background: {{ settings.button_hover }};
-  text-decoration: none;
-}
 
 /* =============== */
 /* = Search = */
