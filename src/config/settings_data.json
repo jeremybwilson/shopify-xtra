@@ -409,10 +409,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-1.jpg",
-              "heading": "Xtratuf <br>X<br> Salmon Sisters",
+              "heading": "Proud To Be The Alaskan Sneaker",
               "subheading": "",
-              "cta_one_link": "shopify:\/\/collections\/new-arrivals",
-              "cta_one_button_text": "Shop now",
+              "cta_one_link": "\/collections\/legacy\/audience_men",
+              "cta_one_button_text": "Shop Legacy Boots",
               "cta_two_link": "",
               "cta_two_button_text": "Garden",
               "caption_color_scheme": "white",
@@ -444,7 +444,7 @@
               "heading": "Commercial Fishing",
               "svg_icon": "",
               "png_icon": "",
-              "link": "#",
+              "link": "shopify:\/\/collections\/commercial-fishing",
               "cta_text": "Shop Now"
             }
           },
@@ -456,7 +456,7 @@
               "heading": "Sport Fishing",
               "svg_icon": "",
               "png_icon": "",
-              "link": "#",
+              "link": "shopify:\/\/collections\/sport-fishing",
               "cta_text": "Shop Now"
             }
           },
@@ -468,7 +468,7 @@
               "heading": "Water Sports",
               "svg_icon": "",
               "png_icon": "",
-              "link": "",
+              "link": "shopify:\/\/collections\/water-sports",
               "cta_text": "Shop Now"
             }
           },
@@ -480,7 +480,7 @@
               "heading": "Lifestyle",
               "svg_icon": "",
               "png_icon": "",
-              "link": "#",
+              "link": "shopify:\/\/collections\/lifestyle",
               "cta_text": "Shop Now"
             }
           }
@@ -502,10 +502,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-1.jpg",
-              "link": "#",
-              "heading_text": "Summer Closeout",
-              "text": "<p>Lorem ipsum dolor sit amet, cons ec tetur adipiscing elit<\/p>",
-              "cta_text": "Shop Now"
+              "link": "\/collections\/mid-tall-boots\/audience_women",
+              "heading_text": "Tougher than the Rest",
+              "text": "",
+              "cta_text": "Shop Women's Boots"
             }
           },
           "1536251685211-0": {
@@ -513,10 +513,10 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-2.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-2.jpg",
-              "link": "#",
-              "heading_text": "Shop our Elite Collection",
-              "text": "<p>Lorem ipsum dolor sit amet, cons ec tetur adipiscing elit<\/p>",
-              "cta_text": "Shop Now"
+              "link": "shopify:\/\/collections\/kids",
+              "heading_text": "Keep Tradition Alive",
+              "text": "",
+              "cta_text": "Shop Kids"
             }
           }
         },
@@ -536,9 +536,9 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-about-promo-desktop-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-about-promo-mobile-1.jpg",
-              "heading": "From Bermuda to the Bering Sea",
-              "subheading": "Lorem ipsum dolor sit amet, cons ec tetur adipiscing elit",
-              "cta_one_link": "#",
+              "heading": "Made for Alaska, Fit for Everyone",
+              "subheading": "",
+              "cta_one_link": "shopify:\/\/pages\/about",
               "cta_one_button_text": "Our Story",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
@@ -678,7 +678,7 @@
               "heading": "Commercial Fishing",
               "svg_icon": "",
               "png_icon": "",
-              "link": "#",
+              "link": "shopify:\/\/collections\/commercial-fishing",
               "cta_text": "Shop Now"
             }
           },
@@ -690,7 +690,7 @@
               "heading": "Sport Fishing",
               "svg_icon": "",
               "png_icon": "",
-              "link": "#",
+              "link": "shopify:\/\/collections\/sport-fishing",
               "cta_text": "Shop Now"
             }
           },
@@ -702,7 +702,7 @@
               "heading": "Water Sports",
               "svg_icon": "",
               "png_icon": "",
-              "link": "",
+              "link": "shopify:\/\/collections\/water-sports",
               "cta_text": "Shop Now"
             }
           },
@@ -714,7 +714,7 @@
               "heading": "Lifestyle",
               "svg_icon": "",
               "png_icon": "",
-              "link": "#",
+              "link": "shopify:\/\/collections\/lifestyle",
               "cta_text": "Shop Now"
             }
           }
