@@ -504,31 +504,31 @@
         "type": "color",
         "id": "gdpr_button_bg",
         "label": "GDPR Button BG",
-        "default": "#0b56a3",
+        "default": "#0b56a3"
       },
       {
         "type": "color",
         "id": "gdpr_button_text",
         "label": "GDPR Button Text",
-        "default": "#ffffff",
+        "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "gdpr_button_bg_hover",
         "label": "GDPR Button BG Hover",
-        "default": "#0e4781",
+        "default": "#0e4781"
       },
       {
         "type": "color",
         "id": "gdpr_alt_button_bg",
         "label": "GDPR Alt Button BG",
-        "default": "#ffffff",
+        "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "gdpr_alt_button_text",
         "label": "GDPR Alt Button Text",
-        "default": "0b56a3",
+        "default": "#0b56a3"
       },
       {
         "type": "color",
