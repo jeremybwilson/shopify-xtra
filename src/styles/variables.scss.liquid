@@ -19,7 +19,7 @@ $color--border-gray: #d7d7d7;
 
 // DARK BACKGROUND
 $color--white: #ffffff;
-$color--light-primary-1: #e63e57; //What dis for? A: Primary color for areas with dark background
+$color--light-primary-1: #e63e57; // Primary color for areas with dark background
 
 // UTILITY + ERROR
 $color--error: {{ settings.error_text }};
@@ -36,6 +36,58 @@ $font-weight--medium: 500;
 $font-weight--bold: 700;
 //$font-weight--black: 800; 
 $font-weight--black: 900; // Museo's 900 is equivalent to 800
+
+
+// BUTTONS -- Main
+$button--main-bg: {{ settings.button_bg }};
+$button--main-bg-hover: {{ settings.button_bg_hover }};
+$button--main-text: {{ settings.button_text }};
+$button--main-text-hover: {{ settings.button_text_hover }};
+$button--main-border: {{ settings.button_border_width }}px solid {{ settings.button_border_color }};
+$button--main-border-hover: {{ settings.button_border_width }}px solid {{ settings.button_border_color_hover }};
+// BUTTONS -- Alt
+$button--alt-bg: {{ settings.alt_button_bg }};
+$button--alt-bg-hover: {{ settings.alt_button_bg_hover }};
+$button--alt-text: {{ settings.alt_button_text }};
+$button--alt-text-hover: {{ settings.alt_button_text_hover }};
+$button--alt-border: {{ settings.alt_button_border_width }}px solid {{ settings.alt_button_border_color }};
+$button--alt-border-hover: {{ settings.alt_button_border_width }}px solid {{ settings.alt_button_border_color_hover }};
+
+
+/* MIXIN : BUTTONS
+ *    EX : @include mainButton;
+ *    EX : @include altButton;
+ * ------------------------------------------------------------------------- */
+@mixin mainButton {
+  background: $button--main-bg;
+  color: $button--main-text;
+  border: $button--main-border;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background: $button--main-bg-hover;
+    color: $button--main-text-hover;
+    border: $button--main-border-hover;
+  }
+}
+
+@mixin altButton {
+  background: $button--alt-bg;
+  color: $button--alt-text;
+  border: $button--alt-border;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    background: $button--alt-bg-hover;
+    color: $button--alt-text-hover;
+    border: $button--alt-border-hover;
+  }
+}
+
 
 /* MIXIN : FONT SIZES
  *    EX : @include fontSize( 16px )
@@ -138,6 +190,8 @@ $font-weight--black: 900; // Museo's 900 is equivalent to 800
 
   @include fontSize(14px);
 }
+
+
 
 
 /* MIXIN : FLEXBOX
