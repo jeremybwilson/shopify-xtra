@@ -135,6 +135,15 @@
       @include mq('tablet-and-up') {
         margin-top: 6px;
       }
+      & > div {
+        display: inline;
+      }
+      .onsale {
+        color: {{ settings.sale_color }}
+      }
+      .was {
+        color: $color--primary-2;
+      }      
     }
   }
   .product-modal {

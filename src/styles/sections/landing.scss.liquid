@@ -1,15 +1,114 @@
 @charset "UTF-8";
 
+
 #subpage {
+  @include flexbox;
+  @include flex-direction(column);
+  @include justify-content(flex-end);
+
   margin-right: 27px;
   margin-left: 27px;
 
   @include p;
-  font-size: 14px;
-  line-height: 2;
+  @include fontDim(14px,24px,0);
+  @include fontSize(14px);
 
-  @include mq("tablet-and-up") {
-    margin: 0;
+  @include mq( 'lap-and-up' ) {
+    @include flex-direction(row);
+  }
+  @include mq( 'desk-and-up' ) {
+    padding-left: 15%;
+  }
+
+  // SUBPAGE : Left-nav
+
+  div.left-nav {
+    margin: 0 0 25px 0;
+    @include mq( 'lap-and-up' ) {
+      @include flex-basis(220px);
+      padding-right: 20px;
+    }
+    @include mq( 'desk-and-up' ) {
+      @include flex-basis(300px);
+    }
+
+    div.desktop-left-nav {
+      display: none;
+
+      @include mq( 'lap-and-up' ) {
+        display: block;
+      }
+
+      ul > li {
+        margin-bottom: 0px;
+
+        &:before {
+          content: " ";
+          margin-right: 0;
+        }
+
+        a {
+          color: $color--primary-2;
+        }
+      }
+    }
+  }
+
+  .left-nav--categories {
+    @include mq("lap-and-up") {
+      display: none;
+    }
+
+    .opener {
+      @include flexbox;
+      @include justify-content(space-between);
+      @include align-items(center);
+      width: 100%;
+      padding: 10px 15px;
+      background: $color--gray-1;
+      color: $color--white;
+      font-weight: $font-weight--book;
+      @include fontSize(14px);
+
+      svg {
+        width: 10px;
+        transition: transform .25s ease;
+        * {
+          fill: $color--white;
+        }
+      }
+
+      &.is-on {
+        svg {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    div.dropdown {
+      display: none;
+      float: left;
+      width: 100%;
+      background: $color--light-gray;
+      padding: 10px 15px;
+
+      a {
+        float: left;
+        width: 100%;
+        color: $color--primary-2;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  div.page-content-field {
+    @include mq( 'lap-and-up' ) {
+      @include flex-basis(100%);
+    }
+
+    a {
+      color: $color--accent-1;
+    }
   }
 
   p {
@@ -49,6 +148,9 @@
     @include mq('tablet-and-up') {
       @include fontSize(18px);
     }
+  }
+  h2 + h3 {
+    margin-top: 20px;
   }
   h4 {
     @include fontSize(14px);
@@ -98,135 +200,6 @@
     }
   }
 
-  // SUBPAGE : Left-nav
-
-  div.left-nav {
-    float: left;
-    width: 100%;
-    margin: 0 0 25px 0;
-
-    @include mq("tablet-and-up") {
-      width: auto !important;
-    }
-
-    div.desktop-left-nav {
-      display: none;
-
-      @include mq("tablet-and-up") {
-        display: block;
-        float: left;
-        width: 100%;
-        padding-left: 168px;
-      }
-      @include mq("wide-and-up") {
-        padding-left: 200px;
-      }
-
-      @include mq("tablet") {
-        padding-left: 0;
-      }
-
-      ul > li {
-        margin-bottom: 0px;
-
-        &:before {
-          content: " ";
-          margin-right: 0;
-        }
-
-        a {
-          color: $color--primary-2;
-        }
-      }
-    }
-  }
-
-  .left-nav--categories {
-    .opener {
-      @include flexbox;
-      @include justify-content(space-between);
-      @include align-items(center);
-      width: 100%;
-      padding: 10px 15px;
-      background: $color--gray-1;
-      color: $color--white;
-      font-weight: $font-weight--book;
-      @include fontSize(14px);
-
-      svg {
-        width: 10px;
-        transition: transform .25s ease;
-        * {
-          fill: $color--white;
-        }
-      }
-
-      &.is-on {
-        svg {
-          transform: rotate(-180deg);
-        }
-      }
-    }
-
-    div.dropdown {
-      display: none;
-      float: left;
-      width: 100%;
-      background: $color--light-gray;
-      padding: 10px 15px;
-
-      a {
-        float: left;
-        width: 100%;
-        color: $color--primary-2;
-        margin-bottom: 15px;
-      }
-    }
-
-    @include mq("tablet-and-up") {
-      display: none;
-    }
-  }
-
-  div.page-content-field {
-    float: left;
-
-    @include mq("tablet-and-up") {
-      float: right;
-      width: 65%;
-    }
-
-    a {
-      color: $color--accent-1;
-    }
-  }
-
-  // SUBPAGE : Content : Columns for Shipping
-
-  div.col {
-    width: 100%;
-    float: left;
-    background: $color--primary-1;
-    color: $color--white;
-    border: 1px dotted $color--white;
-    margin: 10px 0 20px 0;
-    text-align: center;
-    height: 200px;
-    padding: 2%;
-
-    @include mq("tablet-and-up") {
-      width: 33%;
-    }
-
-    img {
-      padding-top: 7%;
-
-      @include mq("tablet-and-up") {
-        padding-top: 0;
-      }
-    }
-  }
-
   table {
     tr:first-child {
     }
@@ -235,4 +208,35 @@
       padding: 5px 10px;
     }
   }
+  table table {
+    margin-bottom: 0;
+  }
+
+
+  // SUBPAGE : Content : Columns for Shipping
+
+  .shipping-guide-chart {
+
+    @include flexbox;
+    @include flex-direction(column);
+    margin: 10px 0 20px 0;
+
+    @include mq( 'tablet-and-up' ) {
+      @include flex-direction(row);
+    }
+
+    .col {
+      padding: 20px 30px;
+      border: 1px dotted $color--white;
+      background: $color--primary-1;
+      color: $color--white;   
+      text-align: center;
+
+      @include mq("tablet-and-up") {
+        width: 33%;
+        padding: 20px;
+      }
+    }
+  }
+
 }

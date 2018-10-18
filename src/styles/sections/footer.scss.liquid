@@ -103,25 +103,12 @@
       }
     }
 
-    .header {
-      padding: 12px 12px;
-      font-weight: $font-weight--black;
-      text-transform: uppercase;
-
-      @include mq('tablet-and-up') {
-        display: inline-block;
-        padding: 9.5px 12px 9.5px 0;
-      }
-      @include mq('wide-and-up') {
-        padding: 9.5px 0;
-      }
-
-    }
-
     a {
       display: block;
       padding: 12px 12px;
       color: {{ settings.footer_color }};
+      font-weight: $font-weight--black;
+      text-transform: uppercase;
 
       @include mq('tablet-and-up') {
         display: inline-block;

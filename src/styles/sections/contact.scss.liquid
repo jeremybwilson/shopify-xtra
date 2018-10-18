@@ -49,6 +49,9 @@
     @include mq( 'phone' ) {
       display: none;
     }
+    @include mq( 'tablet' ) {
+      display: none;
+    }    
   }
   table {
     
@@ -59,14 +62,6 @@
       padding: 0;
 
       @include mq( 'phone' ) {
-        float: left;
-        width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border-left: none !important;
-        height: auto !important;
-      }
-      @include mq( 'tablet' ) {
         float: left;
         width: 100% !important;
         padding: 0 !important;
@@ -92,7 +87,7 @@
   @include mq( 'tablet-and-up' ) {
     float: right;
     width: 100%;
-    margin: 50px 0;
+    margin: 15px 0 50px;
   }
 
   h3 {

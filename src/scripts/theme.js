@@ -1234,7 +1234,7 @@ theme.ColumnsCarousel = (function() {
         },
         onChanged: function(event) {
           current = event.item.index+1;
-          //ui.currentSlide.text(current);
+          ui.currentSlide.text(current);
         }
       });
 
@@ -1668,7 +1668,7 @@ $(document).ready(function() {
     // CONTENT PAGES - Sidebar navigation
 
     $('div.left-nav--categories .opener').click(function(){
-      if ($('div', this).length) {
+      if ($(this).length) {
         $(this).toggleClass('is-on');
         $('.left-nav--categories .dropdown').slideToggle();        
       }
