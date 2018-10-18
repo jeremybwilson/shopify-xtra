@@ -114,14 +114,17 @@
       }
     }
     label:hover {
+      border-color: $color--white;
       background-color: inherit;
+      box-shadow: none;
 
       &:after {
         border-color: $color--primary-1;
       }
     }
     input:checked + label {
-      background-color: inherit;
+      border-color: $color--white;
+      background-color: none;
       box-shadow: none;
 
       &:after {
