@@ -38,15 +38,23 @@
                 and then filter using audience_GENDER tags via the nav "Main Menu".
                 This adds the middle subset gender to the breadcrumb trail.
             {% endcomment %}
-            {% if current_tags.first contains '_women' %}
+            {% capture mergedTags %}
+                {{ current_tags }}
+            {% endcapture %}
+
+            {% if mergedTags contains '_women' and collection.title != 'Women' %}
                 <a href="/collections/women">Women</a>
                 <span class="separator"> / </span>
 
-            {% elsif current_tags.first contains '_men' %}
+            {% elsif mergedTags contains '_men' and collection.title != 'Men' %}
                 <a href="/collections/men">Men</a>
                 <span class="separator"> / </span>
 
-            {% elsif current_tags.first contains '_boys' or current_tags.first contains '_girls' %}
+            {% elsif mergedTags contains '_boys' 
+                or mergedTags contains '_girls' 
+                or mergedTags contains '_kids' 
+                and collection.title != 'Kids' %}
+
                 <a href="/collections/kids">Kids</a>
                 <span class="separator"> / </span>
             {% endif %}
