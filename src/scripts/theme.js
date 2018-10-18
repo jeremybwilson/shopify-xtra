@@ -1234,7 +1234,7 @@ theme.ColumnsCarousel = (function() {
         },
         onChanged: function(event) {
           current = event.item.index+1;
-          //ui.currentSlide.text(current);
+          ui.currentSlide.text(current);
         }
       });
 
