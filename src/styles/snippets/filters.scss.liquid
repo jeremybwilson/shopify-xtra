@@ -707,3 +707,8 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
         }
     {% endif %}
 }
+
+// HIDE SORT DROPDOWN ARROW (IE 9-11)
+select::-ms-expand {
+    display: none;
+}

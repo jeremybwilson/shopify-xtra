@@ -204,12 +204,12 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
                 var colorValueName = this.slugify( option['title'] );
                 var swatch = {
                     colorDisplayName: option['title'],          // NAME : Color Name that user sees in tooltip
-                    colorValueName,                             // NAME : CSS name for color style fallback
+                    colorValueName: colorValueName,             // NAME : CSS name for color style fallback
                     productId: data.id,                         // ID : Product ID
-                    productImgUrl,                              // IMAGE : Product image original (for restoring after hover)
+                    productImgUrl: productImgUrl,               // IMAGE : Product image original (for restoring after hover)
                     swatchId: data.id + '-' + colorValueName,   // ID : Swatch : Swatch Color Unique ID
-                    swatchImgUrl,                               // SWATCH : Image url for swatch (fallback = name as color)    
-                    variantImgUrl                               // IMAGE : Product Variant Image for that color option
+                    swatchImgUrl: swatchImgUrl,                 // SWATCH : Image url for swatch (fallback = name as color)    
+                    variantImgUrl: variantImgUrl                // IMAGE : Product Variant Image for that color option
                 }
 
                 // MANIFEST : ADD : Add this swatch to the list
@@ -399,7 +399,7 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
     // TOTAL : Add data attr to determine number of filters present currently (so ipad can adjust)
     var filterWrap = $( ui.filterWrap );
     if ( filterWrap.length > 0 ) {
-        visibleFilters = activeFilters.filter( filter => {
+        visibleFilters = activeFilters.filter( function( filter ) {
             return filter.values && filter.values.length > 1;
         });
         filterWrap.attr( 'data-total-filter-count', visibleFilters.length );
