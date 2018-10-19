@@ -399,7 +399,10 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
     // TOTAL : Add data attr to determine number of filters present currently (so ipad can adjust)
     var filterWrap = $( ui.filterWrap );
     if ( filterWrap.length > 0 ) {
-        filterWrap.attr( 'data-total-filter-count', filters.length );
+        visibleFilters = activeFilters.filter( filter => {
+            return filter.values && filter.values.length > 1;
+        });
+        filterWrap.attr( 'data-total-filter-count', visibleFilters.length );
     }
 
 
@@ -526,5 +529,5 @@ BCSfFilter.prototype.prepareProductData = function(data) {
 
         data[k]['description'] = data[k]['content'] = data[k]['body_html']
     }
-    return data
+    return data;
 };

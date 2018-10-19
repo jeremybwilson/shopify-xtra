@@ -18,8 +18,8 @@
       asset_url: "{{ 'bc-sf-filter.js' | asset_url }}",
       collection_id: {{ collection.id | default: 0 }},
       collection_handle: "{{ collection.handle }}",
-      {% if template contains 'collection' and collection.handle %}
-      collection_count: {{ collection.products_count  }},
+      {% if template contains 'collection' %}
+        collection_count: {{ collection.products_count  }},
       {% endif %}
       collection_tags: {{ current_tags | json }},
       current_tags: {{ current_tags | json }},
@@ -30,7 +30,7 @@
       template: "{{ template }}"
     },
     {% if shop.metafields.bc-sf-filter.settings != blank %}
-    settings: {{ shop.metafields.bc-sf-filter.settings }},
+      settings: {{ shop.metafields.bc-sf-filter.settings }}
     {% endif %}
   };
   function mergeObject(obj1, obj2){
@@ -50,31 +50,24 @@
 {{ 'bc-sf-filter-lib.js' | asset_url | script_tag }}
 {{ 'bc-sf-search.js' | asset_url | script_tag }}
 
-{% if template contains 'collection' %}
- {% unless template contains 'bc-original' %}
- {{ 'bc-sf-filter.js' | asset_url | script_tag }}
- {% endunless %}
-{% endif %}
-
-{% if template contains 'search' %}
- {{ 'bc-sf-filter.js' | asset_url | script_tag }}
+{% if template contains 'collection' or template contains 'search' %}
+  {{ 'bc-sf-filter.js' | asset_url | script_tag }}
 {% endif %}
 
 <!-- Initialize App -->
 <script>
   var bcsffilter = new BCSfFilter();
+  bcsffilter.loadProductFirst = true;
   bcsffilter.init();
 </script>
 
 <!-- Initialize & Customize Filter -->
 {% if template contains 'collection' %}
-{% unless template contains 'bc-original' %}
-<script>bcsffilter.initFilter();</script>
-{% endunless %}
+    <script>bcsffilter.initFilter();</script>
 {% endif %}
 
 {% if template contains 'search' %}
-<script>bcsffilter.initFilter();</script>
+  <script>bcsffilter.initFilter();</script>
 {% endif %}
 
 <!-- Initialize & Customize Search -->
