@@ -349,7 +349,9 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
 
     // DENSE MODE : 6+ filter sets, shrink spacing on elements to fit for iPad
     &[data-total-filter-count="6"],
-    &[data-total-filter-count="7"] {
+    &[data-total-filter-count="7"],
+    &[data-total-filter-count="8"],
+    &[data-total-filter-count="9"] {
         @include mq( 'lap-and-up' ){
             padding: 15px 5px;
         }
