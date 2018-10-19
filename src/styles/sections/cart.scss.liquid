@@ -153,7 +153,7 @@ th.cart--remove {
 .cart-price,
 .cart-quantity,
 .cart--total-price {
-  color: $color--primary-1;
+  color: $color--primary-2;
   @include fontDim(14px,14px,.025em);
 
   @include mq('phone') {
@@ -173,6 +173,17 @@ th.cart--remove {
   @include mq('tablet-and-up') {
     text-align: center;
   }
+
+  & > div {
+    display: inline;
+  }
+  .onsale {
+    color: {{ settings.sale_color }};
+  }
+  .was {
+    color: $color--primary-2;
+  }   
+
 }
 
 .cart-quantity {
