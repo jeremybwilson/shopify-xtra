@@ -7,16 +7,22 @@
     {% case audience %}
       {% when 'boys' %}
         {% assign size_chart_type = 'kids' %}
+      
       {% when 'girls' %}
         {% assign size_chart_type = 'kids' %}
+
       {% when 'kids' %}
         {% assign size_chart_type = 'kids' %}
+      
       {% when 'men' %}
         {% assign size_chart_type = 'mens' %}
+      
       {% when 'women' %}
         {% assign size_chart_type = 'womens' %}
+      
       {% when 'sale' %}
         {% assign size_chart_type = 'all' %}
+        
       {% else %}
         {% assign size_chart_type = 'all' %}
     {% endcase %}
