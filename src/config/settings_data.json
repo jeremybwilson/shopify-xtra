@@ -1,5 +1,6 @@
 {
-  "presets": {},
+  "presets": {
+  },
   "current": {
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
@@ -7,10 +8,10 @@
     "header_background": "#fefffe",
     "logo_color": "#000000",
     "nav_links": "#0153a6",
-    "nav_links_hover": "#e61533",
     "nav_header_color": "#000000",
     "nav_sub_header_color": "#0153a6",
     "nav_list_item_color": "#000000",
+    "nav_links_hover": "#e61533",
     "nav_minor_border_color": "#cccccc",
     "social_links": "#000000",
     "social_links_hover": "#000000",
@@ -22,7 +23,6 @@
     "sale_color": "#bc0000",
     "dotted_color": "#e5e5e5",
     "error_text": "#f00",
-
     "button_bg": "#e41c39",
     "button_bg_hover": "#a6041c",
     "button_text": "#ffffff",
@@ -37,7 +37,6 @@
     "alt_button_border_color": "transparent",
     "alt_button_border_color_hover": "transparent",
     "alt_button_border_width": 0,
-
     "homepage_instagram_header": "#fff",
     "homepage_instagram_text": "#fff",
     "filter_bg": "#ffffff",
@@ -50,7 +49,8 @@
     "filter_button_alt_bg": "#ffffff",
     "filter_button_alt_text": "#0153a6",
     "filter_bar_border_color": "#0153a6",
-    "filter_bar_border_width": 3,
+    "quickview_button_bg": "#e41c39",
+    "quickview_button_text": "#fefffe",
     "catalog_item_text_color": "#000000",
     "catalog_item_price_color": "#525252",
     "catalog_item_accent_color": "#e61533",
@@ -64,8 +64,6 @@
     "product_badge_diamond_bg": "#0152a6",
     "product_badge_text_color": "#fefffe",
     "react_swatch_outline_color": "#0153a6",
-    "quickview_button_bg": "#e41c39",
-    "quickview_button_text": "#FEFFFE",
     "fancybox_overlay_bg": "0,0,0,0.8",
     "fancybox_close_color": "#5b5b5b",
     "fancybox_close_hover_color": "#9b492b",
@@ -74,11 +72,11 @@
     "gdpr_border_color": "#0b56a3",
     "gdpr_border_width": 0,
     "gdpr_button_bg": "#0b56a3",
-    "gdpr_button_text":"#ffffff",
-    "gdpr_button_bg_hover":"#0e4781",
-    "gdpr_alt_button_bg":"#ffffff",
-    "gdpr_alt_button_text":"0b56a3",
-    "gdpr_alt_button_bg_hover":"#d6d6d6",
+    "gdpr_button_text": "#ffffff",
+    "gdpr_button_bg_hover": "#0e4781",
+    "gdpr_alt_button_bg": "#ffffff",
+    "gdpr_alt_button_text": "#0b56a3",
+    "gdpr_alt_button_bg_hover": "#d6d6d6",
     "navigation": "#000000",
     "nav_color": "#ffffff",
     "nav_hover_color": "#e61533",
@@ -133,6 +131,7 @@
     "quickview": true,
     "vendor": false,
     "show_collection_seo_block": true,
+    "filter_bar_border_width": 3,
     "details_align": "center",
     "secondary_images_hover": "image_flip",
     "cart_notes_enable": false,
@@ -234,9 +233,7 @@
           "1535652979932": {
             "type": "simple_menu",
             "settings": {
-              "menu_item": "Kids",
-              "nav_image": "",
-              "nav_promo_link": ""
+              "menu_item": "Kids"
             }
           },
           "1535653033501": {
@@ -255,11 +252,11 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "1",
+          "num_of_promo_banners": "2",
           "announcement_text_one": "<div class=\"bold\">FREE SHIPPING & FREE RETURNS<\/div>",
           "announcement_link_one": "\/pages\/shipping-returns",
-          "announcement_text_two": "<div class=\"bold\">40% OFF YOUR PURCHASE.<\/div> NO CODE NEEDED.",
-          "announcement_link_two": "http:\/\/google.com",
+          "announcement_text_two": "<div class=\"bold\">UP TO 50% OFF<\/div> SHOP CYBER MONDAY SALE",
+          "announcement_link_two": "shopify:\/\/collections\/holiday-event",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -404,15 +401,35 @@
       "1535728526385": {
         "type": "slideshow",
         "blocks": {
+          "1542959214472": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/black-friday-weekend-sale.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/black-friday-weekend-sale-mobile.jpg",
+              "heading": "CYBER MONDAY SALE",
+              "subheading": "Up to 50% Off Select Styles",
+              "cta_one_link": "shopify:\/\/collections\/holiday-event",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
+          },
           "1535728526385-0": {
             "type": "image",
             "settings": {
               "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-1.jpg",
-              "heading": "Proud To Be The Alaskan Sneaker",
+              "heading": "For Long Days at Sea",
               "subheading": "",
-              "cta_one_link": "\/collections\/legacy\/audience_men",
-              "cta_one_button_text": "Shop Legacy Boots",
+              "cta_one_link": "\/collections\/all-boots\/audience_men",
+              "cta_one_button_text": "Shop Men's Boots",
               "cta_two_link": "",
               "cta_two_button_text": "Garden",
               "caption_color_scheme": "white",
@@ -421,11 +438,12 @@
               "caption_horizontal": "center",
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.2"
+              "caption_opacity": "0.1"
             }
           }
         },
         "block_order": [
+          "1542959214472",
           "1535728526385-0"
         ],
         "settings": {
@@ -573,8 +591,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "Best Sellers",
-          "homepage_collection": "best-sellers",
+          "heading": "Cyber Monday Deals",
+          "homepage_collection": "holiday-event",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
