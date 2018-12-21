@@ -2660,12 +2660,24 @@ theme.ProductGallery = function (context, events) {
         });
       } else {
         $slideshow.slick({
+          arrows: true,
+          infinite: false,
+          nextArrow: '<button type="button" class="slick-next"><div class="bar-left"></div><div class="bar-right"></div></button>',
+          prevArrow: '<button type="button" class="slick-prev"><div class="bar-left"></div><div class="bar-right"></div></button>',
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          slide: '.product-thumbnail',
           vertical: true,
-          arrows: false,
-          verticalSwiping: true,
-          slidesToShow: 7,
-          slidesToScroll: 1,
-          slide: '.product-thumbnail'
+          verticalSwiping: true
+          // responsive: [
+          //   {
+          //     breakpoint: 1024, //slickslider does responsive backwards... this means 1023 and BELOW...
+          //     settings: {
+          //       slidesToShow: 5,
+          //       slidesToScroll: 3
+          //     }
+          //   }
+          // ]
         });
       }
 
