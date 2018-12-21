@@ -1,10 +1,12 @@
 @charset "UTF-8";
+$arrowColorThumbnails: $color--primary-1;
+$arrowColorMobile: $color--dark-gray;
+
 
 /* 
   MOBILE PRODUCT PHOTOS 
   -----------------------------
 */
-
 .mobile-product-photos--wrapper {
   @include mq('tablet-and-up') {
     display: none;
@@ -88,6 +90,48 @@
   }
   @include mq('lap-and-up') {
     margin-top: 70px;
+  }
+
+  // THUMBNAILS : Nav Arrows (vertically)
+  .slick-arrow {
+    position: absolute;
+    height: 20px;
+    z-index: 10;
+    background: transparent;
+    color: $arrowColorThumbnails;
+    font-size: 4rem;
+    outline: none;
+    width: 100%;
+    padding: 0;
+
+    &.slick-disabled {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .bar-left,
+    .bar-right {
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      width: 1px;
+      height: 20px;
+      background: $arrowColorThumbnails;
+      transform: rotate(65deg) translate( -10px, 5px );
+    }
+
+    .bar-right {
+      transform: rotate(-65deg) translate( 10px, 5px );
+    }
+
+    &.slick-prev {
+      top: -20px;
+    }
+
+    &.slick-next {
+      transform: rotate( 180deg );
+      margin-top: 15px;
+    }
   }
 }
 
