@@ -1,24 +1,25 @@
-{% if fulfillment.item_count == item_count %} 
-  {% capture email_title %}Your order has been delivered{% endcapture %}
-  {% capture email_body %}Your order has been delivered. Track your shipment to see the delivery status.{% endcapture %}
-{% elsif fulfillment.item_count > 1 %} 
-  {% if fulfillment_status == 'fulfilled' %}
-    {% capture email_title %}The last items in your order has been delivered{% endcapture %}
-    {% capture email_body %}The last items in your order has been delivered. Track your shipment to see the delivery status.{% endcapture %}
+{% capture email_title %}
+  {% if item_count == 1 %}
+    You left an item in your cart
   {% else %}
-    {% capture email_title %}Some items in your order have been delivered{% endcapture %}
-    {% capture email_body %}Some items in your order have been delivered. Track your shipment to see the delivery status.{% endcapture %}
-  {% endif %}
-{% else %} 
-  {% if fulfillment_status == 'fulfilled' %}
-    {% capture email_title %}The last item in your order has been delivered{% endcapture %}
-    {% capture email_body %}The last item in your order has been delivered. Track your shipment to see the delivery status.{% endcapture %}
+    You left items in your cart
+  {% endif %} 
+{% endcapture %}
+{% capture email_body %}
+  {% if billing_address.first_name %}
+    {% if item_count == 1 %}
+      Hi {{ billing_address.first_name }}, you added an item to your shopping cart and haven't completed your purchase. You can complete it now while it's still available.
+    {% else %}
+      Hi {{ billing_address.first_name }}, you added items to your shopping cart and haven't completed your purchase. You can complete it now while they're still available.
+    {% endif %} 
   {% else %}
-    {% capture email_title %}One item in your order has been delivered{% endcapture %}
-    {% capture email_body %}One item in your order has been delivered. Track your shipment to see the delivery status.{% endcapture %}
+    {% if item_count == 1 %}
+      Hi, you added an item to your shopping cart and haven't completed your purchase. You can complete it now while it's still available.
+    {% else %}
+      Hi, you added items to your shopping cart and haven't completed your purchase. You can complete it now while they're still available.
+    {% endif %} 
   {% endif %}
-{% endif %}
-
+{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,44 +64,39 @@
               <tr>
                 <td style="background-color: #0A56A4; padding: 20px;">
 
-                  <div style="border: solid 6px #0a56a4; padding: 40px 20px 30px">
-
-
-                    <!-- ORDER # -->
-
-                    <div style="color:#ffffff;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 0px;">  
-                      <div style="font-size:16px;line-height:19px;font-family:'Museo Sans', 'Verdana', sans-serif;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 16px;line-height: 19px;text-align: center"><span style="font-size: 12px; line-height: 14px;">ORDER {{ order_name }}</span></p></div> 
-                    </div>
+                  <div style="border: solid 3px #0A56A4; padding: 40px 20px 30px">
 
                     <!-- HEADLINE -->
 
-                    <div style="color:#ffffff;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                      <div style="font-size:12px;line-height:14px;font-family:inherit;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><strong><span style="font-size: 28px; line-height: 33px; letter-spacing: 0; text-transform: uppercase;">{{ email_title }}</span></p></div>  
+                    <div style="color:#FFFFFF;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
+                      <div style="font-size:12px;line-height:14px;font-family:inherit;color:#FFFFFF;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><strong><span style="font-size: 38px; line-height: 45px; letter-spacing: 0em;"><span style="font-size: 28px; line-height: 33px; text-transform: uppercase;">{{ email_title }}</span></span></strong></p></div>  
                     </div>
 
                     <!-- COPY -->
 
-                    <div style="color:#ffffff;line-height:180%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                      <div style="font-size:14px;line-height:25px;font-family:inherit;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: center">{{ email_body }}</p></div> 
-                    </div>             
+                    {% if custom_message != blank %}
+
+                      <div style="color:#FFFFFF;line-height:180%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
+                      <div style="font-size:14px;line-height:25px;font-family:inherit;color:#FFFFFF;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: center">{{ custom_message }}</p></div> 
+                    </div>
+
+                    {% else %}
+
+                    <div style="color:#FFFFFF;line-height:180%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
+                      <div style="font-size:14px;line-height:25px;font-family:inherit;color:#FFFFFF;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: center">{{ email_body }}</p></div> 
+                    </div>
+
+                    {% endif %}
 
                     <!-- BUTTON -->
 
                     <div align="center" class="button-container center " style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;">
                       <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="view_your_order_link" style="height:31pt; v-text-anchor:middle; width:121pt;" arcsize="0%" strokecolor="#e41c39" fillcolor="#e41c39"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:'Museo Sans', 'Verdana', sans-serif; font-size:16px;"><![endif]-->
-                        <a href="{{ order_status_url }}" target="_blank" style="display: block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #e41c39; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; max-width: 162px; width: 132px;width: auto; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; padding-top: 5px; padding-right: 15px; padding-bottom: 5px; padding-left: 15px; font-family: 'Museo Sans', 'Verdana', sans-serif;mso-border-alt: none">
-                          <span style="font-family:'Museo Sans', 'Verdana', sans-serif;font-size:16px;line-height:32px;"><span style="font-size: 12px; line-height: 24px; letter-spacing: 0em;"><strong>VIEW YOUR ORDER</strong></span></span>
+                        <a href="{{ shop.url }}" target="_blank" style="display: block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #e41c39; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; max-width: 162px; width: 132px;width: auto; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; padding-top: 5px; padding-right: 15px; padding-bottom: 5px; padding-left: 15px; font-family: 'Museo Sans', 'Verdana', sans-serif;mso-border-alt: none">
+                          <span style="font-family:'Museo Sans', 'Verdana', sans-serif;font-size:16px;line-height:32px;"><span style="font-size: 12px; line-height: 24px; letter-spacing: .125em; text-transform: uppercase;"><strong>SHOP NOW</strong></span></span>
                         </a>
                       <!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
-                    </div>    
-                    
-                    <!-- LINK -->               
-
-                    <div style="color:#ffffff;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                      <div style="font-size:12px;line-height:14px;color:#ffffff;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px; letter-spacing: .125em;"><a style="color:#ffffff;text-decoration: none;" title="Visit Live Site" href="{{shop.url}}" target="_blank" rel="noopener">VISIT OUR STORE</a></span></p></div> 
                     </div>                    
-
-
 
                   </div>
 
@@ -115,10 +111,11 @@
                   <!-- TITLE -->
 
                   <div style="color:#0a56a4;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                    <div style="font-size:12px;line-height:14px;color:#0a56a4;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center;"><span style="font-size: 18px; line-height: 21px; letter-spacing: 0;"><strong>ITEMS IN THIS SHIPMENT</strong></span></p></div> 
+                    <div style="font-size:12px;line-height:14px;color:#0a56a4;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center;"><span style="font-size: 18px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;"><strong>Complete Your Purchase</strong></span></p></div> 
                   </div>
 
                   <!-- TABLE -->
+
 
                   <!-- 
                   PRODUCT ITEM
@@ -156,7 +153,9 @@
                         {% endif %}
                       </td>
                     </tr>{% endfor %}
-                  </table> 
+                  </table>
+
+    
 
                 </td>
               </tr>
@@ -220,7 +219,7 @@
                 <td>
 
                   <div style="color:#848484;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                    <div style="font-size:12px;line-height:14px;color:#848484;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px;"><a style="color:#848484;text-decoration: none;" title="Contact Us" href="https://www.xtratuf.com/pages/contact-us" target="_blank" rel="noopener">CONTACT US</a>&#160;&#160;&#160;&#160; <a style="color:#848484;text-decoration: none;" title="Contact Us" href="tel:18553772668" target="_blank" rel="noopener">855-377-BOOT (2668)</a><br></span></p></div>  
+                    <div style="font-size:12px;line-height:14px;color:#848484;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="Contact Us" href="https://www.xtratuf.com/pages/contact-us" target="_blank" rel="noopener">CONTACT US</a>&#160;&#160;&#160;&#160; <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="Contact Us" href="tel:18553772668" target="_blank" rel="noopener">855-377-BOOT (2668)</a><br></span></p></div>  
                   </div>
 
                 </td>
@@ -258,7 +257,7 @@
                 <td>
 
                   <div style="color:#848484;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                    <div style="font-size:12px;line-height:14px;color:#848484;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px;"><a style="color:#848484;text-decoration: none;" href="https://www.xtratuf.com/pages/terms-conditions" target="_blank" rel="noopener">Terms &amp; <span style="line-height: 14px; font-size: 12px;">Conditions</span></a> | <a style="color:#848484;text-decoration: none;" href="https://www.honeywell.com/privacy-statement" target="_blank" rel="noopener">Privacy Policy</a></span><span style="font-size: 12px; line-height: 14px;"><br></span></p></div>  
+                    <div style="font-size:12px;line-height:14px;color:#848484;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="https://www.xtratuf.com/pages/terms-conditions" target="_blank" rel="noopener">Terms &amp; <span style="line-height: 14px; font-size: 12px;">Conditions</span></a> | <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="https://www.honeywell.com/privacy-statement" target="_blank" rel="noopener">Privacy Policy</a></span><span style="font-size: 12px; line-height: 14px;"><br></span></p></div>  
                   </div>
 
                 </td>
