@@ -147,7 +147,7 @@
     "instagram_id": "xtratufboots",
     "popup": true,
     "email_image": "",
-    "email_popup_title": "Signup Up & Get 10% Off Your First Order!",
+    "email_popup_title": "Sign Up & Get 10% Off Your First Order!",
     "email_popup_text": "",
     "email_popup_input_placeholder": "Enter Your Email Address",
     "email_popup_bottom_text": "<p>By providing your email address, you agree to our <a target=\"_blank\" href=\"https:\/\/www.honeywell.com\/privacy-statement\">Privacy Policy<\/a> &amp; <a href=\"\/pages\/terms-conditions\" target=\"_blank\">Terms of Service<\/a>.<\/p>",
@@ -252,11 +252,11 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "2",
-          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING & FREE RETURNS<\/div>",
+          "num_of_promo_banners": "1",
+          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING & RETURNS<\/div>",
           "announcement_link_one": "\/pages\/shipping-returns",
-          "announcement_text_two": "<div class=\"bold\">UP TO 50% OFF<\/div> SHOP CYBER MONDAY SALE",
-          "announcement_link_two": "shopify:\/\/collections\/holiday-event",
+          "announcement_text_two": "<div class=\"bold\">Something for Everyone: SHOP GIFT GUIDE<\/div>",
+          "announcement_link_two": "shopify:\/\/pages\/holiday-gift-guide-2018",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -401,15 +401,15 @@
       "1535728526385": {
         "type": "slideshow",
         "blocks": {
-          "1542959214472": {
+          "1544311723364": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/black-friday-weekend-sale.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/black-friday-weekend-sale-mobile.jpg",
-              "heading": "CYBER MONDAY SALE",
-              "subheading": "Up to 50% Off Select Styles",
-              "cta_one_link": "shopify:\/\/collections\/holiday-event",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify:\/\/shop_images\/cod-season-hp1-desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/cod-season-hp1-mobile.jpg",
+              "heading": "Cod Season",
+              "subheading": "",
+              "cta_one_link": "shopify:\/\/collections\/legacy",
+              "cta_one_button_text": "SHOP THE ALASKAN SNEAKER",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -417,25 +417,25 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "center",
               "caption_vertical": 50,
-              "caption_background": "transparent",
+              "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
           },
-          "1535728526385-0": {
+          "1544311638684": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/home-hero-desktop-slide-1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/home-hero-mobile-slide-1.jpg",
-              "heading": "For Long Days at Sea",
+              "image": "shopify:\/\/shop_images\/slamon-sisters-collection-hp2-desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slamon-sisters-collection-hp2-mobile.jpg",
+              "heading": "The Salmon Sisters Collection",
               "subheading": "",
-              "cta_one_link": "\/collections\/all-boots\/audience_men",
-              "cta_one_button_text": "Shop Men's Boots",
+              "cta_one_link": "shopify:\/\/collections\/women-feature-xtratuf-r-x-salmon-sisters",
+              "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
-              "cta_two_button_text": "Garden",
+              "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#164732",
-              "caption_horizontal": "center",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
@@ -443,8 +443,8 @@
           }
         },
         "block_order": [
-          "1542959214472",
-          "1535728526385-0"
+          "1544311723364",
+          "1544311638684"
         ],
         "settings": {
           "full_width": true,
@@ -518,23 +518,23 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-1.jpg",
-              "link": "\/collections\/mid-tall-boots\/audience_women",
-              "heading_text": "Tougher than the Rest",
+              "image": "shopify:\/\/shop_images\/legacy-boots-twin-banner-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/legacy-boots-twin-banner-1.jpg",
+              "link": "shopify:\/\/collections\/legacy",
+              "heading_text": "for the Next Generation of Fishermen",
               "text": "",
-              "cta_text": "Shop Women's Boots"
+              "cta_text": "SHOP Legacy 2.0 Boots"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify:\/\/shop_images\/home-twin-promo-desktop-2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/home-twin-promo-mobile-2.jpg",
-              "link": "shopify:\/\/collections\/kids",
-              "heading_text": "Keep Tradition Alive",
+              "image": "shopify:\/\/shop_images\/elite-legacy-boots-twin-banner-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/elite-legacy-boots-twin-banner-2.jpg",
+              "link": "shopify:\/\/collections\/legacy",
+              "heading_text": "Reinforced Comfort & Protection",
               "text": "",
-              "cta_text": "Shop Kids"
+              "cta_text": "SHOP ELITE LEGACY BOOTS"
             }
           }
         },
@@ -591,8 +591,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "Cyber Monday Deals",
-          "homepage_collection": "holiday-event",
+          "heading": "Salmon Sisters Collection",
+          "homepage_collection": "salmon-sisters",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4

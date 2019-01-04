@@ -1,23 +1,11 @@
-{% if fulfillment.item_count == item_count %} 
-  {% capture email_title %}Your order is <br \> on the way{% endcapture %}
-  {% capture email_body %}Your order is on the way. Track your shipment to see the delivery status.{% endcapture %}
-{% elsif fulfillment.item_count > 1 %} 
-  {% if fulfillment_status == 'fulfilled' %}
-    {% capture email_title %}The last items in your order are on the way{% endcapture %}
-    {% capture email_body %}The last items in your order are on the way. Track your shipment to see the delivery status.{% endcapture %}
+{% capture email_title %}Your gift card is now available! {% endcapture %}
+{% capture email_body %}
+  {% if gift_card.customer %}
+    Hi {{ gift_card.customer.first_name }},  here is your {{ gift_card.balance | money_without_trailing_zeros }} gift card. Treat yourself, or send it to someone else as a gift.
   {% else %}
-    {% capture email_title %}Some items in your order are on the way{% endcapture %}
-    {% capture email_body %}Some items in your order are on the way. Track your shipment to see the delivery status.{% endcapture %}
+    Hi, here is your {{ gift_card.balance | money_without_trailing_zeros }} gift card. Treat yourself, or send it to someone else as a gift.
   {% endif %}
-{% else %} 
-  {% if fulfillment_status == 'fulfilled' %}
-    {% capture email_title %}The last item in your order is on the way{% endcapture %}
-    {% capture email_body %}The last item in your order is on the way. Track your shipment to see the delivery status.{% endcapture %}
-  {% else %}
-    {% capture email_title %}One item in your order is on the way{% endcapture %}
-    {% capture email_body %}One item in your order is on the way. Track your shipment to see the delivery status.{% endcapture %}
-  {% endif %}
-{% endif %}
+{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,105 +48,57 @@
               <!-- BODY :: INTRO -->
 
               <tr>
-                <td style="background-color: #0A56A4; padding: 20px;">
+                <td style="background-color: #fafafa; padding: 20px;">
 
-                  <div style="border: solid 6px #0a56a4; padding: 40px 20px 30px">
-
-
-                    <!-- ORDER # -->
-
-                    <div style="color:#ffffff;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 0px;">  
-                      <div style="font-size:16px;line-height:19px;font-family:'Museo Sans', 'Verdana', sans-serif;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 16px;line-height: 19px;text-align: center"><span style="font-size: 12px; line-height: 14px;">ORDER {{ order_name }}</span></p></div> 
-                    </div>
+                  <div style="border: solid 6px #fafafa; padding: 40px 20px 30px">
 
                     <!-- HEADLINE -->
 
-                    <div style="color:#ffffff;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                      <div style="font-size:12px;line-height:14px;font-family:inherit;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><strong><span style="font-size: 28px; line-height: 33px; letter-spacing: 0; text-transform: uppercase;">{{ email_title }}</span></p></div>  
+
+                    <div style="color:#0a56a4;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
+                      <div style="font-size:12px;line-height:14px;font-family:inherit;color:#0a56a4;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: left"><strong><span style="font-size: 25px; line-height: 33px; letter-spacing: 0; text-transform: uppercase;">{{ email_title }}</span></p></div>  
                     </div>
 
                     <!-- COPY -->
 
-                    <div style="color:#ffffff;line-height:180%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                      <div style="font-size:14px;line-height:25px;font-family:inherit;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: center">{{ email_body }}</p></div> 
-                    </div>             
+                    <div style="color:#000;line-height:180%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
+                      <div style="font-size:14px;line-height:25px;font-family:inherit;color:#000;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: left">{{ email_body }}</p></div> 
+                    </div>  
+
+                  
 
                     <!-- BUTTON -->
 
-                    <div align="center" class="button-container center " style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;">
+                    <div align="left" class="button-container center " style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;">
                       <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="view_your_order_link" style="height:31pt; v-text-anchor:middle; width:121pt;" arcsize="0%" strokecolor="#e41c39" fillcolor="#e41c39"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; font-family:'Museo Sans', 'Verdana', sans-serif; font-size:16px;"><![endif]-->
-                        <a href="{{ order_status_url }}" target="_blank" style="display: block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #e41c39; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; max-width: 162px; width: 132px;width: auto; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; padding-top: 5px; padding-right: 15px; padding-bottom: 5px; padding-left: 15px; font-family: 'Museo Sans', 'Verdana', sans-serif;mso-border-alt: none">
-                          <span style="font-family:'Museo Sans', 'Verdana', sans-serif;font-size:16px;line-height:32px;"><span style="font-size: 12px; line-height: 24px; letter-spacing: .1em;"><strong>VIEW YOUR ORDER</strong></span></span>
+                        <a href="{{ gift_card.url }}" target="_blank" style="display: block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #e41c39; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; max-width: 230px; width: 202px;width: auto; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; padding-top: 5px; padding-right: 15px; padding-bottom: 5px; padding-left: 15px; font-family: 'Museo Sans', 'Verdana', sans-serif;mso-border-alt: none">
+                          <span style="font-family:'Museo Sans', 'Verdana', sans-serif;font-size:16px;line-height:32px;"><span style="font-size: 12px; line-height: 24px; letter-spacing: .1em;"><strong>VIEW YOUR GIFT CARD</strong></span></span>
                         </a>
                       <!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
                     </div>    
-                    
-                    <!-- LINK -->               
 
-                    <div style="color:#ffffff;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                      <div style="font-size:12px;line-height:14px;color:#ffffff;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px; letter-spacing: .125em;"><a style="color:#ffffff;text-decoration: none; letter-spacing: .1em;" title="Visit Live Site" href="{{shop.url}}" target="_blank" rel="noopener">VISIT OUR STORE</a><svg class="icon icon-caret_right" style="width: 10px; margin-left: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path fill="#e41c39" d="M504,0c30.3,0,56.6,11.1,78.8,33.2l784,784c22.2,22.2,33.2,48.4,33.2,78.8s-11.1,56.6-33.2,78.8l-784,784
+                    <!-- LINK -->
+
+                    <div style="color:#000000;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
+                      <div style="font-size:12px;line-height:14px;color:#000000;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: left"><span style="font-size: 12px; line-height: 14px; letter-spacing: .1em;"><a style="color:#000000;text-decoration: none;" title="Visit Live Site" href="{{shop.url}}" target="_blank" rel="noopener"><strong>VISIT OUR STORE</strong></a><svg class="icon icon-caret_right" style="width: 10px; margin-left: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path fill="#0a56a4" d="M504,0c30.3,0,56.6,11.1,78.8,33.2l784,784c22.2,22.2,33.2,48.4,33.2,78.8s-11.1,56.6-33.2,78.8l-784,784
                           c-22.2,22.2-48.4,33.2-78.8,33.2s-56.6-11.1-78.8-33.2c-22.2-22.2-33.2-48.4-33.2-78.8V112c0-30.3,11.1-56.6,33.2-78.8
                           C447.4,11.1,473.7,0,504,0z"></path>
                       </svg></span></p></div> 
-                    </div>                    
+                    </div>
 
+                    <div>
+                      {% if gift_card.pass_url %}
+                        <a href="{{ gift_card.pass_url }}" class="apple-wallet-button">
+                          <img src="{{ 'gift-card/add-to-apple-wallet.png' | shopify_asset_url }}" alt="Add to Apple Wallet" width="120" height="40">
+                        </a>
+                      {% endif %}
+                    </div>
 
+                    <div style="padding: 30px 10px 0px 10px; border-top: 1px solid #e5e5e5; margin-top: 30px;">
+                      <p style="color:#595959; font-family:'Museo Sans', 'Verdana', sans-serif; font-size: 13px;">If you have any questions, reply to this email or contact us at <a href="mailto:help@xtratufboots.com">help@xtratufboots.com</a></p>
+                    </div>
 
                   </div>
-
-                </td>
-              </tr>
-
-              <!-- BODY :: TABLE -->
-
-              <tr>
-                <td style="padding: 60px 40px 50px">
-
-                  <!-- TITLE -->
-
-                  <div style="color:#0a56a4;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                    <div style="font-size:12px;line-height:14px;color:#0a56a4;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center;"><span style="font-size: 18px; line-height: 21px; letter-spacing: 0;"><strong>ITEMS IN THIS SHIPMENT</strong></span></p></div> 
-                  </div>
-
-                  <!-- TABLE -->
-
-                  <!-- 
-                  PRODUCT ITEM
-                  -->
-
-                  <table class="row" style="border-collapse: collapse; width: 100%;">
-                    {% for line in subtotal_line_items %}
-                    <tr class="order-list__item">
-                      <td style="border-bottom: solid 1px #e8e8e8; width: 45%;">
-                        {% if line.image %}
-                          <img src="{{ line | img_url: '180x180' }}" align="left"/>
-                        {% endif %}
-                      </td>
-                      <td class="order-list__product-description-cell" style="vertical-align: middle; width: 55%; padding-left: 40px; padding-right: 10px; border-bottom: solid 1px #e8e8e8;">
-                        {% if line.product.title %}
-                          {% assign line_title = line.product.title %}
-                        {% else %}
-                          {% assign line_title = line.title %}
-                        {% endif %}
-
-                        {% if line.quantity < line.quantity %}
-                          {% capture line_display %} {{ line.quantity }} of {{ line.quantity }} {% endcapture %}
-                        {% else %}
-                          {% assign line_display = line.quantity  %}
-                        {% endif %}
-
-                        <span style="font-weight: bold; font-size: 14px; color: #000000; font-family:'Museo Sans', 'Verdana', sans-serif;" class="order-list__item-title">{{ line_title }} × {{ line_display }}</span>
-
-                        {% if line.variant.title != 'Default Title' %}
-                          <br/><span style="color: #000000; font-size: 14px; font-family:'Museo Sans', 'Verdana', sans-serif;" class="order-list__item-variant">{{ line.variant.title }}</span>
-                        {% endif %}
-
-                        {% if line.refunded_quantity > 0 %}
-                          <br/><span style="color: #000000; font-size: 14px; font-family:'Museo Sans', 'Verdana', sans-serif;" class="order-list__item-refunded">Refunded</span>
-                        {% endif %}
-                      </td>
-                    </tr>{% endfor %}
-                  </table> 
 
                 </td>
               </tr>
