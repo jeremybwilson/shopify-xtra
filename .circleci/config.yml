@@ -73,7 +73,7 @@ jobs:
             echo '
             production:
               password:' $SLATE_PASSWORD '
-              theme_id: "44063785058"
+              theme_id: "live"
               store: xtratuf-usa.myshopify.com
               ignore_files:
                 - settings_data.json' > ./config.yml
