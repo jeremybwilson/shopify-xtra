@@ -1850,6 +1850,8 @@ $(document).ready(function() {
     // check the cookie 
 
     var check_banner_cookie = $.cookie('gdpr_banner_read');
+    var windowWidth = $(window).width();
+
     if(check_banner_cookie == null) {
       $.fancybox({
         href: "#cookie-banner--popup",
@@ -1869,9 +1871,11 @@ $(document).ready(function() {
         $.cookie('gdpr_banner_read','true', { expires: 180 }); // make the cookie, expires in 180 days
         parent.$.fancybox.close();
 
-        setTimeout(function(){
-          email_popup_load();
-        }, 5000);
+        if (windowWidth > 787) {
+          setTimeout(function () {
+              email_popup_load();
+          }, 5000);
+        }
 
       });
     }
