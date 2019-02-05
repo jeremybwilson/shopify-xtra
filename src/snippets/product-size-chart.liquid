@@ -1,8 +1,8 @@
 {% comment %} SIZE CHART {% endcomment %}
 
 {% for tag in product.tags %}
-  {% if tag contains 'audience' %}
-    {% assign audience = tag | remove: 'audience_' %}
+  {% if tag contains 'size_chart_' %}
+    {% assign audience = tag | remove: 'size_chart_' %}
 
     {% case audience %}
       {% when 'boys' %}
