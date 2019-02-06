@@ -399,14 +399,14 @@
       "1535728526385": {
         "type": "slideshow",
         "blocks": {
-          "1544311723364": {
+          "1548910575194": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/his-and-hers-hp.jpg",
-              "mobile_image": "shopify://shop_images/his-and-hers-hp-mobile.jpg",
-              "heading": "<br><br>HIS & HERS",
-              "subheading": "<!--<span style=\"font-size: 23px;\">SELECT STYLES <br> USE CODE: FLASH</span>-->",
-              "cta_one_link": "shopify://collections/his-hers",
+              "image": "shopify://shop_images/HP_3.jpg",
+              "mobile_image": "shopify://shop_images/xtratuf-filson-mobile-3.jpg",
+              "heading": "<br><br>THE ELITE LEGACY BOOT",
+              "subheading": "",
+              "cta_one_link": "shopify://products/mens-filson-12-in-elite-boot",
               "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
@@ -419,14 +419,14 @@
               "caption_opacity": "0.1"
             }
           },
-          "1548910575194": {
+          "1544311723364": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/xtratuf-filson.jpg",
-              "mobile_image": "shopify://shop_images/xtratuf-filson-mobile-3.jpg",
-              "heading": "<br><br>THE ELITE LEGACY BOOT",
-              "subheading": "",
-              "cta_one_link": "shopify://products/mens-filson-12-in-elite-boot",
+              "image": "shopify://shop_images/his-and-hers-hp.jpg",
+              "mobile_image": "shopify://shop_images/his-and-hers-hp-mobile.jpg",
+              "heading": "<br><br>HIS & HERS",
+              "subheading": "<!--<span style=\"font-size: 23px;\">SELECT STYLES <br> USE CODE: FLASH</span>-->",
+              "cta_one_link": "shopify://collections/his-hers",
               "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
