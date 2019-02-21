@@ -24,6 +24,9 @@
 
   {% endcomment %}
 
+  {% comment %} REVIEWS - STAR RATING {% endcomment %}
+  {% include 'yotpo-product-snippet' %}
+
   {% if current_variant.compare_at_price > current_variant.price %}
 
   {% comment %} Sale price formatting {% endcomment %}
