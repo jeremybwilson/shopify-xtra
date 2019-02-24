@@ -209,6 +209,12 @@
     </script>
   {% endif %}
 
+  <!-- ajax load more for blog-->
+  {% include 'ajax-blog-load-more' %}
+
+  <!-- supporting comment feature for article-->
+  {% include 'ajax-article-comment-support' %}
+
   <!-- Responsive Images -->
   {{ 'ls.rias.min.js' | asset_url | script_tag }}
   {{ 'ls.bgset.min.js' | asset_url | script_tag }}
