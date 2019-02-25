@@ -252,7 +252,7 @@
           "full_width_header": false,
           "show_announcement_text": true,
           "num_of_promo_banners": "1",
-          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING & FREE RETURNS</div>",
+          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
           "announcement_link_one": "/pages/shipping-returns",
           "announcement_text_two": "",
           "announcement_link_two": "",
@@ -438,9 +438,30 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
+          },
+          "1550994522434": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/salmon-sisters.jpg",
+              "mobile_image": "shopify://shop_images/salmon-sisters-mobile.jpg",
+              "heading": "NEW PRINTS FROM THE SALMON SISTERS",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "1.0"
+            }
           }
         },
         "block_order": [
+          "1550994522434",
           "1548910575194",
           "1544311723364"
         ],
@@ -515,23 +536,23 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/make-your-escape-twin-banner-1.jpg",
-              "mobile_image": "shopify://shop_images/make-your-escape-twin-mobile-1.jpg",
-              "link": "shopify://collections/women-activity-sport-fishing",
-              "heading_text": "Make Your Escape",
+              "image": "shopify://shop_images/shoe-underwater.jpg",
+              "mobile_image": "shopify://shop_images/shoe-underwater-mobile.jpg",
+              "link": "shopify://collections/men-type-drainage-shoes",
+              "heading_text": "GET WARM WEATHER READY",
               "text": "",
-              "cta_text": "SHOP Women's Sport Fishing"
+              "cta_text": "SHOP DRAINAGE SHOES"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/up-before-the-sun-twin-banner-2.jpg",
-              "mobile_image": "shopify://shop_images/up-before-the-sun-twin-mobile-2.jpg",
-              "link": "shopify://collections/flip-flop",
-              "heading_text": "Up before the Sun",
+              "image": "shopify://shop_images/fisherman.jpg",
+              "mobile_image": "shopify://shop_images/fisherman-mobile.jpg",
+              "link": "shopify://collections/legacy",
+              "heading_text": "ONE BOOT, MULTI-PURPOSE",
               "text": "",
-              "cta_text": "SHOP Performance Sandals"
+              "cta_text": "SHOP LEGACY BOOT"
             }
           }
         },
@@ -588,8 +609,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "Insulated Boots",
-          "homepage_collection": "insulated",
+          "heading": "Salmon Sisters Collection",
+          "homepage_collection": "women-collection-salmon-sisters",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
