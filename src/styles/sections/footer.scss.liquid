@@ -141,6 +141,7 @@
       margin-bottom: 18px;
     }
   }
+  
 
   .section-title h4 {
     @include fontSize(14px);
@@ -152,10 +153,13 @@
     }
   }
   .brands--list {
-    @include flexbox;
+     display:inline-block;
     @include justify-content(center);
     @include align-items(center);
+
   }
+   .brands--list a {display:inline-block;}
+ 
   img {
     max-height: 50px;
 

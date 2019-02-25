@@ -357,11 +357,12 @@
   }
 }
 .product-description--icons {
-  @include flexbox;
+  display:inline-block;
   @include flex-wrap(wrap);
   @include justify-content(center);
   @include align-items(flex-start);
   margin: 15px -10px; // neg margins to accommodate item padding
+    vertical-align: middle;
 
   @include mq('tablet-and-up') {
     @include justify-content(flex-start);
