@@ -1,0 +1,47 @@
+{% assign current_article = article %}
+{% assign current_blog = blog %}
+{% assign count = 0 %}
+
+<div class="article-loop-container">
+    {% for link in linklists.blogs.links %}
+        {% assign blg = link.object %}
+        {% assign blog_tags = blg.all_tags | join: ', ' %}
+
+        {% for c_tag in current_article.tags %}
+            {% if blog_tags contains c_tag %}
+
+                {% for atc in blg.articles %}
+                    {% assign article_tags = atc.tags | join: ', ' %}
+                    {% if article_tags contains c_tag and atc.handle != current_article.handle %}
+                        {% if count == 0 %}
+                            <h2 class="related-articles-title">Related Articles</h2>
+                        {% endif %}
+
+                        {% assign number_of_comments = atc.comments_count %}
+                        {% if comment and comment.created_at %}
+                            {% assign number_of_comments = atc.comments_count | plus: 1 %}
+                        {% endif %}
+                        <div class="article-index"
+                             id="article-{{ atc.id }}"
+                             data-alpha="{{ atc.title }}">
+                            {% assign article = atc %}
+                            {% assign blog = blg %}
+                            {% include 'article-loop' %}
+                        </div>
+                        {% assign count = count | plus: 1 %}
+                    {% endif %}
+                    {% if count == 2 %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+            {% if count == 2 %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+        {% if count == 2 %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+
+</div>
