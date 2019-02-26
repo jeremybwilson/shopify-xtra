@@ -10,6 +10,43 @@
 
     {% assign campaign_vid = tag | remove: 'campaign_video_url_' %}
 
+    {% if campaign_vid contains 'youtu' %}
+      {% comment %} YOUTUBE {% endcomment %}
+
+      {% assign campaign_vid_type = 'youtube' %}
+
+      {% comment %} Parse through YT code and pull the ID {% endcomment %}
+
+      {% if campaign_vid contains '?v=' %}
+        {% comment %}https://www.youtube.com/watch?v=dfDIvsmYla8{% endcomment %}
+
+        {% assign campaign_vid_array = campaign_vid | split: '=' %}
+        {% assign vid_id = campaign_vid_array[1] %}
+
+      {% elsif campaign_vid contains '.be/' %}
+        {% comment %}https://youtu.be/dfDIvsmYla8{% endcomment %}
+
+        {% assign campaign_vid_array = campaign_vid | split: '/' %}
+        {% assign vid_id = campaign_vid_array[3] %}
+
+      {% endif %}
+
+    {% elsif campaign_vid contains 'vimeo' %}
+
+      {% assign campaign_vid_type = 'vimeo' %}
+
+        {% assign campaign_vid_array = campaign_vid | split: '/' %}
+        {% comment %}https://player.vimeo.com/video/29180101{% endcomment %}
+        {% if campaign_vid contains 'player' %}
+          {% assign vid_id = campaign_vid_array[4] %}  
+        {% else %}
+          {% comment %}https://vimeo.com/291801018{% endcomment %}
+          {% assign vid_id = campaign_vid_array[3] %}
+        {% endif %}
+
+    {% endif %}
+
+
   {% endif %}
 
   {% if tag contains 'campaign_video_image' %}
@@ -53,14 +90,15 @@
     {% endcomment %}
 
     <div class="video-wrapper">
+      
       {% if campaign_vid == blank %}
         <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
       {% else %}
-        {% if campaign_vid.type == "youtube" %}
-        <iframe src="//www.youtube.com/embed/{{ video_id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+        {% if campaign_vid_type == "youtube" %}
+        <iframe src="//www.youtube.com/embed/{{ vid_id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
         {% endif %}
-        {% if campaign_vid.type == "vimeo" %}
-          <iframe src="//player.vimeo.com/video/{{ video_id }}?byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+        {% if campaign_vid_type == "vimeo" %}
+          <iframe src="//player.vimeo.com/video/{{ vid_id }}?byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
         {% endif %}
       {% endif %}
     </div>
