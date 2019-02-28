@@ -52,7 +52,21 @@ $resultsTextColor: {{ settings.filter_text_color }};
         left: auto;
     }
 }
-
+@include mq( 'tablet' ) {
+    .collection{
+        #content{
+            top:10px;
+        }
+        #breadcrumb{
+            top:5px;
+        }
+    }
+    #shopify-section-collection-template{
+        .collection-template {
+            margin-top: 0px;
+        }
+    }
+}
 
 
 
