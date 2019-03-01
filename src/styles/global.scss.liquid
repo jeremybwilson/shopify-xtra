@@ -283,3 +283,22 @@ button.shopify-payment-button__more-options {
   background: {{ settings.button_bg_hover }};
   text-decoration: none;
 }
+#content{
+  padding-top:75px;
+}
+@include mq( 'phone' ) {
+  #content {
+    padding-top: 25px;
+  }
+  #breadcrumb {
+    top:15px;
+  }
+}
+@include mq( 'tablet' ) {
+  #content {
+    padding-top: 25px;
+  }
+  #breadcrumb {
+    top:15px;
+  }
+}
