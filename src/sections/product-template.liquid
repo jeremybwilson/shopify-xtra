@@ -1,4 +1,8 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
+{% comment %}{- Select first available variant if current variant is unavailable -}{% endcomment %}
+{% unless current_variant.available %}
+  {% assign current_variant = product.first_available_variant %}
+{% endunless %}
 
 <div itemscope itemtype="http://schema.org/Product"
   id="product-{{ product.id }}"
