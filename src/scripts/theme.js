@@ -2043,7 +2043,7 @@ theme.ProductForm = function (context, events) {
   });
 
   // Select active variant to ensure variant ID matches the URL
-  optionSelectors.selectVariantFromDropdown({ propStateCalll: true });
+  optionSelectors.selectVariantFromDropdown({ propStateCall: true });
 
   (function single_option_selectors() {
     // function for the dropdowns
