@@ -2016,7 +2016,7 @@ theme.ProductForm = function (context, events) {
     return false;
   }
 
-  new Shopify.OptionSelectors("product-select-" + product.id, {
+  var optionSelectors = new Shopify.OptionSelectors("product-select-" + product.id, {
     product: product,
     onVariantSelected: function(variant, selector) {
 
@@ -2041,6 +2041,9 @@ theme.ProductForm = function (context, events) {
     },
     enableHistoryState: config.enable_history
   });
+
+  // Select active variant to ensure variant ID matches the URL
+  optionSelectors.selectVariantFromDropdown({ propStateCall: true });
 
   (function single_option_selectors() {
     // function for the dropdowns
@@ -2136,6 +2139,27 @@ theme.ProductForm = function (context, events) {
       element.addEventListener("change", function (event) {
         events.trigger("swatch:change:" + option_position, element.value);
         current_option_text_change();
+
+        // Select first available variant if top row of options changed
+        if (parseInt(option_position, 10) === 1) {
+          var id = window.location.search.replace('variant=', '')
+          var correspondingVariants = product.variants.reduce((acc, cur, i) => {
+            if (cur.option1 === element.value) {
+              if (id === cur.id.toString()) {
+                acc.selected = cur
+              }
+
+              if (!acc.firstAvailable && cur.available) {
+                acc.firstAvailable = cur
+              }
+            }
+            return acc
+          }, { firstAvailable: null, selected: null })
+          if (!correspondingVariants.selected.available && correspondingVariants.firstAvailable) {
+            var id = correspondingVariants.firstAvailable.option2.toLowerCase().split(' ').join('-')
+            $('#swatch-2-' + id).trigger('change').trigger('click')
+          }
+        }
       });
 
       events.on("variantchange:option" + option_position + ":" + element.value, select);
