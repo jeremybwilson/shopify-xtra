@@ -2042,8 +2042,24 @@ theme.ProductForm = function (context, events) {
     enableHistoryState: config.enable_history
   });
 
-  // Select active variant to ensure variant ID matches the URL
-  optionSelectors.selectVariantFromDropdown({ propStateCall: true });
+  (function initializeVariants() {
+    // Select active variant to ensure variant ID matches the URL
+    optionSelectors.selectVariantFromDropdown({ propStateCall: true });
+
+    // Set availability to only cross out option1 if all corresponding variants are unavailable
+    var variants = product.variants.slice(0)
+    var availableOption1 = product.variants.reduce((acc, cur) => {
+      if (cur.available && acc.indexOf(cur.option1 === -1)) {
+        acc.push(cur.option1)
+      }
+      
+      return acc
+    }, [])
+
+    availableOption1.forEach(option => {
+      $(`[data-swatch-value=${option}]`).removeClass('soldout')
+    })
+  })();
 
   (function single_option_selectors() {
     // function for the dropdowns
@@ -2143,7 +2159,7 @@ theme.ProductForm = function (context, events) {
         // Select first available variant if top row of options changed
         if (parseInt(option_position, 10) === 1) {
           var id = window.location.search.replace('?variant=', '')
-          var correspondingVariants = product.variants.reduce((acc, cur, i) => {
+          var { firstAvailable, selected } = product.variants.reduce((acc, cur, i) => {
             if (cur.option1 === element.value) {
               if (id === cur.id.toString()) {
                 acc.selected = cur
@@ -2155,8 +2171,8 @@ theme.ProductForm = function (context, events) {
             }
             return acc
           }, { firstAvailable: null, selected: null })
-          if (correspondingVariants.selected && !correspondingVariants.selected.available && correspondingVariants.firstAvailable) {
-            var id = correspondingVariants.firstAvailable.option2.toLowerCase().split(' ').join('-')
+          if (selected && !selected.available && firstAvailable) {
+            var id = firstAvailable.option2.toLowerCase().replace(/[^\w]+/g, '-')
             $('#swatch-2-' + id).trigger('change').trigger('click')
           }
         }
@@ -2183,6 +2199,14 @@ theme.ProductForm = function (context, events) {
 
           if ( variant[current_option] != element.value ) {
             return;
+          }
+
+          // Only cross out first option if none of its corresponding variants are available
+          if (current_option === 'option1') {
+            if (variant.available) {
+              available = true
+              return
+            }
           }
 
           if ( variant[other_options[0]] != current_variant[other_options[0]] ) {
