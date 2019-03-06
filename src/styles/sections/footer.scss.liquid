@@ -171,6 +171,8 @@
   }
 }
 .row.footer--bottom-row {
+display: block;
+
   @include mq('tablet-and-up') {
     @include flex-direction(column);
     margin-bottom: 0;
@@ -185,6 +187,9 @@
 .brands--telephone {
   padding-bottom: 42px;
   border-bottom: solid 1px {{ settings.footer_border }};
+  float: left;
+    width: 35%;
+    text-align: left;
 
   @include mq('tablet-and-up') {
     margin-top: 7px;
@@ -203,7 +208,8 @@
     @include fontSize(12px);
     line-height: initial;
     letter-spacing: .2em;
-
+    text-align: left !important;
+    float: left;
     @include mq('tablet-and-up') {
       @include fontSize(16px);
     }
@@ -223,6 +229,8 @@
 }
 #payment {
   padding-top: 36px;
+  display: inline-block;
+    width: 65%;
 
   @include mq('tablet-and-up') {
     @include flexbox;
@@ -238,7 +246,9 @@
 
   .section-title {
     margin-bottom: 16px;
-
+     text-align: left;
+    display: inline-block;
+    float: left;
     @include mq('tablet-and-up') {
       margin-top: 5px;
       margin-bottom: 0;
@@ -259,12 +269,19 @@
   }
 
   svg {
+    display: inline-block;
     height: 30px;
 
     @include mq('tablet-and-up') {
       margin: 0 10px;
     }
   }
+ .payment-methods {
+  display: inline-block;
+    float: left;
+    width: auto;
+    margin-top: -3px;
+    }
 }
 #trust-icons {
   padding-top: 18px;
