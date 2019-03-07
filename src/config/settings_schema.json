@@ -11,7 +11,7 @@
     "name": "Favicon",
     "settings": [
       {
-        "type": "image",
+        "type": "image_picker",
         "id": "favicon.png",
         "label": "Upload a favicon",
         "info": "32 x 32px .png"
@@ -744,7 +744,7 @@
         "id": "social_footer_header",
         "label": "Social - Header",
         "default": "#0a56a4"
-      },   
+      },
 
       {
         "type": "header",
@@ -1093,7 +1093,7 @@
         "id": "ajax_cart_low_stock_text",
         "label": "Low stock alert text",
         "default": "This item does not have enough stock to add to your cart."
-      }      
+      }
     ]
   },
   {
@@ -1174,14 +1174,14 @@
         "id": "email_popup_input_placeholder",
         "label": "Email popup placeholder text",
         "default": "Enter Your Email Address"
-      },      
+      },
       {
         "type": "html",
         "id": "email_popup_bottom_text",
         "label": "Fine print",
         "default": "<p>By providing your email address, you agree to our <a href=\"https://www.honeywell.com/privacy-statement\">Privacy Policy</a> & <a href=\"/pages/terms-and-conditions\">Terms of Service</a>.</p>"
       },
-      { 
+      {
         "type": "text",
         "id": "email_popup_error",
         "label": "Error Text",
