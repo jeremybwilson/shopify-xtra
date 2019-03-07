@@ -815,6 +815,16 @@ a.prototype[n]=function(){var n=arguments;return e&&!this.__chain__?t.apply(this
  */
 // (function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
 
+
+window.theme = window.theme || {}
+
+theme.Utils = (function () {
+  return {
+    handleize: function (str) {
+      return str.toLowerCase().replace(/[^\w]+/g, '-')
+    },
+  }
+})();
 /*============================================================================
   Sections
 ==============================================================================*/
@@ -2050,11 +2060,12 @@ theme.ProductForm = function (context, events) {
     var variants = product.variants.slice(0)
     var availableOption1 = product.variants.reduce((acc, cur) => {
       if (cur.available && acc.indexOf(cur.option1 === -1)) {
-        acc.push(cur.option1)
+        var option = theme.Utils.handleize(cur.option1)
+        acc.push(option)
       }
-      
+
       return acc
-    }, [])
+    }, []);
 
     availableOption1.forEach(option => {
       $(`[data-swatch-value=${option}]`).removeClass('soldout')
@@ -2172,7 +2183,7 @@ theme.ProductForm = function (context, events) {
             return acc
           }, { firstAvailable: null, selected: null })
           if (selected && !selected.available && firstAvailable) {
-            var id = firstAvailable.option2.toLowerCase().replace(/[^\w]+/g, '-')
+            var id = theme.Utils.handleize(firstAvailable.option2)
             $('#swatch-2-' + id).trigger('change').trigger('click')
           }
         }
