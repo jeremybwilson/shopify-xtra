@@ -1,0 +1,10 @@
+{% if template contains 'article' %}
+    <script>
+        $(document).ready(function () {
+            $(document).on('focus', '#comment_body', function (event) {
+                $('.hide-part').show();
+                $('.comment-submit').show();
+            });
+        });
+    </script>
+{% endif %}

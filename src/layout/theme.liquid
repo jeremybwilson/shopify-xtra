@@ -112,7 +112,7 @@
 
 
       {% comment %} :: HOME / BLOG / LIST-COLLECTIONS - No Wrapper or Breadcrumbs :: {% endcomment %}
-      {% if template == 'index' or template contains 'blog' or template contains 'list-collections' %}
+      {% if template == 'index' or template contains 'blog' or template contains 'list-collections' or template contains 'article' %}
         {{ content_for_layout }}
 
 
@@ -120,11 +120,11 @@
       {% else %}
 
         {% comment %} :: BREADCRUMBS :: {% endcomment %}
-        {% if template != 'index' %}
+        {% unless template == 'index' or template contains 'article' %}
           {% if settings.breadcrumb %}
             {% include 'breadcrumb' %}
           {% endif %}
-        {% endif %}
+        {% endunless %}
 
         {% comment %} :: PAGE CONTENT :: {% endcomment %}
         {% comment %} Note : PRODUCT DETAILS has breadcrumbs but custom wrappers {% endcomment %}
@@ -213,6 +213,12 @@
       {% endif %}
     </script>
   {% endif %}
+
+  <!-- ajax load more for blog-->
+  {% include 'ajax-blog-load-more' %}
+
+  <!-- supporting comment feature for article-->
+  {% include 'ajax-article-comment-support' %}
 
   <!-- Responsive Images -->
   {{ 'ls.rias.min.js' | asset_url | script_tag }}

@@ -1,0 +1,35 @@
+{% if template contains 'blog' %}
+    <script>
+        function loadMore(btn) {
+            var loadMoreURL = $(btn).attr("data-url");
+            if($(btn).length > 0 && $(btn).css('display') != 'none') {
+                $.ajax({
+                    type: 'GET',
+                    url: loadMoreURL,
+                    beforeSend: function() {
+                        $(btn).hide();
+                        $('.loading-blog').show();
+                    },
+                    success: function(data) {
+                        // remove loading feedback
+                        $(btn).next().remove();
+                        var filteredArticles = $(data).find(".article-loop-container");
+                        var newBtn = $(data).find(".load_more");
+                        $('.loading-blog').hide();
+                        filteredArticles.insertBefore( $("#blog-list-foot") );
+                        if(newBtn.length) {
+                            newBtn.insertBefore( $("#blog-list-foot") );
+                        }
+                    },
+                    dataType: 'html'
+                });
+            }
+        }
+
+        $(document).ready(function () {
+            $(document).on('click', '.btn-load-more', function(){
+                loadMore(this);
+            });
+        });
+    </script>
+{% endif %}

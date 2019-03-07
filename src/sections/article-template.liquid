@@ -1,136 +1,261 @@
 <div data-section-id="{{ section.id }}" class="article-template">
-{% assign number_of_comments = article.comments_count %}
-{% if comment and comment.created_at %}
-{% assign number_of_comments = article.comments_count | plus: 1 %}
-{% endif %}
+  {% assign number_of_comments = article.comments_count %}
+  {% if comment and comment.created_at %}
+    {% assign number_of_comments = article.comments_count | plus: 1 %}
+  {% endif %}
 
-{% paginate article.comments by 20 %}
+  {% if article.image %}
+    <div class="article-featured-img">
+      {% assign type = article.image %}
+      {%- if type.size > 0 -%}
+        {% assign img_url = type | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+        {% assign imageid = image.id %}
 
-<div id="blog-article" class="desktop-8 desktop-push-2 tablet-6 mobile-3">
-
-  <h1>{{ article.title }}</h1>
-  <div id="article-body">
-    {% assign published_at = article.published_at | date: format: 'month_date_year' %}
-    {% if section.settings.show_date %}<p>{{ 'blogs.article.posted_on_date_html' | t: date: published_at }}</p>{% endif %}
-    {% if article.image %}
-      {%- include 'basic-responsive-image', type: article.image -%}
+        <div class="box-ratio">
+          <img class="lazyload lazyload-fade"
+               id="{{ imageid }}"
+               data-src="{{ img_url }}"
+               data-sizes="auto"
+               alt="{{ type.alt | escape }}">
+        </div>
+      {%- endif -%}
       <noscript>
         <img src="{{ article.image | img_url: '800x' }}" alt="{{ article.image.alt }}">
       </noscript>
-    {% endif %}
-    <div class="rte">{{ article.content }}</div>
-    {% if section.settings.show_icons %}
-      {% include 'social' with article %}
-    {% endif %}
+    </div>
+  {% endif %}
 
+  <div id="content" class="row">
+  {% paginate article.comments by 20 %}
 
-    {% if blog.comments_enabled? %}
-    <div id="comments">
-      {% assign number_of_comments = article.comments_count %}
+    <div id="blog-article">
 
-      <div class="desktop-7 tablet-6 mobile-3">
-        <div class="section-title"><h3>{{ 'blogs.comments.comments_with_count' | t: count: number_of_comments }}</h3></div>
+      <div class="desktop-9 tablet-6 mobile-3 blog-article">
+        <h3 class="blog-title">
+          <a href="{{ blog.url }}">{{ blog.title }}</a>
+        </h3>
 
-        <ul id="commentlist">
-          {% for comment in article.comments %}
-          <li>
-            <div class="comment-details">
-              {{ comment.author }}: {{ comment.created_at | date: "%B %d, %Y" }}
-            </div>
-            <div class="gravatar desktop-1 mobile-1">
-              <img src="//www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}" />
-            </div>
-            <div class="comment desktop-11 mobile-2">
-              {{ comment.content }}
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
+        <h1 class="article-title">{{ article.title }}</h1>
 
+        {% assign published_at = article.published_at | date: '%b %d, %y' %}
+        {% if section.settings.show_date %}
+          <p class="posted">{{ article.author }} | {{ published_at }}</p>
+        {% endif %}
+
+        {% if section.settings.show_icons %}
+          {% include 'social' with article %}
+        {% endif %}
+
+        <div class="comments">
+          <a href="{% if article.comments_enabled? %}{{ article.comment_post_url }}{% endif %}">
+            <span class="fa fa-comment comments-icon"></span>
+            <span class="comments-count">
+              {% if number_of_comments %}
+                {{ number_of_comments }}
+              {% else %}
+                0
+              {% endif %}
+               Comments
+            </span>
+          </a>
+        </div>
       </div>
 
-      <!-- Comment Form -->
-      <div id="comment-form" class="desktop-5 tablet-6 mobile-3">
-        {% form article %}
-          <div class="section-title"><h3>{{ 'blogs.comments.title' | t }}</h3></div>
-          <!-- Check if a comment has been submitted in the last request, and if yes display an appropriate message -->
-          {% if form.posted_successfully? %}
-            {% if blog.moderated? %}
-            <div class="notice">
-              {{ 'blogs.comments.success_moderated' | t }}
-            </div>
-            {% else %}
-            <div class="notice">{{ 'blogs.comments.success' | t }}</div>
-            {% endif %}
-          {% endif %}
+      <div id="article-body">
+        <div class="rte">{{ article.content }}</div>
 
-          {% if form.errors %}
-            <div class="notice error">
-              <p>{{ 'general.forms.post_error' | t }}</p>
-              <ul class="disc">
-                {% for field in form.errors %}
-                {% if field == 'form' %}
-                <li>
-                  {{ form.errors.messages[field] }}
-                </li>
+        {% if blog.comments_enabled? %}
+          <div class="desktop-9 tablet-6 mobile-3 blog-article">
+
+            <div id="comments">
+              {% assign number_of_comments = article.comments_count %}
+
+              <div class="comments-container">
+                <h2 class="section-title">Comments</h2>
+
+                <div class="info-block">
+                  <span class="comments-count">
+                    {{ 'blogs.comments.comments_with_count' | t: count: number_of_comments }}
+                  </span>
+                  {% if shop.customer_accounts_enabled %}
+                    {% if customer %}
+                      {% assign account_url = '/account' %}
+                      {% assign account_txt = 'Account' %}
+                    {% else %}
+                      {% assign account_url = '/account/login' %}
+                      {% assign account_txt = 'Login' %}
+                    {% endif %}
+
+                    <a href="{{ account_url }}" class="customer-login">
+                      <span class="fa fa-comment comments-icon"></span>
+                      <span class="login-text">{{ account_txt }}</span>
+                    </a>
+                  {% endif %}
+                </div>
+
+                <div class="social-block">
+                  <div class="social">
+                    <a class="recommend">
+                      <span class="fa fa-heart comments-icon"></span>
+                      <span class="recommend-text">Recommend</span>
+                    </a>
+                    <a href="//twitter.com/intent/tweet?url={{ shop.url }}{{ article.url }}"
+                       target="_blank" class="social-twitter">
+                      <span class="fa fa-twitter"></span>
+                      <span class="sub-text">Tweet</span>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ shop.url }}{{ article.url }}"
+                       target="_blank" class="social-facebook">
+                      <span class="fa fa-facebook"></span>
+                      <span class="sub-text">Share</span>
+                    </a>
+                  </div>
+                  <div class="sort-widget">
+                    <span class="sort-text">Sort by Best</span>
+                  </div>
+                </div>
+
+                <!-- Comment Form -->
+                <div class="comment-submit-block">
+                  <div class="user-info-part">
+                    <span class="fa fa-user-circle"></span>
+                  </div>
+                  <div id="comment-form">
+                    {% form article %}
+                      <!-- Check if a comment has been submitted in the last request, and if yes display an appropriate message -->
+                      {% if form.posted_successfully? %}
+                        {% if blog.moderated? %}
+                          <div class="notice">
+                            {{ 'blogs.comments.success_moderated' | t }}
+                          </div>
+                        {% else %}
+                          <div class="notice">{{ 'blogs.comments.success' | t }}</div>
+                        {% endif %}
+                      {% endif %}
+
+                      {% if form.errors %}
+                        <div class="notice error">
+                          <p>{{ 'general.forms.post_error' | t }}</p>
+                          <ul class="disc">
+                            {% for field in form.errors %}
+                              {% if field == 'form' %}
+                                <li>
+                                  {{ form.errors.messages[field] }}
+                                </li>
+                              {% else %}
+                                <li>
+                                  <strong>{{ field | replace: 'body', 'Message' }}</strong> {{ form.errors.messages[field] }}
+                                </li>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endif %}
+
+                      <div class="form-widget">
+                        <input type="text" id="comment_body"
+                               name="comment[body]" value="{{form.body}}"
+                               class="{% if form.errors contains 'body' %}input-error{% endif %}"
+                               placeholder="Join the discussion..."
+                        />
+
+                        <div class="hide-part">
+                          <input type="text" id="comment_author"
+                                 name="comment[author]" size="40"
+                                 value="{{form.author}}"
+                                 class="{% if form.errors contains 'author' %}input-error{% endif %}"
+                                 placeholder="{{ 'blogs.comments.name' | t }}"
+                          />
+                          <input type="text" id="comment_email"
+                                 name="comment[email]" size="40"
+                                 value="{{form.email}}"
+                                 class="{% if form.errors contains 'email' %}input-error{% endif %}"
+                                 placeholder="{{ 'blogs.comments.email' | t }}"
+                          />
+                        </div>
+                      </div>
+
+                      {% if blog.moderated? %}
+                        <p class="hint">{{ 'blogs.comments.moderated' | t }}</p>
+                      {% endif %}
+
+                      <input type="submit" class="comment-submit" value="{{ 'blogs.comments.post' | t }}" />
+                    {% endform %}
+                  </div>
+                </div>
+
+                <div class="comments-list-block">
+                  <ul id="commentlist">
+                    {% for comment in article.comments %}
+                      <li>
+                        <div class="comment-single-part">
+                          <div class="user-info-part">
+                            <span class="info">{{ comment.author | slice: 0 | uppercase }}</span>
+                          </div>
+                          <div class="comment-details-part">
+                            <div class="comment-details">
+                              <span class="author">{{ comment.author }}</span>
+                              <span class="date"> {{ comment.created_at | date: "%B %d, %Y" }}</span>
+                            </div>
+                            <div class="comment">
+                              {{ comment.content }}
+                            </div>
+                            <div class="controls">
+                              <a href="mailto:{{ comment.email }}"
+                                 target="_blank" class="reply-control">
+                                Reply
+                              </a>
+                              <a href="mailto:?subject=I wanted you to see this comment - {{ article.title }}&amp;body=Check out this comment {{ shop.url }}{{ article.comment_post_url }}"
+                                 target="_blank" class="share-control">
+                                <span class="fa fa-share-square-o"></span>
+                                <span class="share-text">Share</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div id="pagination">
+              {% if paginate.previous %}
+                {{ '<' | link_to: paginate.previous.url }}
+              {% endif %}
+              {% for part in paginate.parts %}
+                {% if part.is_link %}
+                  {{ part.title | link_to: part.url }}
                 {% else %}
-                <li>
-                  <strong>{{ field | replace: 'body', 'Message' }}</strong> {{ form.errors.messages[field] }}
-                </li>
+                  {% if part.title == '&hellip;' %}
+                    {{ part.title }}
+                  {% else %}
+                    <span class="current">{{ part.title }}</span>
+                  {% endif %}
                 {% endif %}
-
-                {% endfor %}
-              </ul>
+              {% endfor %}
+              {% if paginate.next %}
+                {{ '>' | link_to: paginate.next.url }}
+              {% endif %}
             </div>
-          {% endif %}
-
-          <dl>
-            <dt class="{% if form.errors contains 'author' %}error{% endif %}"><label for="comment_author">{{ 'blogs.comments.name' | t }}</label></dt>
-            <dd><input type="text" id="comment_author" name="comment[author]" size="40" value="{{form.author}}" class="{% if form.errors contains 'author' %}input-error{% endif %}" /></dd>
-
-            <dt class="{% if form.errors contains 'email' %}error{% endif %}"><label for="comment_email">{{ 'blogs.comments.email' | t }}</label></dt>
-            <dd><input type="text" id="comment_email" name="comment[email]" size="40" value="{{form.email}}" class="{% if form.errors contains 'email' %}input-error{% endif %}" /></dd>
-
-            <dt class="{% if form.errors contains 'body' %}error{% endif %}"><label for="comment_body">{{ 'blogs.comments.message' | t }}</label></dt>
-            <dd><textarea id="comment_body" name="comment[body]" cols="40" rows="5" class="{% if form.errors contains 'body' %}input-error{% endif %}">{{form.body}}</textarea></dd>
-          </dl>
-
-          {% if blog.moderated? %}
-          <p class="hint">{{ 'blogs.comments.moderated' | t }}</p>
-          {% endif %}
-
-          <input type="submit" value="{{ 'blogs.comments.post' | t }}" />
-        {% endform %}
+          </div>
+        {% endif %}
       </div>
+    </div>
 
-    </div>
-    <div id="pagination">
-      {% if paginate.previous %}
-      {{ '<' | link_to: paginate.previous.url }}
-      {% endif %}
-      {% for part in paginate.parts %}
-      {% if part.is_link %}
-      {{ part.title | link_to: part.url }}
-      {% else %}
-      {% if part.title == '&hellip;' %}
-      {{ part.title }}
-      {% else %}
-      <span class="current">{{ part.title }}</span>
-      {% endif %}
-      {% endif %}
-      {% endfor %}
-      {% if paginate.next %}
-      {{ '>' | link_to: paginate.next.url }}
-      {% endif %}
-    </div>
-    {% endif %}
+    <div class="clear"></div>
+
+  {% endpaginate %}
   </div>
-</div>
 
+  <div class="related-articles">
+    <div class="row">
+      {% include 'related-articles' %}
+    </div>
+  </div>
 
-<div class="clear"></div>
-
-{% endpaginate %}
 </div>
 
 {% schema %}
@@ -152,3 +277,4 @@
   ]
 }
 {% endschema %}
+

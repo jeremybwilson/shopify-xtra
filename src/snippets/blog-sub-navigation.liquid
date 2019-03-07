@@ -1,0 +1,32 @@
+<nav class="blog-nav">
+  <div class="blog-nav-menu">
+
+    <ul class="blog-nav-menu-desktop-list">
+      {% for link in linklists.blogs.links %}
+        {% assign blogItem = link.object %}
+        <li class="blog-nav-primary-link {% if blog.handle == blogItem.handle %}active{% endif %}">
+          <a class="nav-category-header" href="{{ blogItem.url }}">{{ blogItem.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <div class="blog-nav-menu-mobile">
+      <div class="prefix">
+        <span>Viewing </span>
+      </div>
+      <div class="blog-nav-menu-mobile-list-wrapper">
+        <select class="blog-nav-menu-mobile-list"
+                onchange="location = this.value;"
+        >
+          {% for link in linklists.blogs.links %}
+            {% assign blogItem = link.object %}
+            <option class="blog-select-primary-link"
+                    value="{{ blogItem.url }}"
+                    {% if blog.handle == blogItem.handle %} selected{% endif %}
+            >{{ blogItem.title }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  </div>
+</nav>
