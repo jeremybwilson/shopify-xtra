@@ -1,6 +1,7 @@
 {
   "presets": {},
   "current": {
+    "favicon": "shopify://shop_images/favicon_ce985e2e-2ef5-4938-a951-a6eac4f57989.png",
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
     "announcement_bg_two": "#757575",
