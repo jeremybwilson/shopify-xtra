@@ -12,7 +12,7 @@
     "settings": [
       {
         "type": "image_picker",
-        "id": "favicon.png",
+        "id": "favicon",
         "label": "Upload a favicon",
         "info": "32 x 32px .png"
       }
