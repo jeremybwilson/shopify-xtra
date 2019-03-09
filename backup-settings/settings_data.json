@@ -347,6 +347,9 @@
         "type": "blog-template",
         "settings": {
           "image": "",
+          "heading": "",
+          "blog_nav_bg_color": "#f5f1ed",
+          "blog_nav_font_size": 14,
           "text": "<p>Add some descriptive text to your Blog page.</p>",
           "show_date": true
         }
@@ -742,6 +745,76 @@
           "1539642524127"
         ],
         "settings": {}
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "1552050934620": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "What do the Slip Resistant ratings mean?",
+              "answer": "<p>Our Slip testing is performed to European (EN) / International Organization for Standardization (ISO) standards for Personal Protective Equipment: Footwear Test Method for slip resistance. (EN13287).\nThe Testing method is performed on both the heel and forepart of the whole footwear outsole. The test, TM144, is an established test protocol for slip testing widely accepted in the footwear industry around the world.\nSRA rating is tested on ceramic tile with a sodium sulfate contaminant. Slip data must be equal to or greater than .32 for the forepart and equal to or greater than .28 for the heel. All XTRATUF footwear is SRA rated. (link to SRA PLP)</p>\n<p>SRB rating is tested on smooth stainless steel with glycerine contaminant. Slip data must be equal to or greater than .18 for the forepart and equal to or greater than .13 for the heel. SHOP our SRB rated styles.(\"SHOP our SRB rated styles\" link to SRB PLP)</p><p>SRC rating is for footwear that passes both SRA and SRB. It is the most stringent specification. SHOP our SRC rated styles. (\"SHOP our SRC rated styles\" link to SRC PLP)</p>",
+              "anchor": ""
+            }
+          },
+          "1552051114152": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "How Do I Check My Order Status?",
+              "answer": "<p>If you are a registered customer, you can access your order history by logging into your account using the credentials you used to create your account. You will find the “My Account” link located at the top of each page. Once you have accessed your account, you can click on the “Track Order” link for order status. If you are not a registered user, you can contact Customer Service at 855-377-BOOT (2668) by submitting an email via the Contact Us section on our site here. Customer Service hours are 7am to 11pm (PST/PDT) Monday through Friday.</p>",
+              "anchor": ""
+            }
+          },
+          "1552051133764": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "How do I remove the oil from my new Legacy Boots?",
+              "answer": "<p>We intentionally apply oil to our Legacy Boots, it helps to keep the boots flexible contributing to their comfort and suppleness. They can be wiped with a towel or left out of the box for a few days to dry.</p>",
+              "anchor": ""
+            }
+          },
+          "1552051147735": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "Are Ankle Deck Boots Oil Acid Chemical Resistant?",
+              "answer": "<p>No, our Ankle Deck Boots are not Oil Acid Chemical Resistant. For low boots with Oil Acid Chemical Resistance, please shop our Legacy Ankle and Elite Legacy AnkleBoots. (link Legacy Ankle to PDP &amp; link Elite Legacy Ankle to PDP)</p>",
+              "anchor": ""
+            }
+          },
+          "1552051164832": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "Do you offer discounts for bulk orders?",
+              "answer": "<p>Need XTRATUF® boots for the whole crew? XTRATUF® is happy to offer bulk discounts on large orders of boots and shoes. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p>",
+              "anchor": ""
+            }
+          },
+          "1552051182494": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "Do you offer discounts for active military troops and their families?",
+              "answer": "<p>XTRATUF® is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p>",
+              "anchor": ""
+            }
+          }
+        },
+        "block_order": [
+          "1552050934620",
+          "1552051114152",
+          "1552051133764",
+          "1552051147735",
+          "1552051164832",
+          "1552051182494"
+        ],
+        "settings": {
+          "anchor_top_offset": -100
+        }
       }
     },
     "content_for_index": [
