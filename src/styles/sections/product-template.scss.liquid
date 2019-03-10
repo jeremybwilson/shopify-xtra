@@ -357,7 +357,7 @@
   }
 }
 .product-description--icons {
-  display:inline-block;
+   @include flexbox;
   @include flex-wrap(wrap);
   @include justify-content(center);
   @include align-items(flex-start);
@@ -369,8 +369,8 @@
     margin-top: 30px;
   }
 
-  li {
-    @include flexbox;
+  li {   
+    display:inline-block;
     @include flex-direction(column);
     @include justify-content(center);
     margin: 0 10px 20px;

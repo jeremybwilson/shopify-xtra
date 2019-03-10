@@ -83,8 +83,13 @@
     background: transparent;
     font-family: $font-stack--default;
     @include fontSize(14px);
-    line-height: initial;
+    line-height: 40px;
     text-align: left;
+
+    @media screen and (min-width:0) and (min-resolution: +72dpi) {
+  /*IE9+ CSS*/ 
+      .ie9up{line-height: 35px;}
+    }
 
     @include mq('tablet-and-up') {
       @include fontSize(16px);
@@ -92,26 +97,27 @@
 
     ul {
       @include mq('phone') {
-        @include flexbox;
+       /* @include flexbox;  */
         @include flex-direction(column);
         @include justify-content(flex-start);
         @include align-items(flex-start);
         margin-bottom: 0;
       }
       @include mq('tablet-and-up') {
-        display: block;
+        display: inline-block;
       }
     }
 
     a {
-      display: block;
+     display: inline;
       padding: 12px 12px;
       color: {{ settings.footer_color }};
       font-weight: $font-weight--black;
       text-transform: uppercase;
 
+
       @include mq('tablet-and-up') {
-        display: inline-block;
+        
         padding: 9.5px 12px 9.5px 0;
       }
       @include mq('lap-and-up') {
@@ -171,9 +177,8 @@
   }
 }
 
-
 .row.footer--bottom-row {
-display: block;
+  display: block;
 
   @include mq('tablet-and-up') {
     @include flex-direction(column);
@@ -191,20 +196,26 @@ display: block;
   border-bottom: solid 1px {{ settings.footer_border }};
   float: left;
     width: 35%;
-    text-align: left;
+  
 
   @include mq('tablet-and-up') {
     margin-top: 7px;
     margin-bottom: 18px;
     padding-bottom: 0;
-    border-bottom: none;
+    border-bottom: none;   
   }
+    @include mq(tablet) {
+    width: 100%;
+    text-align: center;
+    }
+
   @include mq('lap-and-up') {
     margin-bottom: 0;
   }
 
+
   a {
-    @include flexbox;
+    display:inline-block;
     @include justify-content(center);
     @include align-items(flex-start);
     @include fontSize(12px);
@@ -214,7 +225,11 @@ display: block;
     float: left;
     @include mq('tablet-and-up') {
       @include fontSize(16px);
+     
     }
+     @include mq('tablet') {
+       width: 100%;
+     }
   }
   h4 {
     margin: 0 7px 0 0;
@@ -222,6 +237,7 @@ display: block;
     font-size: inherit;
     font-weight: $font-weight--black;
     letter-spacing: inherit;
+    display:inline;
   }
   span {
     color: {{ settings.footer_color }};
@@ -230,15 +246,28 @@ display: block;
   }
 }
 #payment {
-  padding-top: 36px;
-  display: inline-block;
+    padding-top: 36px;
+    display: inline-block;
     width: 65%;
+    padding-top: 0;
+    padding-left: 5%;
+
 
   @include mq('tablet-and-up') {
-    @include flexbox;
+   display:inline-block;    
     @include align-items(center);
     padding-top: 6px;
+     
   }
+   @include mq(tablet) {
+    padding-top: 36px;
+    display: block;
+    width: 420px;
+    text-align: right ;
+    margin: 0 auto;
+    margin-top: 20px;
+    }
+
   @include mq('lap-and-up') {
     margin-left: auto;
   }
@@ -254,7 +283,14 @@ display: block;
     @include mq('tablet-and-up') {
       margin-top: 5px;
       margin-bottom: 0;
+     
     }
+   
+    @include mq('tablet') {  
+     width: 100%;
+    text-align: center;    
+    }
+
   }
 
   h4 {
@@ -273,17 +309,29 @@ display: block;
   svg {
     display: inline-block;
     height: 30px;
+    width:50px;
 
     @include mq('tablet-and-up') {
       margin: 0 10px;
+     
     }
+   
   }
+  
+
  .payment-methods {
   display: inline-block;
     float: left;
     width: auto;
     margin-top: -3px;
+    @include mq('tablet') {
+    display: block;
+    margin: 0 auto;
+    float: none;
     }
+
+    }
+
 }
 #trust-icons {
   padding-top: 18px;
