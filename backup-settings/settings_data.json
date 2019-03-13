@@ -346,8 +346,8 @@
       "blog-template": {
         "type": "blog-template",
         "settings": {
-          "image": "",
-          "heading": "",
+          "image": "shopify://shop_images/Image_2_XT_Blog.jpg",
+          "heading": "Life on the water",
           "blog_nav_bg_color": "#f5f1ed",
           "blog_nav_font_size": 14,
           "text": "<p>Add some descriptive text to your Blog page.</p>",
