@@ -15,7 +15,7 @@ $resultsTextColor: {{ settings.filter_text_color }};
     /* COLLECTION : Product Grid + Item View
      * ---------------------------------------------- */
     .collection-template {
-        margin-top: 65px;
+        margin-top: 25px;
 
         @include mq( 'lap-and-up' ) {
             margin-top: 0;
@@ -52,7 +52,21 @@ $resultsTextColor: {{ settings.filter_text_color }};
         left: auto;
     }
 }
-
+@include mq( 'tablet' ) {
+    .collection{
+        #content{
+            top:20px;
+        }
+        #breadcrumb{
+            top:15px;
+        }
+    }
+    #shopify-section-collection-template{
+        .collection-template {
+            margin-top: 0px;
+        }
+    }
+}
 
 
 
