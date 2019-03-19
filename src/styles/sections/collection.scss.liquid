@@ -18,10 +18,10 @@ $resultsTextColor: {{ settings.filter_text_color }};
         margin-top: 25px;
 
         @include mq( 'lap-and-up' ) {
-            margin-top: 0;
+            margin-top: 5px;
         }
         @include mq( 'phone' ) {
-            margin-top: 0;
+            margin-top: 5px;
         }
 
         @import url('../snippets/product-grid.scss.liquid');
@@ -66,7 +66,7 @@ $resultsTextColor: {{ settings.filter_text_color }};
     }
     #shopify-section-collection-template{
         .collection-template {
-            margin-top: 0px;
+            margin-top: 5px;
         }
     }
 }
@@ -120,8 +120,9 @@ $resultsTextColor: {{ settings.filter_text_color }};
 }
 #shopify-section-collection-banner + #breadcrumb{
     padding-left: 0px;
-    top:45px;
+    top:20px;
     @include mq( 'tablet' ) {
+        top:0px;
         padding-top:20px;
         padding-left: 20px;
     }
