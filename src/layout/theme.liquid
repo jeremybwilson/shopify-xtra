@@ -109,6 +109,10 @@
           </div>
         {% endif %}
       {% endif %}
+      {% comment %} :: Collection Banner Functionality :: {% endcomment %}
+      {% if template contains 'collection' %}
+        {% section 'collection-banner' %}
+      {% endif %}
 
 
       {% comment %} :: HOME / BLOG / LIST-COLLECTIONS - No Wrapper or Breadcrumbs :: {% endcomment %}

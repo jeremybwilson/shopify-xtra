@@ -20,6 +20,9 @@ $resultsTextColor: {{ settings.filter_text_color }};
         @include mq( 'lap-and-up' ) {
             margin-top: 0;
         }
+        @include mq( 'phone' ) {
+            margin-top: 0;
+        }
 
         @import url('../snippets/product-grid.scss.liquid');
     }
@@ -67,7 +70,67 @@ $resultsTextColor: {{ settings.filter_text_color }};
         }
     }
 }
+/*  COLLECTION: Banner
+ * ---------------------------------------------- */
+.collection-banner {
+    margin-top: 0;
+    
+    img {
+        width: 100%;
+    }
 
+    .asset-desk {
+        display: none;
+    }
+
+    @include mq( 'lap-and-up' ) {
+        .asset-mob {
+            display: none;
+        }
+        .asset-desk {
+            display: block;
+        }
+    }    
+}
+
+.gridlock .row .collection-banner--mobile {
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;   
+    margin-bottom: 0px;
+    img{
+        float:left;
+    }
+}
+
+.has--category-banner {
+    display: none;
+}
+.collection-banner + #breadcrumb {
+  @include mq( 'lap-and-up' ) {
+    padding-left: 0px;
+  }
+
+  @include mq( 'desk-and-up' ) {
+    padding-left: 0px;
+  }    
+}
+#shopify-section-collection-banner + #breadcrumb{
+    padding-left: 0px;
+    top:45px;
+    @include mq( 'tablet' ) {
+        padding-top:20px;
+        padding-left: 20px;
+    }
+    @include mq( 'phone' ) {
+        top:0px;
+        padding-top:20px;
+        padding-left: 20px;
+    }
+}
 
 
 
