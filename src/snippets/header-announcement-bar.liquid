@@ -21,7 +21,6 @@
     {%- endif -%}
 
 
-{%comment%}
     {% comment %} ..:: TWO PROMO BANNER ::.. {% endcomment %}
     {%- if section.settings.num_of_promo_banners == "2" -%}
       <div id="double-promo-wrapper">
@@ -54,80 +53,6 @@
 
       </div>
     {%- endif -%}
-{% endcomment %}
-    {%- if section.settings.num_of_desktop_banners == "Slider" -%}
-          <div class="announceslide">
-
-          <div id="double-desktop-wrapper" > 
-
-            {% comment %} MOBILE : LEFT ARROW {% endcomment %}
-            <div id="promo-arrow-left" class="announceslideleft">
-              {% include 'svg-icon-caret-left' %}
-            </div>
-
-            <div class="promo-banner one">
-              {%- if section.settings.announcement_link_one -%}
-                <a href="{{ section.settings.announcement_link_one }}">
-                {{ section.settings.announcement_text_one }}</a>
-              {%- else -%}
-                {{ section.settings.announcement_text_one }}
-              {%- endif -%}
-            </div>
-
-            <div class="promo-banner two">
-              {%- if section.settings.announcement_link_two -%}
-                <a href="{{ section.settings.announcement_link_two }}">
-                {{ section.settings.announcement_text_two }}</a>
-              {%- else -%}
-                {{ section.settings.announcement_text_two }}
-              {%- endif -%}
-            </div>
-
-            {% comment %} MOBILE : RIGHT ARROW {% endcomment %}
-            <div id="promo-arrow-right" class="announceslideright">
-              {% include 'svg-icon-caret-right' %}
-            </div>
-
-          </div>
-          </div>
-        {%- endif -%}
-
-       {%- if section.settings.num_of_desktop_banners == "side by side" -%}
-          <div class="announcesidebyside">
-
-          <div id="double-desktop-wrapper" > 
-
-            {% comment %} MOBILE : LEFT ARROW {% endcomment %}
-            <div id="promo-arrow-left" class="announceslideleft">
-              {% include 'svg-icon-caret-left' %}
-            </div>
-
-            <div class="promo-banner one">
-              {%- if section.settings.announcement_link_one -%}
-                <a href="{{ section.settings.announcement_link_one }}">
-                {{ section.settings.announcement_text_one }}</a>
-              {%- else -%}
-                {{ section.settings.announcement_text_one }}
-              {%- endif -%}
-            </div>
-
-            <div class="promo-banner two">
-              {%- if section.settings.announcement_link_two -%}
-                <a href="{{ section.settings.announcement_link_two }}">
-                {{ section.settings.announcement_text_two }}</a>
-              {%- else -%}
-                {{ section.settings.announcement_text_two }}
-              {%- endif -%}
-            </div>
-
-            {% comment %} MOBILE : RIGHT ARROW {% endcomment %}
-            <div id="promo-arrow-right" class="announceslideright">
-              {% include 'svg-icon-caret-right' %}
-            </div>
-
-          </div>
-          </div>
-        {%- endif -%}   
 
   </div>
   {% if section.settings.full_width_header %}</div>{% endif %}
