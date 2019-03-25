@@ -62,7 +62,7 @@
   {% if template contains 'index' %}
     {{ 'instafeed.js' | asset_url | script_tag }}
 	{% endif %}
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% include 'script-google-tag-head' %}
 
@@ -152,7 +152,7 @@
 
   {% include 'popup' %}
 
-  <a href="#" class="scrollup"><i class="icon-chevron-up icon-2x"></i></a>
+  <a href="#" aria-label="Scroll up" class="scrollup"><i class="icon-chevron-up icon-2x"></i></a>
 
   <!-- Begin Recently Viewed Products -->
   <script type="text/javascript" charset="utf-8">

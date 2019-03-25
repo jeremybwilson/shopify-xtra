@@ -50,7 +50,7 @@ var bcSfFilterTemplate = {
     'paginateHtml': '<span class="count"></span>{{previous}}{{pageItems}}{{next}}',
   
     // Sorting Template
-    'sortingHtml': '<h4 class="sort-label">' + bcSfFilterConfig.label.sorting + '</h4><select class="styled-select">{{sortingItems}}</select>',
+    'sortingHtml': '<h4 class="sort-label">' + bcSfFilterConfig.label.sorting + '</h4><select aria-label="Sort By" class="styled-select">{{sortingItems}}</select>',
 
     // Apply Btn Template (Mobile) : Filter constructor not exposed, so func binding close not available, hence this sad click..
     'mobileApplyBtnHtml': '<button class="mobile-apply-button" onClick="$(\'#bc-sf-filter-tree-mobile-button\').click()">Apply</button>'
