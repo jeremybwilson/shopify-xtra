@@ -12,13 +12,13 @@
 
   <div class="columns-carousel {{ pagination_show }}">
 
-    <ul class="owl-carousel columns-carousel--columns">
+    <div class="owl-carousel columns-carousel--columns">
 
       {% comment %} :: THE LOOP :: {% endcomment %}
 
       {% for block in section.blocks %}
 
-      <li id="column--{{ block.id }}" data-block-id="{{ block.id }}" class="column-item" {{ block.shopify_attributes }}>
+      <div id="column--{{ block.id }}" data-block-id="{{ block.id }}" class="column-item" {{ block.shopify_attributes }}>
 
         {% if block.settings.link != blank %}
 
@@ -142,10 +142,10 @@
         </a>
         {% endif %}
 
-      </li>
+      </div>
       {% endfor %}
 
-    </ul>
+    </div>
 
     {% comment %} :: PAGINATION :: {% endcomment %}
 

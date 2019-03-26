@@ -29,7 +29,7 @@
 
       {% comment %} ..:: NAV : BRAND LOGO ::.. {% endcomment %}
       <div id="nav-logo">
-          <a href="/">
+          <a href="/" aria-label="Header Logo">
             {% include 'svg-icon-header-logo' %}
           </a>
       </div>
@@ -64,9 +64,9 @@
           {% if shop.customer_accounts_enabled %}
             <li class="nav-item nav-account">
               {% if customer %}
-                <a href="/account">{% include 'svg-icon-account' %}</a>
+                <a aria-label="Account" href="/account">{% include 'svg-icon-account' %}</a>
               {% else %}
-                <a href="/account/login">{% include 'svg-icon-account' %}</a>
+                <a aria-label="Login" href="/account/login">{% include 'svg-icon-account' %}</a>
               {% endif %}
             </li>
           {% endif %}

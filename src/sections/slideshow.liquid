@@ -200,7 +200,7 @@
       {% if section.blocks.size > 1 %}
 
         <div class="slider--nav">
-          <a href="#" class="flex-prev">
+          <a href="#" class="flex-prev" aria-label="Previous">
             {% include 'svg-icon-arrow-left' %}
           </a>
           <div class="pagination">
@@ -208,7 +208,7 @@
             <span class="slash">/</span>
             <span class="flexslider--total-slides"></span>
           </div>
-          <a href="#" class="flex-next">
+          <a href="#" class="flex-next" aria-label="Next">
             {% include 'svg-icon-arrow-right' %}
           </a>
         </div><!-- .slider--nav -->
