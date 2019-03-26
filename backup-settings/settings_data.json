@@ -426,12 +426,12 @@
           "1548910575194": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/HP_3.jpg",
-              "mobile_image": "shopify://shop_images/xtratuf-filson-mobile-3.jpg",
-              "heading": "<br><br>THE ELITE LEGACY BOOT",
+              "image": "shopify://shop_images/happy-sewards-day-desktop.jpg",
+              "mobile_image": "shopify://shop_images/happy-sewards-day-mobile.jpg",
+              "heading": "<br><br>Happy Seward's Day!",
               "subheading": "",
-              "cta_one_link": "shopify://products/mens-filson-12-in-elite-boot",
-              "cta_one_button_text": "SHOP NOW",
+              "cta_one_link": "shopify://collections/the-alaskan-sneaker",
+              "cta_one_button_text": "Shop The Alaskan Sneaker",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -445,8 +445,8 @@
           }
         },
         "block_order": [
-          "1550994522434",
-          "1548910575194"
+          "1548910575194",
+          "1550994522434"
         ],
         "settings": {
           "full_width": true,
