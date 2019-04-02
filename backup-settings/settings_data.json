@@ -252,11 +252,11 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "1",
+          "num_of_promo_banners": "2",
           "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
           "announcement_link_one": "/pages/shipping-returns",
-          "announcement_text_two": "",
-          "announcement_link_two": "",
+          "announcement_text_two": "<div class=\"bold\">ENTER TO WIN:</div> Take our Survey",
+          "announcement_link_two": "https://www.surveymonkey.com/r/XRRFGJV",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -815,13 +815,30 @@
         "settings": {
           "anchor_top_offset": -100
         }
+      },
+      "collection-banner": {
+        "type": "collection-banner",
+        "blocks": {
+          "1554153808433": {
+            "type": "image",
+            "settings": {
+              "collection": "women-collection-salmon-sisters",
+              "image": "",
+              "mobile_image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1554153808433"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
       "1535728526385",
       "1536353642475",
-      "1536068961071",
       "1536251685211",
+      "1536068961071",
       "1536252750894",
       "1536266098177"
     ]
