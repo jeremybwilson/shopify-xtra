@@ -218,7 +218,7 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Men",
-              "nav_image": "shopify://shop_images/nav-megamenu-1.jpg",
+              "nav_image": "shopify://shop_images/mens-nav.jpg",
               "nav_promo_link": "shopify://collections/men"
             }
           },
@@ -226,7 +226,7 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Women",
-              "nav_image": "shopify://shop_images/nav-megamenu-2.jpg",
+              "nav_image": "shopify://shop_images/womens-nav.jpg",
               "nav_promo_link": "shopify://collections/women"
             }
           },
@@ -406,12 +406,12 @@
           "1550994522434": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/salmon-sisters_f210fa6b-145a-4825-a2ec-3b61a9d07476.jpg",
-              "mobile_image": "shopify://shop_images/salmon-sisters-mobile_11a66fc4-fd2f-4228-955a-36256cab571c.jpg",
-              "heading": "NEW PRINTS FROM THE SALMON SISTERS",
+              "image": "shopify://shop_images/waterproof-deck-shoes-hero-desktop.jpg",
+              "mobile_image": "shopify://shop_images/waterproof-deck-shoes-hero-mobile.jpg",
+              "heading": "Our Best Selling Boot is now a Deck Shoe",
               "subheading": "",
-              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
-              "cta_one_button_text": "SHOP NOW",
+              "cta_one_link": "shopify://collections/men-type-deck-shoes",
+              "cta_one_button_text": "Shop Waterproof Deck Shoes",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -426,12 +426,32 @@
           "1553609592210": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/HP_3.jpg",
-              "mobile_image": "shopify://shop_images/mobile_1.jpg",
-              "heading": "<br><br>THE ELITE LEGACY BOOT",
-              "subheading": "",
-              "cta_one_link": "shopify://products/mens-filson-12-in-elite-boot",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify://shop_images/womens-deck-shoes-hero-desktop-3.jpg",
+              "mobile_image": "shopify://shop_images/womens-deck-shoes-hero-mobile-3.jpg",
+              "heading": "Women's Deck Shoes",
+              "subheading": "Now with Prints by the Salmon Sisters",
+              "cta_one_link": "shopify://collections/women-type-deck-boots",
+              "cta_one_button_text": "Shop Now",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
+          "1554266491479": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/salmon-sisters-hero-desktop-2.jpg",
+              "mobile_image": "shopify://shop_images/salmon-sisters-hero-mobile-2.jpg",
+              "heading": "<br><br><br><br>",
+              "subheading": "<br>",
+              "cta_one_link": "shopify://collections/fish-alaska-editors-choice-2019",
+              "cta_one_button_text": "Shop Top Picks",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -446,7 +466,8 @@
         },
         "block_order": [
           "1550994522434",
-          "1553609592210"
+          "1553609592210",
+          "1554266491479"
         ],
         "settings": {
           "full_width": true,
@@ -459,8 +480,8 @@
           "1536068961071-0": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/home-column-carousel-desktop-slide-1.jpg",
-              "mobile_image": "shopify://shop_images/home-column-carousel-mobile-slide-1.jpg",
+              "image": "shopify://shop_images/carousel-commercial-fishing.jpg",
+              "mobile_image": "shopify://shop_images/carousel-commercial-fishing-mobile.jpg",
               "heading": "Commercial Fishing",
               "svg_icon": "",
               "png_icon": "",
@@ -519,23 +540,23 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/shoe-underwater.jpg",
-              "mobile_image": "shopify://shop_images/shoe-underwater-mobile.jpg",
-              "link": "shopify://collections/men-type-drainage-shoes",
-              "heading_text": "GET WARM WEATHER READY",
+              "image": "shopify://shop_images/mens-lifestyle-twin-banner-1.jpg",
+              "mobile_image": "shopify://shop_images/mens-lifestyle-twin-mobile-1.jpg",
+              "link": "shopify://collections/men-activity-lifestyle",
+              "heading_text": "Tough enough to go wherever the day takes you",
               "text": "",
-              "cta_text": "SHOP DRAINAGE SHOES"
+              "cta_text": "Shop Men's Lifestyle"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/fisherman.jpg",
-              "mobile_image": "shopify://shop_images/fisherman-mobile.jpg",
-              "link": "shopify://collections/legacy",
-              "heading_text": "ONE BOOT, MULTI-PURPOSE",
+              "image": "shopify://shop_images/salmon-sisters-twin-banner-2.jpg",
+              "mobile_image": "shopify://shop_images/salmon-sisters-twin-mobile-2.jpg",
+              "link": "shopify://collections/women-feature-xtratuf-r-x-salmon-sisters",
+              "heading_text": "The Salmon Sisters Collection",
               "text": "",
-              "cta_text": "SHOP LEGACY BOOT"
+              "cta_text": "SHOP NOW"
             }
           }
         },
@@ -555,7 +576,7 @@
             "settings": {
               "image": "shopify://shop_images/home-about-promo-desktop-1.jpg",
               "mobile_image": "shopify://shop_images/home-about-promo-mobile-1.jpg",
-              "heading": "Made for Alaska, Fit for Everyone",
+              "heading": "Built for Alaska,<br>Fit for Everyone.",
               "subheading": "",
               "cta_one_link": "shopify://pages/about",
               "cta_one_button_text": "Our Story",
@@ -832,12 +853,21 @@
           "1554153808433"
         ],
         "settings": {}
+      },
+      "1554225193358": {
+        "type": "video",
+        "settings": {
+          "heading": "",
+          "full_width": true,
+          "video_url": "https://www.youtube.com/watch?v=oGJruPDd07c"
+        }
       }
     },
     "content_for_index": [
       "1535728526385",
       "1536353642475",
       "1536251685211",
+      "1554225193358",
       "1536068961071",
       "1536252750894",
       "1536266098177"
