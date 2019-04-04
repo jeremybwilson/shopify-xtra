@@ -410,8 +410,8 @@
               "mobile_image": "shopify://shop_images/waterproof-deck-shoes-hero-mobile.jpg",
               "heading": "Our Best Selling Boot is now a Deck Shoe",
               "subheading": "",
-              "cta_one_link": "shopify://collections/men-type-deck-shoes",
-              "cta_one_button_text": "Shop Waterproof Deck Shoes",
+              "cta_one_link": "shopify://collections/waterproof-deck-shoes",
+              "cta_one_button_text": "Shop now",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -429,8 +429,8 @@
               "image": "shopify://shop_images/womens-deck-shoes-hero-desktop-3.jpg",
               "mobile_image": "shopify://shop_images/womens-deck-shoes-hero-mobile-3.jpg",
               "heading": "Women's Deck Shoes",
-              "subheading": "Now with Prints by the Salmon Sisters",
-              "cta_one_link": "shopify://collections/women-type-deck-boots",
+              "subheading": "NOW WITH PRINTS BY THE SALMON SISTERS",
+              "cta_one_link": "shopify://collections/women-type-deck-shoes",
               "cta_one_button_text": "Shop Now",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
@@ -542,10 +542,10 @@
             "settings": {
               "image": "shopify://shop_images/mens-lifestyle-twin-banner-1.jpg",
               "mobile_image": "shopify://shop_images/mens-lifestyle-twin-mobile-1.jpg",
-              "link": "shopify://collections/men-activity-lifestyle",
+              "link": "shopify://collections/men-type-deck-shoes",
               "heading_text": "Tough enough to go wherever the day takes you",
               "text": "",
-              "cta_text": "Shop Men's Lifestyle"
+              "cta_text": "Shop Now"
             }
           },
           "1536251685211-0": {
