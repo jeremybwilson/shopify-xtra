@@ -64,7 +64,7 @@
     {% endif %}
 
     {% capture radio_button %}
-      <input type="radio" id="{{ id }}" name="{{ option_name }}" value="{{ value | escape }}" data-position="{{ option.position }}" {{ checked }} />
+      <input type="radio" id="{{ id }}" name="{{ option_name }}" value="{{ value | escape }}" data-position="{{ option.position }}" {{ checked }} {% if option_name == 'size' %} {% unless available %} disabled="" {% endunless %} {% endif %}/>
     {% endcapture %}
 
     {% capture sold_out_image %}
@@ -97,7 +97,7 @@
         {{ radio_button }}
 
         <label for="{{ id }}" style="background-color: {{ css_color }}; {% if settings.use_swatch_images or section.settings.use_swatch_images %}background-image: url({{ image_url }}){% endif %}">
-          {{ sold_out_image }}
+          {% comment %} {{ sold_out_image }} {% endcomment %}
         </label>
       </div>
     {% endcapture %}
