@@ -462,12 +462,33 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
+          },
+          "1554490869855": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/SD_DT_Banner.jpg",
+              "mobile_image": "shopify://shop_images/SD_Mobile.jpg",
+              "heading": "OUR VIDEO IS NOMINATED FOR A WEBBY AWARD",
+              "subheading": "WE PARTNERED WITH CAPT. SEAN DWYER & HUCKBERRY TO TELL HIS STORY.",
+              "cta_one_link": "https://vote.webbyawards.com/PublicVoting#/2019/video/branded-entertainment/documentary",
+              "cta_one_button_text": "WATCH NOW & VOTE",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
           }
         },
         "block_order": [
           "1550994522434",
           "1553609592210",
-          "1554266491479"
+          "1554266491479",
+          "1554490869855"
         ],
         "settings": {
           "full_width": true,
@@ -480,7 +501,7 @@
           "1536068961071-0": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/carousel-commercial-fishing.jpg",
+              "image": "shopify://shop_images/Carousel-commercial-fishing_1.jpg",
               "mobile_image": "shopify://shop_images/carousel-commercial-fishing-mobile.jpg",
               "heading": "Commercial Fishing",
               "svg_icon": "",
@@ -775,7 +796,7 @@
             "settings": {
               "heading_only": false,
               "title": "What do the Slip Resistant ratings mean?",
-              "answer": "How Good is Our Grip? \nThe SRA's, B's an C's of Slip Resistant Footwear.\nAll XTRATUF footwear is slip tested using International Organization for Standardization (ISO) standards for Personal Protective Equipment.\nTesting is performed on both the heel and forepart of the shoes' outsole, an established slip testing protocol, used and accepted in the footwear industry worldwide.\n\n<p>The Right Grip or Get a Grip\no    SRA rating - All XTRATUF footwear is SRA rated for the grip you need on wet flooring surfaces.  (link to SRA PLP)\no    SRB rating - For greater slip resistance on smooth, wet and oily surfaces. Shop our SRB rated styles (link to SRB PLP)\no    SRC rating - SRA and SRB combined for the highest slip resistance rating that can be achieved, giving you best in class traction. Shop our SRC rated styles (Link to SRC PLP)\n</p>",
+              "answer": "<font size=\"+1\">How Good is Our Grip? The SRA's, B's and C's of Slip Resistant Footwear.</font>\n<p>All XTRATUF footwear is slip tested using International Organization for Standardization (ISO) standards for Personal Protective Equipment.\nTesting is performed on both the heel and forepart of the shoes' outsole, an established slip testing protocol, used and accepted in the footwear industry worldwide.</p>\n<p>The Right Grip or Get a Grip:</p>\n<li><a href=\"https://www.xtratuf.com/collections/sra-rated\">SRA Rating: All XTRATUF footwear is SRA rated for the grip you need on wet flooring surfaces.</a></li>\n<li>SRB Rating: For greater slip resistance on smooth, wet and oily surfaces.</li>\n<li><a href=\"https://www.xtratuf.com/collections/src-rated-boots-shoes\">SRC Rating: SRA and SRB combined, for the highest slip resistance rating that can be achieved, giving you best in class traction.</a></li>",
               "anchor": ""
             }
           },
@@ -784,7 +805,7 @@
             "settings": {
               "heading_only": false,
               "title": "How Do I Check My Order Status?",
-              "answer": "<p>If you are a registered customer, you can access your order history by logging into your account using the credentials you used to create your account. You will find the “My Account” link located at the top of each page. Once you have accessed your account, you can click on the “Track Order” link for order status. If you are not a registered user, you can contact Customer Service at 855-377-BOOT (2668) by submitting an email via the Contact Us section on our site here. Customer Service hours are 7am to 11pm (PST/PDT) Monday through Friday.</p>",
+              "answer": "<p>If you are a registered customer, you can access your order history by logging into your account using the credentials you used to create your account. You will find the “My Account” link located at the top of each page. Once you have accessed your account, you can click on the “Track Order” link for order status. </p><p>If you are not a registered user, you can contact Customer Service at 855-377-BOOT (2668) by submitting an email via the Contact Us section on our site here. Customer Service hours are 7am to 11pm (PST/PDT) Monday through Friday.</p>",
               "anchor": ""
             }
           },
@@ -793,7 +814,7 @@
             "settings": {
               "heading_only": false,
               "title": "How do I remove the oil from my new Legacy Boots?",
-              "answer": "<p>We intentionally apply oil to our Legacy Boots, it helps to keep the boots flexible contributing to their comfort and suppleness. They can be wiped with a towel or left out of the box for a few days to dry.</p>",
+              "answer": "<p>We intentionally apply oil to our Legacy Boots, it helps to keep the boots flexible, contributing to their comfort and suppleness. They can be wiped with a towel or left out of the box for a few days to dry.</p>",
               "anchor": ""
             }
           },
@@ -801,8 +822,8 @@
             "type": "html",
             "settings": {
               "heading_only": false,
-              "title": "Are Ankle Deck Boots Oil Acid Chemical Resistant?",
-              "answer": "<p>No, our Ankle Deck Boots are not Oil Acid Chemical Resistant. For low boots with Oil Acid Chemical Resistance, please shop our Legacy Ankle and Elite Legacy AnkleBoots. (link Legacy Ankle to PDP &amp; link Elite Legacy Ankle to PDP)</p>",
+              "title": "Are Your Ankle Deck Boots Acid Chemical Resistant?",
+              "answer": "<p>No, our Ankle Deck Boots are not Acid Chemical Resistant. For low boots with Acid Chemical Resistance, shop our <a href=\"https://www.xtratuf.com/collections/men-type-all-boots/products/mens-6-in-low-cut-legacy-boot-copper-tan?variant=18481081581666\">Legacy Ankle Boots</a> and <a href=\"https://www.xtratuf.com/collections/men-type-all-boots/products/mens-6-in-insulated-elite-legacy-ankle-boot-copper-tan?variant=18481079812194\">Elite Legacy Ankle Boots <!--?<a/--></a>(Elite Boots are also Oil Resistant).</p>",
               "anchor": ""
             }
           },
@@ -811,7 +832,7 @@
             "settings": {
               "heading_only": false,
               "title": "Do you offer discounts for bulk orders?",
-              "answer": "<p>Need XTRATUF® boots for the whole crew? XTRATUF® is happy to offer bulk discounts on large orders of boots and shoes. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p>",
+              "answer": "<p>Need XTRATUF boots for the whole crew?</p>XTRATUF® is happy to offer bulk discounts on large orders of boots and shoes. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.<p></p>",
               "anchor": ""
             }
           },
@@ -820,7 +841,7 @@
             "settings": {
               "heading_only": false,
               "title": "Do you offer discounts for active military troops and their families?",
-              "answer": "<p>XTRATUF® is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p>",
+              "answer": "<p>XTRATUF is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p><p></p>",
               "anchor": ""
             }
           }
