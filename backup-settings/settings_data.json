@@ -255,7 +255,7 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
           "announcement_link_one": "/pages/shipping-returns",
-          "announcement_text_two": "<div class=\"bold\">ENTER TO WIN:</div> Take our Survey",
+          "announcement_text_two": "<div class=\"bold\">WE WANT TO HEAR FROM YOU:</div> Take our Survey",
           "announcement_link_two": "https://www.surveymonkey.com/r/XRRFGJV",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
@@ -844,6 +844,15 @@
               "answer": "<p>XTRATUF is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p><p></p>",
               "anchor": ""
             }
+          },
+          "1554742471703": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "Do you offer wide width boots?",
+              "answer": "We recommend our Legacy 2.0 Boots which were created for a wider foot. Unfortunately, we do not offer wide width options within our collection.",
+              "anchor": ""
+            }
           }
         },
         "block_order": [
@@ -852,7 +861,8 @@
           "1552051133764",
           "1552051147735",
           "1552051164832",
-          "1552051182494"
+          "1552051182494",
+          "1554742471703"
         ],
         "settings": {
           "anchor_top_offset": -100
