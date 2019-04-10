@@ -144,7 +144,7 @@
     "tumblr_url": "",
     "youtube_url": "//www.youtube.com/channel/UCbLKFCrAzj4U2OTsiX0HK2g",
     "googleplus_url": "",
-    "instagram_id": "xtratufboots",
+    "instagram_id": "xtratuf",
     "popup": true,
     "email_image": "",
     "email_popup_title": "Sign Up & Get 10% Off Your First Order!",
@@ -624,9 +624,9 @@
       "1536266098177": {
         "type": "instagram",
         "settings": {
-          "heading": "@xtratufboots",
-          "text": "<p>Tag your photos with <strong>#XTRATUFBOOTS</strong>&nbsp;for a chance to be featured on our feed</p>",
-          "link": "http://www.instagram.com/xtratufboots",
+          "heading": "@xtratuf",
+          "text": "<p>Tag your photos with <strong>@XTRATUF&nbsp;</strong>&nbsp;for a chance to be featured on our feed</p>",
+          "link": "https://www.instagram.com/xtratuf/",
           "cta_text": "View all",
           "instagram_access_token": "1022365975.1677ed0.a29a97191f864ee0afeb65ef0024312b"
         }
