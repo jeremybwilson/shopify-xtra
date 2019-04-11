@@ -840,7 +840,7 @@
             "type": "html",
             "settings": {
               "heading_only": false,
-              "title": "Do you offer discounts for active military troops and their families?",
+              "title": "Do you offer discounts for active military?",
               "answer": "<p>XTRATUF is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.</p><p></p>",
               "anchor": ""
             }
@@ -853,16 +853,26 @@
               "answer": "We recommend our Legacy 2.0 Boots which were created for a wider foot. Unfortunately, we do not offer wide width options within our collection.",
               "anchor": ""
             }
+          },
+          "1554923418689": {
+            "type": "html",
+            "settings": {
+              "heading_only": false,
+              "title": "What does triple-dipped mean?",
+              "answer": "Our signature triple dipping technique, creates a seamless barrier that is highly resistant to many organic and inorganic acids, chemicals and contaminants. We triple-dip the shells of our Legacy Boots for extra tough and 100% Waterproof protection.",
+              "anchor": ""
+            }
           }
         },
         "block_order": [
           "1552050934620",
           "1552051114152",
           "1552051133764",
+          "1554742471703",
+          "1554923418689",
           "1552051147735",
           "1552051164832",
-          "1552051182494",
-          "1554742471703"
+          "1552051182494"
         ],
         "settings": {
           "anchor_top_offset": -100
