@@ -2030,6 +2030,11 @@ theme.ProductForm = function (context, events) {
     product: product,
     onVariantSelected: function(variant, selector) {
 
+      $('.variant-inventory-one-unit').html("");
+      if(inv_qty[ variant.id ] == 1){
+        $('.variant-inventory-one-unit').html("Only 1 left!"); 
+      }
+
       if ( !variant ) {
         events.trigger("variantunavailable");
         return;
