@@ -2032,7 +2032,7 @@ theme.ProductForm = function (context, events) {
 
       $('.variant-inventory-one-unit').html("");
       if(inv_qty[ variant.id ] == 1){
-        $('.variant-inventory-one-unit').html("Only 1 left!"); 
+        $('.variant-inventory-one-unit').html($('.variant-inventory-one-unit').attr("data-callout")); 
       }
 
       if ( !variant ) {

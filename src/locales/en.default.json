@@ -281,7 +281,8 @@
       "continue": "Continue Shopping",
       "popup_question": "Ask us a question",
       "add_to_cart_success_link": "View Cart and Check out!",
-      "add_to_cart_success_html": "Item Added {{ link }}"
+      "add_to_cart_success_html": "Item Added {{ link }}",
+      "one_unit_left": "Only 1 left!"
     }
   },
   "gift_cards": {
