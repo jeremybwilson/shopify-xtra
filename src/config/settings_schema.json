@@ -1144,6 +1144,20 @@
     ]
   },
   {
+    "name": "Marketing Tags",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Nosto"
+      },
+      {
+        "type": "text",
+        "id": "nosto_id",
+        "label": "ID"
+      }
+    ]
+  },
+  {
     "name": "Newsletter",
     "settings": [
       {

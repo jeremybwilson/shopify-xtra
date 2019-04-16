@@ -11,3 +11,9 @@
   </div>  
 
 </div>
+
+{% if settings.nosto_id != blank %}
+    {% include 'nosto-element' with 'notfound-nosto-1' %}
+    {% include 'nosto-element' with 'notfound-nosto-2' %}
+    {% include 'nosto-element' with 'notfound-nosto-3' %}
+{% endif %}
