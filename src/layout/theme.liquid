@@ -82,6 +82,11 @@
 
   {{ content_for_header }}
 
+  <!-- Nosto -->
+  {% if settings.nosto_id != blank %}
+    {% include 'nosto-script' %}
+  {% endif %}
+
 </head>
 
 <body class="gridlock shifter {% if template contains 'product' %}product{% elsif template contains 'collection' %}collection{% else %}{{ template }}{% endif %}">
@@ -240,6 +245,11 @@
 <!--begin-gtm-dataLayer-->
   {% include 'script-gtm-datalayer' %}
 <!--end-gtm-dataLayer-->
+
+<!-- Nosto -->
+  {% if settings.nosto_id != blank %}
+    {% include 'nosto-tagging' %}
+  {% endif %}
 
 </body>
 </html>
