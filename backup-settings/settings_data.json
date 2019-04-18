@@ -462,33 +462,12 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
-          },
-          "1554490869855": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/SD_DT_Banner.jpg",
-              "mobile_image": "shopify://shop_images/SD_Mobile.jpg",
-              "heading": "OUR VIDEO IS NOMINATED FOR A WEBBY AWARD",
-              "subheading": "WE PARTNERED WITH CAPT. SEAN DWYER & HUCKBERRY TO TELL HIS STORY.",
-              "cta_one_link": "https://vote.webbyawards.com/PublicVoting#/2019/video/branded-entertainment/documentary",
-              "cta_one_button_text": "WATCH NOW & VOTE",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "transparent",
-              "caption_opacity": "0.1"
-            }
           }
         },
         "block_order": [
           "1550994522434",
           "1553609592210",
-          "1554266491479",
-          "1554490869855"
+          "1554266491479"
         ],
         "settings": {
           "full_width": true,
