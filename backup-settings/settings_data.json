@@ -400,80 +400,6 @@
           "social_heading": "Connect With Us"
         }
       },
-      "1535728526385": {
-        "type": "slideshow",
-        "blocks": {
-          "1550994522434": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/waterproof-deck-shoes-hero-desktop.jpg",
-              "mobile_image": "shopify://shop_images/waterproof-deck-shoes-hero-mobile.jpg",
-              "heading": "Our Best Selling Boot is now a Deck Shoe",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/waterproof-deck-shoes",
-              "cta_one_button_text": "Shop now",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "1.0"
-            }
-          },
-          "1553609592210": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/womens-deck-shoes-hero-desktop-3.jpg",
-              "mobile_image": "shopify://shop_images/womens-deck-shoes-hero-mobile-3.jpg",
-              "heading": "Women's Deck Shoes",
-              "subheading": "NOW WITH PRINTS BY THE SALMON SISTERS",
-              "cta_one_link": "shopify://collections/women-type-deck-shoes",
-              "cta_one_button_text": "Shop Now",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
-          "1554266491479": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/salmon-sisters-hero-desktop-2.jpg",
-              "mobile_image": "shopify://shop_images/salmon-sisters-hero-mobile-2.jpg",
-              "heading": "<br><br><br><br>",
-              "subheading": "<br>",
-              "cta_one_link": "shopify://collections/fish-alaska-editors-choice-2019",
-              "cta_one_button_text": "Shop Top Picks",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "center",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          }
-        },
-        "block_order": [
-          "1550994522434",
-          "1553609592210",
-          "1554266491479"
-        ],
-        "settings": {
-          "full_width": true,
-          "slider_speed": 3
-        }
-      },
       "1536068961071": {
         "type": "columns-carousel",
         "blocks": {
@@ -881,10 +807,63 @@
           "full_width": true,
           "video_url": "https://www.youtube.com/watch?v=oGJruPDd07c"
         }
+      },
+      "1556040259163": {
+        "type": "slideshow",
+        "blocks": {
+          "1556040259163-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/waterproof-deck-shoes-hero-desktop.jpg",
+              "mobile_image": "shopify://shop_images/product_XMDS-BOF-CAM_2.jpg",
+              "heading": "Our best selling boot is now a deck shoe",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/waterproof-deck-shoes",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
+          "1556040259163-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/womens-deck-shoes-hero-desktop-3.jpg",
+              "mobile_image": "shopify://shop_images/product_XSW-101-WHT_2.jpg",
+              "heading": "Women's Deck Shoes",
+              "subheading": "NOW WITH PRINTS BY THE SALMON SISTERS",
+              "cta_one_link": "shopify://collections/women-type-deck-shoes",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.4"
+            }
+          }
+        },
+        "block_order": [
+          "1556040259163-0",
+          "1556040259163-1"
+        ],
+        "settings": {
+          "full_width": true,
+          "slider_speed": 5
+        }
       }
     },
     "content_for_index": [
-      "1535728526385",
+      "1556040259163",
       "1536353642475",
       "1536251685211",
       "1554225193358",
