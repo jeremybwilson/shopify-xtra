@@ -1986,7 +1986,7 @@ $(document).ready(function() {
       return false;
     }
 
-    $.cookie('mailing_list_delay_popup', 'expires_seven_days', { expires: 7 });
+    $.cookie('mailing_list_delay_popup', 'expires_seven_days', { expires: 364, path: '/' });
 
     $.fancybox({
       href: "#subscribe--popup",
