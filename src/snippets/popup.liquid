@@ -2,7 +2,7 @@
 
 
   <div style="display:none">
-    <div id="subscribe--popup">
+    <div id="subscribe--popup" data-gdpr-expire="{{ settings.cookie_banner_expire }}">
 
       <a id="subscribe--close">
         {% include 'svg-icon-x' %}
@@ -24,7 +24,7 @@
         {% endunless %}
 
       </div><!-- #subscribe--popup--header -->
-    
+
       <form id="subscribe--popup--form">
         <input class="form-control" type="email" id="email-popup" name="email_popup" placeholder="{{ settings.email_popup_input_placeholder }}">
         <label id="subscribe--popup--button" for="subscribe--popup--submit">
@@ -47,4 +47,4 @@
 
     </div>
   </div>
-{% endif %}  
+{% endif %}
