@@ -1883,7 +1883,7 @@ $(document).ready(function() {
       // close the button
 
       $('.button-close').click(function() {
-        $.cookie('gdpr_banner_read', 'true', { expires: 364, path: '/' }); // make the cookie, expires in 180 days
+        $.cookie('gdpr_banner_read', 'true', { expires: expireInDays, path: '/' }); // make the cookie, expires in 180 days
         parent.$.fancybox.close();
 
         if (windowWidth > 767) {
@@ -1996,7 +1996,7 @@ $(document).ready(function() {
       return false;
     }
 
-    $.cookie('mailing_list_delay_popup', 'expires_in_days', { expires: 364, path: '/' });
+    $.cookie('mailing_list_delay_popup', 'expires_in_days', { expires: expireInDays, path: '/' });
 
     $.fancybox({
       href: "#subscribe--popup",
