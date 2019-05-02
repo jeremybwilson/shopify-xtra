@@ -1857,6 +1857,11 @@ $(document).ready(function() {
 
   (function cookie_banner() {
 
+    // pull in the expiry date duration from data-gdpr-expiry attribute
+    const wrap = $( '#cookie-banner--popup' );
+    var expireInDays = wrap.attr( 'data-gdpr-expire' ) || 180;
+    expireInDays = JSON.parse( expireInDays );
+
     // check the cookie
 
     var check_banner_cookie = $.cookie('gdpr_banner_read');
@@ -1878,7 +1883,7 @@ $(document).ready(function() {
       // close the button
 
       $('.button-close').click(function() {
-        $.cookie('gdpr_banner_read', 'true', { expires: 180, path: '/' }); // make the cookie, expires in 180 days
+        $.cookie('gdpr_banner_read', 'true', { expires: 364, path: '/' }); // make the cookie, expires in 180 days
         parent.$.fancybox.close();
 
         if (windowWidth > 767) {
@@ -1980,13 +1985,18 @@ $(document).ready(function() {
 
   function email_popup_load() {
 
+    // pull in the expiry date duration from data-gdpr-expiry attribute
+    const wrap = $( 'subscribe--popup' );
+    var expireInDays = wrap.attr( 'data-gdpr-expire' ) || 180;
+    expireInDays = JSON.parse( expireInDays );
+
     var $popup = $('#subscribe--popup');
 
     if ( !$popup.length > 0 ) {
       return false;
     }
 
-    $.cookie('mailing_list_delay_popup', 'expires_onehundredeighty_days', { expires: 180, path: '/' });
+    $.cookie('mailing_list_delay_popup', 'expires_in_days', { expires: 364, path: '/' });
 
     $.fancybox({
       href: "#subscribe--popup",
