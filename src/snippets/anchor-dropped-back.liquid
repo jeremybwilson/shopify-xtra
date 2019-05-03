@@ -1,0 +1,67 @@
+<!-- PDM-216 START added an anchor to allow customers to be dropped back into the same place they were on the page prior to clicking into a product-->
+<script>
+$(function() {var position = 1;
+    $('.product-impression').each(function() {
+        $(this).attr('data-position', position);
+        position++;
+    });
+    var productSeen = false;
+    var dataBuilt = {
+        'event': 'e_productImpressions',
+        'ecommerce': {
+            'impressions': []
+        }
+    }
+    var waypoints = $('.product-impression').waypoint(function(direction) {
+        if (direction == 'down') {
+            dataBuilt.ecommerce.impressions.push({ 
+                'id': this.element.id,
+                'name': this.element.getAttribute('data-alpha'),
+                'category': this.element.getAttribute('data-category'),
+                'list': this.element.getAttribute('data-list'),
+                'position': this.element.getAttribute('data-position'),
+                'price': this.element.getAttribute('data-price2')
+            });
+        
+            productSeen = true;
+        }
+    },
+    {
+        offset: 'bottom-in-view'
+    });
+    $(window).scroll(function() {
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function() {
+            if (productSeen == true) {
+                dataLayer.push(dataBuilt);
+            }
+            productSeen = false;
+        }, 500));
+    });
+    $('.product-impression a').on('click', function(){
+        var productId = $(this).parent().attr('id');
+        var name = $(this).parent().data('name');
+        var category = $(this).parent().data('category');
+        var list = $(this).parent().data('list');
+        var position = $(this).parent().data('position');
+        var price = $(this).parent().data('price2');
+        dataLayer.push({
+            'event': 'e_productClick',
+            'ecommerce': {
+                'click': {
+                    'actionField': {
+                        'list': list
+                    },
+                    'products': [{
+                        'id': productId,
+                        'name': name,
+                        'category': category,
+                        'position': position,
+                        'price': price
+                    }]
+                }
+            }
+        })
+    });})
+</script>
+<!-- PDM-216 END--> 
