@@ -468,21 +468,21 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/mens-lifestyle-twin-banner-1.jpg",
-              "mobile_image": "shopify://shop_images/mens-lifestyle-twin-mobile-1.jpg",
-              "link": "shopify://collections/men-type-deck-shoes",
-              "heading_text": "Tough enough to go wherever the day takes you",
+              "image": "shopify://shop_images/customer-favorite-twin-banner-1.jpg",
+              "mobile_image": "shopify://shop_images/customer-favorite-twin-mobile-1.jpg",
+              "link": "/collections/men-type-deck-boots",
+              "heading_text": "CUSTOMER FAVORITE",
               "text": "",
-              "cta_text": "Shop Now"
+              "cta_text": "SHOP MEN'S ANKLE DECK BOOTS"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/salmon-sisters-twin-banner-2.jpg",
-              "mobile_image": "shopify://shop_images/salmon-sisters-twin-mobile-2.jpg",
-              "link": "shopify://collections/women-feature-xtratuf-r-x-salmon-sisters",
-              "heading_text": "The Salmon Sisters Collection",
+              "image": "shopify://shop_images/salmon-sisters-twin-banner-2_76b4ee18-3406-45e1-ae01-e8863eec5a77.jpg",
+              "mobile_image": "shopify://shop_images/salmon-sisters-twin-mobile-2_f6ce3ce0-ed69-4e90-a1a3-2f937ef46e88.jpg",
+              "link": "shopify://collections/women-collection-salmon-sisters",
+              "heading_text": "THE SALMON SISTERS COLLECTION",
               "text": "",
               "cta_text": "SHOP NOW"
             }
@@ -541,8 +541,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "Salmon Sisters Collection",
-          "homepage_collection": "women-collection-salmon-sisters",
+          "heading": "BEST SELLERS",
+          "homepage_collection": "best-sellers",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
@@ -816,11 +816,51 @@
           "1556040259163-0": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/waterproof-deck-shoes-hero-desktop.jpg",
-              "mobile_image": "shopify://shop_images/product_XMDS-BOF-CAM_2.jpg",
-              "heading": "Our best selling boot is now a deck shoe",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/waterproof-deck-shoes",
+              "image": "shopify://shop_images/new-arrivals-hero-desktop-1_5c282bd7-5829-42de-b1a7-d7dbf05edb41.jpg",
+              "mobile_image": "shopify://shop_images/new-arrivals-hero-mobile-1-copy.jpg",
+              "heading": "SHARKBYTE CANVAS <br> DECK SHOE",
+              "subheading": "NEW ARRIVAL",
+              "cta_one_link": "shopify://collections/sharkbyte",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 45,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
+          "1556040259163-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/champion-the-day-hero-desktop-2.jpg",
+              "mobile_image": "shopify://shop_images/champion-the-day-hero-mobile-2.jpg",
+              "heading": "CHAMPION THE DAY",
+              "subheading": "MOSSY OAK ELEMENTS™ ANKLE DECK BOOTS",
+              "cta_one_link": "shopify://collections/mossy-oak",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 45,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.4"
+            }
+          },
+          "1557363114895": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/womens-desck-shoes-hero-desktop-3.jpg",
+              "mobile_image": "shopify://shop_images/womens-desck-shoes-hero-mobile-3-copy.JPG",
+              "heading": "WOMEN'S DECK SHOES",
+              "subheading": "NOW WITH PRINTS BY THE SALMON SISTERS",
+              "cta_one_link": "shopify://collections/women-type-deck-shoes",
               "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
@@ -832,31 +872,12 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
-          },
-          "1556040259163-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/womens-deck-shoes-hero-desktop-3.jpg",
-              "mobile_image": "shopify://shop_images/product_XSW-101-WHT_2.jpg",
-              "heading": "Women's Deck Shoes",
-              "subheading": "NOW WITH PRINTS BY THE SALMON SISTERS",
-              "cta_one_link": "shopify://collections/women-type-deck-shoes",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.4"
-            }
           }
         },
         "block_order": [
           "1556040259163-0",
-          "1556040259163-1"
+          "1556040259163-1",
+          "1557363114895"
         ],
         "settings": {
           "full_width": true,
