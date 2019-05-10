@@ -1071,6 +1071,37 @@
       }
     ]
   },
+  {  
+    "name": "Discount code callout executed in checkout [Plus]",  
+    "settings": [ 
+      { 
+        "type": "header",  
+        "content": "Enable discount custom message." 
+      },  
+      { 
+        "type": "paragraph",  
+        "content": "Set a discount code and their related custom message." 
+      },  
+      { 
+        "type": "checkbox",  
+        "id": "display_discount_msg", 
+        "label": "Show discount code custom message on checkout.", 
+        "default": true 
+      },
+      { 
+        "type": "textarea",  
+        "id": "discount_code", 
+        "label": "Employee discount code",
+        "info": "Multiple code separate by comma (,)"
+      },
+      { 
+        "type": "textarea",  
+        "id": "discount_msg", 
+        "label": "Custom message",
+        "info": "Multiple code message separate by comma (,)"
+      } 
+    ]
+  },
   {
     "name": "Social media",
     "settings": [

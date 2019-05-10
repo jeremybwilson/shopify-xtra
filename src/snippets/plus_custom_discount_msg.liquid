@@ -1,0 +1,48 @@
+{% if settings.display_discount_msg and settings.discount_code != blank and settings.discount_msg != blank %}
+	{{ 'jquery-2.2.4.min.js' | asset_url | script_tag }}
+	<script type="text/javascript">
+		var isShowOnce = 0;
+		$(document).on('page:change', function() {
+		  if($('.tag__wrapper .reduction-code .reduction-code__text').length > 0 && isShowOnce == 0){
+		  	var empCodes = '{{ settings.discount_code}}'; 
+		  	var empCustMsgs = '{{ settings.discount_msg}}';
+		  	var empCodesArr = empCodes.split(',');
+		  	var empCustMsgsArr = empCustMsgs.split(',');
+		  	var appliedCode = $('.tag__wrapper .reduction-code .reduction-code__text').text();
+		  	if(empCodesArr.length > 0 && empCodesArr.indexOf(appliedCode) > -1){
+	  			var empCode = empCodesArr[empCodesArr.indexOf(appliedCode)];
+			  	var empCustMsg = empCustMsgsArr[empCodesArr.indexOf(appliedCode)];
+			  	$('<p id="discount-msg">'+empCustMsg+'</p>').insertAfter('.tags-list');
+		  	}
+		  	isShowOnce=1;
+		  }else{
+		  	if($('#discount-msg').length > 0){
+		  		isShowOnce=1;
+		  	}else{
+		  		isShowOnce=0;
+		  	}
+		  }
+		});
+		$(document).on('page:load', function() {
+		  if($('.total-line.total-line--reduction .total-line__name .reduction-code .reduction-code__text').length > 0 && isShowOnce == 0){
+		  	var empCodes = '{{ settings.discount_code}}'; 
+		  	var empCustMsgs = '{{ settings.discount_msg}}';
+		  	var empCodesArr = empCodes.split(',');
+		  	var empCustMsgsArr = empCustMsgs.split(',');
+		  	var appliedCode = $('.total-line.total-line--reduction .total-line__name .reduction-code .reduction-code__text').text();
+		  	if(empCodesArr.length > 0 && empCodesArr.indexOf(appliedCode) > -1){
+	  			var empCode = empCodesArr[empCodesArr.indexOf(appliedCode)];
+			  	var empCustMsg = empCustMsgsArr[empCodesArr.indexOf(appliedCode)];
+			  	$('<p id="discount-msg">'+empCustMsg+'</p>').insertAfter('.tags-list');
+		  	}
+		  	isShowOnce=1;
+		  }else{
+		  	if($('#discount-msg').length > 0){
+		  		isShowOnce=1;
+		  	}else{
+		  		isShowOnce=0;
+		  	}
+		  }
+		});
+	</script>
+{% endif %} 
