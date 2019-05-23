@@ -1,0 +1,94 @@
+{% if template == 'index'%}
+<div class="nosto_page_type" style="display:none">front</div>
+{% elsif template == '404'%}
+<div class="nosto_page_type" style="display:none">notfound</div>
+{% elsif template == 'cart'%}
+<div class="nosto_page_type" style="display:none">cart</div>
+{% endif %}
+
+{% if product %}
+<div class="nosto_page_type" style="display:none">product</div>
+<div class="nosto_product" style="display:none">
+    <span class="url">{{shop.url}}{{product.url}}</span>
+    <span class="product_id">{{product.id}}</span>
+    <span class="name">{{product.title}}</span>
+    <span class="image_url">{{product.featured_image | product_img_url: 'master'}}</span>
+    <span class="thumb_url">{{product.featured_image | product_img_url: 'large'}}</span>
+    <span class="price">{{product.variants[0].price | money_without_currency | remove: ','}}</span>
+    <span class="price_currency_code">{{shop.currency}}</span>
+    {% if product.available %}
+    <span class="availability">InStock</span>
+    {% else %}
+    <span class="availability">OutOfStock</span>
+    {% endif %}
+    <span class="category">{{product.type}}</span>
+    {% for collection in product.collections %}
+    <span class="category">{{collection.title}}</span>
+    {% endfor %}
+    <span class="description">{{product.description}}</span>
+    {% if product.variants[0].compare_at_price > product.variants[0].price%}
+    <span class="list_price">{{product.variants[0].compare_at_price | money_without_currency | remove: ','}}</span>
+    {% endif %}
+    <span class="brand">{{product.vendor}}</span>
+    {% for tag in product.tags %}
+    <span class="tag1">{{ tag }}</span>
+    {% endfor %}
+    {% if product.variants.size == 1 %}
+    <span class="tag2">add-to-cart</span>
+    {% endif %}
+    <span class="tag3"></span>
+    <span class="date_published">{{product.published_at | date:'%Y-%m-%d'}}</span>
+</div>
+{% endif %}
+
+{% if collection %}
+<div class="nosto_page_type" style="display:none">category</div>
+<div class="nosto_category" style="display:none">{{ collection.title }}</div>
+{% for tag in current_tags %}
+<span class="nosto_tag">{{ tag }}</span>
+{% endfor %}
+{% endif %}
+
+{% if search.performed %}
+<div class="nosto_page_type" style="display:none">search</div>
+<div class="nosto_search_term" style="display:none">{{ search.terms }}</div>
+{% endif %}
+
+{% if cart %}
+<div class="nosto_external_visit_ref" style="display:none"></div>
+<script type="text/javascript">
+        var ctoken = (document.cookie.match('(^|; )cart=([^;]*)')||0)[2];
+        if (ctoken) {
+            document.getElementsByClassName('nosto_external_visit_ref')[0].textContent = ctoken;
+        }
+
+</script>
+<div class="nosto_cart" style="display:none">
+    {% assign restorecart = '' %}
+    {% for line_item in cart.items %}
+    <div class="line_item">
+        {% if restorecart != '' %}
+        {% assign restorecart = restorecart | append: ',' %}
+        {% endif %}
+        {% assign restorecart = restorecart | append:  line_item.variant_id | append: ':' |append: line_item.quantity %}
+        <span class="product_id">{{ line_item.product.id }}</span>
+        <span class="quantity">{{ line_item.quantity }}</span>
+        <span class="name">{{ line_item.title }}</span>
+        <span class="unit_price">{{ line_item.price | money_without_currency | remove: ',' }}</span>
+        <span class="price_currency_code">{{ shop.currency }}</span>
+    </div>
+    {% endfor %}
+    {% if restorecart != '' %}
+    <span class="restore_link">{{ shop.secure_url }}/cart/{{restorecart}}</span>
+    {% endif %}
+</div>
+{% endif %}
+
+{% if customer %}
+<div class="nosto_customer" style="display:none">
+    <span class="email">{{ customer.email }}</span>
+    <span class="first_name">{{ customer.first_name }}</span>
+    <span class="last_name">{{ customer.last_name }}</span>
+    <span class="customer_reference">{{ customer.id | append: shop.permanent_domain | sha256 }}</span>
+</div>
+{% endif %}
