@@ -148,7 +148,7 @@
     "youtube_url": "//www.youtube.com/channel/UCbLKFCrAzj4U2OTsiX0HK2g",
     "googleplus_url": "",
     "instagram_id": "xtratuf",
-    "nosto_id": "",
+    "nosto_id": "5331943522",
     "popup": true,
     "email_image": "",
     "email_popup_title": "Sign Up & Get 10% Off Your First Order!",
@@ -543,6 +543,7 @@
       },
       "1536353642475": {
         "type": "featured-collection",
+        "disabled": true,
         "settings": {
           "heading": "BEST SELLERS",
           "homepage_collection": "best-sellers",
@@ -886,11 +887,18 @@
           "full_width": true,
           "slider_speed": 5
         }
+      },
+      "1558651562615": {
+        "type": "nosto-element",
+        "settings": {
+          "nosto_id": "frontpage-nosto-1"
+        }
       }
     },
     "content_for_index": [
       "1556040259163",
       "1536353642475",
+      "1558651562615",
       "1536251685211",
       "1554225193358",
       "1536068961071",
