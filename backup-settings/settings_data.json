@@ -472,21 +472,21 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/customer-favorite-twin-banner-1.jpg",
-              "mobile_image": "shopify://shop_images/customer-favorite-twin-mobile-1.jpg",
-              "link": "/collections/men-type-deck-boots",
-              "heading_text": "CUSTOMER FAVORITE",
+              "image": "shopify://shop_images/left-mens-best-sellers-desktop.jpg",
+              "mobile_image": "shopify://shop_images/left-mens-best-sellers-mobile.jpg",
+              "link": "shopify://collections/men-feature-best-sellers",
+              "heading_text": "MEN'S BEST SELLERS",
               "text": "",
-              "cta_text": "SHOP MEN'S ANKLE DECK BOOTS"
+              "cta_text": "SHOP NOW"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/salmon-sisters-twin-banner-2_76b4ee18-3406-45e1-ae01-e8863eec5a77.jpg",
-              "mobile_image": "shopify://shop_images/salmon-sisters-twin-mobile-2_f6ce3ce0-ed69-4e90-a1a3-2f937ef46e88.jpg",
-              "link": "shopify://collections/women-collection-salmon-sisters",
-              "heading_text": "THE SALMON SISTERS COLLECTION",
+              "image": "shopify://shop_images/right-womens-best-sellers-desktop.jpg",
+              "mobile_image": "shopify://shop_images/right-womens-best-sellers-mobile.jpg",
+              "link": "shopify://collections/women-feature-best-sellers",
+              "heading_text": "WOMEN'S BEST SELLERS",
               "text": "",
               "cta_text": "SHOP NOW"
             }
@@ -544,10 +544,9 @@
       },
       "1536353642475": {
         "type": "featured-collection",
-        "disabled": true,
         "settings": {
-          "heading": "BEST SELLERS",
-          "homepage_collection": "best-sellers",
+          "heading": "NEW ARRIVALS",
+          "homepage_collection": "new-arrivals",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
@@ -821,18 +820,18 @@
           "1556040259163-0": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/new-arrivals-hero-desktop-1_5c282bd7-5829-42de-b1a7-d7dbf05edb41.jpg",
-              "mobile_image": "shopify://shop_images/new-arrivals-hero-mobile-1-copy.jpg",
-              "heading": "SHARKBYTE CANVAS <br> DECK SHOE",
-              "subheading": "NEW ARRIVAL",
-              "cta_one_link": "shopify://collections/sharkbyte",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify://shop_images/salmon-season-slider-1.jpg",
+              "mobile_image": "shopify://shop_images/salmon-season-slider-1-mobile.jpg",
+              "heading": "ITS SALMON SEASON",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
+              "cta_one_button_text": "SHOP SALMON SISTERS",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
+              "caption_horizontal": "left",
               "caption_vertical": 45,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
@@ -841,18 +840,18 @@
           "1556040259163-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/champion-the-day-hero-desktop-2.jpg",
-              "mobile_image": "shopify://shop_images/champion-the-day-hero-mobile-2.jpg",
-              "heading": "CHAMPION THE DAY",
-              "subheading": "MOSSY OAK ELEMENTS™",
-              "cta_one_link": "shopify://collections/mossy-oak",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify://shop_images/sportsfishing-slider-2.jpg",
+              "mobile_image": "shopify://shop_images/sportsfishing-slider-2-mobile.jpg",
+              "heading": "UP & OUT BEFORE THE SUN",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/sport-fishing",
+              "cta_one_button_text": "SHOP SPORTFISHING",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
+              "caption_horizontal": "left",
               "caption_vertical": 45,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.4"
@@ -861,18 +860,18 @@
           "1557363114895": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/womens-desck-shoes-hero-desktop-3.jpg",
-              "mobile_image": "shopify://shop_images/womens-desck-shoes-hero-mobile-3-copy.JPG",
-              "heading": "WOMEN'S DECK SHOES",
-              "subheading": "NOW WITH PRINTS BY THE SALMON SISTERS",
-              "cta_one_link": "shopify://collections/women-type-deck-shoes",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify://shop_images/commercial-fishing-slider-3.jpg",
+              "mobile_image": "shopify://shop_images/commercial-fishing-slider-3-mobile.jpg",
+              "heading": "MENTAL TOUGHNESS",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/commercial-fishing",
+              "cta_one_button_text": "SHOP COMMERCIAL FISHING",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
+              "caption_horizontal": "center",
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
