@@ -70,8 +70,14 @@
     </div>
 
     <div id="product-right" class="{% if section.settings.related_products == 'right' %}desktop-7{% else %}desktop-6{% endif %}">
-
-      <div id="product-description" {% if section.settings.related_products == 'right' %}class="desktop-10 tablet-6 mobile-3"{% endif %}>
+      {% assign tag_exist = false %}
+      {% for tag in product.tags %}
+        {% if tag == settings.bis_hide_tag %}
+          {% assign tag_exist = true %}
+        {% endif %}
+      {% endfor %}
+      
+      <div id="product-description" class="{% if section.settings.related_products == 'right' %}desktop-10 tablet-6 mobile-3 {% endif %} {% if tag_exist %} hide_bis {% endif %}">
         {% if collection and section.settings.product_nav %}
           <div class="product-navigation">
             {% if collection.previous_product %}
