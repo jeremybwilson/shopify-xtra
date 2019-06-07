@@ -1,0 +1,294 @@
+.store-locator-cls{
+    padding-bottom: 0px !important;
+    padding-top: 70px !important;
+    #store-locator-title {
+        margin-bottom: 12px;
+        font-size:1.5625rem;
+        font-size: 1.875rem;
+        font-weight: 800;
+        letter-spacing:0em;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color:#0152a5;
+        text-align: center;
+        line-height: 1.36em;
+        @include mq('phone') {
+            font-size: 1.4rem;
+        }
+    }
+
+    .search_bar {
+        background-color: transparent !important;
+        border: 0px !important;
+        width: 88%;
+        margin: 40px auto !important;
+        padding: 0 0 !important;
+        @include mq('tablet') {
+            width:100%;
+        }
+        @include mq('phone') {
+            margin:25px auto !important;
+            width:100%;
+            padding:0 20px !important;
+        }
+        .main_search_bar {
+            width: 35% !important;
+            @include mq('tablet') {
+                width:38%;
+            }
+            @include mq('phone') {
+                width:100% !important;
+            }
+        }
+        div{
+            margin-left: 0px !important;
+            margin-right: 15px;
+        }
+    }
+    input, select {
+        border: 1px solid #757575 !important;
+        border-radius: 0px !important;
+        padding: 10px 10px;
+        height: 46px !important;
+        font-size: 1rem !important;
+        line-height: 16px;
+        color:#757575 !important;
+        width: 100% !important;
+        font-weight:700;
+        letter-spacing: .025em;
+    }
+    .search_within_distance {
+        width:20%;
+        position:relative;
+        &:before {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid #e41b39;
+            content: "";
+            position: absolute;
+            right: 11px;
+            bottom: 18px;
+        }
+        @include mq('tablet') {
+            min-width:18% !important;
+            width:18% !important;
+        }
+
+        @include mq('phone') {
+            min-width:100% !important;
+            width:100% !important;
+        }
+    }
+    .search_limit {
+        min-width: 20% !important;
+        max-width: 20%;
+        position:relative;
+        &:before {
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 8px solid #e41b39;
+            content: "";
+            position: absolute;
+            right: 11px;
+            bottom: 18px;
+        }
+        @include mq('tablet') {
+            min-width: 18% !important;
+            max-width: 18% !important;
+        }
+        @include mq('phone') {
+            min-width:100% !important;
+            max-width:100% !important;
+            margin-top:15px;
+        }
+    }
+    button#submitBtn {
+            width: 20%;
+            height: 46px;
+            background: #e41b39;
+            line-height: 33px;
+            text-shadow: none;
+            float: left;
+            margin-top: 51px;
+            margin-bottom: 0px !important;
+            border: 0px;
+            font-size: 0.8125rem;
+            margin-left: 0px !important;
+            border-radius: 0px;
+            font-weight: 700;
+            font-family: "Museo Sans",sans-serif;
+            letter-spacing: .125em;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+
+        @include mq('lap') {
+            width:19%;
+        }
+        @include mq('tablet') {
+            width:18% !important;
+        }
+        @include mq('phone') {
+            width:100% !important; 
+            margin-top:20px;
+        }
+    }
+    .search_bar label {
+        font-size: 1rem;
+        letter-spacing:0em;
+        font-weight:700;
+        color: #000;
+        width: 100% !important;
+        margin-bottom: 12px;
+        text-align: left;
+        min-height: 40px;
+        line-height: 1.875em;
+        @include mq('tablet') {
+            font-size: 0.8rem;
+            padding-top:0px !important;
+        }
+        @include mq('phone') {
+            text-align:center;
+            min-height:unset;
+        }
+    }
+    #store_map{
+        width:50% !important; 
+        height: 500px !important;
+        @include mq('phone') {
+            width:100% !important; 
+            min-height:400px !important; 
+            margin-bottom:25px;
+        }
+    }
+    .addresses{
+        width: 48% !important;
+        @include mq('phone') {
+            width: 100% !important;
+            margin: 0px !important;
+            padding: 0 20px;
+        }    
+    }
+    .address2 {
+        margin-bottom: 6px;
+        display: inline-block;
+    }
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+    }
+    span.name {
+        font-weight: 700;
+        line-height:0em;
+        font-size: 1rem;
+        letter-spacing:0em;
+        color:#0151a4 !important;
+        text-transform: uppercase;
+    }
+    .store_website {
+        margin-top: 5px;
+        a{
+            font-weight:700;
+            color:#e41b39 !important;
+        }
+    }
+    
+    .no_stores_found {
+        font-size: 1rem;
+        margin:0px !important;
+    }
+    .addresses{ 
+        margin: 4px 0 7px 0px;
+        display: inline-block;
+        height:468px !important;
+        li{
+            border-top: 1px solid #DDDDDD !important;
+            padding: 25px 0px !important;
+            background-position-x: 1px !important;
+            background-image: none !important;
+            span{
+                font-size: 1rem;
+                color:#000;
+            }
+            a{
+                margin-bottom: 0px !important;
+                color:#e41b39;
+                font-size: 1rem;
+                @include mq('tablet') {
+                    width:90% !important;
+                }    
+                @include mq('phone') {
+                    width:100% !important;
+                }   
+            }
+        }
+    }
+
+    .gm_popup{ 
+        font-size:1rem;
+        span {
+           font-family: "Museo Sans",sans-serif !important;
+           font-weight: 700;
+        }
+        .website_text_span {
+        font-weight: 700;
+        color: #525252 !important;
+    }
+    }
+    .directions{
+        display:none;
+    }
+    .directions a {
+        color: #ae5431;
+        font-weight: 500;
+        font-family: "Gotham A","Gotham B",sans-serif;
+    }
+    span.address {
+        margin: 4px 0 6px 0;
+        display: inline-block;
+    }
+    .distance {
+        width: 100% !important;
+        height: auto !important;
+        font-size: 1rem !important;
+        margin-bottom:6px !important;
+        margin-top:0px !important; 
+        color: #e41b39 !important;
+        font-weight:700;
+    }
+    .addresses .store_website, .store_website_container, .addresses .directions{
+        margin-left: 0px !important;
+    }
+    span.phone {
+        margin-bottom: 4px;
+        display: inline-block;
+    }
+    .gm-style-iw.gm-style-iw-c {
+        border: 1px solid #d6d8e5;
+        border-radius: 0px !important;
+        padding: 30px 30px 20px 30px !important;
+        max-width: 400px !important;
+    }
+    button.gm-ui-hover-effect {
+        right:12px !important;
+        top:3px !important;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .gm-style .gm-style-iw-t::after{
+        border-bottom: 1px solid #d7dde9;
+        border-left: 1px solid #d7dde9;
+    }
+    .gm-style .gm-style-iw{
+            color: #525252 !important;
+            font-weight: 700;
+    }
+}
