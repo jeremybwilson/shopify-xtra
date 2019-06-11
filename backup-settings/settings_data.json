@@ -258,7 +258,7 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "2",
+          "num_of_promo_banners": "1",
           "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
           "announcement_link_one": "/pages/shipping-returns",
           "announcement_text_two": "A FATHER'S LEGACY: <strong>SHOP NOW</strong>",
@@ -876,12 +876,33 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
+          },
+          "1560198484333": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
+              "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
+              "heading": "FIT FOR THE <br>FEMALE FISHERMAN<br>",
+              "subheading": "<strong>WOMEN'S ANKLE DECK BOOT NOW AVAILABLE IN BLACK</strong>",
+              "cta_one_link": "shopify://products/womens-6-in-ankle-deck-boot-black",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "rgba(0,0,0,0)",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
           }
         },
         "block_order": [
-          "1556040259163-0",
+          "1560198484333",
           "1556040259163-1",
-          "1557363114895"
+          "1557363114895",
+          "1556040259163-0"
         ],
         "settings": {
           "full_width": true,
