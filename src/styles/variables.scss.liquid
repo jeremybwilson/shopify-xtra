@@ -1,13 +1,21 @@
 //Sample :  $sample-color: {{ settings.dotted_color }};
 
 // BRAND COLORS
-$color--primary-1: #0a56a4;  // Main Coloration of Primary Elements
-$color--primary-2: #000000;  // Second Main Color (Lets use this for Headers?)
-$color--accent-1: #e41c39;   // Color For Arrows, Buttons, etc
-$color--accent-2: #e41c39;   // Alternative accent in some cases (still working this one out)
+$color--primary-1: #0a56a4;   // TUF Blue :: Main Coloration of Primary Elements
+$color--primary-2: #e41c39;   // XTRA Red :: Second Main Color (Lets use this for Headers?)
+$color--primary-3: #000000;   // Second Main Color (Lets use this for Headers?)
 
-// TEXT 
-$color--text-1: #000000;  // Text Color (Ex: Muck is Dark Green)
+// BRAND SECONDARY COLORS
+$color--accent-1: #e41c39;   // XTRA Red :: Color For Arrows, Buttons, etc
+$color--accent-2: #e41c39;   // TUF Red :: Alternative accent in some cases (still working this one out)
+$color--accent-3: #523A30;   // RAW Umber :: Brand Secondary colors
+$color--accent-4: #446289;   // NAUTICAL Blue :: Brand Secondary colors
+$color--accent-5: #447c81;   // SEA Green :: Brand Secondary colors
+$color--accent-6: #858B84;   // BOULDER Grey :: Brand Secondary colors
+$color--accent-7: #99B9CC;   // DUSK Blue :: Brand Secondary colors
+
+// TEXT
+$color--text-1: #000000;    // Text Color (Ex: Muck is Dark Green)
 
 // BACKGROUND + GREYS
 $color--gray-1: #616365;
@@ -25,16 +33,19 @@ $color--light-primary-1: #e63e57; // Primary color for areas with dark backgroun
 $color--error: {{ settings.error_text }};
 
 // TYPOGRAPHY
-$sans: "Museo Sans", sans-serif;
+$markwebpro: "FF Mark Web Pro", sans-serif;
+$sans: $markwebpro;
 $font-stack--default: $sans;
 $font-stack--heading: $sans;
+$vanguard: "Vanguard CF", sans-serif;
+$veneer: "Veneer Clean", sans-serif;
 
 // FONT WEIGHTS
-// $font-weight--book: 400; 
-$font-weight--book: 500; // Museo's 500 serves the same function as 400 for other fonts, so instead of replacing variables we'll just switch out the value
+$font-weight--book: 400; // Re-enabling 400 for use with Mark Web Pro font face
+// $font-weight--book: 500; // Museo's 500 serves the same function as 400 for other fonts, so instead of replacing variables we'll just switch out the value
 $font-weight--medium: 500;
 $font-weight--bold: 700;
-//$font-weight--black: 800; 
+//$font-weight--black: 800;
 $font-weight--black: 900; // Museo's 900 is equivalent to 800
 
 
@@ -175,7 +186,7 @@ $button--alt-border-hover: {{ settings.alt_button_border_width }}px solid {{ set
   line-height: 22px / 16px * 1em;
   letter-spacing: 0;
 
-  @include fontSize(16px); 
+  @include fontSize(16px);
 }
 @mixin h7 {
   font-weight: $font-weight--bold;
@@ -392,11 +403,11 @@ $retina:           "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)
   } @else if $alias == "tablet-portrait" {
     @media #{$tablet-portrait} {
       @content;
-    }    
+    }
   } @else if $alias == "tablet-landscape" {
     @media #{$tablet-landscape} {
       @content;
-    }        
+    }
   } @else if $alias == "lap" {
     @media #{$lap} {
       @content;
