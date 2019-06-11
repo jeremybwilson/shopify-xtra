@@ -36,21 +36,21 @@
 */
 @font-face{
   font-family:"FFMarkWebProBook";
-  src: url('398CCE_1_0.eot');
-  src: url('398CCE_1_0.eot?#iefix') format('embedded-opentype'),
-    url('398CCE_1_0.woff2') format('woff2'),
-    url('398CCE_1_0.woff') format('woff'),
-    url('398CCE_1_0.ttf') format('truetype');
+  src: url("{{ '398CCE_1_0.eot' | asset_url }}");
+  src: url("{{ '398CCE_1_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ '398CCE_1_0.woff2' | asset_url }}") format('woff2'),
+    url("{{ '398CCE_1_0.woff' | asset_url }}") format('woff'),
+    url("{{ '398CCE_1_0.ttf' | asset_url }}") format('truetype');
   font-weight: $font-weight--book;
 }
 
 @font-face{
   font-family:"FFMarkWebProBold";
-  src: url('398CCE_2_0.eot');
-  src: url('398CCE_2_0.eot?#iefix') format('embedded-opentype'),
-    url('398CCE_2_0.woff2') format('woff2'),
-    url('398CCE_2_0.woff') format('woff'),
-    url('398CCE_2_0.ttf') format('truetype');
+  src: url("{{ '398CCE_2_0.eot' | asset_url }}");
+  src: url("{{ '398CCE_2_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ '398CCE_2_0.woff2' | asset_url }}") format('woff2'),
+    url("{{ '398CCE_2_0.woff' | asset_url }}") format('woff'),
+    url("{{ '398CCE_2_0.ttf' | asset_url }}") format('truetype');
   font-weight: $font-weight--bold;
 }
 
@@ -59,11 +59,11 @@
 */
 @font-face{
   font-family:"VeneerClean-Reg";
-  src: url('398CCE_0_0.eot');
-  src: url('398CCE_0_0.eot?#iefix') format('embedded-opentype'),
-    url('398CCE_0_0.woff2') format('woff2'),
-    url('398CCE_0_0.woff') format('woff'),
-    url('398CCE_0_0.ttf') format('truetype');
+  src: url("{{ '398CCE_0_0.eot' | asset_url }}");
+  src: url("{{ '398CCE_0_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ '398CCE_0_0.woff2' | asset_url }}") format('woff2'),
+    url("{{ '398CCE_0_0.woff' | asset_url }}") format('woff'),
+    url("{{ '398CCE_0_0.ttf' | asset_url }}") format('truetype');
   font-weight: $font-weight--book;
 }
 
@@ -72,6 +72,6 @@
 */
 @font-face{
   font-family:"VanguardCF";
-  src: url("Vanguard-CF-Bold.otf") format("opentype");
+  src: url("{{ 'Vanguard-CF-Bold.otf' | asset_url }}") format("opentype");
   font-weight: $font-weight--book;
 }
