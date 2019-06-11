@@ -33,15 +33,16 @@ $color--light-primary-1: #e63e57; // Primary color for areas with dark backgroun
 $color--error: {{ settings.error_text }};
 
 // TYPOGRAPHY
-$sans: "FFMarkWebProBook", sans-serif;
+$markwebpro: "FF Mark Web Pro", sans-serif;
+$sans: $markwebpro;
 $font-stack--default: $sans;
 $font-stack--heading: $sans;
 $vanguard: "Vanguard CF", sans-serif;
-$veneer: "VeneerClean-Reg", sans-serif;
+$veneer: "Veneer Clean Reg", sans-serif;
 
 // FONT WEIGHTS
-// $font-weight--book: 400;
-$font-weight--book: 500; // Museo's 500 serves the same function as 400 for other fonts, so instead of replacing variables we'll just switch out the value
+$font-weight--book: 400; // Re-enabling 400 for use with Mark Web Pro font face
+// $font-weight--book: 500; // Museo's 500 serves the same function as 400 for other fonts, so instead of replacing variables we'll just switch out the value
 $font-weight--medium: 500;
 $font-weight--bold: 700;
 //$font-weight--black: 800;

@@ -28,14 +28,13 @@
 */
 
 /* @import must be at top of file, otherwise CSS will not work */
-
 @import url("https://hello.myfonts.net/count/398cce");
 
 /*
 * Mark-Pro
 */
 @font-face{
-  font-family:"FFMarkWebProBook";
+  font-family:"FF Mark Web Pro"; // Book
   src: url("{{ '398CCE_1_0.eot' | asset_url }}");
   src: url("{{ '398CCE_1_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
     url("{{ '398CCE_1_0.woff2' | asset_url }}") format('woff2'),
@@ -45,7 +44,7 @@
 }
 
 @font-face{
-  font-family:"FFMarkWebProBold";
+  font-family:"FF Mark Web Pro";
   src: url("{{ '398CCE_2_0.eot' | asset_url }}");
   src: url("{{ '398CCE_2_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
     url("{{ '398CCE_2_0.woff2' | asset_url }}") format('woff2'),
@@ -58,7 +57,7 @@
 * Veneer Clean Regular
 */
 @font-face{
-  font-family:"VeneerClean-Reg";
+  font-family:"Veneer Clean";
   src: url("{{ '398CCE_0_0.eot' | asset_url }}");
   src: url("{{ '398CCE_0_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
     url("{{ '398CCE_0_0.woff2' | asset_url }}") format('woff2'),
@@ -71,7 +70,7 @@
 * Vanguard-CF
 */
 @font-face{
-  font-family:"VanguardCF";
+  font-family:"Vanguard CF";
   src: url("{{ 'Vanguard-CF-Bold.otf' | asset_url }}") format("opentype");
-  font-weight: $font-weight--book;
+  font-weight: $font-weight--bold;  // this is a bold font face to immediately applying weight of 700
 }
