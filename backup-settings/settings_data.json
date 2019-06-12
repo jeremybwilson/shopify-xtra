@@ -182,6 +182,7 @@
     "checkout_accent_color": "#e41c39",
     "checkout_button_color": "#0a56a4",
     "checkout_error_color": "#ff6d6d",
+    "bis_hide_tag": "discontinued",
     "cart_links": "#000000",
     "cart_links_hover": "#000000",
     "newsletter_color": "#ffffff",
@@ -817,23 +818,23 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
-          "1556040259163-0": {
+          "1560198484333": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/salmon-season-slider-1.jpg",
-              "mobile_image": "shopify://shop_images/salmon-season-slider-1-mobile.jpg",
-              "heading": "Fresh prints for spring",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
-              "cta_one_button_text": "SHOP THE SALMON SISTERS COLLECTION",
+              "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
+              "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
+              "heading": "FIT FOR THE <br>FEMALE FISHERMAN<br>",
+              "subheading": "<strong>WOMEN'S ANKLE DECK BOOT <br>NOW AVAILABLE IN BLACK</strong>",
+              "cta_one_link": "shopify://products/womens-6-in-ankle-deck-boot-black",
+              "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
+              "custom_slide_main_color": "rgba(0,0,0,0)",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 45,
-              "caption_background": "rgba(0,0,0,0)",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
               "caption_opacity": "0.1"
             }
           },
@@ -877,23 +878,23 @@
               "caption_opacity": "0.1"
             }
           },
-          "1560198484333": {
+          "1556040259163-0": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
-              "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
-              "heading": "FIT FOR THE <br>FEMALE FISHERMAN<br>",
-              "subheading": "<strong>WOMEN'S ANKLE DECK BOOT NOW AVAILABLE IN BLACK</strong>",
-              "cta_one_link": "shopify://products/womens-6-in-ankle-deck-boot-black",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify://shop_images/salmon-season-slider-1.jpg",
+              "mobile_image": "shopify://shop_images/salmon-season-slider-1-mobile.jpg",
+              "heading": "Fresh prints",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
+              "cta_one_button_text": "SHOP THE SALMON SISTERS COLLECTION",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
-              "custom_slide_main_color": "rgba(0,0,0,0)",
+              "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "transparent",
+              "caption_horizontal": "left",
+              "caption_vertical": 45,
+              "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
           }
