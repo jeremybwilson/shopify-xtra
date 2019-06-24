@@ -1,7 +1,8 @@
 {
-  "presets": {},
+  "presets": {
+  },
   "current": {
-    "favicon": "shopify:\/\/shop_images\/favicon_ce985e2e-2ef5-4938-a951-a6eac4f57989.png",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
     "announcement_bg_two": "#757575",
@@ -86,10 +87,10 @@
     "nav_dropdown_color": "#ffffff",
     "dropdown_hover_background_color": "#282828",
     "dropdown_hover_link_color": "#ffffff",
-    "directional_background": "#0153a6",
-    "directional_hover_background": "#ff0000",
+    "directional_background": "#000000",
+    "directional_hover_background": "#ffffff",
     "directional_color": "#ffffff",
-    "directional_hover_color": "#ffffff",
+    "directional_hover_color": "#000000",
     "swatch_color": "#000000",
     "swatch_background": "#ffffff",
     "swatch_border": "#000000",
@@ -139,18 +140,13 @@
     "ajax_cart_method": "drawer",
     "ajax_cart_remove_text": "This will remove the item from your cart. Continue?",
     "ajax_cart_low_stock_text": "This item does not have enough stock to add to your cart.",
-    "display_discount_msg": true,
-    "discount_code": "PROFAMILY25,XTBHOLEMAN40,XTTHOLEMAN40,XTWEBER40,XTPETERSON40,XTNEVIUS40,XTNEATON40,XTTEAL40,XTDWYER40,HON1MB,FF25,NSALAMON,DHOYT,AHOYT,GSERAFINI,HFUQUA,MSULLIVAN,CKNOLLENBERG,GROTHENBERG,OGDECKBOOT,MHARTWIG,RLYONS,CREYNOLDS,CHEEKY40,LG30XT,CSCHOENXT30,K0C95KF1FYD8,M563W19P55TJ,AVZZFKT6VKWG,G46PADA36TB7,CMCZX5BY5NZ2,E291JPQMHPTY,WBDAV4NKXZM8,N96PG5BZ9S3F,95GSBMT0SWBV,2ESRQ6YH63YB,MKM5ZQ4NEBRD,2BFQ566GETCB,7PBF3PBY1H5T,T5TKT62VWDTB,ZDYKR5EWR6ZW,MST5B3DMDG2C,FD9MP4H3W9K1,PX5E3X9G3HQQ,VFMWTD9CEJR8,N4K6WB73SV3P,Z9WVYN709H05,ZJD6MWF3PGS3,Gr8BearLodge40,BOL25,AWBK08QDEH2P,RRX24MFY6FZH,5HVTPGPX49FD,DFBQPWSNNT59,RZ53CJBGKJEJ,B5YNS4H5GVF6,RKXCWPF5K3TX,T4D7RK0C0F7S,VY6J95Y2QFD7,4MZ50W23WEQ2,JR3929B3MK63,9K4B352M5438,792BZ2VTPRJB,3H3V98SQ7PBX,6T8282KDVQ8Z,9943MQ79TNV2,W68Z4F4GH7X4,7NS8F86TNTGF,Z2Q535BHN9JZ,3657WQJ34GC4,7DFS3Z4JFVM7,K35XH55THVW7,FW9N9ST4MSMC,3V8D5XSDMSHG,58474W6XCCXC,CF4Z3639T3H7,33P26Z44Z98F,55P2T4XHS4C8,WW8JQFWQQKM6,TGBM967RVRJ4,HCC6Q8BC25QX,78Q78TZ287B4,97KW6NJR6SXR,9HM43ZR5CCQH,Z35686CF4WJH,5CQ6F39RXVV4,6573366V2KTJ,734G7PD7H89D,9D632JXWT767,M6C479N3VGT9,NCB7SZFQ2KFZ,S66FTW8F93V3,WF4ZX8R2M449,782J8CHW4R4G,9C8D22H959KR,7G522DJ8RM7H,F494Q2865Q23,F89XP72348R3,B8634M2Z6453,53KTJ9FSVS5G,MKS2Q993SJ36,BMTH78F46PPN,5R3958R8MG9F,BNXHP6NF8ZH7,F47JX7FDMRXF,ZWCH274856RT,8VX35J7QH82P,8WKFT77524MP,CS3RDV9V3MXJ,W6RQB588XN27,42W8X47CJMP9,RTWJ88N372J2,NH78T25M76FN,NM7793V77KM9,228HKQ2N6329,966C75VJ9245,M73QSPBMB7S6,NR2JJH94F4T2,K7365687JBCV,222229G63999,DDZ766992VCT,5RJJPPKN432M,3JR75QCMJ24J,2HKJMS7C362H,M59X435X5899,63P38428WTMQ,P9DS943M24V3,PHQBM69527V3,88SG37D735MD,TF6FTF4G9F9J,XFS8QFKC38JS,R43973843MQ9,NP68DPF8D9H5,87285S9FBCJ8,W9794WCFJV67,K7GQMQZ457CG,JH7P47P3N6KR,82429CM6K873,FC3S8K6PQ9JQ,57DK5GDN748J,3735GDMXJRRF,K9VMSMM2NX93,5768775TWCGK,8Q7J89H53PT4,JB7D5Q62RKC7,3G32WG6DSS89,4G4MFQ38TD4H,823PVZDVDSDN,5TG8G8P699N3,69P7VJBWM68G,566622DT4XRM,GB2267B5R663,7C7N2S6CR4B2,9KST4B5ZR46P,JSZ79N3XFK64,59MP8FP337MZ,Z7XKR72G6P98,JCMK9H978SD3,37939Q5SH8Z8,5VSTR4GTRRNA,8S852237,946KQ85D,2W6JNJQ3,3773V385,B3RQRTRD,2KW785ZX,542PBGDV,3F6Z4BF9,P76WJ4GP,92GM8H26,7282356Z,NH44KFFX,6D2C2MB5,V7HT2S5J,748Q7682,CB93G4C4,3X8GF75M,7528QDW2,2MC74WJP,F37PP22P,2MZB4D5T,2FC8VW7S,MPSGP5Q9,5JW2N393,54VV8387,3P3FN6K7,X7SGX28S,H8S93R9J,35297CPB,M46Z69G3,HB5DF65M,FXDRH33K,PFDQX322,37X84B24,S5H94H93,C9JD2H38,42X2259B,52JW3PQ7,6R3TM68R,N7F52JZ2,7SG6G7W5,PC898J48,2GVH985F,JDZKHXTH,6G869D57,S963553P,P556X4G4,368RG8JK,THCXCQ46,HN5N4323,83GN37YRZXD0,ICOFARMTOUR",
-    "discount_msg": "25% OFF - XT PRO TEAM FF,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - XT PRO TEAM,40% OFF - FINAL SALE,25% OFF - HONEYWELL FF,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,40% OFF - PM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,25% OFF - SALES TEAM DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,40% OFF - FORGEGO PARTNER DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - HONEWELL EXEC DISCOUNT,100% OFF - UF FISHING CLUB DISCOUNT,100% OFF - UF FISHING CLUB DISCOUNT,100% OFF - UF FISHING CLUB DISCOUNT,40% OFF - GREAT BEAR LODGE DISCOUNT,25% OFF - BOL PARTNERSHIP DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,100% OFF - SURVEY WINNER DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,$50 OFF - BILLFISH CLASSIC DISCOUNT,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,100% OFF - FINAL SALE,40% OFF - WELLFLEET SHELLFISH DISCOUNT,15% OFF - ICO FARM TOUR DISCOUNT",
     "twittername": "",
     "facebook_url": "\/\/www.facebook.com\/XtraTuf\/",
     "pinterest_url": "",
     "tumblr_url": "",
     "youtube_url": "\/\/www.youtube.com\/channel\/UCbLKFCrAzj4U2OTsiX0HK2g",
     "googleplus_url": "",
-    "instagram_id": "xtratuf",
-    "nosto_id": "5331943522",
-    "yottaa_key": "xvhkylwm73AK6Q",
+    "instagram_id": "xtratufboots",
     "popup": true,
     "email_image": "",
     "email_popup_title": "Sign Up & Get 10% Off Your First Order!",
@@ -162,7 +158,6 @@
     "cookie_banner_mobile_text": "<p>We use cookies.<\/p>",
     "cookie_banner_mobile_button": "http:\/\/www.honeywell.com\/privacy-statement",
     "cookie_banner_mobile_button_text": "More Info",
-    "cookie_banner_expire": 365,
     "cookie_banner_desktop_text": "<p>This site uses cookies to simplify and improve your usage and experience of this website. Cookies are small text files stored on the device you are using to access this website. If you ignore this message and continue without changing your browser settings, we will assume that you are consenting to our use of cookies. For further information on our use of cookies, please see our <a href=\"https:\/\/www.honeywell.com\/privacy-statement\" target=\"_blank\">Privacy Statement<\/a><\/p>",
     "cookie_banner_accept_button_text": "Accept",
     "show_multiple_currencies": false,
@@ -225,7 +220,7 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Men",
-              "nav_image": "shopify:\/\/shop_images\/mens-nav_9fc19baa-eaf5-4f03-9d1d-3163b2653e9b.jpg",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-1.jpg",
               "nav_promo_link": "shopify:\/\/collections\/men"
             }
           },
@@ -233,7 +228,7 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Women",
-              "nav_image": "shopify:\/\/shop_images\/womens-nav_005f53d0-15f4-4b0e-9fb6-5c073b40b7d1.jpg",
+              "nav_image": "shopify:\/\/shop_images\/nav-megamenu-2.jpg",
               "nav_promo_link": "shopify:\/\/collections\/women"
             }
           },
@@ -259,11 +254,11 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "2",
-          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS<\/div>",
+          "num_of_promo_banners": "1",
+          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING & RETURNS<\/div>",
           "announcement_link_one": "\/pages\/shipping-returns",
-          "announcement_text_two": "A FATHER'S LEGACY: <strong>SHOP NOW<\/strong>",
-          "announcement_link_two": "https:\/\/www.xtratuf.com\/pages\/gifts-for-dad",
+          "announcement_text_two": "<div class=\"bold\">Something for Everyone: SHOP GIFT GUIDE<\/div>",
+          "announcement_link_two": "shopify:\/\/pages\/holiday-gift-guide-2018",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -353,10 +348,7 @@
       "blog-template": {
         "type": "blog-template",
         "settings": {
-          "image": "shopify:\/\/shop_images\/Image_2_XT_Blog.jpg",
-          "heading": "Life on the water",
-          "blog_nav_bg_color": "#f5f1ed",
-          "blog_nav_font_size": 14,
+          "image": "",
           "text": "<p>Add some descriptive text to your Blog page.<\/p>",
           "show_date": true
         }
@@ -376,7 +368,8 @@
       },
       "search-template": {
         "type": "search-template",
-        "settings": {}
+        "settings": {
+        }
       },
       "password-template": {
         "type": "password-template",
@@ -399,12 +392,65 @@
       "newsletter": {
         "type": "newsletter",
         "settings": {
-          "heading": "<span id=\"footerSignup\">Join Our Newsletter<\/span>",
+          "heading": "Join Our Newsletter",
           "newsletter_subheading": "<p>Sign up now for exclusive offers<\/p>",
           "newsletter_placeholder": "Enter Email Address",
           "newsletter_error": "Please enter a valid e-mail address",
           "newsletter_success": "<p>You have successfully joined our newsletter<\/p>",
           "social_heading": "Connect With Us"
+        }
+      },
+      "1535728526385": {
+        "type": "slideshow",
+        "blocks": {
+          "1544311723364": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/cod-season-hp1-desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/cod-season-hp1-mobile.jpg",
+              "heading": "Cod Season",
+              "subheading": "",
+              "cta_one_link": "shopify:\/\/collections\/legacy",
+              "cta_one_button_text": "SHOP THE ALASKAN SNEAKER",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
+          "1544311638684": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/slamon-sisters-collection-hp2-desktop.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/slamon-sisters-collection-hp2-mobile.jpg",
+              "heading": "The Salmon Sisters Collection",
+              "subheading": "",
+              "cta_one_link": "shopify:\/\/collections\/women-feature-xtratuf-r-x-salmon-sisters",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          }
+        },
+        "block_order": [
+          "1544311723364",
+          "1544311638684"
+        ],
+        "settings": {
+          "full_width": true,
+          "slider_speed": 3
         }
       },
       "1536068961071": {
@@ -413,8 +459,8 @@
           "1536068961071-0": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Carousel-commercial-fishing_1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/carousel-commercial-fishing-mobile.jpg",
+              "image": "shopify:\/\/shop_images\/home-column-carousel-desktop-slide-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/home-column-carousel-mobile-slide-1.jpg",
               "heading": "Commercial Fishing",
               "svg_icon": "",
               "png_icon": "",
@@ -465,7 +511,8 @@
           "1536068961071-2",
           "1536068961071-3"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "1536251685211": {
         "type": "twin-promos",
@@ -473,23 +520,23 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify:\/\/shop_images\/left-mens-best-sellers-desktop.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/left-mens-best-sellers-mobile.jpg",
-              "link": "shopify:\/\/collections\/men-feature-best-sellers",
-              "heading_text": "MEN'S BEST SELLERS",
+              "image": "shopify:\/\/shop_images\/legacy-boots-twin-banner-1.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/legacy-boots-twin-banner-1.jpg",
+              "link": "shopify:\/\/collections\/legacy",
+              "heading_text": "for the Next Generation of Fishermen",
               "text": "",
-              "cta_text": "SHOP NOW"
+              "cta_text": "SHOP Legacy 2.0 Boots"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify:\/\/shop_images\/right-womens-best-sellers-desktop.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/right-womens-best-sellers-mobile.jpg",
-              "link": "shopify:\/\/collections\/women-feature-best-sellers",
-              "heading_text": "WOMEN'S BEST SELLERS",
+              "image": "shopify:\/\/shop_images\/elite-legacy-boots-twin-banner-2.jpg",
+              "mobile_image": "shopify:\/\/shop_images\/elite-legacy-boots-twin-banner-2.jpg",
+              "link": "shopify:\/\/collections\/legacy",
+              "heading_text": "Reinforced Comfort & Protection",
               "text": "",
-              "cta_text": "SHOP NOW"
+              "cta_text": "SHOP ELITE LEGACY BOOTS"
             }
           }
         },
@@ -509,7 +556,7 @@
             "settings": {
               "image": "shopify:\/\/shop_images\/home-about-promo-desktop-1.jpg",
               "mobile_image": "shopify:\/\/shop_images\/home-about-promo-mobile-1.jpg",
-              "heading": "Made for Alaska, <br />Fit for Everyone",
+              "heading": "Made for Alaska, Fit for Everyone",
               "subheading": "",
               "cta_one_link": "shopify:\/\/pages\/about",
               "cta_one_button_text": "Our Story",
@@ -536,9 +583,9 @@
       "1536266098177": {
         "type": "instagram",
         "settings": {
-          "heading": "@xtratuf",
-          "text": "<p>Tag your photos with <strong>@XTRATUF&nbsp;<\/strong>&nbsp;for a chance to be featured on our feed<\/p>",
-          "link": "https:\/\/www.instagram.com\/xtratuf\/",
+          "heading": "@xtratufboots",
+          "text": "<p>Tag your photos with <strong>#XTRATUFBOOTS<\/strong> to be featured on our feed<\/p>",
+          "link": "http:\/\/www.instagram.com\/xtratufboots",
           "cta_text": "View all",
           "instagram_access_token": "1022365975.1677ed0.a29a97191f864ee0afeb65ef0024312b"
         }
@@ -546,8 +593,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "NEW ARRIVALS",
-          "homepage_collection": "new-arrivals",
+          "heading": "Salmon Sisters Collection",
+          "homepage_collection": "salmon-sisters",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
@@ -698,211 +745,89 @@
           "1539642513779",
           "1539642524127"
         ],
-        "settings": {}
-      },
-      "page-faq-template": {
-        "type": "page-faq-template",
-        "blocks": {
-          "1552050934620": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "What do the Slip Resistant ratings mean?",
-              "answer": "<font size=\"+1\">How Good is Our Grip? The SRA's, B's and C's of Slip Resistant Footwear.<\/font>\n<p>All XTRATUF footwear is slip tested using International Organization for Standardization (ISO) standards for Personal Protective Equipment.\nTesting is performed on both the heel and forepart of the shoes' outsole, an established slip testing protocol, used and accepted in the footwear industry worldwide.<\/p>\n<p>The Right Grip or Get a Grip:<\/p>\n<li><a href=\"https:\/\/www.xtratuf.com\/collections\/sra-rated\">SRA Rating: All XTRATUF footwear is SRA rated for the grip you need on wet flooring surfaces.<\/a><\/li>\n<li>SRB Rating: For greater slip resistance on smooth, wet and oily surfaces.<\/li>\n<li><a href=\"https:\/\/www.xtratuf.com\/collections\/src-rated-boots-shoes\">SRC Rating: SRA and SRB combined, for the highest slip resistance rating that can be achieved, giving you best in class traction.<\/a><\/li>",
-              "anchor": ""
-            }
-          },
-          "1552051114152": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "How Do I Check My Order Status?",
-              "answer": "<p>If you are a registered customer, you can access your order history by logging into your account using the credentials you used to create your account. You will find the “My Account” link located at the top of each page. Once you have accessed your account, you can click on the “Track Order” link for order status. <\/p><p>If you are not a registered user, you can contact Customer Service at 855-377-BOOT (2668) by submitting an email via the Contact Us section on our site here. Customer Service hours are 7am to 11pm (PST\/PDT) Monday through Friday.<\/p>",
-              "anchor": ""
-            }
-          },
-          "1552051133764": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "How do I remove the oil from my new Legacy Boots?",
-              "answer": "<p>We intentionally apply oil to our Legacy Boots, it helps to keep the boots flexible, contributing to their comfort and suppleness. They can be wiped with a towel or left out of the box for a few days to dry.<\/p>",
-              "anchor": ""
-            }
-          },
-          "1554742471703": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "Do you offer wide width boots?",
-              "answer": "We recommend our Legacy 2.0 Boots which were created for a wider foot. Unfortunately, we do not offer wide width options within our collection.",
-              "anchor": ""
-            }
-          },
-          "1554923418689": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "What does triple-dipped mean?",
-              "answer": "Our signature triple dipping technique, creates a seamless barrier that is highly resistant to many organic and inorganic acids, chemicals and contaminants. We triple-dip the shells of our Legacy Boots for extra tough and 100% Waterproof protection.",
-              "anchor": ""
-            }
-          },
-          "1552051147735": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "Are Your Ankle Deck Boots Acid Chemical Resistant?",
-              "answer": "<p>No, our Ankle Deck Boots are not Acid Chemical Resistant. For low boots with Acid Chemical Resistance, shop our <a href=\"https:\/\/www.xtratuf.com\/collections\/men-type-all-boots\/products\/mens-6-in-low-cut-legacy-boot-copper-tan?variant=18481081581666\">Legacy Ankle Boots<\/a> and <a href=\"https:\/\/www.xtratuf.com\/collections\/men-type-all-boots\/products\/mens-6-in-insulated-elite-legacy-ankle-boot-copper-tan?variant=18481079812194\">Elite Legacy Ankle Boots <!--?<a\/--><\/a>(Elite Boots are also Oil Resistant).<\/p>",
-              "anchor": ""
-            }
-          },
-          "1552051164832": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "Do you offer discounts for bulk orders?",
-              "answer": "<p>Need XTRATUF boots for the whole crew?<\/p>XTRATUF® is happy to offer bulk discounts on large orders of boots and shoes. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.<p><\/p>",
-              "anchor": ""
-            }
-          },
-          "1552051182494": {
-            "type": "html",
-            "settings": {
-              "heading_only": false,
-              "title": "Do you offer discounts for active military?",
-              "answer": "<p>XTRATUF is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.<\/p><p><\/p>",
-              "anchor": ""
-            }
-          }
-        },
-        "block_order": [
-          "1552050934620",
-          "1552051114152",
-          "1552051133764",
-          "1554742471703",
-          "1554923418689",
-          "1552051147735",
-          "1552051164832",
-          "1552051182494"
-        ],
         "settings": {
-          "anchor_top_offset": -100
-        }
-      },
-      "collection-banner": {
-        "type": "collection-banner",
-        "blocks": {
-          "1554153808433": {
-            "type": "image",
-            "settings": {
-              "collection": "women-collection-salmon-sisters",
-              "image": "",
-              "mobile_image": ""
-            }
-          }
-        },
-        "block_order": [
-          "1554153808433"
-        ],
-        "settings": {}
-      },
-      "1554225193358": {
-        "type": "video",
-        "settings": {
-          "heading": "",
-          "full_width": true,
-          "video_url": "https:\/\/www.youtube.com\/watch?v=oGJruPDd07c"
-        }
-      },
-      "1556040259163": {
-        "type": "slideshow",
-        "blocks": {
-          "1556040259163-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/salmon-season-slider-1.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/salmon-season-slider-1-mobile.jpg",
-              "heading": "Fresh prints for spring",
-              "subheading": "",
-              "cta_one_link": "shopify:\/\/collections\/women-collection-salmon-sisters",
-              "cta_one_button_text": "SHOP THE SALMON SISTERS COLLECTION",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 45,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
-          "1556040259163-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/sportsfishing-slider-2.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/sportsfishing-slider-2-mobile.jpg",
-              "heading": "UP & OUT BEFORE THE SUN",
-              "subheading": "",
-              "cta_one_link": "shopify:\/\/collections\/sport-fishing",
-              "cta_one_button_text": "SHOP SPORT FISHING",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 45,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.4"
-            }
-          },
-          "1557363114895": {
-            "type": "image",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/commercial-fishing-slider-3.jpg",
-              "mobile_image": "shopify:\/\/shop_images\/commercial-fishing-slider-3-mobile.jpg",
-              "heading": "REQUIRED: <br>MENTAL TOUGHNESS <br>",
-              "subheading": "",
-              "cta_one_link": "shopify:\/\/collections\/commercial-fishing",
-              "cta_one_button_text": "SHOP COMMERCIAL FISHING",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          }
-        },
-        "block_order": [
-          "1556040259163-0",
-          "1556040259163-1",
-          "1557363114895"
-        ],
-        "settings": {
-          "full_width": true,
-          "slider_speed": 5
-        }
-      },
-      "1558651562615": {
-        "type": "nosto-element",
-        "settings": {
-          "nosto_id": "frontpage-nosto-1"
         }
       }
     },
+    "page-faq-template": {
+      "type": "page-faq-template",
+      "blocks": {
+        "1552041998504": {
+          "type": "html",
+          "settings": {
+            "heading_only": false,
+            "title": "What do the Slip Resistant ratings mean?",
+            "answer": "<p>Our Slip testing is performed to European (EN) \/ International Organization for Standardization (ISO) standards for Personal Protective Equipment: Footwear Test Method for slip resistance. (EN13287).\nThe Testing method is performed on both the heel and forepart of the whole footwear outsole. The test, TM144, is an established test protocol for slip testing widely accepted in the footwear industry around the world.\nSRA rating is tested on ceramic tile with a sodium sulfate contaminant. Slip data must be equal to or greater than .32 for the forepart and equal to or greater than .28 for the heel. All XTRATUF footwear is SRA rated. (link to SRA PLP)\nSRB rating is tested on smooth stainless steel with glycerine contaminant. Slip data must be equal to or greater than .18 for the forepart and equal to or greater than .13 for the heel. SHOP our SRB rated styles.(\"SHOP our SRB rated styles\" link to SRB PLP)<\/p>\n<p>SRC rating is for footwear that passes both SRA and SRB. It is the most stringent specification. SHOP our SRC rated styles. (\"SHOP our SRC rated styles\" link to SRC PLP)<\/p>",
+            "anchor": ""
+          }
+        },
+        "1552042220828": {
+          "type": "html",
+          "settings": {
+            "heading_only": false,
+            "title": "How Do I Check My Order Status?",
+            "answer": "<p>If you are a registered customer, you can access your order history by logging into your account using the credentials you used to create your account. You will find the “My Account” link located at the top of each page. Once you have accessed your account, you can click on the “Track Order” link for order status. If you are not a registered user, you can contact Customer Service at 855-377-BOOT (2668) by submitting an email via the Contact Us section on our site here. Customer Service hours are 7am to 11pm (PST\/PDT) Monday through Friday.<\/p>",
+            "anchor": ""
+          }
+        },
+        "1552042252289": {
+          "type": "html",
+          "settings": {
+            "heading_only": false,
+            "title": "How do I remove the oil from my new Legacy Boots?",
+            "answer": "<p>We intentionally apply oil to our Legacy Boots, it helps to keep the boots flexible contributing to their comfort and suppleness. They can be wiped with a towel or left out of the box for a few days to dry.<\/p>",
+            "anchor": ""
+          }
+        },
+        "1552042271768": {
+          "type": "html",
+          "settings": {
+            "heading_only": false,
+            "title": "Are Ankle Deck Boots Oil Acid Chemical Resistant?",
+            "answer": "<p>No, our Ankle Deck Boots are not Oil Acid Chemical Resistant. For low boots with Oil Acid Chemical Resistance, please shop our Legacy Ankle and Elite Legacy AnkleBoots. (link Legacy Ankle to PDP &amp; link Elite Legacy Ankle to PDP)<\/p>",
+            "anchor": ""
+          }
+        },
+        "1552042285983": {
+          "type": "html",
+          "settings": {
+            "heading_only": false,
+            "title": "Do you offer discounts for bulk orders?",
+            "answer": "<p>Need XTRATUF® boots for the whole crew? XTRATUF® is happy to offer bulk discounts on large orders of boots and shoes. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.<\/p>",
+            "anchor": ""
+          }
+        },
+        "1552042307198": {
+          "type": "html",
+          "settings": {
+            "heading_only": false,
+            "title": "Do you offer discounts for active military troops and their families?",
+            "answer": "<p>XTRATUF® is proud to help outfit active troops and their families by offering a 25% discount. Discounts are currently available via phone orders only, please call our customer care center at 1-855-377-2668 for complete details.<\/p>",
+            "anchor": ""
+          }
+        }
+      },
+      "block_order": [
+        "1552041998504",
+        "1552042220828",
+        "1552042252289",
+        "1552042271768",
+        "1552042285983",
+        "1552042307198"
+      ],
+      "settings": {
+        "anchor_top_offset": -100,
+        "section_title_top": "",
+        "before_content": "",
+        "after_content": "",
+        "landing_page_cs_nav": ""
+      }
+    },
     "content_for_index": [
-      "1556040259163",
-      "1558651562615",
-      "1536251685211",
+      "1535728526385",
       "1536353642475",
-      "1554225193358",
       "1536068961071",
+      "1536251685211",
       "1536252750894",
       "1536266098177"
     ]
