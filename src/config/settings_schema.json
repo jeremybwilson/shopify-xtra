@@ -1154,6 +1154,36 @@
     "settings": [
       {
         "type": "header",
+        "content": "Google Tag Manager"
+      },
+      {
+        "type": "text",
+        "id": "gtm_container_id",
+        "label": "Container ID",
+        "info": "Add the container ID (GTM-XXXXXXX) associated with the Google Tag Manager Account."
+      },
+      {
+        "type": "header",
+        "content": "Google Optimize"
+      },
+      {
+        "type": "checkbox",
+        "id": "google_optimize_antiflicker_enabled",
+        "label": "Enable Google Optimize - Antiflicker Code"
+      },      
+      {
+        "type": "range",
+        "id": "google_optimize_antiflicker_amount",
+        "min": 0,
+        "max": 9000,
+        "step": 500,
+        "unit": "ms",
+        "label": "Delay amount",
+        "info": "(in milliseconds)",
+        "default": 2000
+      },      
+      {
+        "type": "header",
         "content": "Nosto"
       },
       {
