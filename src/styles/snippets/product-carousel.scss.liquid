@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .featured-collection {
-  // top header
+  // top header 
   text-align: center;
 
   @include mq('tablet-and-up') {
@@ -32,14 +32,14 @@
 
       &:after {
         display: none;
-      }
+      }  
     }
     .cta {
       display: block;
     }
     a {
       display: block;
-      color: $color--primary-3;
+      color: $color--primary-2;
       font-weight: $font-weight--bold;
       @include fontDim(13px,13px,0);
       text-transform: uppercase;
@@ -63,7 +63,7 @@
           fill: $color--accent-1;
         }
       }
-    }
+    }    
 
   }
 }
@@ -76,7 +76,7 @@
 
     button {
       position: absolute;
-      top: 50%;
+      top: 50%; 
       transform: translateY(-50%);
 
       &.disabled {
@@ -122,7 +122,7 @@
     h3 {
       max-width: 250px;
       margin: 0 auto;
-      color: $color--primary-3;
+      color: $color--primary-2;
       font-weight: $font-weight--black;
       @include fontDim(16px,16px,0);
       text-transform: uppercase;
@@ -130,7 +130,7 @@
     }
     .price {
       margin-top: 0;
-      color: $color--primary-3;
+      color: $color--primary-2;
       @include fontDim(16px,16px,0);
 
       @include mq('tablet-and-up') {
@@ -143,8 +143,8 @@
         color: {{ settings.sale_color }}
       }
       .was {
-        color: $color--primary-3;
-      }
+        color: $color--primary-2;
+      }      
     }
   }
   .product-modal {

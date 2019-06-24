@@ -13,10 +13,10 @@
     margin-bottom: 14px;
   }
 
-  h5,
+  h5, 
   .current-option {
     display: inline;
-    color: $color--primary-3;
+    color: $color--primary-2;    
     @include fontDim(16px,16px,0);
     text-transform: uppercase;
 
@@ -26,12 +26,12 @@
   }
 
   // swatch main label
-  h5 {
+  h5 { 
     font-weight: $font-weight--black;
   }
 
-  // swatch current option
-  .current-option {
+  // swatch current option 
+  .current-option { 
     margin-left: .5em;
     font-weight: $font-weight--bold;
   }
@@ -56,7 +56,7 @@
     display: inline-block;
     -webkit-transform:translateZ(0); /* webkit flicker fix */
     -webkit-font-smoothing:antialiased; /* webkit text rendering fix */
-    position:relative;
+    position:relative;    
 
     input {
       display: none;
@@ -72,8 +72,8 @@
       height: {{ height }};
       margin: 0 5px 5px 0;
       padding:0;
-      border: solid 1px $color--primary-3;
-      color: $color--primary-3;
+      border: solid 1px $color--primary-2;
+      color: $color--primary-2;
       @include fontDim(16px,16px,.025em);
       font-weight: $font-weight--bold;
       line-height: {{ height }};
@@ -90,7 +90,7 @@
 
   }
 
-  // soldout
+  // soldout 
 
   .swatch-element.soldout {
     label,
@@ -146,7 +146,7 @@
       box-shadow: none;
 
       &:after {
-        border-color: $color--primary-1;
+        border-color: $color--primary-1;  
       }
     }
   }
@@ -166,12 +166,12 @@
     height: 100%;
     left: 0;
     top: 0;
-  }
+  }  
   .swatch-element.soldout .crossed-out {
     display: block;
   }
 
-  // error state
+  // error state 
 
   &.error {
     background-color: #E8D2D2 !important;
@@ -190,7 +190,7 @@
     }
     code {
       font-family: monospace;
-    }
+    }    
   }
 
   // Tooltip
@@ -246,7 +246,7 @@
       left: 0;
       position: absolute;
       width: 100%;
-    }
+    }    
     &:after {
       border-left: solid transparent 10px;
       border-right: solid transparent 10px;
