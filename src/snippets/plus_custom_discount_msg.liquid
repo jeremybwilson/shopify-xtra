@@ -1,5 +1,4 @@
 {% if settings.display_discount_msg and settings.discount_code != blank and settings.discount_msg != blank %}
-	{{ 'jquery-2.2.4.min.js' | asset_url | script_tag }}
 	<script type="text/javascript">
 		var isShowOnce = 0;
 		$(document).on('page:change', function() {
