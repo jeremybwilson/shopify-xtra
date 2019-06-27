@@ -2069,7 +2069,7 @@ theme.ProductForm = function (context, events) {
 
   (function initializeVariants() {
     // Select active variant to ensure variant ID matches the URL
-    optionSelectors.selectVariantFromDropdown({ propStateCall: true });
+    // optionSelectors.selectVariantFromDropdown({ propStateCall: true });
 
     // Set availability to only cross out option1 if all corresponding variants are unavailable
     var variants = product.variants.slice(0)
@@ -2082,9 +2082,9 @@ theme.ProductForm = function (context, events) {
       return acc
     }, []);
 
-    availableOption1.forEach(option => {
-      $(`[data-swatch-value=${option}]`).removeClass('soldout')
-    })
+    // availableOption1.forEach(option => {
+    //   $(`[data-swatch-value=${option}]`).removeClass('soldout')
+    // })
   })();
 
   (function single_option_selectors() {
@@ -3121,4 +3121,31 @@ $(document).on('change','.swatch.color input',function(){
       }
     });
   }
+});
+$(document).on('change','.swatch.color input',function(){
+  $('.swatch.size input:checked').each(function(){
+    $(this).prop('checked',false);
+  });
+  $('.add.AddtoCart').attr('type','button');
+  $('.add.AddtoCart').addClass('disable');
+  $(".variant-size-select-error").html('Please select a size');
+  $(".variant-size-select-error").removeClass('hide');
+  $(".swatch.size .current-option").html('');
+});
+$(document).ready(function(){
+    $('.swatch.size input:checked').each(function(){
+      $(this).prop('checked',false);
+    });
+    $('.add.AddtoCart').attr('type','button');
+    $('.add.AddtoCart').addClass('disable');
+    $(".variant-size-select-error").html('Please select a size');
+});
+$(document).on('change','.swatch.size input',function(){
+  $('.add.AddtoCart').attr('type','submit');
+  $('.add.AddtoCart').removeClass('disable');
+  $(".variant-size-select-error").addClass('hide');
+});
+$(document).on('click','input[type=button].add.AddtoCart',function(){
+  $(".variant-size-select-error").html('Please select a size to add to cart');
+  $(".variant-size-select-error").removeClass('hide');
 });

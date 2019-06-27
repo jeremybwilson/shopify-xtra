@@ -10,7 +10,11 @@
     <h5>{{ option.name }}</h5>
 
     {% comment %} Currently Selected Option {% endcomment %}
-    <h6 class="current-option">{{ current_variant[current_option] }}</h6>
+    <h6 class="current-option">
+    {% if option_name != "size" %}
+      {{ current_variant[current_option] }}
+    {% endif %}
+    </h6>
 
     {% if option_name contains 'size' and template != 'product.quick' %}
       <a href="#size-chart--popup" class="fancybox size-chart--trigger">Size Chart</a>
