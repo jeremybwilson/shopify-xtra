@@ -165,7 +165,7 @@
     "cookie_banner_mobile_button": "http://www.honeywell.com/privacy-statement",
     "cookie_banner_mobile_button_text": "More Info",
     "cookie_banner_expire": 365,
-    "cookie_banner_desktop_text": "<p>This site uses cookies to simplify and improve your usage and experience of this website. Cookies are small text files stored on the device you are using to access this website. If you ignore this message and continue without changing your browser settings, we will assume that you are consenting to our use of cookies. For further information on our use of cookies, please see our <a href=\"https://www.honeywell.com/privacy-statement\" target=\"_blank\">Privacy Statement</a></p>",
+    "cookie_banner_desktop_text": "<p>Hello, we use cookies to improve website performance, facilitate information sharing on social media, and offer advertising tailored to your interests. By using our site, you consent to the use of these cookies. For more information, see our <a href=\"https://www.honeywell.com/privacy-statement\" target=\"_blank\">Privacy Statement</a>. You can also customize your browser’s cookie settings. </p>",
     "cookie_banner_accept_button_text": "Accept",
     "show_multiple_currencies": false,
     "currency_format": "money_with_currency_format",
@@ -821,6 +821,26 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
+          "1556040259163-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/salmon-season-slider-1.jpg",
+              "mobile_image": "shopify://shop_images/salmon-season-slider-1-mobile.jpg",
+              "heading": "Fresh prints",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
+              "cta_one_button_text": "SHOP THE SALMON SISTERS COLLECTION",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 45,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
           "1560198484333": {
             "type": "image",
             "settings": {
@@ -877,26 +897,6 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "left",
               "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
-          "1556040259163-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/salmon-season-slider-1.jpg",
-              "mobile_image": "shopify://shop_images/salmon-season-slider-1-mobile.jpg",
-              "heading": "Fresh prints",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
-              "cta_one_button_text": "SHOP THE SALMON SISTERS COLLECTION",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 45,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
