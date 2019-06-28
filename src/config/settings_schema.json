@@ -1359,5 +1359,28 @@
         "default": "USD"
       }
     ]
+  },
+  {
+    "name": "Address Autofill",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Address Autofill Integration Settings (Auto fill the city and state in the address fields)."
+      },
+      {
+        "type": "checkbox",
+        "id": "address_autofill_enable_flag",
+        "label": "Enable address autofill integration for this store",
+        "default": false,
+        "info": "Check the box to enable. A unique key value MUST also be provided."
+      },
+      {
+        "type": "text",
+        "id": "googlegeo_key_value",
+        "label": "Unique key value",
+        "default": "AIzaSyDV4sR_-Dnp_C4TXJnn1vAce2l1A2t-5eY",
+        "info": "Insert a unique Geocoding API key value here.  Enable checkbox above must also be checked."
+      }
+    ]
   }
 ]

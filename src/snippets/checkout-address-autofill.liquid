@@ -1,0 +1,65 @@
+{%- if settings.address_autofill_enable_flag and settings.googlegeo_key_value != '' -%}
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$.support.cors = true;
+		$.ajaxSetup({ cache: false });
+		var city = '';
+		var hascity = 0;
+		var hassub = 0;
+		var state = '';
+		var nbhd = '';
+		var subloc = '';
+
+		$('#checkout_shipping_address_zip').keyup(function() {
+		  $zval = $('#checkout_shipping_address_zip').val();
+
+		  if($zval.length == 5){
+		     $jCSval = getCityState($zval, true); 
+		  }else{
+		  	$('#checkout_shipping_address_city').val('');
+		  	$('#checkout_shipping_address_province').val('');
+		  }
+		});
+
+		function getCityState($zip, $blnUSA) {
+			 var date = new Date();
+			 $.getJSON('https://maps.googleapis.com/maps/api/geocode/json?address=' + $zip + '&key={{settings.googlegeo_key_value}}&type=json&_=' + date.getTime(), function(response){
+				     //find the city and state
+				 var address_components = response.results[0].address_components;
+				 $.each(address_components, function(index, component){
+					 var types = component.types;
+					 $.each(types, function(index, type){
+						if(type == 'locality') {
+						  city = component.long_name;
+						  hascity = 1;
+						}
+						if(type == 'administrative_area_level_1') {
+						  state = component.short_name;
+						}
+						if(type == 'neighborhood') {
+						  nbhd = component.long_name;
+						}
+						if(type == 'sublocality') {
+						  subloc = component.long_name;
+						  hassub = 1;
+						}
+					 });
+				});
+
+				//pre-fill the city and state
+				if(hascity == 1){
+					$('#checkout_shipping_address_city').val(city);
+				} else if(hassub == 1) {
+				    $('#checkout_shipping_address_city').val(subloc);
+				} else {
+				    $('#checkout_shipping_address_city').val(nbhd);
+				}
+				$('#checkout_shipping_address_province').val(state);
+				//reset
+				hascity = 0;
+				hassub = 0; 
+			});
+		}
+	});
+	</script>
+{%- endif -%}
