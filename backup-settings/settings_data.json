@@ -512,7 +512,7 @@
             "settings": {
               "image": "shopify://shop_images/home-about-promo-desktop-1.jpg",
               "mobile_image": "shopify://shop_images/home-about-promo-mobile-1.jpg",
-              "heading": "Built for Alaska,<br>Fit for Everyone.",
+              "heading": "Alaska Proven.<br>Built for all.",
               "subheading": "",
               "cta_one_link": "shopify://pages/about",
               "cta_one_button_text": "Our Story",
@@ -922,10 +922,10 @@
     },
     "content_for_index": [
       "1556040259163",
-      "1558651562615",
-      "1536251685211",
       "1536353642475",
+      "1536251685211",
       "1554225193358",
+      "1558651562615",
       "1536068961071",
       "1536252750894",
       "1536266098177"
