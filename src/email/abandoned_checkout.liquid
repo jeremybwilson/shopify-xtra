@@ -32,7 +32,9 @@ still available.
 {% endif %}
 {% endcapture %}
 
+{% capture visit_our_store_text %}Visit Our Store{% endcapture %}
 {% capture contact_us_text %}Contact Us{% endcapture %}
+{% capture contact_us_telephone %}855-377-BOOT (2668){% endcapture %}
 {% capture terms_and_conditions %}Terms &amp; Conditions{% endcapture %}
 {% capture privacy_policy_text %}Privacy Policy{% endcapture %}
 
@@ -305,14 +307,7 @@ still available.
                     <div style="color:#848484;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
                       <div style="font-size:12px;line-height:14px;color:#848484;{{ font_family_css }}text-align:left;">
                         <p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center">
-                          <span style="font-size: 12px; line-height: 14px; text-transform: uppercase;"><a
-                              style="color:#848484;text-decoration: none; letter-spacing: .1em;"
-                              title="{{ contact_us_text }}"
-                              href="{{ shop.url }}/pages/contact-us{{ full_email_template_params }}" target="_blank"
-                              rel="noopener">{{ contact_us_text }}</a>&#160;&#160;&#160;&#160; <a
-                              style="color:#848484;text-decoration: none; letter-spacing: .1em;"
-                              title="{{ contact_us_text }}" href="tel:18553772668" target="_blank"
-                              rel="noopener">855-377-BOOT (2668)</a><br></span>
+                          <span style="font-size: 12px; line-height: 14px; text-transform: uppercase;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="{{ contact_us_text }}" href="{{ shop.url }}/pages/contact-us{{ full_email_template_params }}" target="_blank" rel="noopener">{{ contact_us_text }}</a>&#160;&#160;&#160;&#160; <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="{{ contact_us_text }}" href="tel:18553772668" target="_blank" rel="noopener">{{ contact_us_telephone }}</a><br></span>
                         </p>
                       </div>
                     </div>
@@ -322,19 +317,14 @@ still available.
                 <!-- DIVIDER -->
                 <tr>
                   <td>
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="divider "
-                      style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="divider " style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
                       <tbody>
                         <tr style="vertical-align: top">
-                          <td class="divider_inner"
-                            style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-right: 0px;padding-left: 0px;padding-top: 15px;padding-bottom: 10px;min-width: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                            <table class="divider_content" height="0px" align="center" border="0" cellpadding="0"
-                              cellspacing="0" width="100%"
-                              style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #666;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                          <td class="divider_inner" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-right: 0px;padding-left: 0px;padding-top: 15px;padding-bottom: 10px;min-width: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                            <table class="divider_content" height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #666;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
                               <tbody>
                                 <tr style="vertical-align: top">
-                                  <td
-                                    style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                  <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
                                     <span>&#160;</span>
                                   </td>
                                 </tr>
@@ -353,13 +343,8 @@ still available.
                     <div style="color:#848484;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
                       <div style="font-size:12px;line-height:14px;color:#848484;{{ font_family_css }}text-align:left;">
                         <p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center">
-                          <span style="font-size: 12px; line-height: 14px; text-transform: uppercase;"><a
-                              style="color:#848484;text-decoration: none; letter-spacing: .1em;"
-                              href="{{ shop.url }}/pages/terms-conditions{{ full_email_template_params }}"
-                              target="_blank" rel="noopener">{{ terms_and_conditions }}</a> | <a
-                              style="color:#848484;text-decoration: none; letter-spacing: .1em;"
-                              href="https://www.honeywell.com/privacy-statement" target="_blank"
-                              rel="noopener">{{ privacy_policy_text}}</a></span><br></p>
+                          <span style="font-size: 12px; line-height: 14px; text-transform: uppercase;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="{{ shop.url }}/pages/terms-conditions{{ full_email_template_params }}" target="_blank" rel="noopener">{{ terms_and_conditions }}</a> | <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="https://www.honeywell.com/privacy-statement" target="_blank" rel="noopener">{{ privacy_policy_text}}</a></span><br>
+                        </p>
                       </div>
                     </div>
                   </td>
