@@ -476,10 +476,10 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/left-mens-best-sellers-desktop.jpg",
-              "mobile_image": "shopify://shop_images/left-mens-best-sellers-mobile.jpg",
-              "link": "shopify://collections/men-feature-best-sellers",
-              "heading_text": "MEN'S BEST SELLERS",
+              "image": "shopify://shop_images/waterproof-deck-shoes.jpg",
+              "mobile_image": "shopify://shop_images/waterproof-deck-shoes_c1d52b5a-3051-43fd-84f3-8c3a7b535774.jpg",
+              "link": "shopify://collections/waterproof-deck-shoes",
+              "heading_text": "WATERPROOF DECK SHOES",
               "text": "",
               "cta_text": "SHOP NOW"
             }
@@ -487,10 +487,10 @@
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/right-womens-best-sellers-desktop.jpg",
-              "mobile_image": "shopify://shop_images/right-womens-best-sellers-mobile.jpg",
-              "link": "shopify://collections/women-feature-best-sellers",
-              "heading_text": "WOMEN'S BEST SELLERS",
+              "image": "shopify://shop_images/salmon-sisters-collection_cbfe644c-1113-48c9-bfba-fd1f2af82f9e.jpg",
+              "mobile_image": "shopify://shop_images/salmon-sisters-collection.jpg",
+              "link": "shopify://collections/women-collection-salmon-sisters",
+              "heading_text": "THE SALMON SISTERS COLLECTION",
               "text": "",
               "cta_text": "SHOP NOW"
             }
@@ -549,8 +549,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "NEW ARRIVALS",
-          "homepage_collection": "new-arrivals",
+          "heading": "SLIP-RESISTANT DECK SHOES",
+          "homepage_collection": "lifestyle",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
@@ -821,33 +821,13 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
-          "1556040259163-0": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/salmon-season-slider-1.jpg",
-              "mobile_image": "shopify://shop_images/salmon-season-slider-1-mobile.jpg",
-              "heading": "Fresh prints",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/women-collection-salmon-sisters",
-              "cta_one_button_text": "SHOP THE SALMON SISTERS COLLECTION",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 45,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
           "1560198484333": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
               "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
-              "heading": "FIT FOR THE <br>FEMALE FISHERMAN<br>",
-              "subheading": "<strong>WOMEN'S ANKLE DECK BOOT <br>NOW AVAILABLE IN BLACK & BROWN</strong>",
+              "heading": "WOMEN'S ANKLE DECK BOOT",
+              "subheading": "NOW AVAILABLE IN BLACK & BROWN",
               "cta_one_link": "shopify://collections/women-activity-ankle-deck-boots",
               "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
@@ -864,18 +844,18 @@
           "1556040259163-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/sportsfishing-slider-2.jpg",
-              "mobile_image": "shopify://shop_images/sportsfishing-slider-2-mobile.jpg",
-              "heading": "UP & OUT BEFORE THE SUN",
+              "image": "shopify://shop_images/deck-shoes_f1ae0ac3-0307-43d7-b569-e52b95500fb9.jpg",
+              "mobile_image": "shopify://shop_images/deck-shoes-m_9be3eff9-938f-4080-a658-58bd5b4ed26f.jpg",
+              "heading": "CELEBRATE SUMMER",
               "subheading": "",
-              "cta_one_link": "shopify://collections/sport-fishing",
-              "cta_one_button_text": "SHOP SPORT FISHING",
+              "cta_one_link": "shopify://collections/lifestyle",
+              "cta_one_button_text": "SHOP NON-SLIP DECK SHOES",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
+              "caption_horizontal": "right",
               "caption_vertical": 45,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.4"
@@ -884,18 +864,18 @@
           "1557363114895": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/commercial-fishing-slider-3.jpg",
-              "mobile_image": "shopify://shop_images/commercial-fishing-slider-3-mobile.jpg",
-              "heading": "REQUIRED: <br>MENTAL TOUGHNESS <br>",
+              "image": "shopify://shop_images/deck-boot_3cbe5bbc-ea26-4bed-8af4-6a70a446fd24.jpg",
+              "mobile_image": "shopify://shop_images/deck-boot-m_be8ac846-87d9-4959-a42b-e781e7efe5bd.jpg",
+              "heading": "Mossy Oak Elements™ Collection",
               "subheading": "",
-              "cta_one_link": "shopify://collections/commercial-fishing",
-              "cta_one_button_text": "SHOP COMMERCIAL FISHING",
+              "cta_one_link": "shopify://collections/mossy-oak",
+              "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
+              "caption_horizontal": "right",
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
@@ -903,9 +883,8 @@
           }
         },
         "block_order": [
-          "1556040259163-0",
-          "1560198484333",
           "1556040259163-1",
+          "1560198484333",
           "1557363114895"
         ],
         "settings": {
