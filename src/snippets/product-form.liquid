@@ -181,6 +181,7 @@
         inv_qty[{{- var.id -}}] = {{ var.inventory_quantity | default: 0 }};
       {% endfor %}
     </script>
+    <span class="variant-size-select-error"></span>
     <span class="variant-inventory-one-unit" data-callout="{{ 'products.product.one_unit_left' | t }}"></span>
     <div id="product-add">
       {% if section.settings.show_quantity %}

@@ -503,3 +503,13 @@
     ]
   }
 {% endschema %}
+{% if template == 'product.quick' %}
+  <script>
+    $('.swatch.size input:checked').each(function(){
+        $(this).prop('checked',false);
+    });
+    $('.add.AddtoCart').attr('type','button');
+    $('.add.AddtoCart').addClass('disable');
+    $(".variant-size-select-error").html('Please select a size');
+  </script>
+{% endif %}
