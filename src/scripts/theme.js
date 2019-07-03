@@ -3059,7 +3059,7 @@ theme.Blog = (function() {
   function Blog(container) {
     $(document).ready( () => {
       // Sorting blog article based on created_at 
-      $(".article-loop-container").html($(".article-loop-container .article-index").sort(function (a, b) {
+      $(".article-loop-container-sort").html($(".article-loop-container-sort .article-index").sort(function (a, b) {
         var a_no = parseInt(a.getAttribute('data-time'));
         var b_no = parseInt(b.getAttribute('data-time'));
         return a_no == b_no ? 0 : a_no >  b_no ? -1 : 1

@@ -39,7 +39,7 @@
     {% else %}
       {% paginate blog.articles by 10 %}
 
-        <div class="article-loop-container">
+        <div class="article-loop-container article-loop-container-sort">
           {% for article in blog.articles  %}
             {% assign number_of_comments = article.comments_count %}
             {% if comment and comment.created_at %}
