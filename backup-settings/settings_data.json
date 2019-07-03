@@ -171,6 +171,8 @@
     "currency_format": "money_with_currency_format",
     "supported_currencies": "INR GBP CAD USD AUD EUR JPY",
     "default_currency": "USD",
+    "address_autofill_enable_flag": false,
+    "googlegeo_key_value": "AIzaSyDV4sR_-Dnp_C4TXJnn1vAce2l1A2t-5eY",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify://shop_images/checkout-logo.png",
     "checkout_logo_position": "left",
@@ -821,26 +823,6 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
-          "1560198484333": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
-              "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
-              "heading": "WOMEN'S ANKLE DECK BOOT",
-              "subheading": "NOW AVAILABLE IN BLACK & BROWN",
-              "cta_one_link": "shopify://collections/women-activity-ankle-deck-boots",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "rgba(0,0,0,0)",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "transparent",
-              "caption_opacity": "0.1"
-            }
-          },
           "1556040259163-1": {
             "type": "image",
             "settings": {
@@ -861,15 +843,35 @@
               "caption_opacity": "0.4"
             }
           },
+          "1560198484333": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
+              "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
+              "heading": "WOMEN'S ANKLE DECK BOOT",
+              "subheading": "NOW AVAILABLE IN BLACK & BROWN",
+              "cta_one_link": "shopify://collections/women-activity-ankle-deck-boots",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "rgba(0,0,0,0)",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
+          },
           "1557363114895": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/deck-boot_3cbe5bbc-ea26-4bed-8af4-6a70a446fd24.jpg",
               "mobile_image": "shopify://shop_images/deck-boot-m_be8ac846-87d9-4959-a42b-e781e7efe5bd.jpg",
-              "heading": "Mossy Oak Elements™ Collection",
+              "heading": "Mossy Oak Elements™",
               "subheading": "",
               "cta_one_link": "shopify://collections/mossy-oak",
-              "cta_one_button_text": "SHOP NOW",
+              "cta_one_button_text": "SHOP THE COLLECTION",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
