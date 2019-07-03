@@ -3052,6 +3052,25 @@ theme.Search = (function() {
   return Search;
 })();
 
+/*============================================================================
+  Blog template
+==============================================================================*/
+theme.Blog = (function() {
+  function Blog(container) {
+    $(document).ready( () => {
+      // Sorting blog article based on created_at 
+      $(".article-loop-container-sort").html($(".article-loop-container-sort .article-index").sort(function (a, b) {
+        var a_no = parseInt(a.getAttribute('data-time'));
+        var b_no = parseInt(b.getAttribute('data-time'));
+        return a_no == b_no ? 0 : a_no >  b_no ? -1 : 1
+      }));
+    });
+  }
+
+  Blog.prototype = _.assignIn({}, Blog.prototype, {});
+  return Blog;
+})();
+
 
 
 /*============================================================================
@@ -3073,6 +3092,7 @@ $(document).ready(function() {
   sections.register('mobile-navigation', theme.mobileNav);
   sections.register('product-section', theme.Product);
   sections.register('search-template', theme.Search);
+  sections.register('blog-template', theme.Blog);
 });
 
 /*============================================================================

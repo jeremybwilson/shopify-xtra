@@ -3,7 +3,7 @@
     {% if section.settings.heading != blank %}
     <h2 class="section-heading desktop-12 mobile-3">{{ section.settings.heading | escape }}</h2>
     {% endif %}
-    <div class="article-loop">
+    <div class="article-loop article-loop-container-sort">
       {%- assign blog = blogs[section.settings.blog] -%}
       {%- assign post_limit = section.settings.post_limit -%}
       {% if blog == blank %}

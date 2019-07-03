@@ -1,5 +1,5 @@
 {% assign count = 0 %}
-<div class="article-loop-container">
+<div class="article-loop-container article-loop-container-sort">
   {% for link in linklists.blogs.links %}
     {% assign blog = link.object %}
     {% for article in blog.articles  %}
@@ -9,7 +9,8 @@
       {% endif %}
       <div class="article-index"
            id="article-{{ article.id }}"
-           data-alpha="{{ article.title }}">
+           data-alpha="{{ article.title }}"
+           data-time="{{ article.created_at | date : '%s' }}">
         {% include 'article-loop' %}
       </div>
       {% assign count = count | plus: 1 %}
