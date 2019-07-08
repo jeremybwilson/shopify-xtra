@@ -60,11 +60,10 @@
       width: 100%;
       margin-bottom: 25px;
       .product-modal {
-        font-weight: 700;
+        font-weight: $font-weight--bold;
         line-height: 1.42857em;
         letter-spacing: 0;
-        font-size: 16px;
-        font-size: 1rem;
+        @include fontSize(16px);
         background: {{ settings.button_bg }};
         color: {{ settings.button_text }};
         border-radius: 0;
