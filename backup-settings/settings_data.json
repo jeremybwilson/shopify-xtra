@@ -264,7 +264,7 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "2",
+          "num_of_promo_banners": "1",
           "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
           "announcement_link_one": "/pages/shipping-returns",
           "announcement_text_two": "<strong>Red, White & Blue Sale SHOP NOW</strong>",
@@ -551,8 +551,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "Red, White & Blue Sale",
-          "homepage_collection": "sale",
+          "heading": "New Arrivals",
+          "homepage_collection": "new-arrivals",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
@@ -891,30 +891,9 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
-          },
-          "1562212443270": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/red-white-blue-sale.jpg",
-              "mobile_image": "shopify://shop_images/red-white-blue-sale-mobile.jpg",
-              "heading": "Red, White & Blue Sale",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/sale",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "dark",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
           }
         },
         "block_order": [
-          "1562212443270",
           "1556040259163-1",
           "1560198484333",
           "1557363114895"
