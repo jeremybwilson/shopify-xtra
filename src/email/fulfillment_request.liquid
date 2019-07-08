@@ -1,14 +1,15 @@
-{% capture notification_template_name %}shipping_update{% endcapture %}
+{% capture notification_template_name %}fulfillment_request{% endcapture %}
 {% capture full_email_template_params %}?utm_source=tran&utm_medium=email&utm_campaign={{ notification_template_name }}{% endcapture %}
 {% capture font_family_css %}font-family:'Museo Sans', 'Verdana', sans-serif;{% endcapture %}
 {% capture xtratuf_css_variable_one %}padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;{% endcapture %}
 {% capture shop_custom_name %}XtraTuf{% endcapture %}
 
-{% capture email_title %}Your shipping status has been updated{% endcapture %}
-{% capture email_body %}The following items have been updated with new shipping information.{% endcapture %}
+{% capture email_title %} Please Fulfill Order{% endcapture %}
 
-{% capture view_your_order_text %}View Your Order{% endcapture %}
-{% capture items_in_this_shipment_text %}Items In This Shipment{% endcapture %}
+{% capture shipping_address_text %}Shipping Address{% endcapture %}
+{% capture shipping_method_text %}Shipping Method{% endcapture %}
+{% capture tracking_number_text %}Tracking Number{% endcapture %}
+{% capture customer_email_text %}Customer Email{% endcapture %}
 {% capture visit_our_store_text %}Visit Our Store{% endcapture %}
 {% capture contact_us_text %}Contact Us{% endcapture %}
 {% capture contact_us_telephone %}855-377-BOOT (2668){% endcapture %}
@@ -25,10 +26,11 @@
 </head>
 <body>
 
-<table class="full-container" style="background: #eeeeee; width: 100%; border-collapse: collapse;">
+<table class="full-container" style="background: #fafafa; width: 100%; border-collapse: collapse;">
   <tr>
     <td style="text-align: center" align="center">
       <!-- LAYOUT -->
+
       <table class="main-layout" style="width: 500px; min-width: 500px; max-width: 500px; background-color: #ffffff; margin: 20px auto; border-collapse: collapse;">
         <!-- HEADER -->
         <tr>
@@ -41,45 +43,19 @@
         </tr>
 
         <!-- BODY -->
+
         <tr>
           <td style="padding: 0">
             <table class="body-layout" style="width: 100%; border-collapse: collapse;">
-
               <!-- BODY :: INTRO -->
               <tr>
-                <td style="background-color: #0A56A4; padding: 20px;">
-                  <div style="border: solid 6px #0a56a4; padding: 40px 20px 30px">
-
-                    <!-- ORDER # -->
-                    <div style="color:#ffffff;line-height:120%;{{ font_family_css }} padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 0px;">
-                      <div style="font-size:16px;line-height:19px;{{ font_family_css }}color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 16px;line-height: 19px;text-align: center"><span style="font-size: 12px; line-height: 14px;">ORDER {{ order_name }}</span></p></div>
-                    </div>
-
-                    <!-- HEADLINE -->
-                    <div style="color:#ffffff;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
-                      <div style="font-size:12px;line-height:14px;font-family:inherit;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><strong><span style="font-size: 28px; line-height: 33px; letter-spacing: 0; text-transform: uppercase;">{{ email_title }}</span></p></div>
-                    </div>
-
-                    <!-- COPY -->
-                    <div style="color:#ffffff;line-height:180%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
-                      <div style="font-size:14px;line-height:25px;font-family:inherit;color:#ffffff;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: center">{{ email_body }}</p></div>
-                    </div>
-
-                    <!-- BUTTON -->
-                    <div align="center" class="button-container center " style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;">
-                      <!--[if mso]><table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"><tr><td style="padding-right: 10px; padding-left: 10px; padding-top:10px; padding-bottom:10px;" align="center"><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="view_your_order_link" style="height:31pt; v-text-anchor:middle; width:121pt;" arcsize="0%" strokecolor="#e41c39" fillcolor="#e41c39"><w:anchorlock/><v:textbox inset="0,0,0,0"><center style="color:#ffffff; {{ font_family_css }} font-size:16px;"><![endif]-->
-                        <a href="{{ order_status_url }}{{ full_email_template_params }}" target="_blank" style="display: block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #e41c39; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; max-width: 162px; width: 132px;width: auto; border-top: 0px solid transparent; border-right: 0px solid transparent; border-bottom: 0px solid transparent; border-left: 0px solid transparent; padding-top: 5px; padding-right: 15px; padding-bottom: 5px; padding-left: 15px; font-family: 'Museo Sans', 'Verdana', sans-serif;mso-border-alt: none">
-                          <span style="{{ font_family_css }}font-size:16px;line-height:32px;"><span style="font-size: 12px; line-height: 24px; letter-spacing: 0em; text-transform:uppercase;"><strong>{{ view_your_order_text }}</strong></span></span>
-                        </a>
-                      <!--[if mso]></center></v:textbox></v:roundrect></td></tr></table><![endif]-->
-                    </div>
-
-                    <!-- LINK -->
-                    <div style="color:#ffffff;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
-                      <div style="font-size:12px;line-height:14px;color:#ffffff;{{ font_family_css }}text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px; letter-spacing: .125em;"><a style="color:#ffffff;text-decoration: none;" title="{{ visit_our_store_text }}" href="{{shop.url}}{{ full_email_template_params }}" target="_blank" rel="noopener">{{ visit_our_store_text }}</a><svg class="icon icon-caret_right" style="width: 10px; margin-left: 5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path fill="#e41c39" d="M504,0c30.3,0,56.6,11.1,78.8,33.2l784,784c22.2,22.2,33.2,48.4,33.2,78.8s-11.1,56.6-33.2,78.8l-784,784
-                          c-22.2,22.2-48.4,33.2-78.8,33.2s-56.6-11.1-78.8-33.2c-22.2-22.2-33.2-48.4-33.2-78.8V112c0-30.3,11.1-56.6,33.2-78.8
-                          C447.4,11.1,473.7,0,504,0z"></path>
-                      </svg></span></p></div>
+                <td style="background-color: #ffffff; padding: 20px;">
+                  <div style="border: solid 6px #ffffff; padding: 40px 20px 30px">
+                    <!-- BRIEF -->
+                    <div style="color: #000; font-size: 13px; {{ font_family_css }} line-height: 17px; letter-spacing: 0;">
+                        <p><span style="text-transform: uppercase;"><strong>Please fulfill<span style="color: #0a56a4;"> Order {{ name }}</strong></span></span></p>
+                        <p>Total number of items: {{ fulfillment.item_count }}</p>
+                        <p>Unique items: {{ fulfillment.fulfillment_line_items.size }}</p>
                     </div>
                   </div>
                 </td>
@@ -87,54 +63,96 @@
 
               <!-- BODY :: TABLE -->
               <tr>
-                <td style="padding: 60px 40px 50px">
-                  <!-- TITLE -->
-                  <div style="color:#164632;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
-                    <div style="font-size:12px;line-height:14px;color:#0a56a4;{{ font_family_css }}text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center;"><span style="font-size: 18px; line-height: 21px; letter-spacing: 0; text-transform:uppercase;"><strong>{{ items_in_this_shipment_text }}</strong></span></p></div>
-                  </div>
-
+                <td style="padding: 60px 40px 50px; background-color: #fafafa">
                   <!-- TABLE -->
-
-                  <!-- PRODUCT ITEM -->
-                  <table class="row" style="border-collapse: collapse; width: 100%;">
-                    {% for line in subtotal_line_items %}
-                    <tr class="order-list__item">
-                      <td style="border-bottom: solid 1px #e8e8e8; width: 45%;">
-                        {% if line.image %}
-                          <img src="{{ line | img_url: '180x180' }}" align="left"/>
+                  <!--  PRODUCT ITEM -->
+                  <table class="row" style=" background-color: #fafafa; border-collapse: collapse; width: 100%;">
+                    <tr>
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%; padding-bottom: 15px;">
+                        <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
+                          <p><span><strong>Items To Fulfill</strong></span></p>
+                        </div>
+                        {% for line in fulfillment.fulfillment_line_items %}
+                          <div style="padding-bottom: 15px;">
+                            <p>Variant Title: {{ line.line_item.title }}</p>
+                            <p>SKU: {{ line.line_item.sku }}</p>
+                            <p>Quantity: {{ line.quantity }}</p>
+                            <p>Grams: {{ line.line_item.grams }}</p>
+                            <p>Vendor: {{ line.line_item.vendor }}</p>
+                          </div>
+                        {% endfor %}
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
+                        <!-- SHIPPING ADDRESS  -->
+                        {% if shipping_address %}
+                          <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
+                            <p><span><strong>{{ shipping_address_text }}</strong></span></p>
+                          </div>
+                           <p>
+                              {{ shipping_address.name }}
+                                {% if shipping_address.company %}
+                                {{ shipping_address.company }}
+                              {% endif %}
+                            </p>
+                            <p>{{ shipping_address.address1 }}</p>
+                            <p>{{ shipping_address.address2 }}</p>
+                            <p>{{ shipping_address.city }}, {{ shipping_address.province }}</p>
+                            <p>{{ shipping_address.zip }}</p>
+                            <p>{{ shipping_address.country }}</p>
+                            {% if shipping_address.phone %}
+                              <p>Phone: {{ shipping_address.phone }}</p>
+                            {% endif %}
                         {% endif %}
                       </td>
-                      <td class="order-list__product-description-cell" style="vertical-align: middle; width: 55%; padding-left: 40px; padding-right: 10px; border-bottom: solid 1px #e8e8e8;">
-                        {% if line.product.title %}
-                          {% assign line_title = line.product.title %}
-                        {% else %}
-                          {% assign line_title = line.title %}
-                        {% endif %}
-
-                        {% if line.quantity < line.quantity %}
-                          {% capture line_display %} {{ line.quantity }} of {{ line.quantity }} {% endcapture %}
-                        {% else %}
-                          {% assign line_display = line.quantity  %}
-                        {% endif %}
-
-                        <span style="font-weight: bold; font-size: 14px; color: #000000; {{ font_family_css }}" class="order-list__item-title">{{ line_title }} × {{ line_display }}</span>
-
-                        {% if line.variant.title != 'Default Title' %}
-                          <br/><span style="color: #000000; font-size: 14px; {{ font_family_css }}" class="order-list__item-variant">{{ line.variant.title }}</span>
-                        {% endif %}
-
-                        {% if line.refunded_quantity > 0 %}
-                          <br/><span style="color: #000000; font-size: 14px; {{ font_family_css }}" class="order-list__item-refunded">Refunded</span>
+                    </tr>
+                    <tr>
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
+                        <!-- SHIPPING METHOD  -->
+                        {% if shipping_method %}
+                          <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
+                            <p><span><strong>{{ shipping_method_text }}</strong></span></p>
+                          </div>
+                           <p>{{ shipping_method.title }}</p>
+                              {% else %}None
                         {% endif %}
                       </td>
-                    </tr>{% endfor %}
+                    </tr>
+                    <tr>
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
+                        <!-- TRACKING NUMBER  -->
+                        {% if fulfillment.tracking_number %}
+                          <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
+                            <p><span><strong>{{ tracking_number_text}}</strong></span></p>
+                          </div>
+                           <p>{{ fulfillment.tracking_number }}</p>
+                              {% else %}None
+                        {% endif %}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
+                        <!-- CUSTOMER EMAIL  -->
+                        {% if fulfillment.tracking_number %}
+                          <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
+                            <p><span><strong>{{ customer_email_text }}</strong></span></p>
+                          </div>
+                           <p>{{ email }}</p>
+                              {% else %}None
+                        {% endif %}
+                      </td>
+                    </tr>
                   </table>
-
+                                <div>
+                <div style="font-size: 13px;line-height:25px; {{ font_family_css }}color:#000000;text-align:left;">
+                  <p>Thank you,<br \>{{ shop_name }}</p>
+                </div>
+              </div>
                 </td>
               </tr>
-
             </table>
-
           </td>
         </tr>
 

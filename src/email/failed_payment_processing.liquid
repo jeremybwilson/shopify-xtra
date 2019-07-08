@@ -1,0 +1,143 @@
+{% capture notification_template_name %}failed_payment{% endcapture %}
+{% capture full_email_template_params %}?utm_source=tran&utm_medium=email&utm_campaign={{ notification_template_name }}{% endcapture %}
+{% capture font_family_css %}font-family:'Museo Sans', 'Verdana', sans-serif;{% endcapture %}
+{% capture xtratuf_css_variable_one %}padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;{% endcapture %}
+{% capture shop_custom_name %}XtraTuf{% endcapture %}
+
+{% capture email_title %} Your payment couldn’t be processed {% endcapture %}
+{% capture email_body %}
+  You added items to your shopping cart but the payment couldn’t be processed. You haven’t been charged.
+{% endcapture %}
+
+{% capture return_to_cart_text %}Return to cart{% endcapture %}
+{% capture visit_our_store_text %}Visit Our Store{% endcapture %}
+{% capture contact_us_text %}Contact Us{% endcapture %}
+{% capture contact_us_telephone %}855-377-BOOT (2668){% endcapture %}
+{% capture terms_and_conditions %}Terms &amp; Conditions{% endcapture %}
+{% capture privacy_policy_text %}Privacy Policy{% endcapture %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>{{ email_title }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/notifications/styles.css">
+  <style>
+    .button__cell { background: {{ shop.email_accent_color }}; }
+    a, a:hover, a:active, a:visited { color: {{ shop.email_accent_color }}; }
+  </style>
+</head>
+
+  <body>
+    <table class="body">
+      <tr>
+        <td>
+          <table class="header row">
+            <tr>
+              <td class="header__cell">
+                <center>
+
+                  <table class="container">
+                    <tr>
+                      <td>
+
+                        <table class="row">
+                          <tr>
+                            <td class="shop-name__cell">
+                              {%- if shop.email_logo_url %}
+                                <img src="{{shop.email_logo_url}}" alt="{{ shop.name }}" width="{{ shop.email_logo_width }}">
+                              {%- else %}
+                                <h1 class="shop-name__text">
+                                  <a href="{{shop.url}}{{ full_email_template_params }}">{{ shop.name }}</a>
+                                </h1>
+                              {%- endif %}
+                            </td>
+
+                          </tr>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </table>
+
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <table class="row content">
+            <tr>
+              <td class="content__cell">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td>
+
+                      <h2>{{ email_title }}</h2>
+                      <p>{{ email_body }}</p>
+                      <p> You can still return to your cart to complete your purchase. </p>
+                      {% if shop.url %}
+                        <table class="row actions">
+                          <tr>
+                            <td class="actions__cell">
+                              <table class="button main-action-cell">
+                                <tr>
+                                  <table class="row actions">
+                                    <tr>
+                                      <td class="actions__cell">
+                                        <table class="button main-action-cell">
+                                          <tr>
+                                            <td class="button__cell"><a href="{{ url }}{{ full_email_template_params }}" class="button__text">{{ return_to_cart_text }}</a></td>
+                                          </tr>
+                                        </table>
+                                        {% if shop.url %}
+                                      <table class="link secondary-action-cell">
+                                        <tr>
+                                          <td class="link__cell">or <a href="{{ shop.url }}{{ full_email_template_params }}">{{ visit_our_store_text }}</a></td>
+                                        </tr>
+                                      </table>
+                                  {% endif %}
+
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      {% endif %}
+
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <table class="row footer">
+            <tr>
+              <td class="footer__cell">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td>
+
+                        <p class="disclaimer__subtext">If you have any questions, reply to this email or contact us at <a href="mailto:{{ shop.email }}">{{ shop.email }}</a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table>
+
+          <img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
