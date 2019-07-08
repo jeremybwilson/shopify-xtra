@@ -1,5 +1,20 @@
+{% capture notification_template_name %}fulfillment_request{% endcapture %}
+{% capture full_email_template_params %}?utm_source=tran&utm_medium=email&utm_campaign={{ notification_template_name }}{% endcapture %}
+{% capture font_family_css %}font-family:'Museo Sans', 'Verdana', sans-serif;{% endcapture %}
+{% capture xtratuf_css_variable_one %}padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;{% endcapture %}
+{% capture shop_custom_name %}XtraTuf{% endcapture %}
+
 {% capture email_title %} Please Fulfill Order{% endcapture %}
 
+{% capture shipping_address_text %}Shipping Address{% endcapture %}
+{% capture shipping_method_text %}Shipping Method{% endcapture %}
+{% capture tracking_number_text %}Tracking Number{% endcapture %}
+{% capture customer_email_text %}Customer Email{% endcapture %}
+{% capture visit_our_store_text %}Visit Our Store{% endcapture %}
+{% capture contact_us_text %}Contact Us{% endcapture %}
+{% capture contact_us_telephone %}855-377-BOOT (2668){% endcapture %}
+{% capture terms_and_conditions %}Terms &amp; Conditions{% endcapture %}
+{% capture privacy_policy_text %}Privacy Policy{% endcapture %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +22,7 @@
   <title>{{ email_title }}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width">
-  
+
 </head>
 <body>
 
@@ -17,18 +32,13 @@
       <!-- LAYOUT -->
 
       <table class="main-layout" style="width: 500px; min-width: 500px; max-width: 500px; background-color: #ffffff; margin: 20px auto; border-collapse: collapse;">
-          
         <!-- HEADER -->
-
         <tr>
           <td align="center" style="padding-top: 25px; padding-bottom: 25px; padding-left: 0; padding-right: 0; text-align: center; background-color: #ffffff; width: 100%;">
-
             <!-- LOGO  -->
-
-            <a href="{{ shop.url }}" target="_blank" title="{{ shop.name }}">
+            <a href="{{ shop.url }}{{ full_email_template_params }}" target="_blank" title="{{ shop.name }}">
               <img class="center fixedwidth" align="center" border="0" src="https://cdn.shopify.com/s/files/1/0053/3194/3522/files/email_logo.gif?7953218545083095441" alt="{{ shop.name }}" title="{{ shop.name }}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 150px" width="150">
             </a>
-
           </td>
         </tr>
 
@@ -36,49 +46,32 @@
 
         <tr>
           <td style="padding: 0">
-
             <table class="body-layout" style="width: 100%; border-collapse: collapse;">
-
               <!-- BODY :: INTRO -->
-
               <tr>
                 <td style="background-color: #ffffff; padding: 20px;">
-
                   <div style="border: solid 6px #ffffff; padding: 40px 20px 30px">
-
                     <!-- BRIEF -->
-          
-                    <div style="color: #000; font-size: 13px; font-family:'Museo Sans', 'Verdana', sans-serif; line-height: 17px; letter-spacing: 0;">
+                    <div style="color: #000; font-size: 13px; {{ font_family_css }} line-height: 17px; letter-spacing: 0;">
                         <p><span style="text-transform: uppercase;"><strong>Please fulfill<span style="color: #0a56a4;"> Order {{ name }}</strong></span></span></p>
-
-
                         <p>Total number of items: {{ fulfillment.item_count }}</p>
                         <p>Unique items: {{ fulfillment.fulfillment_line_items.size }}</p>
                     </div>
-          
-
                   </div>
                 </td>
               </tr>
 
               <!-- BODY :: TABLE -->
-
               <tr>
                 <td style="padding: 60px 40px 50px; background-color: #fafafa">
                   <!-- TABLE -->
-
-                  <!-- 
-                  PRODUCT ITEM
-                  -->
-
+                  <!--  PRODUCT ITEM -->
                   <table class="row" style=" background-color: #fafafa; border-collapse: collapse; width: 100%;">
                     <tr>
-                      <td style="color: #000000; font-size: 13px; font-family:'Museo Sans', 'Verdana', sans-serif; width: 45%; padding-bottom: 15px;">
-
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%; padding-bottom: 15px;">
                         <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
                           <p><span><strong>Items To Fulfill</strong></span></p>
-                        </div>  
-                      
+                        </div>
                         {% for line in fulfillment.fulfillment_line_items %}
                           <div style="padding-bottom: 15px;">
                             <p>Variant Title: {{ line.line_item.title }}</p>
@@ -92,12 +85,12 @@
                       </td>
                     </tr>
                     <tr>
-                      <td style="color: #000000; font-size: 13px; font-family:'Museo Sans', 'Verdana', sans-serif; width: 45%;" >
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
                         <!-- SHIPPING ADDRESS  -->
                         {% if shipping_address %}
                           <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
-                            <p><span><strong>Shipping Address</strong></span></p>
-                          </div>   
+                            <p><span><strong>{{ shipping_address_text }}</strong></span></p>
+                          </div>
                            <p>
                               {{ shipping_address.name }}
                                 {% if shipping_address.company %}
@@ -112,70 +105,64 @@
                             {% if shipping_address.phone %}
                               <p>Phone: {{ shipping_address.phone }}</p>
                             {% endif %}
-                        {% endif %}            
+                        {% endif %}
                       </td>
                     </tr>
                     <tr>
-                      <td style="color: #000000; font-size: 13px; font-family:'Museo Sans', 'Verdana', sans-serif; width: 45%;" >
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
                         <!-- SHIPPING METHOD  -->
                         {% if shipping_method %}
                           <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
-                            <p><span><strong>Shipping Method</strong></span></p>
-                          </div>   
+                            <p><span><strong>{{ shipping_method_text }}</strong></span></p>
+                          </div>
                            <p>{{ shipping_method.title }}</p>
                               {% else %}None
-                        {% endif %}     
+                        {% endif %}
                       </td>
                     </tr>
                     <tr>
-                      <td style="color: #000000; font-size: 13px; font-family:'Museo Sans', 'Verdana', sans-serif; width: 45%;" >
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
                         <!-- TRACKING NUMBER  -->
                         {% if fulfillment.tracking_number %}
                           <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
-                            <p><span><strong>Tracking Number</strong></span></p>
-                          </div>   
+                            <p><span><strong>{{ tracking_number_text}}</strong></span></p>
+                          </div>
                            <p>{{ fulfillment.tracking_number }}</p>
                               {% else %}None
-                        {% endif %}     
+                        {% endif %}
                       </td>
                     </tr>
                     <tr>
-                      <td style="color: #000000; font-size: 13px; font-family:'Museo Sans', 'Verdana', sans-serif; width: 45%;" >
+                      <td style="color: #000000; font-size: 13px; {{ font_family_css }} width: 45%;" >
                         <!-- CUSTOMER EMAIL  -->
                         {% if fulfillment.tracking_number %}
                           <div style="color: #0a56a4; font-size: 16px; line-height: 21px; letter-spacing: 0; text-transform: uppercase;">
-                            <p><span><strong>Customer Email</strong></span></p>
-                          </div>   
+                            <p><span><strong>{{ customer_email_text }}</strong></span></p>
+                          </div>
                            <p>{{ email }}</p>
                               {% else %}None
-                        {% endif %}     
+                        {% endif %}
                       </td>
                     </tr>
-                  </table>     
-                                <div> 
-                <div style="font-size: 13px;line-height:25px; font-family:'Museo Sans', 'Verdana', sans-serif;color:#000000;text-align:left;">
+                  </table>
+                                <div>
+                <div style="font-size: 13px;line-height:25px; {{ font_family_css }}color:#000000;text-align:left;">
                   <p>Thank you,<br \>{{ shop_name }}</p>
-                </div> 
-              </div> 
+                </div>
+              </div>
                 </td>
               </tr>
-
             </table>
-
           </td>
         </tr>
 
         <!-- FOOTER -->
-
         <tr>
           <td style="background: #2D2D2D; padding: 40px 40px 20px;">
             <table style="width: 100%;">
-
               <!-- SOCIAL -->
-
               <tr>
                 <td>
-
                   <div align="center" style="padding-right: 10px; padding-left: 10px; padding-bottom: 10px; opacity: .5" class="">
                   <div style="line-height:10px;font-size:1px">&#160;</div>
                   <div style="display: table; max-width:181px;">
@@ -183,7 +170,7 @@
                     <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;Margin-right: 20px">
                       <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
                         <a href="https://www.facebook.com/XtraTuf/" title="Facebook" target="_blank">
-                          <img src="https://cdn.shopify.com/s/files/1/0015/2525/2190/files/facebook_2x_af60cbec-cd0a-4a73-a7b6-c929538ac6ad.png?9131003845000148457" alt="Facebook" title="Facebook" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                          <img src="https://cdn.shopify.com/s/files/1/0015/2525/2190/files/facebook_2x_af60cbec-cd0a-4a73-a7b6-c929538ac6ad.png?9131003845000148457" alt="Facebook"  width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
                         </a>
                       <div style="line-height:5px;font-size:1px">&#160;</div>
                       </td></tr>
@@ -192,7 +179,7 @@
                     <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;Margin-right: 20px">
                       <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
                         <a href="https://instagram.com/xtratufboots" title="Instagram" target="_blank">
-                          <img src="https://cdn.shopify.com/s/files/1/0015/2525/2190/files/instagram_2x_631ec28e-2aa5-405c-a1b2-42b3280cb039.png?9131003845000148457" alt="Instagram" title="Instagram" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                          <img src="https://cdn.shopify.com/s/files/1/0015/2525/2190/files/instagram_2x_631ec28e-2aa5-405c-a1b2-42b3280cb039.png?9131003845000148457" alt="Instagram"  width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
                         </a>
                       <div style="line-height:5px;font-size:1px">&#160;</div>
                       </td></tr>
@@ -201,7 +188,7 @@
                     <table align="left" border="0" cellspacing="0" cellpadding="0" width="32" height="32" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;Margin-right: 0">
                       <tbody><tr style="vertical-align: top"><td align="left" valign="middle" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top">
                         <a href="https://www.youtube.com/channel/UCbLKFCrAzj4U2OTsiX0HK2g" title="YouTube" target="_blank">
-                          <img src="https://cdn.shopify.com/s/files/1/0015/2525/2190/files/youtube_2x_90c5b067-99c2-4489-a649-307a3283c97f.png?9131003845000148457" alt="YouTube" title="YouTube" width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
+                          <img src="https://cdn.shopify.com/s/files/1/0015/2525/2190/files/youtube_2x_90c5b067-99c2-4489-a649-307a3283c97f.png?9131003845000148457" alt="YouTube"  width="32" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;max-width: 32px !important">
                         </a>
                       <div style="line-height:5px;font-size:1px">&#160;</div>
                       </td></tr>
@@ -213,64 +200,61 @@
                 </td>
               </tr>
 
-              <!-- CONTACT -->
+                <!-- CONTACT -->
+                <tr>
+                  <td>
+                    <div style="color:#848484;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
+                      <div style="font-size:12px;line-height:14px;color:#848484;{{ font_family_css }}text-align:left;">
+                        <p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center">
+                          <span style="font-size: 12px; line-height: 14px; text-transform: uppercase;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="{{ contact_us_text }}" href="{{ shop.url }}/pages/contact-us{{ full_email_template_params }}" target="_blank" rel="noopener">{{ contact_us_text }}</a>&#160;&#160;&#160;&#160; <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="{{ contact_us_text }}" href="tel:18553772668" target="_blank" rel="noopener">{{ contact_us_telephone }}</a><br></span>
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
 
-              <tr>
-                <td>
-
-                  <div style="color:#848484;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                    <div style="font-size:12px;line-height:14px;color:#848484;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="Contact Us" href="https://www.xtratuf.com/pages/contact-us" target="_blank" rel="noopener">CONTACT US</a>&#160;&#160;&#160;&#160; <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" title="Contact Us" href="tel:18553772668" target="_blank" rel="noopener">855-377-BOOT (2668)</a><br></span></p></div>  
-                  </div>
-
-                </td>
-              </tr>
-
-              <!-- DIVIDER -->
-
-              <tr>
-                <td>
-
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="divider " style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                <!-- DIVIDER -->
+                <tr>
+                  <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="divider " style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
                       <tbody>
-                          <tr style="vertical-align: top">
-                              <td class="divider_inner" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-right: 0px;padding-left: 0px;padding-top: 15px;padding-bottom: 10px;min-width: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                  <table class="divider_content" height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #666;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                      <tbody>
-                                          <tr style="vertical-align: top">
-                                              <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
-                                                  <span>&#160;</span>
-                                              </td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </td>
-                          </tr>
+                        <tr style="vertical-align: top">
+                          <td class="divider_inner" style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;padding-right: 0px;padding-left: 0px;padding-top: 15px;padding-bottom: 10px;min-width: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                            <table class="divider_content" height="0px" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;table-layout: fixed;border-spacing: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;vertical-align: top;border-top: 1px solid #666;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                              <tbody>
+                                <tr style="vertical-align: top">
+                                  <td style="word-break: break-word;border-collapse: collapse !important;vertical-align: top;font-size: 0px;line-height: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%">
+                                    <span>&#160;</span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
                       </tbody>
-                  </table>
+                    </table>
+                  </td>
+                </tr>
 
-                </td>
-              </tr>
-
-              <!-- TERMS -->
-
-              <tr>
-                <td>
-
-                  <div style="color:#848484;line-height:120%;font-family:'Museo Sans', 'Verdana', sans-serif; padding-right: 10px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;"> 
-                    <div style="font-size:12px;line-height:14px;color:#848484;font-family:'Museo Sans', 'Verdana', sans-serif;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><span style="font-size: 12px; line-height: 14px;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="https://www.xtratuf.com/pages/terms-conditions" target="_blank" rel="noopener">Terms &amp; <span style="line-height: 14px; font-size: 12px;">Conditions</span></a> | <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="https://www.honeywell.com/privacy-statement" target="_blank" rel="noopener">Privacy Policy</a></span><span style="font-size: 12px; line-height: 14px;"><br></span></p></div>  
-                  </div>
-
-                </td>
-              </tr>
-
-            </table>
-          </td>
-        </tr>
-
-      </table>
-    </td>
-  </tr>
-</table>
+                <!-- TERMS -->
+                <tr>
+                  <td>
+                    <div style="color:#848484;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
+                      <div style="font-size:12px;line-height:14px;color:#848484;{{ font_family_css }}text-align:left;">
+                        <p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center">
+                          <span style="font-size: 12px; line-height: 14px; text-transform: uppercase;"><a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="{{ shop.url }}/pages/terms-conditions{{ full_email_template_params }}" target="_blank" rel="noopener">{{ terms_and_conditions }}</a> | <a style="color:#848484;text-decoration: none; letter-spacing: .1em;" href="https://www.honeywell.com/privacy-statement" target="_blank" rel="noopener">{{ privacy_policy_text}}</a></span><br>
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 
 </body>
 </html>
