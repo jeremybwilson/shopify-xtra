@@ -264,11 +264,11 @@
         "settings": {
           "full_width_header": false,
           "show_announcement_text": true,
-          "num_of_promo_banners": "1",
+          "num_of_promo_banners": "2",
           "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
           "announcement_link_one": "/pages/shipping-returns",
-          "announcement_text_two": "<strong>Red, White & Blue Sale SHOP NOW</strong>",
-          "announcement_link_two": "shopify://collections/sale",
+          "announcement_text_two": "Sign up and <strong>GET 10% OFF </strong>your first order",
+          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -805,19 +805,10 @@
               "image": "",
               "mobile_image": ""
             }
-          },
-          "1562212148455": {
-            "type": "image",
-            "settings": {
-              "collection": "sale",
-              "image": "shopify://shop_images/man-on-boat.jpg",
-              "mobile_image": "shopify://shop_images/man-on-boat-mobile.jpg"
-            }
           }
         },
         "block_order": [
-          "1554153808433",
-          "1562212148455"
+          "1554153808433"
         ],
         "settings": {}
       },
