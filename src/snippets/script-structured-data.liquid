@@ -1,0 +1,163 @@
+{% comment %} Product {% endcomment %}
+{% if template == 'product' %}
+
+    {% assign current_variant = product.selected_or_first_available_variant %}
+
+    <script type="application/ld+json">
+
+        {
+            "@context": "http://schema.org/",
+            "@type": "Product",
+            "name": "{{ product.title | strip_html | escape }}",
+            "url": "{{ shop.url }}{{ product.url }}",
+            "image": [
+            {% for image in product.images %}
+                "https:{{ image.src | img_url: 'grande' }}"{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+            ],
+            "description": "{{ product.description | strip_html | escape }}",
+        {% if current_variant.sku != blank %}
+            "sku": "{{ current_variant.sku }}",
+            "mpn": "{{ current_variant.barcode }}",
+        {% endif %}
+            "brand": {
+                "@type": "Thing",
+                "name": "{{ product.vendor | escape }}"
+            },  
+            
+            "offers": 
+            {
+                "@type" : "Offer",
+                "url" : "{{ shop.url }}{{ product.url }}",
+                "priceCurrency": "{{ shop.currency }}",
+                "price": "{{ product.price | money_without_currency  | strip_html }}",
+                "itemCondition" : "http://schema.org/NewCondition",
+                "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+                "priceValidUntil" : "2060-01-01",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "{{ shop.name | escape }}"
+                }
+            }
+        }
+
+    </script>
+
+{% endif %}
+
+{% comment %} Breadcrumb {% endcomment %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "{{ 'general.breadcrumbs.home' | t }}",
+        "item": "{{ shop.url }}"
+    },
+    {% if template contains "product" %}
+        {% if collection %}            
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ collection.title }}",
+
+                {% if collection.handle %}            
+                    {% capture coll_url %}/collections/{{ collection.handle }}{% endcapture %}
+                    "item": "{{ shop.url }}{{ coll_urll }}"
+                
+                {% elsif collection.all_products_count > 0 and collection.products.first.type == collection.title %}
+                    "item": "{{ shop.url }}{{ url_for_type }}"
+                
+                {% elsif collection.all_products_count > 0 and collection.products.first.vendor == collection.title %}
+                    "item": "{{ shop.url }}{{ url_for_vendor }}"
+                    
+                {% endif %}
+            },
+        {% else %}
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ product.type }}",
+                "item": "{{ shop.url }}{{ product.type | url_for_type }}"
+            },
+        {% endif %}
+
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{ page_title }}",
+            "item": "{{ shop.url }}{{ product.url }}"
+        }
+
+    {% elsif template == "article" %}
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ blog.title }}",
+            "item": "{{ shop.url }}{{ blog.url }}"
+        }
+    {% elsif template contains "collection" %}
+
+        {% if current_tags.size > 0 %}
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ collection.title }}",
+                "item": "{{ shop.url }}{{ collection.url }}"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "{{ current_tags.first }}",
+                "item": "{{ shop.url }}{{ collection.url }}"
+            }
+        {% else %}
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "{{ collection.title }}",
+                "item": "{{ shop.url }}{{ collection.url }}"
+            }
+        {% endif %}
+    {% else %}
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ page_title }}",
+            "item": "{{ shop.url }}{{ request.path }}"
+        }
+    {% endif %}  
+
+  ]
+}
+
+</script>
+
+
+{% comment %} Social Media {% endcomment %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ shop.name | escape }}",
+  "url": "{{ shop.url }}",
+  "sameAs": [
+    {% if settings.facebook_url != blank %}
+        "{{ settings.facebook_url }}"
+    {% endif %}
+    {% comment %} {% if settings.instagram_id != blank %}
+        "{{ settings.instagram_id }}",
+    {% endif %}        
+    {% if settings.pinterest_url != blank %}    
+        "{{ settings.pinterest_url }}",
+    {% endif %}
+    {% if settings.twittername != blank %}    
+        "http://www.twitter.com/{{ settings.twittername }}"
+    {% endif %} {% endcomment %}
+  ]
+}
+</script>

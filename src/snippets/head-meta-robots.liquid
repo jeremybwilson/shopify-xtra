@@ -1,0 +1,30 @@
+{% comment %} META ROBOTS - CUSTOMIZING {% endcomment %}
+
+  {% comment %} Grab the query and parse through to get to the URL {% endcomment %}
+  {%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+  {%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+  -%}
+
+  {% comment %} Collection Pages {% endcomment %}
+  {% if template contains 'collection' %}
+
+    {% comment %} Filter Results page {% endcomment %}
+    {% if current_tags %} 
+      {% assign pageUrlEnd = pageUrl | split: '/' | last %}
+
+      {% comment %} Remove multi-filters {% endcomment %}
+      {% if pageUrlEnd contains '+' %} 
+        <meta name="robots" content="noindex, nofollow" />
+      {% endif %}
+    {% endif %}
+
+    <link rel="canonical" href="{{shop.url}}{{ collection.url }}" />
+
+  {% else %}
+
+    <link rel="canonical" href="{{ canonical_url }}" />
+
+  {% endif %}

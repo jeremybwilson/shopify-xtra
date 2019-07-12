@@ -18,8 +18,11 @@
   {% if page_description %}
   <meta name="description" content="{{ page_description | escape }}" />
   {% endif %}
-  <link rel="canonical" href="{{ canonical_url }}" />
 
+  {% include 'head-meta-robots' %}
+  <meta name="format-detection" content="telephone=no">
+  {% comment %} canonical link is found in the head-meta-robots {% endcomment %}
+  
   {% include 'social-media-meta-tags' %}
 
 
@@ -258,6 +261,9 @@
   {% if settings.nosto_id != blank %}
     {% include 'nosto-tagging' %}
   {% endif %}
+
+  {% comment %} STRUCTURED DATA {% endcomment %}
+  {% include 'script-structured-data' %}
 
 </body>
 </html>

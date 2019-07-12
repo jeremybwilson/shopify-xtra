@@ -4,7 +4,7 @@
   {% assign current_variant = product.first_available_variant %}
 {% endunless %}
 
-<div itemscope itemtype="http://schema.org/Product"
+<div 
   id="product-{{ product.id }}"
   class="product-page product-template"
   data-product-id="{{ product.id }}"
@@ -93,10 +93,12 @@
           <h2>{{ product.vendor }}</h2>
         {% endif %}
 
-        <h1 itemprop="name">
-          {{ product.title }}
-        </h1>
-        
+        {% if template != 'product.quick' %}
+          <h1>{{ product.title }}</h1>
+        {% else %}
+          <h2>{{ product.title }}</h2>
+        {% endif %}        
+
         {% comment %}
           REACT EXAMPLE #2:
               Here, we use our snippet to include the DOM Node we'll need to render our 
@@ -106,9 +108,7 @@
         {% endcomment %}
 
 
-        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-          <meta itemprop="priceCurrency" content="{{ shop.currency }}">
-          <link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+        <div>
           {% capture product_form_config %}
             { "money_format": {{ shop.money_format | json }},
               "enable_history": true,
@@ -239,6 +239,17 @@
     <div class="yotpo-summary-snippet">
     {% include 'yotpo-product-snippet' %}</div>
     {% include 'yotpo-product-summary' %}    
+
+    {% if product.metafields.yotpo.reviews_count and product.metafields.yotpo.reviews_count != "0" %}	
+      <div class="row yotpo-aggregate-rating-text">	
+        <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">	
+        <span itemprop="itemReviewed">{{ product.title }}</span>	
+        has a rating of <span itemprop="ratingValue">{{ product.metafields.yotpo.reviews_average }}</span> stars	
+        based on <span itemprop="ratingCount">{{ product.metafields.yotpo.reviews_count }}</span> reviews.	
+        </div>	
+      </div>	
+    {% endif %}
+
     
   {% endunless %}
 </div>
