@@ -46,8 +46,13 @@
     </div><!-- .visit-our-brands -->
 
   </div>
-  <div class="row footer--bottom-row">
-    <div class="brands--telephone">
+  <div class="row footer--bottom-row" itemscope itemtype="http://schema.org/LocalBusiness">
+    <div class="brands--telephone">	     
+      <h6 itemprop="name">{{ shop.name }}</h6>
+
+      <div class="local-image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <img src="{{ 'localbusiness_image.png' | asset_url }}" itemprop="url">
+      </div>
       <a href="tel:{{ section.settings.tel_number }}"><h4>TEL</h4><span>{{ section.settings.tel_text }}</span></a>
     </div><!-- .brands--telephone -->
 

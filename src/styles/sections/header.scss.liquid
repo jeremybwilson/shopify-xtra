@@ -134,7 +134,12 @@ $navHoverColor: {{ settings.nav_hover_color }};
         background: {{ settings.header_background }};
         z-index: $zIndexBackingShadow; // -1, Relative to #nav-bar-wrapper, so its -1 on inner layer of nav-bar.
     }
-
+    .header-h1 { // SEO H1 for Home page
+        pointer-events: none;
+        position: fixed;
+        top: -9999em;
+        left: -9999em;
+    }
 
 
     /*  NAV : ACCOUNT + CART + SEARCH + SITE PICKER (Right Elements)
