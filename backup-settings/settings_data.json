@@ -265,8 +265,8 @@
           "full_width_header": false,
           "show_announcement_text": true,
           "num_of_promo_banners": "2",
-          "announcement_text_one": "<div class=\"bold\">FREE SHIPPING AND FREE RETURNS</div>",
-          "announcement_link_one": "/pages/shipping-returns",
+          "announcement_text_one": "Sale on Sale <span class=\"bold\">USE CODE TAKE15</span>",
+          "announcement_link_one": "shopify://collections/sale",
           "announcement_text_two": "Sign up and <strong>GET 10% OFF </strong>your first order",
           "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
           "announcement_height": 60,
@@ -823,6 +823,26 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
+          "1563162603710": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/20190618_XTUF_Prime_Dayhero_1920x828_slider_1.jpg",
+              "mobile_image": "shopify://shop_images/20190618_XTUF_Prime_Dayhero_mobile_768x835_slider_1.jpg",
+              "heading": "SALE ON SALE<br>TODAY ONLY",
+              "subheading": "USE CODE <strong>TAKE15</strong>",
+              "cta_one_link": "shopify://collections/sale",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
           "1556040259163-1": {
             "type": "image",
             "settings": {
@@ -885,6 +905,7 @@
           }
         },
         "block_order": [
+          "1563162603710",
           "1556040259163-1",
           "1560198484333",
           "1557363114895"
