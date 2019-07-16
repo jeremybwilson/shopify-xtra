@@ -24,7 +24,14 @@
                 "@type": "Thing",
                 "name": "{{ product.vendor | escape }}"
             },  
-            
+        {% if product.metafields.yotpo.reviews_count and product.metafields.yotpo.reviews_count != "0" %}	
+      		"aggregateRating": {
+            	"@type" : "http://schema.org/AggregateRating",
+                "itemReviewed" : "{{ product.title }}",
+                "ratingValue" : "{{ product.metafields.yotpo.reviews_average }}",
+                "ratingCount" : "{{ product.metafields.yotpo.reviews_count }}"
+            },
+        {% endif %}
             "offers": 
             {
                 "@type" : "Offer",
