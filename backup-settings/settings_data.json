@@ -265,10 +265,10 @@
           "full_width_header": false,
           "show_announcement_text": true,
           "num_of_promo_banners": "2",
-          "announcement_text_one": "Sale on Sale <span class=\"bold\">USE CODE TAKE15</span>",
-          "announcement_link_one": "shopify://collections/sale",
-          "announcement_text_two": "Sign up and <strong>GET 10% OFF </strong>your first order",
-          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
+          "announcement_text_one": "FREE SHIPPING & FREE RETURNS",
+          "announcement_link_one": "shopify://pages/shipping-returns",
+          "announcement_text_two": "GET 15% OFF SALE: <span class=\"bold\">USE CODE TAKE15</span>",
+          "announcement_link_two": "shopify://collections/sale",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -551,8 +551,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "New Arrivals",
-          "homepage_collection": "new-arrivals",
+          "heading": "SALE ON SALE",
+          "homepage_collection": "sale",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
