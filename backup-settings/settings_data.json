@@ -267,8 +267,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & FREE RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "GET 15% OFF SALE: <span class=\"bold\">USE CODE TAKE15</span>",
-          "announcement_link_two": "shopify://collections/sale",
+          "announcement_text_two": "<strong>GET 10% OFF YOUR FIRST ORDER</strong>: SIGN UP",
+          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -551,8 +551,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "SALE ON SALE",
-          "homepage_collection": "sale",
+          "heading": "Mossy Oak Elements™",
+          "homepage_collection": "mossy-oak",
           "homepage_product_limit": 8,
           "homepage_product_display": "carousel",
           "products_per_row": 4
@@ -565,7 +565,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/about-image-1.jpg",
-              "module_html": "<p>We've earned the <strong>Respect, Loyalty and trust</strong> of people who can't afford to take trust lightly.</p>",
+              "module_html": "<p></p><p>Over 50 years ago, a boot arrived in Alaska, as <strong>rugged and real</strong> as the people who live and work there. Like Alaska's people, those boots did their job no matter what the conditions.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_right",
               "module_image_position_mobile": "image_top"
@@ -575,7 +575,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/about-image-2.jpg",
-              "module_html": "<p>We make essential gear <strong>engineered to withstand the world's toughest conditions</strong> and to protect people who put their lives on the line to live and work on the water.</p>",
+              "module_html": "<p></p><p>Now an Alaskan icon, the Legacy Boot is <strong>100% waterproof</strong>, <strong>flexible</strong>, and <strong>durable</strong>—made to keep you dry, stable, and always working comfortably. Featuring a non-marking, slip resistant Chevron outsole, they're as <strong>reliable and tough</strong> as it gets. In fact, they're part of what it means to be an Alaskan.</p>",
               "module_image_color_scheme": "dark",
               "module_image_position_desktop": "image_left",
               "module_image_position_mobile": "image_top"
@@ -585,7 +585,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/about-image-3.jpg",
-              "module_html": "<p> We're part of a marine lifestyle that values <strong>authenticity, performance and hard work</strong> whether you \nfish to live or live to fish.</p>",
+              "module_html": "<p></p><p>The Legacy Boot works, and in the eyes of Alaskan's, that's a beautiful thing. Dubbed the \"Alaskan sneaker\"—it has been <strong>performance-tested and proven</strong> across the toughest stretches of water, from Misty Fjords to Kodiak, from the Bering Sea to Harrison Bay.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_right",
               "module_image_position_mobile": "image_top"
@@ -595,7 +595,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/about-image-4.jpg",
-              "module_html": "<p><strong>XTRATUF</strong> is chosen not only by fisherman on the Bering Sea, but by commercial, sport and water-enthusiasts everywhere.</p>",
+              "module_html": "<p>XTRATUF boots have become the badge of <strong>ultimate preparedness</strong> for the individuals of Alaska - the people who arrive as lone wolves and become part of a pack. <br><br>The XTRATUF boots they wear prove a <strong>reliable partner</strong> through thick and thin, keeping multiple generations safe, dry and moving forward, one sure step at a time.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_left",
               "module_image_position_mobile": "image_top"
@@ -621,8 +621,8 @@
             "settings": {
               "image": "shopify://shop_images/about-hero-desktop-slide-1.jpg",
               "mobile_image": "shopify://shop_images/about-hero-mobile-slide-1.jpg",
-              "heading": "We Come From Alaska",
-              "subheading": "Where nothing is forgiven and no compromise goes unpunished. <br> Where 50-foot seas swallow the slightest missteps.",
+              "heading": "ALASKA PROVEN.<br>BUILT FOR ALL.<br>",
+              "subheading": "",
               "cta_one_link": "",
               "cta_one_button_text": "Add a button",
               "cta_two_link": "",
@@ -817,32 +817,12 @@
         "settings": {
           "heading": "",
           "full_width": true,
-          "video_url": "https://www.youtube.com/watch?v=oGJruPDd07c"
+          "video_url": "https://youtu.be/hCfrm6aZZEg"
         }
       },
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
-          "1563162603710": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/20190618_XTUF_Prime_Dayhero_1920x828_slider_1.jpg",
-              "mobile_image": "shopify://shop_images/20190618_XTUF_Prime_Dayhero_mobile_768x835_slider_1.jpg",
-              "heading": "SALE ON SALE<br>TODAY ONLY",
-              "subheading": "USE CODE <strong>TAKE15</strong>",
-              "cta_one_link": "shopify://collections/sale",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "center",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
           "1556040259163-1": {
             "type": "image",
             "settings": {
@@ -905,7 +885,6 @@
           }
         },
         "block_order": [
-          "1563162603710",
           "1556040259163-1",
           "1560198484333",
           "1557363114895"
