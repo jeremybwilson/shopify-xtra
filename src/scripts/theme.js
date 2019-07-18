@@ -189,7 +189,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
         return false;
       });
 
-      this.$nodes.page.on('click.drawer', $.proxy(function () {
+      this.$nodes.page.on('click.drawer, .PageOverlay', $.proxy(function () {
         this.close();
         return false;
       }, this));
