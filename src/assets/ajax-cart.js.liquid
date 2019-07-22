@@ -108,7 +108,7 @@ ShopifyAPI.addItemFromForm = function(form, callback, errorCallback) {
 ShopifyAPI.addItemById = function( variantId, callback, errorCallback, isGift ) {
   var bodyData = "form_type=product&utf8=%E2%9C%93&id=" + variantId;
   bodyData = isGift ? bodyData + "&properties[_discountItem]=true" : bodyData;
-
+  
   // SETUP : Build the fetch call
   var params = {
     type: 'POST',
@@ -525,6 +525,7 @@ var ajaxCart = (function(module, $) {
     });
   };
 
+  // NOTE : THIS FUNCTION ONLY CALLED WHEN CHANGING QUANTITY / REMOVING ITEMS
   adjustCartCallback = function (cart) {
     isUpdating = false;
 
@@ -538,16 +539,8 @@ var ajaxCart = (function(module, $) {
     // Update quantity and price
     updateCountPrice(cart);
 
-    // Ensure we've tracked them (in case they already had an old cart that wasn't tracked before)
-    trackCartStart();
-
     // Reprint cart on short timeout so you don't see the content being removed
     ShopifyAPI.getCart(buildCart);
-
-    // Reprint cart on short timeout so you don't see the content being removed
-    setTimeout(function() {
-      ShopifyAPI.getCart(buildCart);
-    }, 150);
 
     // UPDATE : Event trigger for the Discounts Engine (React Component)
     $.event.trigger({

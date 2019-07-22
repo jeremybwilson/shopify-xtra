@@ -56,10 +56,11 @@ $modalButtonAltText: {{ settings.discount_modal_button_alt_text }};
             // HEADING : Modal headline
             .modal-list-heading {
                 @include fontDim( 18px, 22px, 0 );
+                font-family: $font-stack--heading;
                 font-weight: $font-weight--bold;
                 color: $modalHeader;
                 position: relative;
-                margin: 10px 0;
+                margin: 20px 0 10px 0;
                 padding: 0 10px;
                 text-transform: uppercase;
                 text-align: center;
@@ -136,6 +137,7 @@ $modalButtonAltText: {{ settings.discount_modal_button_alt_text }};
             // NAME : Item Being offered's name
             .modal-item-name {
                 @include fontDim( 16px, 18px, 0 );
+                font-family: $font-stack--default;
                 font-weight: $font-weight--medium;
                 color: $modalText;
                 margin-bottom: 15px;
