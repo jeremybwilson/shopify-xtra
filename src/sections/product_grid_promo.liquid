@@ -1,0 +1,66 @@
+{% if section.blocks.size > 0 %}
+  {% for block in section.blocks %}
+    {% if block.settings.promo_url != blank and block.settings.is_show_promo == true %}
+      {% if block.settings.is_show_on_all_collection == true or collections[block.settings.promo_collection].id == collection.id %}
+        <div id="mycol_row">
+          <div data-block-id="{{ block.id }}" class="product_grid_promo product-index hide" data-position="{{ block.settings.promo_position }}">
+              <div class="prod-container">
+                  <div class="prod-image">
+                      <a href="{{ block.settings.promo_url }}">
+                      <div class="reveal">
+                          <img id="promo_collection_img" src="{{ block.settings.promo_image | img_url: 'large' }}" alt="Promo image">
+                      </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Product Grid Promo",
+  "blocks":[{
+      "name":"Collection Promo",
+      "type":"image",
+      "settings": [
+        {
+          "type": "checkbox", 
+          "id": "is_show_promo",
+          "label": "Show this block",
+          "default": true
+        },
+        {
+          "type": "checkbox", 
+          "id": "is_show_on_all_collection",
+          "label": "Show this block for all collection",
+          "default": false
+        },
+        {
+          "type": "collection", 
+          "id": "promo_collection",
+          "label": "Select collection"
+        },
+        {
+          "type": "url",
+          "id": "promo_url",
+          "label": "Select link"
+        },
+        {
+          "type": "image_picker",
+          "id": "promo_image",
+          "label": "Image"
+        },
+        {
+          "type": "number",
+          "id": "promo_position",
+          "label": "Position"
+        }
+      ]
+  }]
+
+}
+{% endschema %} 

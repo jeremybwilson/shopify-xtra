@@ -1,4 +1,6 @@
 // Override Settings : Note, custom object cant' be overriden and rquires direct modification
+window.collection_count = 0;
+window.promo_grid_add_count = 0;
 var bcSfFilterSettings = {
     general: {
        limit: bcSfFilterConfig.custom.products_per_page,
@@ -240,7 +242,33 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
 
 
     // RENDER : Return out our built template!
-    return itemHtml;
+    var collection_total_product = parseInt($("#all_products_count").val());
+    if($(".product_grid_promo").length > 0){
+        var current_html = "";
+        $(".product_grid_promo").each(function() {
+            if(
+                ($( this ).length > 0 && (index + collection_count + promo_grid_add_count)  == $( this ).data('position')) || 
+                (($( this ).length > 0 && collection_count == 0 &&  index == totalProduct &&  $( this ).data('position') >= collection_total_product) )
+            ){
+                promo_grid_add_count++;
+                $( this ).show();
+                $( this ).removeClass('product_grid_promo ');
+                $( this ).addClass(itemGridWidthClass);
+                var promo_html =  $( this ).parents('div:first').html();
+                $( this ).remove();
+                current_html += promo_html;
+            }
+        });
+        if( index == totalProduct){
+            collection_count += totalProduct;
+        }
+        return current_html + itemHtml;
+    }else{
+        if( index == totalProduct){
+            collection_count += totalProduct;
+        }
+        return itemHtml;
+    }
 }
 
 // Build Pagination
