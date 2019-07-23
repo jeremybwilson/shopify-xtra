@@ -1659,11 +1659,16 @@ ul#nav li ul.megamenu div.mega-container li.desktop-3:nth-child(5n) {
   height: 100%;
 }
 
-.js-drawer-open .PageOverlay{
+@media screen and (max-width: 767px) {
+  .js-drawer-open {
+    overflow: hidden;
+  }
+}
+.js-drawer-open .PageOverlay.active{
   opacity: 0.5;
   visibility: visible;
 }
-.PageOverlay{
+.PageOverlay.active{
   position: fixed;
   top: 0;
   left: 0;
@@ -1673,8 +1678,6 @@ ul#nav li ul.megamenu div.mega-container li.desktop-3:nth-child(5n) {
   visibility: hidden;
   opacity: 0;
   background: #363636;
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .js-drawer-open-right .is-moved-by-drawer {
