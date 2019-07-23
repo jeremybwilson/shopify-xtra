@@ -36,35 +36,25 @@
   <tr>
     <td style="text-align: center" align="center">
       <!-- LAYOUT -->
-
       <table class="main-layout" style="width: 500px; min-width: 500px; max-width: 500px; background-color: #ffffff; margin: 20px auto; border-collapse: collapse;">
 
         <!-- HEADER -->
-
         <tr>
           <td align="center" style="padding-top: 25px; padding-bottom: 25px; padding-left: 0; padding-right: 0; text-align: center; background-color: #ffffff; width: 100%;">
-
             <!-- LOGO  -->
-
             <a href="{{ shop.url }}{{ full_email_template_params }}" target="_blank" title="{{ shop.name }}">
               <img class="center fixedwidth" align="center" border="0" src="https://cdn.shopify.com/s/files/1/0053/3194/3522/files/email_logo.gif?7953218545083095441" alt="{{ shop.name }}" title="{{ shop.name }}" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: block !important;border: none;height: auto;float: none;width: 100%;max-width: 150px" width="150">
             </a>
-
           </td>
         </tr>
 
         <!-- BODY -->
-
         <tr>
           <td style="padding: 0">
-
             <table class="body-layout" style="width: 100%; border-collapse: collapse;">
-
               <!-- BODY :: INTRO -->
-
               <tr>
                 <td style="background-color: #fafafa; padding: 20px;">
-
                   <div style="border: solid 6px #fafafa; padding: 40px 20px 30px">
 
                     <!-- SUBHEADLINE -->
@@ -78,39 +68,28 @@
                     {% endif %}
 
                     <!-- HEADLINE -->
-
                     <div style="color:#0a56a4;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
                       <div style="font-size:12px;line-height:14px;font-family:inherit;color:#0a56a4;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center"><strong><span style="font-size: 28px; line-height: 33px; letter-spacing: 0; text-transform: uppercase;">{{ email_title }}</span></p></div>
                     </div>
 
                     <!-- COPY -->
-
                     <div style="color:#000000;line-height:180%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
                       <div style="font-size:14px;line-height:25px;font-family:inherit;color:#000000;text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 25px;text-align: center">{{ email_body }}</p></div>
                     </div>
-
                   </div>
-
                 </td>
               </tr>
 
               <!-- BODY :: TABLE -->
-
               <tr>
                 <td style="padding: 60px 40px 50px">
-
                   <!-- TITLE -->
-
                   <div style="color:#164632;line-height:120%;{{ font_family_css }} {{ xtratuf_css_variable_one }}">
                     <div style="font-size:12px;line-height:14px;color:#0a56a4;{{ font_family_css }}text-align:left;"><p style="margin: 0;font-size: 14px;line-height: 17px;text-align: center;"><span style="font-size: 18px; line-height: 21px; letter-spacing: 0;"><strong>ORDER SUMMARY</strong></span></p></div>
                   </div>
 
                   <!-- TABLE -->
-
-
-                  <!--
-                  PRODUCT ITEM
-                  -->
+                  <!-- PRODUCT ITEM -->
 
                   <table class="row" style="border-collapse: collapse; width: 100%;">
                     {% for line in subtotal_line_items %}
