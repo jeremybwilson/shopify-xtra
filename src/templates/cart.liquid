@@ -25,12 +25,29 @@
       </thead>
       <tbody>
         {% for item in cart.items %}
+        {% comment %} FLAG : Is this cart item a gift with purchase item? {% endcomment %}
+        {% assign isGiftItem = false %}
+        {% assign property_size = item.properties | size %}
+        {% if property_size > 0 %}
+            {% for p in item.properties %}
+                {% if p.first contains 'discountItem' %}
+                    {% assign isGiftItem = true %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+        {% comment %} Cart setup continues below... move on to next step after adding that {% endcomment %}
         <tr>
           <td class="cart-item">
               <div class="cart-image" style="max-width: 100px;">
-                <a href="{{ item.url }}" title="{{ item.product.title | escape }}">
-                  <img src="{{ item | img_url: '400x' }}" alt="{{ item.title | escape }}" />
-                </a>
+                {% comment %} :: GWP - Prevent picture linking to hidden gift item :: {% endcomment %}
+                {% if isGiftItem %}
+                    <img title="{{ item.product.title | escape }}" src="{{ item | img_url: '400x' }}" alt="{{ item.title | escape }}" />                         
+                {% comment %} :: REGULAR ITEM IMAGE :: {% endcomment %}
+                {% else %}
+                  <a href="{{ item.url }}" title="{{ item.product.title | escape }}">
+                    <img src="{{ item | img_url: '400x' }}" alt="{{ item.title | escape }}" />
+                  </a>
+                {% endif %}
               </div>
               <div class="cart-title">
                 {% if settings.vendor %}<p>{{ item.vendor }}</p>{% endif %}
@@ -60,26 +77,36 @@
             <a href="#" onclick="remove_item({{ item.variant.id }}); return false;"><i class="fa fa-times"></i><span class="remove-text">{{ 'cart.general.remove' | t }}</span></a>
           </td>          
           <td class="cart-price">
-
-            {% if item.variant.compare_at_price > item.price %}
-              <div class="onsale">
-                <span class="money">{{ item.price | money }}</span>
-              </div>
-              <div class="was">
-                <span class="money">{{ item.variant.compare_at_price | money }}</span>
-              </div>
-
-            {% else %}
-
+            {% comment %} :: PRICE : GIFT ITEM - Hide Price :: <------- THIS IS THE PART YOU ARE ADDING HERE {% endcomment %}
+            {% if isGiftItem %}
               <div class="prod-price">
-                <span class="money">{{ item.price | money }}</span>
+                <span class="money">Gift Item</span>
               </div>
+            {% comment %} :: PRICE : REGULAR ITEM :: <------- THIS IS THE ORIGINAL CODE WHERE THE USUAL PRICE WILL STAY AS IT WAS {% endcomment %}
+            {% else %}
+              {% if item.variant.compare_at_price > item.price %}
+                <div class="onsale">
+                  <span class="money">{{ item.price | money }}</span>
+                </div>
+                <div class="was">
+                  <span class="money">{{ item.variant.compare_at_price | money }}</span>
+                </div>
 
+              {% else %}
+
+                <div class="prod-price">
+                  <span class="money">{{ item.price | money }}</span>
+                </div>
+
+              {% endif %}
             {% endif %}
           </td>
-          <td class="cart-quantity">
-            <input type="text" class="cart-qty" size="4" name="updates[{{ item.id }}]" id="updates_{{ item.variant.id }}" value="{{ item.quantity }}" onfocus="this.select();"/>
-          </td>
+          {% comment %} CART : ITEM : QUANTITY {% endcomment %}
+          {% if isGiftItem == false %}
+            <td class="cart-quantity">
+              <input type="text" class="cart-qty" size="4" name="updates[{{ item.id }}]" id="updates_{{ item.variant.id }}" value="{{ item.quantity }}" onfocus="this.select();"/>
+            </td>
+          {% endif %}
           <td class="cart--total-price">
             <span class="money">{{ item.line_price | money }}</span>
           </td>

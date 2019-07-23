@@ -136,7 +136,12 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
     Drawer.prototype.init = function () {
       $(this.config.open).on('click', $.proxy(this.open, this));
-      this.$drawer.find(this.config.close).on('click', $.proxy(this.close, this));
+      // this.$drawer.find(this.config.close).on('click', $.proxy(this.close, this));
+      this.$drawer.find(this.config.close).on('click', $.proxy(function () {
+        $('.PageOverlay').removeClass('active');
+        this.close();
+        return false;
+      }, this));
     };
 
     Drawer.prototype.open = function (evt) {
@@ -190,6 +195,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
       });
 
       this.$nodes.page.on('click.drawer', $.proxy(function () {
+        $('.PageOverlay').removeClass('active');
         this.close();
         return false;
       }, this));
@@ -825,6 +831,13 @@ theme.Utils = (function () {
     },
   }
 })();
+
+/*
+ * ----------------------------------------------------------------------------------------------------
+ * DISCOUNT ENGINE (React Component)
+ * --------------------------------------------------------------------------------------------------- */
+require( './react-components/discounts/DiscountParent.js' );
+
 /*============================================================================
   Sections
 ==============================================================================*/
