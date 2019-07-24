@@ -77,6 +77,13 @@
     "gdpr_alt_button_bg": "#ffffff",
     "gdpr_alt_button_text": "#0b56a3",
     "gdpr_alt_button_bg_hover": "#d6d6d6",
+    "discount_modal_bg": "#fefffe",
+    "discount_modal_text": "#000000",
+    "discount_modal_header": "#000000",
+    "discount_modal_button_bg": "#0a56a4",
+    "discount_modal_button_text": "#fefffe",
+    "discount_modal_button_alt_bg": "#000000",
+    "discount_modal_button_alt_text": "#fefffe",
     "navigation": "#000000",
     "nav_color": "#ffffff",
     "nav_hover_color": "#e61533",
@@ -187,6 +194,8 @@
     "checkout_accent_color": "#e41c39",
     "checkout_button_color": "#0a56a4",
     "checkout_error_color": "#ff6d6d",
+    "discount_modal_enable": false,
+    "discount_modal_config": "eyJjb29raWVFeHBpcmVJbkRheXMiOiA2MCwidGhyZXNob2xkRGlzY291bnRzIjogW3siZGlzY291bnRJZCI6IDEsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKEJsYWNrKSIsImdpZnRJZCI6IDE1NDU5OTY0MDkyNTEwLCJncmFudFR5cGUiOiAicGljayIsImludmVudG9yeUlkIjogMTU0MDIyMTI5ODI4NzgsIm1pblNwZW5kIjogMjAwLCJwcm9kdWN0SGFuZGxlIjogIndpZ3dhbS13aW50ZXItaGF0In0seyJkaXNjb3VudElkIjogMiwiZGlzcGxheU5hbWUiOiAiV2lnd2FtIEhhdCAoR3JheSkiLCJnaWZ0SWQiOiAxNTQ1OTk2NTM3MDQ2MiwiZ3JhbnRUeXBlIjogInBpY2siLCJpbnZlbnRvcnlJZCI6IDE1NDAyMjEzMDE1NjQ2LCJtaW5TcGVuZCI6IDIwMCwicHJvZHVjdEhhbmRsZSI6ICJ3aWd3YW0td2ludGVyLWhhdCJ9LHsiZGlzY291bnRJZCI6IDMsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKE5hdHVyYWwpIiwiZ2lmdElkIjogMTU0NTk5NjU1MDE1MzQsImdyYW50VHlwZSI6ICJwaWNrIiwiaW52ZW50b3J5SWQiOiAxNTQwMjIxMzA0ODQxNCwibWluU3BlbmQiOiAyMDAsInByb2R1Y3RIYW5kbGUiOiAid2lnd2FtLXdpbnRlci1oYXQifV19",
     "bis_hide_tag": "discontinued",
     "cart_links": "#000000",
     "cart_links_hover": "#000000",
@@ -898,6 +907,14 @@
         "type": "nosto-element",
         "settings": {
           "nosto_id": "frontpage-nosto-1"
+        }
+      },
+      "gift-with-purchase": {
+        "type": "gift-with-purchase",
+        "settings": {
+          "discount_modal_enable": true,
+          "cookie_expire_in_days": 60,
+          "currency_symbol": "$"
         }
       }
     },
