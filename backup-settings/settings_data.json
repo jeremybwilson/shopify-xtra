@@ -276,7 +276,7 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & FREE RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "<strong>GET 10% OFF YOUR FIRST ORDER</strong>: SIGN UP",
+          "announcement_text_two": "<strong>GET 10% OFF YOUR FIRST ORDER</strong>",
           "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
