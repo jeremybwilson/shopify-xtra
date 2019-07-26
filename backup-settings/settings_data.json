@@ -911,6 +911,25 @@
       },
       "gift-with-purchase": {
         "type": "gift-with-purchase",
+        "blocks": {
+          "1564077235901": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "super duper",
+              "min_spend": 305,
+              "time_start": "01 Jul 2019 01:00 GMT-7",
+              "time_end": "30 Aug 2019 01:00 GMT-7",
+              "grant_type": "all",
+              "auto_add_to_cart": false,
+              "gift_id": "18480972726370",
+              "inventory_id": "18480972726370",
+              "product_handle": "baby-logo-onesie-white"
+            }
+          }
+        },
+        "block_order": [
+          "1564077235901"
+        ],
         "settings": {
           "discount_modal_enable": true,
           "cookie_expire_in_days": 60,
