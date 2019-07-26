@@ -3,7 +3,7 @@ var bcSfFilterSettings = {
     general: {
        limit: bcSfFilterConfig.custom.products_per_page,
         // Optional
-        loadProductFirst: true,
+        loadProductFirst: false,
         refineByHorizontalPosition: 'top',
         paginationType: "default", // PDM-216 this will work if we have "default" pagination
     },
