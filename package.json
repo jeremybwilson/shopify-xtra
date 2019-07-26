@@ -1,6 +1,6 @@
 {
-  "name": "Shopify-Muck",
-  "version": "0.0.1",
+  "name": "Shopify-Xtra",
+  "version": "1.1.0",
   "devDependencies": {
     "@shopify/slate-tools": "0.14.0",
     "babel-core": "~6.26.3",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@vimeo/player": "^2.6.3",
+    "html-entities": "^1.2.1",
     "prop-types": "~15.6.2",
     "react": "~16.4.2",
     "react-dom": "~16.4.2",

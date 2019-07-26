@@ -77,6 +77,13 @@
     "gdpr_alt_button_bg": "#ffffff",
     "gdpr_alt_button_text": "#0b56a3",
     "gdpr_alt_button_bg_hover": "#d6d6d6",
+    "discount_modal_bg": "#fefffe",
+    "discount_modal_text": "#000000",
+    "discount_modal_header": "#000000",
+    "discount_modal_button_bg": "#0a56a4",
+    "discount_modal_button_text": "#fefffe",
+    "discount_modal_button_alt_bg": "#000000",
+    "discount_modal_button_alt_text": "#fefffe",
     "navigation": "#000000",
     "nav_color": "#ffffff",
     "nav_hover_color": "#e61533",
@@ -187,6 +194,8 @@
     "checkout_accent_color": "#e41c39",
     "checkout_button_color": "#0a56a4",
     "checkout_error_color": "#ff6d6d",
+    "discount_modal_enable": false,
+    "discount_modal_config": "eyJjb29raWVFeHBpcmVJbkRheXMiOiA2MCwidGhyZXNob2xkRGlzY291bnRzIjogW3siZGlzY291bnRJZCI6IDEsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKEJsYWNrKSIsImdpZnRJZCI6IDE1NDU5OTY0MDkyNTEwLCJncmFudFR5cGUiOiAicGljayIsImludmVudG9yeUlkIjogMTU0MDIyMTI5ODI4NzgsIm1pblNwZW5kIjogMjAwLCJwcm9kdWN0SGFuZGxlIjogIndpZ3dhbS13aW50ZXItaGF0In0seyJkaXNjb3VudElkIjogMiwiZGlzcGxheU5hbWUiOiAiV2lnd2FtIEhhdCAoR3JheSkiLCJnaWZ0SWQiOiAxNTQ1OTk2NTM3MDQ2MiwiZ3JhbnRUeXBlIjogInBpY2siLCJpbnZlbnRvcnlJZCI6IDE1NDAyMjEzMDE1NjQ2LCJtaW5TcGVuZCI6IDIwMCwicHJvZHVjdEhhbmRsZSI6ICJ3aWd3YW0td2ludGVyLWhhdCJ9LHsiZGlzY291bnRJZCI6IDMsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKE5hdHVyYWwpIiwiZ2lmdElkIjogMTU0NTk5NjU1MDE1MzQsImdyYW50VHlwZSI6ICJwaWNrIiwiaW52ZW50b3J5SWQiOiAxNTQwMjIxMzA0ODQxNCwibWluU3BlbmQiOiAyMDAsInByb2R1Y3RIYW5kbGUiOiAid2lnd2FtLXdpbnRlci1oYXQifV19",
     "bis_hide_tag": "discontinued",
     "cart_links": "#000000",
     "cart_links_hover": "#000000",
@@ -267,7 +276,7 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & FREE RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "<strong>GET 10% OFF YOUR FIRST ORDER</strong>: SIGN UP",
+          "announcement_text_two": "<strong>GET 10% OFF YOUR FIRST ORDER</strong>",
           "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
@@ -351,7 +360,7 @@
           "related_products": "none",
           "free_shipping_header_text": "Free Shipping & Returns",
           "free_shipping_text": "<p>FREE Shipping and FREE Returns for all ground orders. Orders placed before 2PM EST Monday &ndash; Friday will ship next day. For additional information, visit our <a href=\"/pages/shipping-returns\" title=\"Shipping and Return\">Shipping page</a>.</p>",
-          "show_social": false,
+          "show_social": true,
           "size_chart_page": "size-chart"
         }
       },
@@ -584,7 +593,7 @@
           "1539646807998": {
             "type": "text_block",
             "settings": {
-              "module_image": "shopify://shop_images/about-image-3.jpg",
+              "module_image": "shopify://shop_images/190417-corey-arnold-3-about-us.jpg",
               "module_html": "<p></p><p>The Legacy Boot works, and in the eyes of Alaskan's, that's a beautiful thing. Dubbed the \"Alaskan sneaker\"—it has been <strong>performance-tested and proven</strong> across the toughest stretches of water, from Misty Fjords to Kodiak, from the Bering Sea to Harrison Bay.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_right",
@@ -594,7 +603,7 @@
           "1539646813012": {
             "type": "text_block",
             "settings": {
-              "module_image": "shopify://shop_images/about-image-4.jpg",
+              "module_image": "shopify://shop_images/190418-corey-arnold-4-about-us.jpg",
               "module_html": "<p>XTRATUF boots have become the badge of <strong>ultimate preparedness</strong> for the individuals of Alaska - the people who arrive as lone wolves and become part of a pack. <br><br>The XTRATUF boots they wear prove a <strong>reliable partner</strong> through thick and thin, keeping multiple generations safe, dry and moving forward, one sure step at a time.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_left",
@@ -898,6 +907,33 @@
         "type": "nosto-element",
         "settings": {
           "nosto_id": "frontpage-nosto-1"
+        }
+      },
+      "gift-with-purchase": {
+        "type": "gift-with-purchase",
+        "blocks": {
+          "1564077235901": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "super duper",
+              "min_spend": 305,
+              "time_start": "01 Jul 2019 01:00 GMT-7",
+              "time_end": "30 Aug 2019 01:00 GMT-7",
+              "grant_type": "all",
+              "auto_add_to_cart": false,
+              "gift_id": "18480972726370",
+              "inventory_id": "18480972726370",
+              "product_handle": "baby-logo-onesie-white"
+            }
+          }
+        },
+        "block_order": [
+          "1564077235901"
+        ],
+        "settings": {
+          "discount_modal_enable": true,
+          "cookie_expire_in_days": 60,
+          "currency_symbol": "$"
         }
       }
     },
