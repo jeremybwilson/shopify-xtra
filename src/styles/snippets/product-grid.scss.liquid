@@ -21,6 +21,18 @@ $loadMoreBgHover: {{ settings.collection_load_more_bg_hover }};
     left: 50%;
     transform: translateX( -50% );
     max-width: 99vw; // Prevent breaking viewport bounds
+    display: flex;
+    flex-wrap: wrap;
+    
+    .full-hight-promo{
+        .prod-container {
+            height: 100%;
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 
     // IMAGE : Product Image containment and layers
     .prod-container {

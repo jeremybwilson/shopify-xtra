@@ -3,7 +3,7 @@
     {% if block.settings.promo_url != blank and block.settings.is_show_promo == true %}
       {% if block.settings.is_show_on_all_collection == true or collections[block.settings.promo_collection].id == collection.id %}
         <div id="mycol_row">
-          <div data-block-id="{{ block.id }}" class="product_grid_promo product-index hide" data-position="{{ block.settings.promo_position }}">
+          <div data-block-id="{{ block.id }}" class="product_grid_promo product-index hide full-hight-promo" data-position="{{ block.settings.promo_position }}">
               <div class="prod-container">
                   <div class="prod-image">
                       <a href="{{ block.settings.promo_url }}">
