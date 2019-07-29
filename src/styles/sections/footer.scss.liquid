@@ -196,7 +196,7 @@
   padding-bottom: 42px;
   border-bottom: solid 1px {{ settings.footer_border }};
   float: left;
-    width: 35%;
+  width: 35%;
   
 
   @include mq('tablet-and-up') {
@@ -208,6 +208,10 @@
     @include mq(tablet) {
     width: 100%;
     text-align: center;
+    }
+
+    @include mq(phone) {
+      width: 100% !important;
     }
 
   @include mq('lap-and-up') {
@@ -230,7 +234,13 @@
     }
      @include mq('tablet') {
        width: 100%;
+       display:flex;
      }
+
+     @include mq(phone) {
+        display:flex;
+        width: 100%;
+    }
   }
   h4 {
     margin: 0 7px 0 0;
@@ -263,11 +273,16 @@
    @include mq(tablet) {
     padding-top: 36px;
     display: block;
-    width: 420px;
-    text-align: right ;
+    width:100%;
+    text-align:center;
     margin: 0 auto;
     margin-top: 20px;
     }
+
+   @include mq(phone) {
+    width:100% !important;
+    padding-top:36px !important;
+   }
 
   @include mq('lap-and-up') {
     margin-left: auto;
@@ -289,7 +304,12 @@
    
     @include mq('tablet') {  
      width: 100%;
-    text-align: center;    
+     text-align: center;    
+    }
+
+    @include mq('phone') {  
+      text-align:center;
+      width:100%;
     }
 
   }
@@ -321,7 +341,7 @@
   
 
  .payment-methods {
-  display: inline-block;
+     display: inline-block;
     float: left;
     width: auto;
     margin-top: -3px;
@@ -329,6 +349,10 @@
     display: block;
     margin: 0 auto;
     float: none;
+    }
+
+    @include mq('phone'){
+      width:100%;
     }
 
     }
