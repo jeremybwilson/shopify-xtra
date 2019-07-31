@@ -160,7 +160,7 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
-    "popup": true,
+    "popup": false,
     "email_image": "shopify://shop_images/190417-corey-arnold-3-about-us.jpg",
     "email_popup_title": "Get 10% Off Your First Order!",
     "email_popup_text": "Sign up to be the first to hear about new arrivals, early access and exclusive offers!",
@@ -840,7 +840,7 @@
               "heading": "CELEBRATE SUMMER",
               "subheading": "",
               "cta_one_link": "shopify://collections/lifestyle",
-              "cta_one_button_text": "SHOP NON-SLIP DECK SHOES",
+              "cta_one_button_text": "Shop Non-Slip Deck Shoes",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -911,25 +911,6 @@
       },
       "gift-with-purchase": {
         "type": "gift-with-purchase",
-        "blocks": {
-          "1564077235901": {
-            "type": "discount_object",
-            "settings": {
-              "display_name": "super duper",
-              "min_spend": 305,
-              "time_start": "01 Jul 2019 01:00 GMT-7",
-              "time_end": "30 Aug 2019 01:00 GMT-7",
-              "grant_type": "all",
-              "auto_add_to_cart": false,
-              "gift_id": "18480972726370",
-              "inventory_id": "18480972726370",
-              "product_handle": "baby-logo-onesie-white"
-            }
-          }
-        },
-        "block_order": [
-          "1564077235901"
-        ],
         "settings": {
           "discount_modal_enable": true,
           "cookie_expire_in_days": 60,
