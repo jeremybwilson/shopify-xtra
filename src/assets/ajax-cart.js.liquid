@@ -465,11 +465,11 @@ var ajaxCart = (function(module, $) {
       var $el = $(this),
           line = $el.data('line');
 
-      if (confirm(removeText) && line) {
-        updateQuantity(line, 0);
-      } else {
-        return false;
-      }
+      // if (confirm(removeText) && line) {
+         updateQuantity(line, 0);
+      // } else {
+      //   return false;
+      // }
     });
 
     // Update quantity based on input on change
