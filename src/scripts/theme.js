@@ -3182,3 +3182,33 @@ $(document).on('click','input[type=button].add.AddtoCart',function(){
   $(".variant-size-select-error").html('Please select a size to add to cart');
   $(".variant-size-select-error").removeClass('hide');
 });
+// update review & rating when review count is zero
+// call this event when product is load on front
+window.total_display_product = 0;
+window.display_product = false;
+$(document).on('DOMSubtreeModified', "#product-loop", function() {
+  var html = '<div class="standalone-bottomline"> ' + 
+                        '<div class="yotpo-bottomline pull-left  star-clickable">'+
+                            '<span class="yotpo-stars">'+
+                                '<span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span>' + 
+                                '<span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span>' + 
+                                '<span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span>' + 
+                                '<span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span>' + 
+                                '<span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span>' + 
+                                '<span class="sr-only" tabindex="0">0 star rating</span>'+
+                            '</span>'+
+                            '<a class="text-m">0 Reviews</a>'+ 
+                            '<div class="yotpo-clr"></div>'+
+                        '</div>'+
+                        '<div class="yotpo-clr"></div>'+
+                    '</div>';
+  if(window.total_display_product == $('.yotpo-display-wrapper').length && window.display_product){
+    window.display_product = false;
+    $('.yotpo-display-wrapper').each(function (index, value) {
+      var length = $(this).find('.yotpo-stars').length;
+      if(length == 0){
+          $(this).html(html);
+      }
+    });
+  }
+});
