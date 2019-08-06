@@ -3197,7 +3197,7 @@ $(document).on('DOMSubtreeModified', "#product-loop", function() {
                                 '<span class="yotpo-icon yotpo-icon-empty-star rating-star pull-left"></span>' + 
                                 '<span class="sr-only" tabindex="0">0 star rating</span>'+
                             '</span>'+
-                            '<a class="text-m">0 Reviews</a>'+ 
+                            '<a class="text-m">0</a>'+ 
                             '<div class="yotpo-clr"></div>'+
                         '</div>'+
                         '<div class="yotpo-clr"></div>'+
@@ -3209,6 +3209,10 @@ $(document).on('DOMSubtreeModified', "#product-loop", function() {
       if(length == 0){
           $(this).html(html);
       }
+    });
+    $("#product-loop .bottomLine .text-m").each(function(index,value){
+      var rhtml = $(this).html().replace(' Reviews','');
+      $(this).html(rhtml);
     });
   }
 });
