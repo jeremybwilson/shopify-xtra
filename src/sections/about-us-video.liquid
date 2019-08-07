@@ -1,0 +1,54 @@
+
+<section class="shopify-section video-banner-wrapper">
+  <div id="BgVideo">
+    <iframe class="bgvideo" src="{{ section.settings.video_url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div> 
+  <div class="index-section">
+    <div class="row banner-inner-width">
+        <div class="caption-wrapper">
+          <h1 class="slide-title">ALASKA PROVEN.<br>BUILT FOR ALL.</h1>
+              <div class="buttons-row">
+                  <div class="cta" id="cta-one-1560198484333">
+                      <a id="headerVideoLink" aria-label="youtube video link" class="fancybox-media vid-ply-btn popup-modal" href="{{ section.settings.popup_url }}">
+                      Play Video
+                      </a>
+                  </div>
+              </div>
+        </div>
+    </div>
+  </div> 
+</section>
+<script>
+  jQuery(document).ready(function($){
+    $('.fancybox-media').fancybox({
+      openEffect  : 'none',
+      closeEffect : 'none',
+      maxWidth: 1200,
+      helpers : {
+        media : {}
+      }
+           
+        
+    });
+  }); 
+</script>
+
+
+{% schema %}
+{
+  "name":"About Video",
+  "settings":[
+      {
+          "type":"url",
+          "label":"Background Video URL",
+          "id":"video_url"
+      },
+      {
+          "type":"url",
+          "label":"Popup Video URL",
+          "id":"popup_url"
+      }
+  ]
+}
+
+{% endschema %}
