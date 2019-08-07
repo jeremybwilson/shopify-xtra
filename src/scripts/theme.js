@@ -3211,7 +3211,7 @@ $(document).on('DOMSubtreeModified', "#product-loop", function() {
       }
     });
     $("#product-loop .bottomLine .text-m").each(function(index,value){
-      var rhtml = $(this).html().replace(' Reviews','');
+      var rhtml = $(this).html().replace(' Reviews','').replace(' Review','');
       $(this).html(rhtml);
     });
   }
