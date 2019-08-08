@@ -34,6 +34,7 @@ var bcSfFilterTemplate = {
                                         '{{itemVendor}}' +
                                         '<h3 class="product-title">{{itemTitle}}</h3>' +
                                     '</a>' +
+                                    '<div class="yotpo bottomLine" data-product-id="{{itemProductId}}"></div>'+
                                     '<div class="product-price-wrap">{{itemPrice}}</div>' +
                                 '</div>' +
                                 '{{itemQuickview}}' +
@@ -60,6 +61,7 @@ var bcSfFilterTemplate = {
 
 
 BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) {
+    window.total_display_product = totalProduct;
     /*** Prepare data ***/
     var images = data.images_info;
     
@@ -265,6 +267,8 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
 
 // Build Pagination
 BCSfFilter.prototype.buildPagination = function(totalProduct) {
+    yotpo.initWidgets();
+    window.display_product = true;
     // Get page info
     var currentPage = parseInt(this.queryParams.page);
     var totalPage = Math.ceil(totalProduct / this.queryParams.limit);
