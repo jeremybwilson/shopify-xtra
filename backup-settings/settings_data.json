@@ -276,8 +276,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & FREE RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "<strong>GET 10% OFF YOUR FIRST ORDER</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
+          "announcement_text_two": "Spotlight: Island Creek Oysters <strong><br>SHOP TOP PICKS</strong>",
+          "announcement_link_two": "shopify://collections/top-picks",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -487,10 +487,10 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/waterproof-deck-shoes.jpg",
-              "mobile_image": "shopify://shop_images/waterproof-deck-shoes_c1d52b5a-3051-43fd-84f3-8c3a7b535774.jpg",
-              "link": "shopify://collections/waterproof-deck-shoes",
-              "heading_text": "WATERPROOF DECK SHOES",
+              "image": "shopify://shop_images/twin-left-feature-butter-brine_bc5de71f-9f9a-4c6f-b60a-3140aaa70070.jpg",
+              "mobile_image": "shopify://shop_images/twin-left-feature-butter-brine-mobile_239c9c49-6a10-4270-ac99-ae4cffd23d2a.jpg",
+              "link": "shopify://collections/commercial-fishing",
+              "heading_text": "Harvesting Butter & Brine",
               "text": "",
               "cta_text": "SHOP NOW"
             }
@@ -498,10 +498,10 @@
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/salmon-sisters-collection_cbfe644c-1113-48c9-bfba-fd1f2af82f9e.jpg",
-              "mobile_image": "shopify://shop_images/salmon-sisters-collection.jpg",
-              "link": "shopify://collections/women-collection-salmon-sisters",
-              "heading_text": "THE SALMON SISTERS COLLECTION",
+              "image": "shopify://shop_images/twin-right-oh-shuck_ab5a5454-aa27-4e86-bad2-6e464a2d6d53.jpg",
+              "mobile_image": "shopify://shop_images/twin-right-oh-shuck-mobile_7b935e06-ec4c-449c-a381-a1ce321a5ac7.jpg",
+              "link": "shopify://collections/lifestyle",
+              "heading_text": "Oh Shuck!",
               "text": "",
               "cta_text": "SHOP NOW"
             }
@@ -512,7 +512,7 @@
           "1536251685211-0"
         ],
         "settings": {
-          "full_width": false
+          "full_width": true
         }
       },
       "1536252750894": {
@@ -560,11 +560,11 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "Mossy Oak Elements™",
-          "homepage_collection": "mossy-oak",
-          "homepage_product_limit": 8,
+          "heading": "NEW ARRIVALS",
+          "homepage_collection": "new-arrivals",
+          "homepage_product_limit": 14,
           "homepage_product_display": "carousel",
-          "products_per_row": 4
+          "products_per_row": 3
         }
       },
       "page-about-template": {
@@ -814,10 +814,19 @@
               "image": "",
               "mobile_image": ""
             }
+          },
+          "1565210280949": {
+            "type": "image",
+            "settings": {
+              "collection": "top-picks",
+              "image": "shopify://shop_images/top-picks_38fe2f6d-7b3d-4026-ae4b-03f92f3a1ff0.jpg",
+              "mobile_image": "shopify://shop_images/top-picks-mobile_8124e182-353e-4c04-a317-fc7b75d90aa6.jpg"
+            }
           }
         },
         "block_order": [
-          "1554153808433"
+          "1554153808433",
+          "1565210280949"
         ],
         "settings": {}
       },
@@ -835,56 +844,56 @@
           "1556040259163-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/deck-shoes_f1ae0ac3-0307-43d7-b569-e52b95500fb9.jpg",
-              "mobile_image": "shopify://shop_images/deck-shoes-m_9be3eff9-938f-4080-a658-58bd5b4ed26f.jpg",
-              "heading": "CELEBRATE SUMMER",
+              "image": "shopify://shop_images/hero-our-spotlight-1-new_84c41a64-f7cc-4a25-ae21-fdbd8fd7194c.jpg",
+              "mobile_image": "shopify://shop_images/hero-our-spotlight-1-mobile-new_10b59a7c-f1e9-444a-ae10-7e27427fdb28.jpg",
+              "heading": "IN OUR SPOTLIGHT",
               "subheading": "",
-              "cta_one_link": "shopify://collections/lifestyle",
-              "cta_one_button_text": "Shop Non-Slip Deck Shoes",
+              "cta_one_link": "shopify://collections/top-picks",
+              "cta_one_button_text": "SHOP TOP PICKS",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.4"
+            }
+          },
+          "1557363114895": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/hero-tide-to-table-3_28319321-5bca-44ee-a744-d818758f9fa7.jpg",
+              "mobile_image": "shopify://shop_images/hero-tide-to-table-3-mobile_0e9b829a-0ace-4361-a7b9-1a49079de170.jpg",
+              "heading": "FROM TIDE <br><strong>TO TABLE</strong>",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/commercial-fishing",
+              "cta_one_button_text": "SHOP COMMERCIAL",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
-              "caption_vertical": 45,
+              "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.4"
+              "caption_opacity": "0.1"
             }
           },
           "1560198484333": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/XT-HPG-ADB-Womens-Black-Flat.jpg",
-              "mobile_image": "shopify://shop_images/XT-HPGMobile-ADB-Womens-Black.jpg",
-              "heading": "WOMEN'S ANKLE DECK BOOT",
-              "subheading": "NOW AVAILABLE IN BLACK & BROWN",
-              "cta_one_link": "shopify://collections/women-activity-ankle-deck-boots",
-              "cta_one_button_text": "SHOP NOW",
+              "image": "shopify://shop_images/hero-tide-to-table-2_20ca48e3-0469-4c5c-af72-1f604556b951.jpg",
+              "mobile_image": "shopify://shop_images/hero-tide-to-table-2-mobile_739d0128-1ea4-4631-9962-6e6c38ccc2f3.jpg",
+              "heading": "<strong>FROM TIDE</strong><br> TO TABLE",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/lifestyle",
+              "cta_one_button_text": "SHOP LIFESTYLE",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "rgba(0,0,0,0)",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "transparent",
-              "caption_opacity": "0.1"
-            }
-          },
-          "1557363114895": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/deck-boot_3cbe5bbc-ea26-4bed-8af4-6a70a446fd24.jpg",
-              "mobile_image": "shopify://shop_images/deck-boot-m_be8ac846-87d9-4959-a42b-e781e7efe5bd.jpg",
-              "heading": "Mossy Oak Elements™",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/mossy-oak",
-              "cta_one_button_text": "SHOP THE COLLECTION",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
@@ -895,8 +904,8 @@
         },
         "block_order": [
           "1556040259163-1",
-          "1560198484333",
-          "1557363114895"
+          "1557363114895",
+          "1560198484333"
         ],
         "settings": {
           "full_width": true,
@@ -920,10 +929,10 @@
     },
     "content_for_index": [
       "1556040259163",
-      "1536353642475",
+      "1558651562615",
       "1536251685211",
       "1554225193358",
-      "1558651562615",
+      "1536353642475",
       "1536068961071",
       "1536252750894",
       "1536266098177"
