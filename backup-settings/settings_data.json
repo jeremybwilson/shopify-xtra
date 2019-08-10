@@ -160,7 +160,7 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
-    "popup": true,
+    "popup": false,
     "email_image": "shopify://shop_images/190417-corey-arnold-3-about-us.jpg",
     "email_popup_title": "Get 10% Off Your First Order!",
     "email_popup_text": "Sign up to be the first to hear about new arrivals, early access and exclusive offers!",
