@@ -1,7 +1,10 @@
 
 <section class="shopify-section video-banner-wrapper">
   <div id="BgVideo">
-    <iframe class="bgvideo" src="{{ section.settings.video_url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% comment %}<iframe class="bgvideo" src="{{ section.settings.video_url }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>{% endcomment %}
+    <video autoplay muted loop id="myVideo">
+       <source src="{{ section.settings.video_url }}" type="video/mp4">   
+    </video>
   </div> 
   <div class="index-section">
     <div class="row banner-inner-width">
@@ -41,12 +44,14 @@
       {
           "type":"url",
           "label":"Background Video URL",
-          "id":"video_url"
+          "id":"video_url",
+          "info":"Enter cdn URL"
       },
       {
           "type":"url",
           "label":"Popup Video URL",
-          "id":"popup_url"
+          "id":"popup_url",
+          "info":"Enter Youtube URL"
       }
   ]
 }
