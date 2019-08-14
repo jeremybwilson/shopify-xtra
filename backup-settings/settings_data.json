@@ -160,12 +160,12 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
-    "popup": false,
-    "email_image": "shopify://shop_images/190417-corey-arnold-3-about-us.jpg",
+    "popup": true,
+    "email_image": "",
     "email_popup_title": "Get 10% Off Your First Order!",
     "email_popup_text": "Sign up to be the first to hear about new arrivals, early access and exclusive offers!",
     "email_popup_input_placeholder": "Enter Your Email Address",
-    "email_popup_bottom_text": "<p>By providing your email address, you agree to our <a target=\"_blank\" href=\"https://www.honeywell.com/privacy-statement\">Privacy Policy</a> &amp; <a href=\"/pages/terms-conditions\" target=\"_blank\">Terms of Service</a>.</p>",
+    "email_popup_bottom_text": "<p>We won't share your info.View our <a target=\"_blank\" href=\"https://www.honeywell.com/privacy-statement\">Privacy Policy</a> &amp; <a href=\"/pages/terms-conditions\" target=\"_blank\">Terms of Service</a>.</p>",
     "email_popup_error": "Please enter a valid e-mail address",
     "email_popup_success": "<p>Thank you for signing up! Please check your email for your special offer!</p>",
     "cookie_banner_mobile_text": "<p>We use cookies.</p>",
@@ -921,7 +921,7 @@
       "gift-with-purchase": {
         "type": "gift-with-purchase",
         "settings": {
-          "discount_modal_enable": true,
+          "discount_modal_enable": false,
           "cookie_expire_in_days": 60,
           "currency_symbol": "$"
         }
