@@ -925,6 +925,13 @@
           "cookie_expire_in_days": 60,
           "currency_symbol": "$"
         }
+      },
+      "about-us-video": {
+        "type": "about-us-video",
+        "settings": {
+          "video_url": "https://cdn.shopify.com/s/files/1/0053/3194/3522/files/An_Alaskan_Icon.mp4?423528&autoplay=1",
+          "popup_url": "https://www.youtube.com/watch?v=hCfrm6aZZEg&feature=youtu.be"
+        }
       }
     },
     "content_for_index": [
