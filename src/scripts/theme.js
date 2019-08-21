@@ -1689,14 +1689,6 @@ $(document).ready(function() {
         return attr == 'false' ? true : 'false';
       });
     });
-    /*Add our-story-body class in about page*/ 
-    var href = document.location.href;
-    var lastPathSegment = href.substr(href.lastIndexOf('/') + 1);
-    if(lastPathSegment == 'about'){      
-      $('body').addClass('our-story-body'); 
-    }else{
-      $('body').removeClass('our-story-body'); 
-    }
     
     /* Ensure that sub nav menus open to the left if any chance of offscreen overflow */
     $("ul.submenu li").on('mouseenter mouseleave', function (e) {
