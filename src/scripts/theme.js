@@ -1689,7 +1689,7 @@ $(document).ready(function() {
         return attr == 'false' ? true : 'false';
       });
     });
-
+    
     /* Ensure that sub nav menus open to the left if any chance of offscreen overflow */
     $("ul.submenu li").on('mouseenter mouseleave', function (e) {
       if ($('ul', this).length) {
