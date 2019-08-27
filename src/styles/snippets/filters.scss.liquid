@@ -61,7 +61,7 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
         }
 
         .bc-sf-filter-option-block {
-            position: relative; // So the giant menu will align with items, comment out to make full width menus
+            position: static; // So the giant menu will align with items, comment out to make full width menus
             margin-bottom: 0; 
             padding-top: 3px; // So line is cleanly centered horizontally
 
@@ -120,7 +120,7 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
             .bc-sf-filter-block-content {
                 background: $filterBg;
                 border: none;
-                width: 190px;
+                width: 100%;
                 top: 54px !important; //Has to override inline set style by js
                 border: $filterBarBorder;
 
@@ -132,7 +132,9 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
                 // APPLY : Button to apply selected filters in a list
                 .bc-sf-filter-select-button {
                     @include h6;
-                    width: 100%;
+                    width: 15%;
+                    display:block;
+                    margin: 0 auto 20px;
                     outline: none;
                     color: $filterBtnMainText;
                     background: $filterBtnMainBg; // Reverse it so the button matches convention
@@ -140,12 +142,12 @@ $filterBarBorder: {{ settings.filter_bar_border_width }}px solid {{ settings.fil
 
                 // LIST : The actual list itself
                 ul.bc-sf-filter-option-multiple-list {
-
+                    padding-left: 0;
+                    margin: 15px 45px;
                     // FILTER : OPTION : Parent list item for individual item in filter options
                     li {
-                        display: block; // one item per row
-                        width: 100%; // Default: 30% in inital styles
-                        margin-bottom: 15px;
+                        width: 25%; // Default: 30% in inital styles
+                        margin: 0 0 20px 0;
 
                         // FILTER : OPTION : link wrapper around the 3 spans of data 
                         a {
