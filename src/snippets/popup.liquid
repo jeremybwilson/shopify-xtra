@@ -2,7 +2,7 @@
 
 
   <div style="display:none">
-    <div id="subscribe--popup" data-gdpr-expire="{{ settings.cookie_banner_expire }}">
+    <div id="subscribe--popup" data-gdpr-expire="{{ settings.cookie_banner_expire }}" {% if settings.mobile_newletter_popup_disable != false %}class="mobile-disable"{% endif %}>
 
       <a id="subscribe--close">
         {% include 'svg-icon-x' %}

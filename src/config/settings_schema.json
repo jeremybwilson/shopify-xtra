@@ -1253,6 +1253,21 @@
     "name": "Newsletter",
     "settings": [
       {
+        "type": "header",
+        "content": "Mobile settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_newletter_popup_disable",
+        "label": "Disable Mobile Viewport Mailing List Popup",
+        "default": false,
+        "info": "Check box to disable newsletter signup modal on mobile only."
+      },
+      {
+        "type": "header",
+        "content": "All other settings"
+      },
+      {
         "type": "checkbox",
         "id": "popup",
         "label": "Show Join Mailing List Popup"
