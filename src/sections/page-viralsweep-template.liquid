@@ -1,0 +1,129 @@
+{% comment %}VIRALSWEEP TEST TEMPLATE PAGE :: PDM-827 {% endcomment %}
+<div id="page" class="desktop-12 tablet-6 mobile-3" data-section-id="{{ section.id }}">
+  {{ page.content }}
+
+  {%- if section.settings.enable_viralsweep == true and section.settings.campaign_id != blank or section.settings.campaign_id_other != blank -%}
+    {% capture campaign_id %}{{ section.settings.campaign_id }}{% endcapture %}
+    {% capture campaign_id_other %}{{ section.settings.campaign_id_other }}{% endcapture %}
+    {% capture campaign_domain %}{{ section.settings.campaign_domain }}{% endcapture %}
+    {%- if campaign_domain == 'en' %}
+      {% assign campaign_id_vals = campaign_id | split: "_" %}
+      {% capture scriptId %}vsscript_{{ campaign_id }}{% endcapture %}
+    {%- else -%}
+      {% assign campaign_id_vals = campaign_id_other | split: "_" %}
+      {% capture scriptId %}vsscript_{{ campaign_id_other }}{% endcapture %}
+    {%- endif -%}
+
+      <script type="text/javascript">
+      window.theme.viralSweepData = {};         // Default to an empty object so we are certain this will exist
+      var data = window.theme.viralSweepData;   // Shorthand to make it easier to extend props
+      data.domainLocale = window.theme.Utils.domainCookie();  // Store our domain
+
+      // LANGUAGE DEFAULT : English data supplied by default, if TLD (top level domain) = "com" or "uk"
+      if ( /com|uk/i.test( data.domainLocale ) ) {
+        data.vsScriptId = '{{ scriptId }}';
+        data.vsScriptUrl = '//app.viralsweep.com/vsa-widget-3155df-{{ campaign_id_vals[0] }}.js?sid={{ campaign_id }}';
+      };
+      </script>
+
+      {% comment %} LANGUAGE : Is Campaign Domain NOT english? {% endcomment %}
+      {%- if campaign_domain != 'en' -%}
+
+        {% comment %} DATA : Build Non-EN Specific script URL info {% endcomment %}
+        <script type="text/javascript">
+        var data = window.theme.viralSweepData
+        // Check to see which domain we are currently on
+        if ( /de|fr/i.test( data.domainLocale ) ) { // if the domain is .de or fr-ca, then embed ViralSweep  non-EN campaign include
+          data.vsScriptId = '{{ scriptId }}';
+          data.vsScriptUrl = '//app.viralsweep.com/vsa-widget-3155df-{{ campaign_id_vals[0] }}.js?sid={{ campaign_id_other }}';
+        }
+        </script>
+      {%- endif -%}
+
+      {% comment %} VIRAL SWEEP WIDGET : Div that the script will generate the widget into {% endcomment %}
+      <div id="{{ scriptId }}"></div>
+
+      <script type="text/javascript">
+        var data = window.theme.viralSweepData;
+
+        // ADD SCRIPT : We know as long as those two datapoints, we can generate the widget
+        if (data.vsScriptId && data.vsScriptUrl) {
+
+          // PROTOTYPE: Add Element BEFORE neighboring element
+          Element.prototype.appendBefore = function(element){
+            element.parentNode.insertBefore(this, element)
+          }
+          // PROTOTYPE: Add Element AFTER neighboring element
+          Element.prototype.appendAfter = function(element){
+            element.parentNode.insertBefore(this, element.nextSibling)
+          }
+
+          // NODE : What element to put our script after
+          var widgetNode = document.getElementById( data.vsScriptId );
+
+          var script = document.createElement('script');
+          script.async = "";
+          script.src = data.vsScriptUrl;
+          // widgetNode.parentNode.insertAfter( script, widgetNode );
+          script.appendAfter(widgetNode);
+        }
+      </script>
+    </div><!-- /.viralsweep-container -->
+  {%- endif -%}
+</div>
+
+{% schema %}
+  {
+    "name": "ViralSweep Settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "ViralSweep Campaign"
+      },
+      {
+        "type":   "checkbox",
+        "id":     "enable_viralsweep",
+        "label":  "Enable full page ViralSweep page",
+        "info":   "This setting enables or disables the overall full page ViralSweep page template.",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "ViralSweep Campaign Info"
+      },
+      {
+        "type":   "select",
+        "id":     "campaign_domain",
+        "label":  "Campaign Domain",
+        "info":   "Leave set to EN unless you need DE for German content",
+        "options": [
+          {
+            "label": "EN",
+            "value": "en"
+          },
+          {
+            "label": "DE",
+            "value": "de"
+          },
+          {
+            "label": "FR",
+            "value": "fr"
+          }
+        ],
+        "default": "en"
+      },
+      {
+          "type": "text",
+          "id": "campaign_id",
+          "label": "Enter ViralSweep campaign ID for EN domain",
+          "default": ""
+      },
+      {
+          "type": "text",
+          "id": "campaign_id_other",
+          "label": "Enter ViralSweep campaign ID for non-EN domain",
+          "default": ""
+      }
+    ]
+  }
+{% endschema %}
