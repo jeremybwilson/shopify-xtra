@@ -22,14 +22,11 @@
   {% endif %}
 {% endfor %}
 
-
 {% schema %}
 {
   "name": "Collection banner",
   "class": "no_padding",
   "settings": [
-          
-
   ],
   "blocks": [
     {
@@ -45,12 +42,14 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Desktop Image"
+          "label": "Desktop Image",
+          "info": "Size: 1400px W by 276px H"
         },
         {
           "type": "image_picker",
           "id": "mobile_image",
-          "label": "Mobile Image"
+          "label": "Mobile Image",
+          "info": "Size: 800px W by 312px H"
         }
       ]
     }
