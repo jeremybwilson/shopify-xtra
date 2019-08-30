@@ -160,6 +160,7 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
+    "mobile_newletter_popup_disable": false,
     "popup": true,
     "email_image": "",
     "email_popup_title": "Get 10% Off Your First Order!",
@@ -920,8 +921,27 @@
       },
       "gift-with-purchase": {
         "type": "gift-with-purchase",
+        "blocks": {
+          "1567110392773": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "Winter Solstice Coolie",
+              "min_spend": 100,
+              "time_start": "16 DEC 2019 11:00 EST",
+              "time_end": "",
+              "grant_type": "pick",
+              "auto_add_to_cart": false,
+              "gift_id": "29545804300386",
+              "inventory_id": "29545804300386",
+              "product_handle": "winter-solstice-coolie"
+            }
+          }
+        },
+        "block_order": [
+          "1567110392773"
+        ],
         "settings": {
-          "discount_modal_enable": false,
+          "discount_modal_enable": true,
           "cookie_expire_in_days": 60,
           "currency_symbol": "$"
         }
