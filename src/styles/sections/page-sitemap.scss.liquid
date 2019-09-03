@@ -1,0 +1,47 @@
+ul.parent {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+ul.parent >li {
+    min-width: 25%;
+    margin-bottom:2%;
+    list-style: none;
+}
+
+ul.parent >li ul.child ul.grandchild {
+    padding-left: 25px;
+    list-style: circle;
+}
+
+ul.parent a:hover {
+    color: #e41c39;
+}
+
+@include mq('phone'){
+    ul.parent {
+      margin: 0px 20px;
+    }
+    ul.parent >li {
+      margin-bottom:5%;
+    }
+    .footer-sitemap ul {
+      margin: 0 20px;    
+    }    
+}
+
+.footer-sitemap {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-sitemap ul {
+    min-width: 25%;
+    margin-bottom: 2%; 
+}
+
+.footer-sitemap ul a:hover{
+  color:#e41c39;
+} 
