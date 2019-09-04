@@ -16,7 +16,20 @@ ul.parent >li ul.child ul.grandchild {
 }
 
 ul.parent a:hover {
-    color: #e41c39;
+    color: $color--accent-1;
+}
+ul.parent >li >a {
+    font-weight: $font-weight--black;
+    line-height: 1.25em;
+    letter-spacing: 0;
+    @include fontSize( 16px );    
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: $color--primary-1;   
+}
+ul.child {
+    color: $color--primary-1;    
 }
 
 @include mq('phone'){
@@ -27,7 +40,11 @@ ul.parent a:hover {
       margin-bottom:5%;
     }
     .footer-sitemap ul {
-      margin: 0 20px;    
+      margin: 0 20px;
+      @include fontSize( 14px );    
+    }
+    ul.child{
+      @include fontSize( 14px );    
     }    
 }
 
@@ -39,9 +56,10 @@ ul.parent a:hover {
 
 .footer-sitemap ul {
     min-width: 25%;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
+    color: $color--primary-1; 
 }
 
 .footer-sitemap ul a:hover{
-  color:#e41c39;
+  color:$color--accent-1;
 } 
