@@ -419,7 +419,8 @@
           "newsletter_placeholder": "Enter Email Address",
           "newsletter_error": "Please enter a valid e-mail address",
           "newsletter_success": "<p>Thank you for signing up! Please check your email for your special offer!</p>",
-          "social_heading": "Connect With Us"
+          "social_heading": "Connect With Us",
+          "info_line": "<p>We won't share your info. View our <a target=\"_blank\" href=\"https://www.honeywell.com/en-us/privacy-statement\" title=\"privacy Policy\">Privacy Policy</a> &amp; <a href=\"/pages/terms-conditions\" title=\"Terms of Services\">Terms of Service</a>.</p>"
         }
       },
       "1536068961071": {
