@@ -15,6 +15,18 @@ ul.parent >li ul.child ul.grandchild {
     list-style: circle;
 }
 
+ul.parent>li ul.child ul.grandchild >li {
+    font-weight: $font-weight--medium;
+}
+
+ul.child > li {
+    font-weight: $font-weight--medium;
+}
+
+ul.child>li >span {
+    font-weight: $font-weight--bold;
+}
+
 ul.parent a:hover {
     color: $color--accent-1;
 }
@@ -62,4 +74,8 @@ ul.child {
 
 .footer-sitemap ul a:hover{
   color:$color--accent-1;
-} 
+}
+
+.footer-sitemap ul >li {
+    font-weight: $font-weight--medium;
+}

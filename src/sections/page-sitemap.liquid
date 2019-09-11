@@ -4,8 +4,12 @@
 {% if link.links != blank %}
   <ul class="child">
     {% for child_link in link.links %} 
-      {% if child_link.title != '-' %} 
+      {% if child_link.title != '-' %}
+      {% if child_link.url == '/collections/men' or  child_link.url =='/collections/women/audience_women' %} 
+       <li><span>{{ child_link.title }}</span>       
+      {% else %} 
        <li><a href= "{{ child_link.url }}">{{ child_link.title }}</a>
+      {% endif %}  
       {% endif %}
     {% if child_link.links != blank %}
       <ul class="grandchild">
