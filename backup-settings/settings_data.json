@@ -953,6 +953,14 @@
           "video_url": "https://cdn.shopify.com/s/files/1/0053/3194/3522/files/An_Alaskan_Icon.mp4?423528&autoplay=1",
           "popup_url": "https://www.youtube.com/watch?v=hCfrm6aZZEg&feature=youtu.be"
         }
+      },
+      "page-viralsweep-template": {
+        "type": "page-viralsweep-template",
+        "settings": {
+          "enable_viralsweep": true,
+          "campaign_id": "55270_XXXXXX",
+          "campaign_id_other": "55270_XXXXXX"
+        }
       }
     },
     "content_for_index": [
