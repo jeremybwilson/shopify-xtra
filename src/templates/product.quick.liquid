@@ -5,9 +5,6 @@
 </div>
 
 {% if settings.ajax_cart_method == 'drawer' %}
-  {{ 'handlebars.min.js' | asset_url | script_tag }}
-  {% include 'ajax-cart-template' %}
-  {{ 'ajax-cart.js' | asset_url | script_tag }}
   <script>
     jQuery(function($) {
       ajaxCart.init({
