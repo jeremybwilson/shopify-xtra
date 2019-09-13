@@ -425,6 +425,7 @@
       },
       "1536068961071": {
         "type": "columns-carousel",
+        "disabled": true,
         "blocks": {
           "1536068961071-0": {
             "type": "image",
