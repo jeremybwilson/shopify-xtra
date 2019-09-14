@@ -160,7 +160,7 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
-    "mobile_newletter_popup_disable": false,
+    "mobile_newletter_popup_disable": true,
     "popup": true,
     "email_image": "",
     "email_popup_title": "Get 10% Off Your First Order!",
@@ -493,7 +493,7 @@
               "image": "shopify://shop_images/twin-1-slip-into-fall.jpg",
               "mobile_image": "shopify://shop_images/twin-1-slip-into-fall-mobile.jpg",
               "link": "shopify://collections/lifestyle",
-              "heading_text": "SLIP INTO FALL",
+              "heading_text": "STEP INTO FALL",
               "text": "",
               "cta_text": "SHOP LIFESTYLE"
             }
@@ -884,6 +884,26 @@
               "caption_opacity": "0.1"
             }
           },
+          "1568396007250": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Our_Proving_Ground_DT.jpg",
+              "mobile_image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
+              "heading": "Our Proving Ground",
+              "subheading": "",
+              "cta_one_link": "shopify://collections/new-arrivals",
+              "cta_one_button_text": "SHOP NEW ARRIVALS",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
+          },
           "1560198484333": {
             "type": "image",
             "settings": {
@@ -908,6 +928,7 @@
         "block_order": [
           "1556040259163-1",
           "1557363114895",
+          "1568396007250",
           "1560198484333"
         ],
         "settings": {
