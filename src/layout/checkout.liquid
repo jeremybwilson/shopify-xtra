@@ -12,6 +12,7 @@
 
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
+    {% include 'script-google-tag-head' %}
   </head>
   <body>
     {{ skip_to_content_link }}
@@ -57,5 +58,6 @@
     <!---PDM-222-->
     {% include 'checkout-address-autofill' %}
     <!---PDM-222-->
+    {% include 'script-google-tag-body' %}
   </body>
 </html>
