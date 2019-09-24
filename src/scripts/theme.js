@@ -1755,6 +1755,26 @@ $(document).ready(function() {
       });
     });
 
+    $(document).on('click', ".bc-sf-filter-option-multiple-list .bc-sf-filter-option-item", function() {
+      var filterval = $(this).attr('data-id');
+      var clearHtml = "<a href='javascript:;' class='bc-sf-filter-clear custom-bc-sf-filter-clear' onclick=\"clearFilterOption(event, this,'"+filterval+"')" +"\">Clear</a>";
+      var parent_block = $(this).parents('.bc-sf-filter-option-block'); 
+      var clearlength = parent_block.find('.bc-sf-filter-clear').length;
+      if(clearlength == 0){
+          $(this).parents('.bc-sf-filter-block-content-inner').append(clearHtml);
+      }else{
+        $(".bc-sf-filter-clear").addClass('custom-bc-sf-filter-clear');
+      }
+      if(parent_block.find('input[type=checkbox].selected').length == 0){
+        parent_block.find('.bc-sf-filter-clear').remove();  
+      }
+    });
+    $(document).on('click','.custom-bc-sf-filter-clear',function(){
+      var parent_block = $(this).parents('.bc-sf-filter-option-block'); 
+      parent_block.find('.bc-sf-filter-option-item.selected').removeClass('selected');
+      parent_block.find('input.selected').removeClass('selected');
+      $(this).remove();
+    });
   }());
 
   /* Stop the flash of unstyled content */
