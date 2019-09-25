@@ -3220,15 +3220,16 @@ $(document).on('DOMSubtreeModified', "#product-loop", function() {
 /*================================
     Holiday  Theme
   ================================*/
-$(document).ready(function(){
+window.holidayThemeActive = function(classname){
+var canvasid = 'snow-' + Math.floor(Math.random() * 10000);
 var canvas = document.createElement('canvas')
-canvas.id = 'snow'
+canvas.id = canvasid
 
-var container = document.getElementsByClassName('slides');
+var container = document.getElementsByClassName(classname);
 
 container[0].appendChild(canvas)
 
-	var canvas = document.getElementById("snow");
+	var canvas = document.getElementById(canvasid);
 		canvas.style.position = 'absolute';
 		canvas.style.top = 0;
 		canvas.style.left = 0;
@@ -3237,7 +3238,7 @@ container[0].appendChild(canvas)
 	var ctx = canvas.getContext("2d");
 
 	var W = window.innerWidth
-	var H = $(".slides").height();
+	var H = $("." + classname).height();
 		canvas.width = W;
 		canvas.height = H;
  
@@ -3311,4 +3312,4 @@ container[0].appendChild(canvas)
  }
 //animation loop
 setInterval(draw, 33);
-});
+};
