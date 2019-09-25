@@ -814,7 +814,7 @@
             "type": "image",
             "settings": {
               "collection": "women-collection-salmon-sisters",
-              "image": "",
+              "image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
               "mobile_image": ""
             }
           },
@@ -849,10 +849,10 @@
             "settings": {
               "image": "shopify://shop_images/hp-1-ankle-deck-boots-desktop.jpg",
               "mobile_image": "shopify://shop_images/hp-1-ankle-deck-boots-mobile.jpg",
-              "heading": "Rise to the<br> Challenge",
-              "subheading": "NEW CLOTHING ADDED!",
-              "cta_one_link": "shopify://collections/new-arrivals",
-              "cta_one_button_text": "Shop New Arrivals",
+              "heading": "IT'S HOODIE SEASON",
+              "subheading": "JUST IN FOR FALL",
+              "cta_one_link": "shopify://collections/clothing",
+              "cta_one_button_text": "SHOP CLOTHING",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -958,10 +958,25 @@
               "inventory_id": "29545804300386",
               "product_handle": "winter-solstice-coolie"
             }
+          },
+          "1569349869798": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "Free",
+              "min_spend": 500,
+              "time_start": "24 Sep 2019 11:34 GMT-7",
+              "time_end": "24 Sep 2019 13:34 GMT-7",
+              "grant_type": "all",
+              "auto_add_to_cart": true,
+              "gift_id": "1950274060386",
+              "inventory_id": "1950274060386",
+              "product_handle": "baby-logo-onesie-white"
+            }
           }
         },
         "block_order": [
-          "1567110392773"
+          "1567110392773",
+          "1569349869798"
         ],
         "settings": {
           "discount_modal_enable": true,
@@ -983,6 +998,26 @@
           "campaign_id": "55270_XXXXXX",
           "campaign_id_other": "55270_XXXXXX"
         }
+      },
+      "product_grid_promo": {
+        "type": "product_grid_promo",
+        "blocks": {
+          "1569356463094": {
+            "type": "image",
+            "settings": {
+              "is_show_promo": true,
+              "is_show_on_all_collection": false,
+              "promo_collection": "men-activity-commercial-fishing",
+              "promo_url": "",
+              "promo_image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
+              "promo_position": 1
+            }
+          }
+        },
+        "block_order": [
+          "1569356463094"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
