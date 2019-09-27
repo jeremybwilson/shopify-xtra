@@ -810,14 +810,6 @@
       "collection-banner": {
         "type": "collection-banner",
         "blocks": {
-          "1554153808433": {
-            "type": "image",
-            "settings": {
-              "collection": "women-collection-salmon-sisters",
-              "image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
-              "mobile_image": ""
-            }
-          },
           "1565210280949": {
             "type": "image",
             "settings": {
@@ -828,7 +820,6 @@
           }
         },
         "block_order": [
-          "1554153808433",
           "1565210280949"
         ],
         "settings": {}
