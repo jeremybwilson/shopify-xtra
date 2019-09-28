@@ -160,8 +160,8 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
-    "mobile_newletter_popup_disable": true,
-    "popup": true,
+    "mobile_newletter_popup_disable": false,
+    "popup": false,
     "email_image": "",
     "email_popup_title": "Get 10% Off Your First Order!",
     "email_popup_text": "Sign up to be the first to hear about new arrivals, early access and exclusive offers!",
@@ -996,11 +996,11 @@
           "1569356463094": {
             "type": "image",
             "settings": {
-              "is_show_promo": true,
+              "is_show_promo": false,
               "is_show_on_all_collection": false,
-              "promo_collection": "men-activity-commercial-fishing",
-              "promo_url": "",
-              "promo_image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
+              "promo_collection": "men",
+              "promo_url": "shopify://pages/about",
+              "promo_image": "shopify://shop_images/product_XSB-200-BLU_2.jpg",
               "promo_position": 1
             }
           }
