@@ -7,6 +7,10 @@
     <meta name="referrer" content="origin">
 
     <title>{{ page_title }}</title>
+    <!-- Favicons -->
+    {% if settings.favicon %}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x' }}">
+    {% endif %}
 
     {{ content_for_header }}
 
