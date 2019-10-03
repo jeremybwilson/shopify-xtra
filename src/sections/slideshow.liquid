@@ -20,7 +20,7 @@
         {% endif %}
 
       <div class="flexslider index_Slider {{ solo_class }}" id="Slideshow-{{ section.id }}" data-speed="{{ slider_speed }}">
-        <ul class="slides">
+        <ul class="slides slides-{{ section.id }}">
           {% for block in section.blocks %}
 
           <li id="slide--{{ block.id }}"
@@ -227,6 +227,15 @@
   {% endunless %}
 </div>
 <div class="clear"></div>
+<script>
+$(document).ready(function(){
+  var is_holiday_active = {{section.settings.holiday_theme}};
+  if(is_holiday_active){
+    var classname = "slides-{{ section.id }}";
+    holidayThemeActive(classname);
+  }
+});
+</script>
 
 {% schema %}
 {
@@ -442,6 +451,11 @@
       "step": 1,
       "label": "Slideshow speed (seconds)",
       "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "holiday_theme",
+      "label": "Enable Holiday theme"     
     }
   ],
   "presets": [{
