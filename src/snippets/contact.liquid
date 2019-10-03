@@ -47,6 +47,9 @@
     <label>{{ 'contact.form.message' | t }}<span class="req">*</span></label>
     <textarea rows="15" cols="90" id="contactFormMessage" name="contact[body]" placeholder="{{ 'contact.form.message' | t }}" aria-label="Body"></textarea>
   </p>
+
+  <div class="disclaimer-contact">{{ settings.disclaimer_contact_us_text }}</div>
+
   <p class="form-submit">
     <input type="submit" id="contactFormSubmit" class="secondary button" value="{{ 'contact.form.send' | t }}" />
   </p> 
