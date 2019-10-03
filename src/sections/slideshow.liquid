@@ -11,7 +11,7 @@
 
       {% if section.blocks.size > 0 %}
 
-        {% comment %} Add a class for sliders with solo images {% endcomment %}      
+        {% comment %} Add a class for sliders with solo images {% endcomment %}
 
         {% if section.blocks.size == 1 %}
           {% assign solo_class = 'one-image-only' %}
@@ -27,14 +27,14 @@
             data-block-id="{{ block.id }}"
             class="slide--{{ block.id }} slide_image"
             data-flexslider-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
-  
+
             {% comment %} :: IMAGES - MOBILE AND DESKTOP :: {% endcomment %}
 
             {% if block.settings.image != blank %}
 
               <div class="box-ratio">
                 <picture>
-                  
+
                   {% comment %} :: MOBILE IMAGE :: {% endcomment %}
 
                   {% if block.settings.mobile_image != blank %}
@@ -46,8 +46,8 @@
 
                   {% assign desktop_img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
-                  <img class="slideshow__image slideshow__image__{{ block.id }} lazyload lazyload-fade" 
-                    data-src="{{ desktop_img_url }}" 
+                  <img class="slideshow__image slideshow__image__{{ block.id }} lazyload lazyload-fade"
+                    data-src="{{ desktop_img_url }}"
                     data-sizes="auto"
                     data-parent-fit="cover"
                     alt="{{ block.settings.image.alt | escape }}">
@@ -93,7 +93,7 @@
                   }
 
                 {% endif %}
-                
+
               </style>
 
             {% endif %}
@@ -131,13 +131,13 @@
                   {% comment %} CTA TWO - Only show if link exists. Duplicate this and the necessary schema code if client asks for more buttons. {% endcomment %}
 
                   {% if block.settings.cta_two_link != blank and block.settings.cta_two_button_text != blank %}
-                  
+
                     <div class="cta" id="cta-one-{{ block.id }}">
                       <a href="{{ block.settings.cta_two_link }}">
                       {{ block.settings.cta_two_button_text }}
                       </a>
                     </div>
-                  
+
                   {% endif %}
 
                 </div>
@@ -249,7 +249,7 @@ $(document).ready(function(){
         {
           "type": "header",
           "content": "Images"
-        },      
+        },
         {
           "type": "image_picker",
           "id": "image",
@@ -259,7 +259,7 @@ $(document).ready(function(){
           "type": "image_picker",
           "id": "mobile_image",
           "label": "Image (Mobile)"
-        },        
+        },
         {
           "type": "header",
           "content": "Text Box - Content"
@@ -307,7 +307,7 @@ $(document).ready(function(){
           "label": "Button text",
           "default": "Add a button",
           "info": "Visible only if a link is chosen"
-        },        
+        },
         {
           "type": "header",
           "content": "Text Box - Color Scheme"
@@ -330,7 +330,7 @@ $(document).ready(function(){
               "value": "custom",
               "label": "Custom"
             }
-          ] 
+          ]
         },
         {
           "type": "color",
@@ -439,6 +439,10 @@ $(document).ready(function(){
   ],
   "settings": [
     {
+      "type": "header",
+      "content": "Slide Show - Settings"
+    },
+    {
       "type": "checkbox",
       "id": "full_width",
       "label": "Enable full width"
@@ -453,9 +457,13 @@ $(document).ready(function(){
       "default": 5
     },
     {
+      "type": "header",
+      "content": "Slide Show - Holiday Theme"
+    },
+    {
       "type": "checkbox",
       "id": "holiday_theme",
-      "label": "Enable Holiday theme"     
+      "label": "Check this box to enable Holiday theme"
     }
   ],
   "presets": [{
