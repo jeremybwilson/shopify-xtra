@@ -547,7 +547,8 @@
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 3
+          "slider_speed": 3,
+          "holiday_theme": false
         }
       },
       "1536266098177": {
@@ -654,7 +655,8 @@
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 5
+          "slider_speed": 5,
+          "holiday_theme": false
         }
       },
       "columns-carousel": {
@@ -799,6 +801,26 @@
               "caption_opacity": "0.4"
             }
           },
+          "1570044914517": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/BlueMermaidLife-01_HP_DT_cd88c281-ee8b-43dd-a15e-6ba49af2d87c.jpg",
+              "mobile_image": "shopify://shop_images/BlueMermaidLife-01_HP_Mobile_f1b2c757-1f59-4026-b84d-f228eaf47ae5.jpg",
+              "heading": "MERMAID LIFE<br>LEGACY BOOT",
+              "subheading": "DESIGNED BY THE SALMON SISTERS",
+              "cta_one_link": "shopify://products/womens-salmon-sisters-15-in-legacy-boot-brown",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
           "1568396007250": {
             "type": "image",
             "settings": {
@@ -838,26 +860,6 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
-          },
-          "1570044914517": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/BlueMermaidLife-01_HP_DT_cd88c281-ee8b-43dd-a15e-6ba49af2d87c.jpg",
-              "mobile_image": "shopify://shop_images/BlueMermaidLife-01_HP_Mobile_f1b2c757-1f59-4026-b84d-f228eaf47ae5.jpg",
-              "heading": "MERMAID LIFE<br>LEGACY BOOT",
-              "subheading": "DESIGNED BY THE SALMON SISTERS",
-              "cta_one_link": "shopify://products/womens-salmon-sisters-15-in-legacy-boot-brown",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "center",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
           }
         },
         "block_order": [
@@ -868,7 +870,8 @@
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 5
+          "slider_speed": 5,
+          "holiday_theme": false
         }
       },
       "1558651562615": {
