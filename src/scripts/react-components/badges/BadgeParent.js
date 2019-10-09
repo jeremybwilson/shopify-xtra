@@ -16,6 +16,7 @@
  *      ]
  *********************************************/
 const BadgeItem = require('./BadgeItem.js');
+const ReactDOM = require('../../vendor/react-dom.min.js');
 var badgeData = []; // Top level so findTag() can use it also
 
 

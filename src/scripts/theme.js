@@ -51,6 +51,7 @@
 
 
 window.theme = window.theme || {};
+window.React = require( './vendor/react.min.js' );
 
 /* For IE 11+ Nodelist forEach Function */
 if (window.NodeList && !NodeList.prototype.forEach) {
