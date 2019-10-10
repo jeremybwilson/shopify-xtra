@@ -3172,6 +3172,9 @@ $(document).ready(function(){
     $('.add.AddtoCart').attr('type','button');
     $('.add.AddtoCart').addClass('disable');
     $(".variant-size-select-error").html('Please select a size');
+
+    var mainHeight= $('.index_Slider').outerHeight();
+    $('.index_Slider > ul > li').css("min-height",mainHeight+'px');
 });
 $(document).on('change','.swatch.size input',function(){
   $('.add.AddtoCart').attr('type','submit');
