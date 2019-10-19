@@ -910,11 +910,26 @@
               "inventory_id": "1950274060386",
               "product_handle": "baby-logo-onesie-white"
             }
+          },
+          "1571430770545": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "Unisex Kryptek Trucker Cap",
+              "min_spend": 100,
+              "time_start": "17 Mar 2025",
+              "time_end": "17 Mar 2026",
+              "grant_type": "all",
+              "auto_add_to_cart": false,
+              "gift_id": "30885960810594",
+              "inventory_id": "18481301094498",
+              "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-highlander"
+            }
           }
         },
         "block_order": [
           "1567110392773",
-          "1569349869798"
+          "1569349869798",
+          "1571430770545"
         ],
         "settings": {
           "discount_modal_enable": true,
