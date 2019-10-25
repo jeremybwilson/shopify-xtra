@@ -786,7 +786,7 @@
             "settings": {
               "image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-desktop_47955e8c-9cf5-47c2-9580-44803a9f128d.jpg",
               "mobile_image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-mobile_7057be51-daab-467a-8d4e-26134708d494.jpg",
-              "heading": "FISHE®WEAR<br> LEGACY BOOT<br>",
+              "heading": "FISHE®WEAR LEGACY BOOT<br>",
               "subheading": "NEW PRINT FROM ANCHORAGE",
               "cta_one_link": "/collections/women-feature-new-arrivals/products/womens-fishewear-15-in-legacy-boot-black",
               "cta_one_button_text": "SHOP NOW",
@@ -841,19 +841,19 @@
               "caption_opacity": "0.1"
             }
           },
-          "1560198484333": {
+          "1571936668552": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/hp3-alaskan-proven-desktop.jpg",
-              "mobile_image": "shopify://shop_images/hp3-alaskan-proven-mobile.jpg",
-              "heading": "Alaska Proven. <br><strong>Built for All.</strong>",
-              "subheading": "",
-              "cta_one_link": "/collections/kids/audience_kids",
-              "cta_one_button_text": "Shop Kids",
+              "image": "shopify://shop_images/xtuf-leather-ankle-deck-boots-desktop_d9bf68da-45fb-48bf-bcad-e932ad149a4c.jpg",
+              "mobile_image": "",
+              "heading": "LEATHER ANKLE DECK BOOTS",
+              "subheading": "OUR BEST SELLER GETS AN UPGRADE",
+              "cta_one_link": "https://www.xtratuf.com/collections/leather-ankle-deck-boots",
+              "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
+              "cta_two_button_text": "",
               "caption_color_scheme": "white",
-              "custom_slide_main_color": "rgba(0,0,0,0)",
+              "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
@@ -863,10 +863,10 @@
           }
         },
         "block_order": [
+          "1571936668552",
           "1556040259163-1",
-          "1568396007250",
           "1570044914517",
-          "1560198484333"
+          "1568396007250"
         ],
         "settings": {
           "full_width": true,
