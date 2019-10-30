@@ -384,7 +384,7 @@ BCSfFilter.prototype.buildFilterSorting = function() {
             var sortingItemsHtml = '';
             for (var k in sortingArr) {
                 if (k === 'extra-sort1-descending') {
-                    sortingItemsHtml += '<option value="' + k +'">Top Rate</option>';
+                    sortingItemsHtml += '<option value="' + k +'">Top Rated</option>';
                 } else {
                     sortingItemsHtml += '<option value="' + k +'">' + sortingArr[k] + '</option>';
                 }
