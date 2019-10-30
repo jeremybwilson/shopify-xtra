@@ -12,7 +12,11 @@
                 <nav>
                   <ul>
                     {% for link in linklists[block.settings.footer_nav].links %}
-                    <li>{{ link.title | link_to: link.url }}</li>
+                      {% if link.title != "Privacy Policy" %}
+                        <li>{{ link.title | link_to: link.url }}</li>
+                      {% else %}
+                        <li><a href="{{ link.url }}" target="_blanck">{{ link.title }}</a></li>
+                      {% endif %}
                     {% endfor %}
                   </ul>
                 </nav>
