@@ -7,7 +7,7 @@
 
         {% for block in section.blocks %}
           {% case block.type %}
-            {% when 'link_list' %}    
+            {% when 'link_list' %}
               <div class="footer-nav">
                 <nav>
                   <ul>
@@ -15,7 +15,7 @@
                       {% if link.title != "Privacy Policy" %}
                         <li>{{ link.title | link_to: link.url }}</li>
                       {% else %}
-                        <li><a href="{{ link.url }}" target="_blanck">{{ link.title }}</a></li>
+                        <li><a href="{{ link.url }}" target="_blank">{{ link.title }}</a></li>
                       {% endif %}
                     {% endfor %}
                   </ul>
@@ -24,7 +24,7 @@
           {% endcase %}
         {% endfor %}
 
-      </div><!--.footer-blocks-->      
+      </div><!--.footer-blocks-->
     {% endif %}
 
     <div class="visit-our-brands">
@@ -44,14 +44,14 @@
 
         {% unless section.settings.visit_brand_link_three == blank %}
           <a aria-label="Brand Link 3" href="{{ section.settings.visit_brand_link_three }}" title="{{ section.settings.visit_brand_image_three.alt }}"><img src="{{ section.settings.visit_brand_image_three | img_url: 'x100' }}" alt="{{ section.settings.visit_brand_image_three.alt }}"></a>
-        {% endunless %}                
+        {% endunless %}
 
       </div><!-- .brands--list -->
     </div><!-- .visit-our-brands -->
 
   </div>
   <div class="row footer--bottom-row" itemscope itemtype="http://schema.org/LocalBusiness">
-    <div class="brands--telephone">	     
+    <div class="brands--telephone">
       <h6 itemprop="name">{{ shop.name }}</h6>
 
       <div class="local-image" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
@@ -71,7 +71,7 @@
           {% include 'svg-icon-amex' %}
           {% include 'svg-icon-paypal' %}
         </div><!-- .payment-methods -->
-            
+
         {% comment %}
          // PENDING - figure out how to actually alter the output SVGs
 
@@ -121,7 +121,7 @@
     "label": "Actual Number",
     "default": "18553772668",
     "info": "This is the number that will actually be dialed when the link is clicked on mobile. Do not include dashes or any punctuation."
-   },   
+   },
 
    {
      "type": "header",
@@ -147,7 +147,7 @@
     "type": "image_picker",
     "id": "visit_brand_image_one",
     "label": "Logo"
-   },  
+   },
    {
      "type": "header",
      "content": "Visit Our Brands - #2"
@@ -161,7 +161,7 @@
     "type": "image_picker",
     "id": "visit_brand_image_two",
     "label": "Logo"
-   },  
+   },
    {
      "type": "header",
      "content": "Visit Our Brands - #3"
@@ -175,7 +175,7 @@
     "type": "image_picker",
     "id": "visit_brand_image_three",
     "label": "Logo"
-   },  
+   },
    {
      "type": "header",
      "content": "Trust Icons"
@@ -184,17 +184,17 @@
     "type": "image_picker",
     "id": "trust_icon_image_one",
     "label": "Logo #1"
-   },  
+   },
    {
     "type": "image_picker",
     "id": "trust_icon_image_two",
     "label": "Logo #2"
-   },  
+   },
    {
     "type": "image_picker",
     "id": "trust_icon_image_three",
     "label": "Logo #3"
-   }  
+   }
   ],
   "blocks":[
     {
