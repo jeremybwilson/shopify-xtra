@@ -54,6 +54,8 @@ jobs:
               theme_id: "44063785058"
               store: xtratuf-usa.myshopify.com
               ignore_files:
+                - "*.shogun*.liquid"
+                - shogun-*.liquid
                 # - settings_data.json #This is commented out so we keep in sync with repo
                 - settings_data.presets-portion.bak.json' > ./config.yml
       - run:
@@ -77,6 +79,8 @@ jobs:
               store: xtratuf-usa.myshopify.com
               ignore_files:
                 - settings_data.json
+                - "*.shogun*.liquid"
+                - shogun-*.liquid
                 - en.default.json' > ./config.yml
       - run:
           name: Deploy
