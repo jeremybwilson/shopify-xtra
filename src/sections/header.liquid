@@ -30,7 +30,13 @@
       {% comment %} ..:: NAV : BRAND LOGO ::.. {% endcomment %}
       <div id="nav-logo">
           <a href="/" aria-label="Header Logo">
-            {% include 'svg-icon-header-logo-white' %}
+            {% comment %}BLACKOUT THEME .: NOTE :. Enabling from theme settings with true or false{% endcomment %}
+            {% if settings.blackout_theme == true %}
+              {% include 'svg-icon-header-logo-white' %}
+            {% else %}
+              {% include 'svg-icon-header-logo' %}
+            {% endif %}
+
             {% if template == "index" %}
               <h1 class="header-h1">{{ shop.name }}</h1>
             {% endif %}            
