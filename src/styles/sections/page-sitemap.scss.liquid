@@ -1,0 +1,81 @@
+ul.parent {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+ul.parent >li {
+    min-width: 25%;
+    margin-bottom:2%;
+    list-style: none;
+}
+
+ul.parent >li ul.child ul.grandchild {
+    padding-left: 25px;
+    list-style: circle;
+}
+
+ul.parent>li ul.child ul.grandchild >li {
+    font-weight: $font-weight--medium;
+}
+
+ul.child > li {
+    font-weight: $font-weight--medium;
+}
+
+ul.child>li >span {
+    font-weight: $font-weight--bold;
+}
+
+ul.parent a:hover {
+    color: $color--accent-1;
+}
+ul.parent >li >a {
+    font-weight: $font-weight--black;
+    line-height: 1.25em;
+    letter-spacing: 0;
+    @include fontSize( 16px );    
+    letter-spacing: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: $color--primary-1;   
+}
+ul.child {
+    color: $color--primary-1;    
+}
+
+@include mq('phone'){
+    ul.parent {
+      margin: 0px 20px;
+    }
+    ul.parent >li {
+      margin-bottom:5%;
+    }
+    .footer-sitemap ul {
+      margin: 0 20px;
+      @include fontSize( 14px );    
+    }
+    ul.child{
+      @include fontSize( 14px );    
+    }    
+}
+
+.footer-sitemap {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-sitemap ul {
+    min-width: 25%;
+    margin-bottom: 2%;
+    color: $color--primary-1; 
+}
+
+.footer-sitemap ul a:hover{
+  color:$color--accent-1;
+}
+
+.footer-sitemap ul >li {
+    font-weight: $font-weight--medium;
+}

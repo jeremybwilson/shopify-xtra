@@ -160,8 +160,8 @@
     "google_optimize_antiflicker_amount": 2000,
     "nosto_id": "5331943522",
     "yottaa_key": "xvhkylwm73AK6Q",
-    "mobile_newletter_popup_disable": true,
-    "popup": true,
+    "mobile_newletter_popup_disable": false,
+    "popup": false,
     "email_image": "",
     "email_popup_title": "Get 10% Off Your First Order!",
     "email_popup_text": "Sign up to be the first to hear about new arrivals, early access and exclusive offers!",
@@ -240,7 +240,7 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Men",
-              "nav_image": "shopify://shop_images/mens-nav_9fc19baa-eaf5-4f03-9d1d-3163b2653e9b.jpg",
+              "nav_image": "shopify://shop_images/xtratuf-collection-bannermens_1.jpg",
               "nav_promo_link": "shopify://collections/men"
             }
           },
@@ -248,7 +248,7 @@
             "type": "mega_menu",
             "settings": {
               "menu_item": "Women",
-              "nav_image": "shopify://shop_images/womens-nav_005f53d0-15f4-4b0e-9fb6-5c073b40b7d1.jpg",
+              "nav_image": "shopify://shop_images/xtratuf-collection-bannerwomens_1.jpg",
               "nav_promo_link": "shopify://collections/women"
             }
           },
@@ -275,7 +275,7 @@
           "full_width_header": false,
           "show_announcement_text": true,
           "num_of_promo_banners": "2",
-          "announcement_text_one": "FREE SHIPPING & FREE RETURNS",
+          "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
           "announcement_text_two": "Get 10% OFF your first order: <strong>SIGN UP</strong>",
           "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
@@ -490,23 +490,23 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/twin-1-slip-into-fall.jpg",
-              "mobile_image": "shopify://shop_images/twin-1-slip-into-fall-mobile.jpg",
-              "link": "shopify://collections/lifestyle",
-              "heading_text": "STEP INTO FALL",
-              "text": "",
-              "cta_text": "SHOP LIFESTYLE"
+              "image": "shopify://shop_images/xtuf-an-alaskan-icon-mobile_038c3e85-ce17-431e-b16d-355c388608c1.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-an-alaskan-icon-desktop_faec9ef6-f924-4663-83cd-630824a87553.jpg",
+              "link": "shopify://collections/clothing",
+              "heading_text": "AN ALASKAN ICON",
+              "text": "<p>NEW HOODIES &amp; TEES</p>",
+              "cta_text": "SHOP NOW"
             }
           },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/twin-2-shop-deck-boots.jpg",
-              "mobile_image": "shopify://shop_images/twin-2-shop-deck-boots-mobile.jpg",
-              "link": "shopify://collections/deck-boots",
-              "heading_text": "CUSTOMER FAVORITE",
-              "text": "",
-              "cta_text": "SHOP DECK BOOTS"
+              "image": "shopify://shop_images/xtuf-glacier-trek-desktop_9a68fd76-2ae8-4e50-b01c-ac985500467a.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-glacier-trek-mobile_f7051c64-ef96-4b7c-9ddf-852cb38bc22a.jpg",
+              "link": "/collections/new-arrivals/products/mens-swingsaw-glacier-trek-pro-15-in-elite-legacy-boot-brown",
+              "heading_text": "GLACIER TREK™ PRO",
+              "text": "<p>SUPERIOR TRACTION</p>",
+              "cta_text": "SHOP SWINGSAW"
             }
           }
         },
@@ -547,7 +547,8 @@
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 3
+          "slider_speed": 3,
+          "holiday_theme": false
         }
       },
       "1536266098177": {
@@ -577,7 +578,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/about-image-1.jpg",
-              "module_html": "<p></p><p>Over 50 years ago, a boot arrived in Alaska, as <strong>rugged and real</strong> as the people who live and work there. Like Alaska's people, those boots did their job no matter what the conditions.</p>",
+              "module_html": "<p>Over 50 years ago, a boot arrived in Alaska, as <strong>rugged and real</strong> as the people who live and work there. Like Alaska's people, those boots did their job no matter what the conditions.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_right",
               "module_image_position_mobile": "image_top"
@@ -587,7 +588,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/about-image-2.jpg",
-              "module_html": "<p></p><p>Now an Alaskan icon, the Legacy Boot is <strong>100% waterproof</strong>, <strong>flexible</strong>, and <strong>durable</strong>—made to keep you dry, stable, and always working comfortably. Featuring a non-marking, slip resistant Chevron outsole, they're as <strong>reliable and tough</strong> as it gets. In fact, they're part of what it means to be an Alaskan.</p>",
+              "module_html": "<p>Now an Alaskan icon, the Legacy Boot is <strong>100% Waterproof, Flexible, and Durable</strong>—made to keep you dry, stable and always working comfortably. Featuring a non-marking, slip-resistant Chevron outsole, they're as <strong>reliable and tough</strong> as it gets.<br><br> In fact, they're part of what it means to be Alaskan.</p>",
               "module_image_color_scheme": "dark",
               "module_image_position_desktop": "image_left",
               "module_image_position_mobile": "image_top"
@@ -597,7 +598,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/190417-corey-arnold-3-about-us.jpg",
-              "module_html": "<p></p><p>The Legacy Boot works, and in the eyes of Alaskan's, that's a beautiful thing. Dubbed the \"Alaskan sneaker\"—it has been <strong>performance-tested and proven</strong> across the toughest stretches of water, from Misty Fjords to Kodiak, from the Bering Sea to Harrison Bay.</p>",
+              "module_html": "<p>The Legacy Boot works, and in the eyes of Alaskans, that's a beautiful thing. Dubbed the \"Alaskan Sneaker\" it has been<strong> performance-tested and proven</strong> across the toughest stretches of water, from the Misty Fjords to Kodiak, from the Bering Sea to Harrison Bay.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_right",
               "module_image_position_mobile": "image_top"
@@ -607,7 +608,7 @@
             "type": "text_block",
             "settings": {
               "module_image": "shopify://shop_images/190418-corey-arnold-4-about-us.jpg",
-              "module_html": "<p>XTRATUF boots have become the badge of <strong>ultimate preparedness</strong> for the individuals of Alaska - the people who arrive as lone wolves and become part of a pack. <br><br>The XTRATUF boots they wear prove a <strong>reliable partner</strong> through thick and thin, keeping multiple generations safe, dry and moving forward, one sure step at a time.</p>",
+              "module_html": "<p>XTRATUF boots have become the badge of <strong>ultimate preparedness</strong> for the individuals of Alaska, the people who arrive as lone wolves and become part of a pack.<br><br>The XTRATUF boots they wear prove a <strong>reliable partner</strong> through thick and thin, keeping multiple generations safe, dry, and moving forward, one sure step at a time.</p>",
               "module_image_color_scheme": "light",
               "module_image_position_desktop": "image_left",
               "module_image_position_mobile": "image_top"
@@ -621,7 +622,7 @@
           "1539646813012"
         ],
         "settings": {
-          "about_text": "<h2>Choose Your Footwear</h2>\n<p>We have a variety of footwear to fit your marine lifestyle.</p>",
+          "about_text": "",
           "about_text_color": "#e6e6e6"
         }
       },
@@ -654,67 +655,12 @@
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 5
+          "slider_speed": 5,
+          "holiday_theme": false
         }
       },
       "columns-carousel": {
         "type": "columns-carousel",
-        "blocks": {
-          "1539638126458": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/home-column-carousel-desktop-slide-1.jpg",
-              "mobile_image": "shopify://shop_images/home-column-carousel-mobile-slide-1.jpg",
-              "heading": "Commercial Fishing",
-              "svg_icon": "",
-              "png_icon": "",
-              "link": "shopify://collections/commercial-fishing",
-              "cta_text": "Shop Now"
-            }
-          },
-          "1539642501764": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/home-column-carousel-desktop-slide-2.jpg",
-              "mobile_image": "shopify://shop_images/home-column-carousel-mobile-slide-2.jpg",
-              "heading": "Sport Fishing",
-              "svg_icon": "",
-              "png_icon": "",
-              "link": "shopify://collections/sport-fishing",
-              "cta_text": "Shop Now"
-            }
-          },
-          "1539642513779": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/home-column-carousel-desktop-slide-3.jpg",
-              "mobile_image": "shopify://shop_images/home-column-carousel-mobile-slide-3.jpg",
-              "heading": "Water Sports",
-              "svg_icon": "",
-              "png_icon": "",
-              "link": "shopify://collections/water-sports",
-              "cta_text": "Shop Now"
-            }
-          },
-          "1539642524127": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/home-column-carousel-desktop-slide-4.jpg",
-              "mobile_image": "shopify://shop_images/home-column-carousel-mobile-slide-4.jpg",
-              "heading": "Lifestyle",
-              "svg_icon": "",
-              "png_icon": "",
-              "link": "shopify://collections/lifestyle",
-              "cta_text": "Shop Now"
-            }
-          }
-        },
-        "block_order": [
-          "1539638126458",
-          "1539642501764",
-          "1539642513779",
-          "1539642524127"
-        ],
         "settings": {}
       },
       "page-faq-template": {
@@ -810,14 +756,6 @@
       "collection-banner": {
         "type": "collection-banner",
         "blocks": {
-          "1554153808433": {
-            "type": "image",
-            "settings": {
-              "collection": "women-collection-salmon-sisters",
-              "image": "",
-              "mobile_image": ""
-            }
-          },
           "1565210280949": {
             "type": "image",
             "settings": {
@@ -828,7 +766,6 @@
           }
         },
         "block_order": [
-          "1554153808433",
           "1565210280949"
         ],
         "settings": {}
@@ -844,35 +781,35 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
+          "1573392558286": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/190816_SEAlaska_17850_DT.jpg",
+              "mobile_image": "shopify://shop_images/190816_SEAlaska_17850_Mobile.jpg",
+              "heading": "A NEW TAKE ON <br>THE LEGACY",
+              "subheading": "LIMITED RUN ONLINE EXCLUSIVE!",
+              "cta_one_link": "shopify://collections/online-exclusives",
+              "cta_one_button_text": "SHOP MEN",
+              "cta_two_link": "shopify://collections/online-exclusives",
+              "cta_two_button_text": "SHOP WOMEN",
+              "caption_color_scheme": "custom",
+              "custom_slide_main_color": "#383837",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "#e5e5e5",
+              "caption_opacity": "0.5"
+            }
+          },
           "1556040259163-1": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/hp-1-ankle-deck-boots-desktop.jpg",
-              "mobile_image": "shopify://shop_images/hp-1-ankle-deck-boots-mobile.jpg",
-              "heading": "Rise to the<br> Challenge",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/ankle-deck-boots",
-              "cta_one_button_text": "Shop Ankle Deck Boots",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.4"
-            }
-          },
-          "1557363114895": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/hp2-up-for-anything-desktop.jpg",
-              "mobile_image": "shopify://shop_images/hp2-up-for-anything-mobile.jpg",
-              "heading": "Up for Anything",
-              "subheading": "JUST LIKE YOU",
-              "cta_one_link": "shopify://collections/sharkbyte",
-              "cta_one_button_text": "Shop Sharkbyte",
+              "image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-desktop_47955e8c-9cf5-47c2-9580-44803a9f128d.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-mobile_7057be51-daab-467a-8d4e-26134708d494.jpg",
+              "heading": "FISHE®WEAR LEGACY BOOT<br>",
+              "subheading": "NEW PRINT FROM ANCHORAGE",
+              "cta_one_link": "/collections/women-feature-new-arrivals/products/womens-fishewear-15-in-legacy-boot-black",
+              "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -880,7 +817,7 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
-              "caption_background": "#000000",
+              "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
           },
@@ -900,40 +837,62 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
-              "caption_background": "transparent",
-              "caption_opacity": "0.1"
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "1.0"
             }
           },
-          "1560198484333": {
+          "1571936668552": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/hp3-alaskan-proven-desktop.jpg",
-              "mobile_image": "shopify://shop_images/hp3-alaskan-proven-mobile.jpg",
-              "heading": "Alaska Proven. <br><strong>Built for All.</strong>",
-              "subheading": "",
-              "cta_one_link": "/collections/kids/audience_kids",
-              "cta_one_button_text": "Shop Kids",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
+              "image": "shopify://shop_images/xtuf-leather-ankle-deck-boots-desktop_d9bf68da-45fb-48bf-bcad-e932ad149a4c.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-leather-ankle-deck-boots-mobile_fed6e8cf-fa26-458a-af7b-c7a95dab6253.jpg",
+              "heading": "LEATHER ANKLE DECK BOOTS",
+              "subheading": "OUR BEST SELLER GETS AN UPGRADE",
+              "cta_one_link": "https://www.xtratuf.com/collections/leather-ankle-deck-boots?_=pf&pf_t_gender=audience_men",
+              "cta_one_button_text": "SHOP MEN",
+              "cta_two_link": "https://www.xtratuf.com/collections/leather-ankle-deck-boots?_=pf&pf_t_gender=audience_women",
+              "cta_two_button_text": "SHOP WOMEN",
               "caption_color_scheme": "white",
-              "custom_slide_main_color": "rgba(0,0,0,0)",
+              "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
+          },
+          "1570044914517": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Mermaid_Life_DT.jpg",
+              "mobile_image": "shopify://shop_images/Mermaid_Life_Mobile.jpg",
+              "heading": "MERMAID LIFE<br>LEGACY BOOT",
+              "subheading": "",
+              "cta_one_link": "shopify://products/womens-salmon-sisters-15-in-legacy-boot-brown",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "custom",
+              "custom_slide_main_color": "#383837",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "#e5e5e5",
+              "caption_opacity": "0.5"
+            }
           }
         },
         "block_order": [
+          "1573392558286",
           "1556040259163-1",
-          "1557363114895",
           "1568396007250",
-          "1560198484333"
+          "1571936668552",
+          "1570044914517"
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 5
+          "slider_speed": 5,
+          "holiday_theme": false
         }
       },
       "1558651562615": {
@@ -945,23 +904,38 @@
       "gift-with-purchase": {
         "type": "gift-with-purchase",
         "blocks": {
-          "1567110392773": {
+          "1569349869798": {
             "type": "discount_object",
             "settings": {
-              "display_name": "Winter Solstice Coolie",
+              "display_name": "Free",
+              "min_spend": 500,
+              "time_start": "24 Sep 2019 11:34 GMT-7",
+              "time_end": "24 Sep 2019 13:34 GMT-7",
+              "grant_type": "all",
+              "auto_add_to_cart": true,
+              "gift_id": "1950274060386",
+              "inventory_id": "1950274060386",
+              "product_handle": "baby-logo-onesie-white"
+            }
+          },
+          "1571430770545": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "Unisex Kryptek Trucker Cap",
               "min_spend": 100,
-              "time_start": "16 DEC 2019 11:00 EST",
-              "time_end": "",
-              "grant_type": "pick",
+              "time_start": "17 Mar 2025",
+              "time_end": "17 Mar 2026",
+              "grant_type": "all",
               "auto_add_to_cart": false,
-              "gift_id": "29545804300386",
-              "inventory_id": "29545804300386",
-              "product_handle": "winter-solstice-coolie"
+              "gift_id": "30885960810594",
+              "inventory_id": "18481301094498",
+              "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-highlander"
             }
           }
         },
         "block_order": [
-          "1567110392773"
+          "1569349869798",
+          "1571430770545"
         ],
         "settings": {
           "discount_modal_enable": true,
@@ -973,7 +947,7 @@
         "type": "about-us-video",
         "settings": {
           "video_url": "https://cdn.shopify.com/s/files/1/0053/3194/3522/files/An_Alaskan_Icon.mp4?423528&autoplay=1",
-          "popup_url": "https://www.youtube.com/watch?v=hCfrm6aZZEg&feature=youtu.be"
+          "popup_url": "https://youtu.be/hCfrm6aZZEg"
         }
       },
       "page-viralsweep-template": {
@@ -983,6 +957,26 @@
           "campaign_id": "55270_XXXXXX",
           "campaign_id_other": "55270_XXXXXX"
         }
+      },
+      "product_grid_promo": {
+        "type": "product_grid_promo",
+        "blocks": {
+          "1569356463094": {
+            "type": "image",
+            "settings": {
+              "is_show_promo": false,
+              "is_show_on_all_collection": false,
+              "promo_collection": "men",
+              "promo_url": "shopify://collections/men",
+              "promo_image": "shopify://shop_images/product_XSB-200-BLU_2.jpg",
+              "promo_position": 1
+            }
+          }
+        },
+        "block_order": [
+          "1569356463094"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [

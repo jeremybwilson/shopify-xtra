@@ -1,5 +1,6 @@
 <div data-section-id="{{ section.id }}" class="collection-template" data-section-type="collection-template">
   
+  <input type="hidden" id="all_products_count" value="{{ collection.all_products_count }}">
   {% case section.settings.grid %}
   {% when '2' or 2 %}
   {%- assign grid_item_width = 'desktop-6 tablet-3 mobile-half' -%}

@@ -33,6 +33,7 @@
 @import url('./sections/article-template.scss.liquid');
 @import url('./sections/about.scss.liquid');
 @import url('blackout-theme.scss.liquid');
+@import url('./sections/page-sitemap.scss.liquid');
 
 /*================ Snippets ================*/
 @import url('./snippets/cookie-banner.scss.liquid');
@@ -53,3 +54,5 @@
 @import url('./vendor/fancybox.scss.liquid');
 @import url('./vendor/owlcarousel.scss.liquid');
 @import url('./vendor/store-locator.scss.liquid');
+@import url('./vendor/shogun.scss.liquid');
+

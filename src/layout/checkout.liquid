@@ -7,11 +7,16 @@
     <meta name="referrer" content="origin">
 
     <title>{{ page_title }}</title>
+    <!-- Favicons -->
+    {% if settings.favicon %}
+      <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x' }}">
+    {% endif %}
 
     {{ content_for_header }}
 
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
+    {% include 'script-google-tag-head' %}
   </head>
   <body>
     {{ skip_to_content_link }}
@@ -57,5 +62,6 @@
     <!---PDM-222-->
     {% include 'checkout-address-autofill' %}
     <!---PDM-222-->
+    {% include 'script-google-tag-body' %}
   </body>
 </html>
