@@ -2,6 +2,7 @@
   "presets": {},
   "current": {
     "favicon": "shopify://shop_images/favicon_ce985e2e-2ef5-4938-a951-a6eac4f57989.png",
+    "blackout_theme": false,
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
     "announcement_bg_two": "#757575",
@@ -775,7 +776,7 @@
         "settings": {
           "heading": "",
           "full_width": true,
-          "video_url": "https://youtu.be/hCfrm6aZZEg"
+          "video_url": "https://www.youtube.com/watch?v=cSP1wg2x024"
         }
       },
       "1556040259163": {
