@@ -539,7 +539,7 @@ function buildDefaultLink(a,b){var c=window.location.href.split("?")[0];return c
 
 // Display Type : List
 // Select Type  : Single
-BCSfFilter.prototype.buildFilterOptionSingleList = function(data, filterTreeId) {
+/* BCSfFilter.prototype.buildFilterOptionSingleList = function(data, filterTreeId) {
   var self = this;
   // Sort values
   if (data.hasOwnProperty('values') && (data.valueType == 'all' || this.getSettingValue('general.sortManualValues') || (data.valueType != 'all' && data.sortManualValues))) data.values = this.sortFilterOptionValue(data);
@@ -612,7 +612,7 @@ BCSfFilter.prototype.buildFilterOptionMultipleList = function(data, filterTreeId
     html = html.replace(/{{itemList}}/g, itemsContent);
     this.buildFilterOption(html, data, filterTreeId);
   }
-};
+};*/
 
 // Build Filter Option item in general
 BCSfFilter.prototype.buildFilterOptionItem = function(html, iLabel, iValue, fOType, fOId, fOLabel, fODisplayType, fOSelectType, fOItemValue, fOData) {
