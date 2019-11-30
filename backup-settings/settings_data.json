@@ -2,7 +2,6 @@
   "presets": {},
   "current": {
     "favicon": "shopify://shop_images/favicon_ce985e2e-2ef5-4938-a951-a6eac4f57989.png",
-    "blackout_theme": false,
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
     "announcement_bg_two": "#757575",
@@ -196,6 +195,7 @@
     "checkout_accent_color": "#e41c39",
     "checkout_button_color": "#0a56a4",
     "checkout_error_color": "#ff6d6d",
+    "blackout_theme": false,
     "discount_modal_enable": false,
     "discount_modal_config": "eyJjb29raWVFeHBpcmVJbkRheXMiOiA2MCwidGhyZXNob2xkRGlzY291bnRzIjogW3siZGlzY291bnRJZCI6IDEsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKEJsYWNrKSIsImdpZnRJZCI6IDE1NDU5OTY0MDkyNTEwLCJncmFudFR5cGUiOiAicGljayIsImludmVudG9yeUlkIjogMTU0MDIyMTI5ODI4NzgsIm1pblNwZW5kIjogMjAwLCJwcm9kdWN0SGFuZGxlIjogIndpZ3dhbS13aW50ZXItaGF0In0seyJkaXNjb3VudElkIjogMiwiZGlzcGxheU5hbWUiOiAiV2lnd2FtIEhhdCAoR3JheSkiLCJnaWZ0SWQiOiAxNTQ1OTk2NTM3MDQ2MiwiZ3JhbnRUeXBlIjogInBpY2siLCJpbnZlbnRvcnlJZCI6IDE1NDAyMjEzMDE1NjQ2LCJtaW5TcGVuZCI6IDIwMCwicHJvZHVjdEhhbmRsZSI6ICJ3aWd3YW0td2ludGVyLWhhdCJ9LHsiZGlzY291bnRJZCI6IDMsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKE5hdHVyYWwpIiwiZ2lmdElkIjogMTU0NTk5NjU1MDE1MzQsImdyYW50VHlwZSI6ICJwaWNrIiwiaW52ZW50b3J5SWQiOiAxNTQwMjIxMzA0ODQxNCwibWluU3BlbmQiOiAyMDAsInByb2R1Y3RIYW5kbGUiOiAid2lnd2FtLXdpbnRlci1oYXQifV19",
     "bis_hide_tag": "discontinued",
@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "Get 10% OFF your first order: <strong>SIGN UP</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
+          "announcement_text_two": "<strong>Up to 50% OFF</strong> SHOP BLACK FRIDAY SALE",
+          "announcement_link_two": "https://www.xtratuf.com/collections/sale",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -782,6 +782,26 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
+          "1575011113439": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-bf-desktop.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-bf-mobile.jpg",
+              "heading": "BLACK FRIDAY SALE<br>UP TO 50% OFF<br>",
+              "subheading": "",
+              "cta_one_link": "/collections/sale",
+              "cta_one_button_text": "Shop Sale",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 45,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
+          },
           "1573392558286": {
             "type": "image",
             "settings": {
@@ -864,6 +884,7 @@
           }
         },
         "block_order": [
+          "1575011113439",
           "1573392558286",
           "1556040259163-1",
           "1568396007250",
