@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "Get 10% OFF your first order: <strong>SIGN UP</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
+          "announcement_text_two": "30% OFF Apparel <strong>SHOP NOW</strong>",
+          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-one",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -782,6 +782,26 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
+          "1575432325125": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-day1-desktop.gif",
+              "mobile_image": "shopify://shop_images/xtuf-sale-blank-mobile.jpg",
+              "heading": "30% OFF<br>SELECT APPAREL<br>",
+              "subheading": "THE FEAST OF THE SEVEN DEALS",
+              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-one",
+              "cta_one_button_text": "SHOP TODAY’S DEAL",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "left",
+              "caption_vertical": 50,
+              "caption_background": "transparent",
+              "caption_opacity": "0.1"
+            }
+          },
           "1573392558286": {
             "type": "image",
             "settings": {
@@ -789,10 +809,10 @@
               "mobile_image": "shopify://shop_images/190816_SEAlaska_17850_Mobile.jpg",
               "heading": "A NEW TAKE ON <br>THE LEGACY",
               "subheading": "LIMITED RUN ONLINE EXCLUSIVE!",
-              "cta_one_link": "shopify://collections/online-exclusives",
-              "cta_one_button_text": "SHOP MEN",
-              "cta_two_link": "shopify://collections/online-exclusives",
-              "cta_two_button_text": "SHOP WOMEN",
+              "cta_one_link": "https://www.xtratuf.com/collections/online-exclusives/audience_women",
+              "cta_one_button_text": "SHOP WOMEN'S LEGACY LACE",
+              "cta_two_link": "",
+              "cta_two_button_text": "",
               "caption_color_scheme": "custom",
               "custom_slide_main_color": "#383837",
               "custom_slide_alt_color": "#e41c39",
@@ -864,6 +884,7 @@
           }
         },
         "block_order": [
+          "1575432325125",
           "1573392558286",
           "1556040259163-1",
           "1568396007250",
@@ -903,13 +924,13 @@
             "settings": {
               "display_name": "Unisex Kryptek Trucker Cap",
               "min_spend": 100,
-              "time_start": "17 Mar 2025",
-              "time_end": "17 Mar 2026",
+              "time_start": "06 Dec 2019 23:59 GMT-7",
+              "time_end": "07 Dec 2019 23:59 GMT-7",
               "grant_type": "all",
-              "auto_add_to_cart": false,
-              "gift_id": "30885960810594",
-              "inventory_id": "18481301094498",
-              "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-highlander"
+              "auto_add_to_cart": true,
+              "gift_id": "18481300504674",
+              "inventory_id": "18481300504674",
+              "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-pontus-blue"
             }
           }
         },
