@@ -59,7 +59,7 @@ var bcSfFilterTemplate = {
     'pageItemSelectedHtml': '<span class="current">{{itemTitle}}</span>',
     'pageItemRemainHtml': '{{itemTitle}}',
     'paginateHtml': '<span class="count"></span>{{previous}}{{pageItems}}{{next}}',
-  
+
     // Sorting Template
     'sortingHtml': '<h4 class="sort-label">' + bcSfFilterConfig.label.sorting + '</h4><select aria-label="Sort By" class="styled-select">{{sortingItems}}</select>',
 
@@ -73,22 +73,22 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
     window.total_display_product = totalProduct;
     /*** Prepare data ***/
     var images = data.images_info;
-    
+
     // Displaying price base on the policy of Shopify, have to multiple by 100
     var soldOut = !data.available; // Check a product is out of stock
     var onSale = data.compare_at_price_min > data.price_min; // Check a product is on sale
     var priceVaries = data.price_min != data.price_max; // Check a product has many prices
-    
-    /* HIDE ITEM : Hide if tag "hide_from_catalog" found basically 
+
+    /* HIDE ITEM : Hide if tag "hide_from_catalog" found basically
     INFO:
         If item has tag "hide_from_catalog", skip it as its a Gift w/ Purchase item
-        We can't set item unavailable on sales channels if its a gift item, so this 
+        We can't set item unavailable on sales channels if its a gift item, so this
         is solution for now to hide the item from store "all products catalogs"
-    RESULTS COUNT NOTE : 
+    RESULTS COUNT NOTE :
         Page counts will be off by however hidden items there are, but since
         hidden items should have no collection tag assignments, it should only
         affect the "all products" collection and a num or two off shouldn't matter there.
-    * --------------------------------------------------------------------------------------- */ 
+    * --------------------------------------------------------------------------------------- */
     if ( data.tags ) {
         var hasHideFlag = data.tags.filter(function (tag) {
             return tag === 'hide_from_catalog'
@@ -98,13 +98,13 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
             return '';
         }
     }
-    
+
     // Get First Variant (selected_or_first_available_variant)
     var firstVariant = data['variants'][0];
     if (getParam('variant') !== null && getParam('variant') != '') {
         var paramVariant = data.variants.filter(function(e) { return e.id == getParam('variant'); });
         if (typeof paramVariant[0] !== 'undefined') firstVariant = paramVariant[0];
-    
+
     } else {
         for (var i = 0; i < data['variants'].length; i++) {
             if (data['variants'][i].available) {
@@ -114,7 +114,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
         }
     }
     /*** End Prepare data ***/
-  
+
 
     // TEMPLATE : Create unique tpl instance
     var itemHtml = bcSfFilterTemplate.productGridItemHtml;
@@ -135,7 +135,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
     if ( data.tags ) {
         var findTag = function(searchString) {
             var foundTags = data.tags.filter( function( tag ) {
-                return tag.indexOf( searchString ) >= 0; 
+                return tag.indexOf( searchString ) >= 0;
             });
 
             return foundTags || [];
@@ -149,7 +149,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
             var itemBadgeHtml = bcSfFilterTemplate.itemBadgeHtml; //Don't modify original :)
             itemBadgeHtml = itemBadgeHtml.replace( /{{badgeTags}}/g, JSON.stringify( badgeTags ) );
             itemHtml = itemHtml.replace( /{{itemBadge}}/g, itemBadgeHtml );
-        
+
         } else {
             itemHtml = itemHtml.replace(/{{itemBadge}}/g, '' ); //No badge, remove block
         }
@@ -159,7 +159,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
     // THUMBNAIL : Add Thumbnail template
     var itemThumbUrl = images.length > 0 ? this.optimizeImage(images[0]['src']) : bcSfFilterConfig.general.no_image_url;
     itemHtml = itemHtml.replace(/{{itemThumbUrl}}/g, itemThumbUrl);
-    
+
 
     // IMAGE : FLIP : Add Flip Image if enabled
     var itemFlipImageHtml = '';
@@ -181,21 +181,21 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
     if (onSale) {
         itemPriceHtml += '<div class="onsale">' + this.formatMoney(data.price_min, this.moneyFormat) + '</div>';
         itemPriceHtml += '<div class="was">' + this.formatMoney(data.compare_at_price_min, this.moneyFormat) + '</div>';
-        
+
     } else {
         itemPriceHtml += '<div class="prod-price">';
-        
+
         if (priceVaries) {
             itemPriceHtml += bcSfFilterConfig.label.from_price + ' ' + this.formatMoney(data.price_min, this.moneyFormat) + ' - ' + this.formatMoney(data.price_max, this.moneyFormat);
         } else {
             itemPriceHtml += this.formatMoney(data.price_min, this.moneyFormat);
         }
-        
+
         itemPriceHtml += '</div>';
     }
     // PDM-868 : Patch for mobile Safari regex bug
-    var itemPriceRegEx = new RegExp( '{{itemPrice}}', 'g'); 
-    itemHtml = itemHtml.replace(itemPriceRegEx, function(match) { return itemPriceHtml }); 
+    var itemPriceRegEx = new RegExp( '{{itemPrice}}', 'g');
+    itemHtml = itemHtml.replace(itemPriceRegEx, function(match) { return itemPriceHtml });
 
     // QUICK VIEW : Add quickview template and setup for fancybox usage
     var itemQuickviewHtml = '';
@@ -222,7 +222,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
 
                 // PRODUCT IMAGE : Parent image that is displayed by default (used by hover states to reset)
                 var productImgUrl = images.length > 0 ? this.optimizeImage(images[0]['src']) : bcSfFilterConfig.general.no_image_url;
-                
+
                 // VARIANT IMAGE : Build Variant Product Image URL for hover display of that color's image
                 var imageIndex = option['image'] - 1; //Doesn't count from 0, counts from 1
                 var variantImgUrl = '';
@@ -241,7 +241,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
                     productId: data.id,                         // ID : Product ID
                     productImgUrl: productImgUrl,               // IMAGE : Product image original (for restoring after hover)
                     swatchId: data.id + '-' + colorValueName,   // ID : Swatch : Swatch Color Unique ID
-                    swatchImgUrl: swatchImgUrl,                 // SWATCH : Image url for swatch (fallback = name as color)    
+                    swatchImgUrl: swatchImgUrl,                 // SWATCH : Image url for swatch (fallback = name as color)
                     variantImgUrl: variantImgUrl                // IMAGE : Product Variant Image for that color option
                 }
 
@@ -252,14 +252,14 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
             // POPULATE : Render the react root element for each swatch list
             var swatchManifestString = JSON.stringify( swatchManifest );
             itemSwatchHtml = "<div class='react-swatch-list' data-swatches='" + swatchManifestString + "'></div>";
-        
+
         // BUILD : Spacer : Only 1 color, render spacer instead of swatch list
         } else {
             itemSwatchHtml = "<div class='swatch-spacer'></div>";
         }
     }
     itemHtml = itemHtml.replace(/{{itemSwatch}}/g, itemSwatchHtml);
-  
+
 
     // INFO : Add main attributes for product data
     itemHtml = itemHtml.replace(/{{itemPriceAttr}}/g, data.price_min);
@@ -277,7 +277,7 @@ BCSfFilter.prototype.buildProductGridItem = function(data, index, totalProduct) 
         var current_html = "";
         $(".product_grid_promo").each(function() {
             if(
-                ($( this ).length > 0 && (index + collection_count + promo_grid_add_count)  == $( this ).data('position')) || 
+                ($( this ).length > 0 && (index + collection_count + promo_grid_add_count)  == $( this ).data('position')) ||
                 (($( this ).length > 0 && collection_count == 0 &&  index == totalProduct &&  $( this ).data('position') >= collection_total_product) )
             ){
                 promo_grid_add_count++;
@@ -380,7 +380,7 @@ BCSfFilter.prototype.buildFilterSorting = function() {
 
         var sortingArr = this.getSortingList();
         if (sortingArr) {
-            // Build content 
+            // Build content
             var sortingItemsHtml = '';
             for (var k in sortingArr) {
                 if (k === 'extra-sort1-descending') {
@@ -400,8 +400,8 @@ BCSfFilter.prototype.buildFilterSorting = function() {
 
 // Build additional attributes of product items
 BCSfFilter.prototype.buildExtrasProductList = function(data) {
-    
-    // THE ONE IN THEME.JS SEEMS TO ACTUALLY DO SOMETHING, 
+
+    // THE ONE IN THEME.JS SEEMS TO ACTUALLY DO SOMETHING,
     // NOT SURE WHAT THIS IS DOING AS NOTHING BROKE COMMENTING IT OUT..
     // if (typeof Yotpo !== 'undefined') {
     //     var api = new Yotpo.API(yotpo);
@@ -409,20 +409,20 @@ BCSfFilter.prototype.buildExtrasProductList = function(data) {
     // }
 
     // if ($(window).width() >= 769) {
-    //     $('.prod-container').hover(function(){ 
+    //     $('.prod-container').hover(function(){
     //         $(this).children('.product-modal').show();
-    //     }, function(){ 
-    //         $(this).children('.product-modal').hide(); 
+    //     }, function(){
+    //         $(this).children('.product-modal').hide();
     //     })
 
-    //     // Call Fancybox for product modal + stop scroll to top 
+    //     // Call Fancybox for product modal + stop scroll to top
     //     $('.product-modal').fancybox({
     //         helpers: {
     //             overlay: {
     //                 locked: false
     //             }
     //         }
-    //     });    
+    //     });
     // }
 };
 
@@ -436,7 +436,7 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
         $(this).attr('data-position', position);
         position++;
     });
-    
+
     var ui = {
         filterHeaderText: '.bc-sf-filter-block-title span', // Text for filter headers, appending the count here
         filterSetWraps: '.bc-sf-filter-option-block-list',  //Generated by filter js, DON'T store jq dom references here
@@ -446,7 +446,7 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
         selectedInputs: 'input.selected'
     };
 
-    // RESULTS COUNT : Render number of results in current collection 
+    // RESULTS COUNT : Render number of results in current collection
     var resultsDiv = document.getElementById( ui.resultsCount ) || {};
     resultsDiv.innerHTML = data.total_product + " Results";
 
@@ -457,7 +457,7 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
     jQ(this.selector.bottomPagination).find('.count').html(bcSfFilterConfig.label.showing_items + ' ' + from + '-' + to + ' ' +  bcSfFilterConfig.label.pagination_of + ' ' + data.total_product);
 
 
-    // APPLY (MOBILE) : Filters apply on selection, "Apply" closes menu on moble.  
+    // APPLY (MOBILE) : Filters apply on selection, "Apply" closes menu on moble.
     var filterTreeWrap = $( ui.filterTreeWrap );
     if ( filterTreeWrap ) {
         filterTreeWrap.append( bcSfFilterTemplate.mobileApplyBtnHtml );
@@ -467,7 +467,7 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
     var filterData = {};
     if ( data.filter ) {
         filterData = window.filter = data.filter; //Update filter data with latest from API
-    
+
     // Fallback, only initial API calls have filter data since its for the whole set of paginated data.
     } else {
         filterData = window.filter;
@@ -490,7 +490,7 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
 
     // FILTER SELECTION COUNTS : Indicates how many filters in each set are selected
     var updateFilterCounts = function() {
-        
+
         // SETS : If we have them, find the selected items in each and set a data-attr for the current count
         var filterSets = $( ui.filterSetWraps ) || [];
         var hasSelections = false;
@@ -517,9 +517,9 @@ BCSfFilter.prototype.buildAdditionalElements = function(data, eventType) {
         });
 
         // BUTTONS : ARRANGEMENT : Indicator to tel how to style "apply" button to sit with "Clear All", which admittedly had to be a bit strangely wired
-        hasSelections ? ( 
+        hasSelections ? (
             $( ui.filterTreeWrap ).addClass( 'selections-active' ) // Selections present
-        ) : ( 
+        ) : (
             $( ui.filterTreeWrap ).removeClass( 'selections-active' ) // No selections present
         );
     }
@@ -702,7 +702,11 @@ BCSfFilter.prototype.buildFilterOptionTagReviewRatingData = function(data, fOId)
       for (i in array2) {
         if (array1.indexOf(array2[i]) === -1) temp.push(array2[i]);
       }
-      return temp.sort((a, b) => a - b);
+      // :: NOTE :: commenting out ES6 syntax due to issue in SRE-2075
+      // return temp.sort((a, b) => a - b);
+      return temp.sort( function(a, b){
+        return a - b;
+      });
     }
 
     var unavailableRatingData = differenceOf2Arrays(arrRatingList, arrAvailableRatingData);
@@ -741,61 +745,61 @@ BCSfFilter.prototype.prepareProductData = function(data) {
             }
         }
         data[k]['url'] = '/products/' + data[k].handle;
-        
+
         var optionsArr = [];
-        for (var i = 0; i < data[k]['options_with_values'].length; i++) { 
-            optionsArr.push(data[k]['options_with_values'][i]['name']) 
-        } 
+        for (var i = 0; i < data[k]['options_with_values'].length; i++) {
+            optionsArr.push(data[k]['options_with_values'][i]['name'])
+        }
 
         data[k]['options'] = optionsArr;
 
-        data[k]['price_min'] *= 100, 
-        data[k]['price_max'] *= 100, 
-        data[k]['compare_at_price_min'] *= 100, 
+        data[k]['price_min'] *= 100,
+        data[k]['price_max'] *= 100,
+        data[k]['compare_at_price_min'] *= 100,
         data[k]['compare_at_price_max'] *= 100;
 
         data[k]['price'] = data[k]['price_min'];
         data[k]['compare_at_price'] = data[k]['compare_at_price_min'];
         data[k]['price_varies'] = data[k]['price_min'] != data[k]['price_max'];
-        
+
         var firstVariant = data[k]['variants'][0];
-        if (getParam('variant') !== null && getParam('variant') != '') { 
+        if (getParam('variant') !== null && getParam('variant') != '') {
             var variantArr = data.variants ? data.variants : data[k]['variants']; //MODIFIED : This was breaking collection when ?variant=### query params were in url
             var paramVariant = variantArr.filter(
-                function(e) { 
-                    return e.id == getParam('variant') 
+                function(e) {
+                    return e.id == getParam('variant')
                 }
-            ); 
+            );
 
-            if (typeof paramVariant[0] !== 'undefined') firstVariant = paramVariant[0] 
-        } else { 
-            for (var i = 0; i < data[k]['variants'].length; i++) { 
-                if (data[k]['variants'][i].available) { 
-                    firstVariant = data[k]['variants'][i]; 
-                    break 
-                } 
-            } 
-        } 
+            if (typeof paramVariant[0] !== 'undefined') firstVariant = paramVariant[0]
+        } else {
+            for (var i = 0; i < data[k]['variants'].length; i++) {
+                if (data[k]['variants'][i].available) {
+                    firstVariant = data[k]['variants'][i];
+                    break
+                }
+            }
+        }
 
         data[k]['selected_or_first_available_variant'] = firstVariant;
-        for (var i = 0; i < data[k]['variants'].length; i++) { 
-            var variantOptionArr = []; 
-            var count = 1; 
-            var variant = data[k]['variants'][i]; 
-            var variantOptions = variant['merged_options']; 
-            if (Array.isArray(variantOptions)) { 
-                for (var j = 0; j < variantOptions.length; j++) { 
+        for (var i = 0; i < data[k]['variants'].length; i++) {
+            var variantOptionArr = [];
+            var count = 1;
+            var variant = data[k]['variants'][i];
+            var variantOptions = variant['merged_options'];
+            if (Array.isArray(variantOptions)) {
+                for (var j = 0; j < variantOptions.length; j++) {
                     var temp = variantOptions[j].split(':');
                     data[k]['variants'][i]['option' + (parseInt(j) + 1)] = temp[1];
                     data[k]['variants'][i]['option_' + temp[0]] = temp[1];
-                    variantOptionArr.push(temp[1]) 
-                } 
-                data[k]['variants'][i]['options'] = variantOptionArr 
-            } 
+                    variantOptionArr.push(temp[1])
+                }
+                data[k]['variants'][i]['options'] = variantOptionArr
+            }
 
             data[k]['variants'][i]['compare_at_price'] = parseFloat(data[k]['variants'][i]['compare_at_price']) * 100;
-            data[k]['variants'][i]['price'] = parseFloat(data[k]['variants'][i]['price']) * 100 
-        } 
+            data[k]['variants'][i]['price'] = parseFloat(data[k]['variants'][i]['price']) * 100
+        }
 
         data[k]['description'] = data[k]['content'] = data[k]['body_html']
     }
