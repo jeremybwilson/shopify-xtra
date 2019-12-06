@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "30% OFF Apparel <strong>SHOP NOW</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-one",
+          "announcement_text_two": "20% OFF Salmon Sisters Kids Boots <strong>SHOP NOW</strong>",
+          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-two",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -757,17 +757,17 @@
       "collection-banner": {
         "type": "collection-banner",
         "blocks": {
-          "1565210280949": {
+          "1575578408622": {
             "type": "image",
             "settings": {
-              "collection": "top-picks",
-              "image": "shopify://shop_images/top-picks_38fe2f6d-7b3d-4026-ae4b-03f92f3a1ff0.jpg",
-              "mobile_image": "shopify://shop_images/top-picks-mobile_8124e182-353e-4c04-a317-fc7b75d90aa6.jpg"
+              "collection": "",
+              "image": "",
+              "mobile_image": ""
             }
           }
         },
         "block_order": [
-          "1565210280949"
+          "1575578408622"
         ],
         "settings": {}
       },
@@ -785,11 +785,11 @@
           "1575432325125": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/xtuf-day1-desktop.gif",
+              "image": "shopify://shop_images/xtuf-day2-desktop_70e424eb-674e-4d65-928e-22495ca4b291.gif",
               "mobile_image": "shopify://shop_images/xtuf-sale-blank-mobile.jpg",
-              "heading": "30% OFF<br>SELECT APPAREL<br>",
+              "heading": "20% OFF <br>SALMON SISTERS<br> KIDS BOOTS",
               "subheading": "THE FEAST OF THE SEVEN DEALS",
-              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-one",
+              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-two",
               "cta_one_button_text": "SHOP TODAY’S DEAL",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
@@ -798,7 +798,7 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "left",
               "caption_vertical": 50,
-              "caption_background": "transparent",
+              "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
           },
@@ -892,7 +892,7 @@
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 5,
+          "slider_speed": 8,
           "holiday_theme": false
         }
       },
