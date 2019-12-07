@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "20% OFF Salmon Sisters Kids Boots <strong>SHOP NOW</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-two",
+          "announcement_text_two": "$15 OFF Chumrunner Deck Shoes <strong>SHOP NOW</strong>",
+          "announcement_link_two": "/collections/feast-of-the-seven-deals-deal-three",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -785,14 +785,14 @@
           "1575432325125": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/xtuf-day2-desktop_70e424eb-674e-4d65-928e-22495ca4b291.gif",
+              "image": "shopify://shop_images/xtra-tuff-15-off-chumrunner-desk-shoes.gif",
               "mobile_image": "shopify://shop_images/xtuf-sale-blank-mobile.jpg",
-              "heading": "20% OFF <br>SALMON SISTERS<br> KIDS BOOTS",
+              "heading": "$15 OFF <br>CHUMRUNNER<br>DECK SHOES",
               "subheading": "THE FEAST OF THE SEVEN DEALS",
-              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-two",
+              "cta_one_link": "/collections/feast-of-the-seven-deals-deal-three",
               "cta_one_button_text": "SHOP TODAY’S DEAL",
               "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
+              "cta_two_button_text": "",
               "caption_color_scheme": "white",
               "custom_slide_main_color": "#ffffff",
               "custom_slide_alt_color": "#e41c39",
@@ -861,34 +861,13 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "1.0"
             }
-          },
-          "1571936668552": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/xtuf-leather-ankle-deck-boots-desktop_d9bf68da-45fb-48bf-bcad-e932ad149a4c.jpg",
-              "mobile_image": "shopify://shop_images/xtuf-leather-ankle-deck-boots-mobile_fed6e8cf-fa26-458a-af7b-c7a95dab6253.jpg",
-              "heading": "LEATHER ANKLE DECK BOOTS",
-              "subheading": "OUR BEST SELLER GETS AN UPGRADE",
-              "cta_one_link": "https://www.xtratuf.com/collections/leather-ankle-deck-boots?_=pf&pf_t_gender=audience_men",
-              "cta_one_button_text": "SHOP MEN",
-              "cta_two_link": "https://www.xtratuf.com/collections/leather-ankle-deck-boots?_=pf&pf_t_gender=audience_women",
-              "cta_two_button_text": "SHOP WOMEN",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
           }
         },
         "block_order": [
           "1575432325125",
           "1573392558286",
           "1556040259163-1",
-          "1568396007250",
-          "1571936668552"
+          "1568396007250"
         ],
         "settings": {
           "full_width": true,
