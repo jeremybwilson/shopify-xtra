@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "$15 OFF Chumrunner Deck Shoes <strong>SHOP NOW</strong>",
-          "announcement_link_two": "/collections/feast-of-the-seven-deals-deal-three",
+          "announcement_text_two": "<strong>GET A FREE KRYPTEK HAT</strong> with orders $100 or more",
+          "announcement_link_two": "shopify://collections/new-arrivals",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -785,12 +785,12 @@
           "1575432325125": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/xtra-tuff-15-off-chumrunner-desk-shoes.gif",
+              "image": "shopify://shop_images/free-hat-with-orders-50-or-more.gif",
               "mobile_image": "shopify://shop_images/xtuf-sale-blank-mobile.jpg",
-              "heading": "$15 OFF <br>CHUMRUNNER<br>DECK SHOES",
-              "subheading": "THE FEAST OF THE SEVEN DEALS",
-              "cta_one_link": "/collections/feast-of-the-seven-deals-deal-three",
-              "cta_one_button_text": "SHOP TODAY’S DEAL",
+              "heading": "GET A FREE <br>KRYPTEK HAT<br>",
+              "subheading": "with orders $100 or more <br>THE FEAST OF THE SEVEN DEALS",
+              "cta_one_link": "shopify://collections/new-arrivals",
+              "cta_one_button_text": "SHOP NEW ARRIVALS",
               "cta_two_link": "",
               "cta_two_button_text": "",
               "caption_color_scheme": "white",
@@ -905,17 +905,32 @@
               "min_spend": 100,
               "time_start": "06 Dec 2019 23:59 GMT-7",
               "time_end": "07 Dec 2019 23:59 GMT-7",
-              "grant_type": "all",
+              "grant_type": "pick",
               "auto_add_to_cart": true,
               "gift_id": "18481300504674",
               "inventory_id": "18481300504674",
               "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-pontus-blue"
             }
+          },
+          "1575735496871": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "Unisex Kryptek Trucker Cap",
+              "min_spend": 100,
+              "time_start": "06 Dec 2019 23:59 GMT-7",
+              "time_end": "07 Dec 2019 23:59 GMT-7",
+              "grant_type": "pick",
+              "auto_add_to_cart": false,
+              "gift_id": "18481301094498",
+              "inventory_id": "18481301094498",
+              "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-highlander"
+            }
           }
         },
         "block_order": [
           "1569349869798",
-          "1571430770545"
+          "1571430770545",
+          "1575735496871"
         ],
         "settings": {
           "discount_modal_enable": true,
