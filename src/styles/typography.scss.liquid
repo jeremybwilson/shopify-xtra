@@ -21,12 +21,77 @@
   font-weight: $font-weight--black;
 }
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3797465, 2019-08-14T16:10:52-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3797465
+ *
+ * © 2019 MyFonts Inc
+*/
 
-// Legal print from the Font Publisher:
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/39f1d9");
 
-/*
-This CSS resource incorporates links to font software which is the valuable copyrighted
-property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
-redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
-Imaging with any questions regarding Web Fonts:  http://www.fonts.com
-*/    
+/* NEW XTRATUF WebFonts provided in PDM-894 */
+
+/* These fonts are called out in the order they appear in the provided Style Guide - PDM-894 */
+
+/* ** Book  => font-family: 'FFMarkWebProRegular' ** */
+@font-face {
+  font-family:"FF Mark Web Pro";
+  src: url("{{ '39F1D9_0_0.eot' | asset_url }}");
+  src: url("{{ '39F1D9_0_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ '39F1D9_0_0.woff2' | asset_url }}") format('woff2'),
+    url("{{ '39F1D9_0_0.woff' | asset_url }}") format('woff'),
+    url("{{ '39F1D9_0_0.ttf' | asset_url }}") format('truetype');
+  font-weight: $font-weight--book;
+}
+
+/* **  Medium  =>  font-family: 'FFMarkWebProMedium' ** */
+@font-face {
+  font-family:"FF Mark Web Pro";
+  src: url("{{ '39F1D9_4_0.eot' | asset_url }}");
+  src: url("{{ '39F1D9_4_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ '39F1D9_4_0.woff2' | asset_url }}") format('woff2'),
+    url("{{ '39F1D9_4_0.woff' | asset_url }}") format('woff'),
+    url("{{ '39F1D9_4_0.ttf' | asset_url }}") format('truetype');
+  font-weight: $font-weight--medium;  // this is a medium font face to immediately applying weight of 500
+}
+
+/* ** :: Bold  =>  font-family: 'FFMarkWebProBold' ** */
+@font-face {
+  font-family:"FF Mark Web Pro";
+  src: url("{{ '39F1D9_6_0.eot' | asset_url }}");
+  src: url("{{ '39F1D9_6_0.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ '39F1D9_6_0.woff2' | asset_url }}") format('woff2'),
+    url("{{ '39F1D9_6_0.woff' | asset_url }}") format('woff'),
+    url("{{ '39F1D9_6_0.ttf' | asset_url }}") format('truetype');
+  font-weight: $font-weight--bold;  // this is a bold font face to immediately applying weight of 700
+}
+
+/* ** Vanguard-CF ** */
+
+@font-face{
+  font-family:"Vanguard CF";  // Extra Bold
+  src: url("{{ 'vanguard-cf-extra-bold.eot' | asset_url }}");
+  src: url("{{ 'vanguard-cf-extra-bold.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ 'vanguard-cf-extra-bold.woff2' | asset_url }}") format('woff2'),
+    url("{{ 'vanguard-cf-extra-bold.woff' | asset_url }}") format('woff'),
+    url("{{ 'vanguard-cf-extra-bold.ttf' | asset_url }}") format('truetype');
+  font-weight: $font-weight--bold;  // this is a bold font face to immediately applying weight of 700
+}
+
+@font-face{
+  font-family:"Vanguard CF";  // Medium
+  src: url("{{ 'vanguard-cf-medium.eot' | asset_url }}");
+  src: url("{{ 'vanguard-cf-medium.eot?#iefix' | asset_url }}") format('embedded-opentype'),
+    url("{{ 'vanguard-cf-medium.woff2' | asset_url }}") format('woff2'),
+    url("{{ 'vanguard-cf-medium.woff' | asset_url }}") format('woff'),
+    url("{{ 'vanguard-cf-medium.ttf' | asset_url }}") format('truetype');
+  font-weight: $font-weight--medium;  // this is a medium font face to immediately applying weight of 500
+}
