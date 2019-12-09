@@ -51,6 +51,7 @@
 
 
 window.theme = window.theme || {};
+window.React = require( './vendor/react.min.js' );
 
 /* For IE 11+ Nodelist forEach Function */
 if (window.NodeList && !NodeList.prototype.forEach) {
@@ -1256,23 +1257,12 @@ theme.ColumnsCarousel = (function() {
     // CAROUSEL INIT
 
     var initColumnsCarousel = function(Columnscarousel) {
-
+      var slides = ($(window).width() >= 1024) ? 4 : (($(window).width() > 767 && $(window).width() < 1023) ? 3 : 1); 
       var current = 0;
 
       var cols = Columnscarousel.owlCarousel({
-        lazyLoad: true,
-        responsive : {
-          0 : {
-            items: 1
-          },
-          767 : {
-            items: 3
-          },
-          1024 : {
-            items: 4
-          }
-        },
-        onInitialized: function(event) {
+        items : slides,
+        onInitialized: function(event) { console.warn(event);
           current = event.item.index+1;
           ui.currentSlide.text(current);
           ui.totalSlides.text(event.item.count);
@@ -1381,15 +1371,9 @@ theme.FeaturedProducts = (function() {
   function FeaturedProducts(container) {
 
     var initHomepageCarousel = function(productCarousel) {
+      var homeslides = ($(window).width() >= 1024) ? 4 : (($(window).width() > 767 && $(window).width() < 1023) ? 3 : 1);
       productCarousel.owlCarousel({
-        responsive: {
-          0 : {
-            items: 1
-          },
-          767 : {
-            items: 3
-          }
-        },
+        items: homeslides,
         nav: true,
         navText: [$('.product-carousel--prev'),$('.product-carousel--next')],
         lazyLoad : true
@@ -1409,7 +1393,12 @@ theme.FeaturedProducts = (function() {
     $(document).on('shopify:section:load', function(event) {
       initHomepageCarousel($(event.target).find('.product-collection-carousel'));
     });
-
+     
+    $( window ).resize(function() {
+      $('.product-collection-carousel').owlCarousel('destroy');
+      initHomepageCarousel($('.product-collection-carousel'));
+    });
+    
   }
 
   FeaturedProducts.prototype = _.assignIn({}, FeaturedProducts.prototype, {});
@@ -3192,6 +3181,9 @@ $(document).ready(function(){
     $('.add.AddtoCart').attr('type','button');
     $('.add.AddtoCart').addClass('disable');
     $(".variant-size-select-error").html('Please select a size');
+
+    var mainHeight= $('.index_Slider').outerHeight();
+    $('.index_Slider > ul > li').css("min-height",mainHeight+'px');
 });
 $(document).on('change','.swatch.size input',function(){
   $('.add.AddtoCart').attr('type','submit');
@@ -3236,6 +3228,7 @@ $(document).on('DOMSubtreeModified', "#product-loop", function() {
     });
   }
 });
+
 
 /*================================
     Holiday  Theme

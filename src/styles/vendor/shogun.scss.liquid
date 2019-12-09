@@ -1,0 +1,103 @@
+#shogun-landing { 
+
+	//tools 
+
+	.margin-center {
+		margin: 0 auto;
+	}
+	
+	.mobile-asset {
+		display: none;
+
+		@include mq("phone") {
+			display: block;
+		}
+	}
+
+	.desktop-asset {
+		display: block;
+		
+		@include mq("phone") {
+			display: none;
+		}
+	}
+
+	//layout
+
+	.shg-row {
+		margin: 15px 0;
+	}
+
+	//elements
+
+	.shogun-heading-component {
+
+		h1 {
+    		font-weight: $font-weight--black;
+    		line-height: 1.38095em;
+    		letter-spacing: 0;
+			border-bottom: none !important;
+			padding: 0;
+			margin: 0;
+		}
+
+		h2 {
+			font-weight: $font-weight--black;
+			line-height: 1em;
+    		letter-spacing: 0.04em;
+			text-transform: uppercase;
+		}
+
+	}
+
+	.shg-btn {
+		text-decoration: none !important;
+	}
+
+	// modules
+
+	.main-hero {
+		margin: 15px 0;
+	}
+
+	.twin-promo {
+		@include mq("phone") {
+			[class*="shg-c-"]:first-child {
+				margin-bottom: 60px;
+			}
+			[class*="shg-c-"]:last-child {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.trio-promo {
+		.shogun-image-container {
+			margin-bottom: 15px;
+		}
+	}
+
+	.img-txt {
+
+		[class*="shg-c-"] {
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+
+		.shogun-image-container {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		.text-container {
+		    min-height: auto !important;
+		    height: auto;
+		    width: 100%;
+		    padding: 50px;
+		    text-align: center;
+		}
+
+	}
+
+}
