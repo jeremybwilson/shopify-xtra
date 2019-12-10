@@ -19,6 +19,21 @@
     ]
   },
   {
+    "name": "Alternate Themes",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Blackout Theme"
+      },
+      {
+        "type": "checkbox",
+        "id": "blackout_theme",
+        "label": "Check the box to enable Blackout theme",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": "Colors",
     "settings": [
       {
@@ -1117,35 +1132,35 @@
       }
     ]
   },
-  {  
-    "name": "Discount code callout executed in checkout [Plus]",  
-    "settings": [ 
-      { 
-        "type": "header",  
-        "content": "Enable discount custom message." 
-      },  
-      { 
-        "type": "paragraph",  
-        "content": "Set a discount code and their related custom message." 
-      },  
-      { 
-        "type": "checkbox",  
-        "id": "display_discount_msg", 
-        "label": "Show discount code custom message on checkout.", 
-        "default": true 
+  {
+    "name": "Discount code callout executed in checkout [Plus]",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Enable discount custom message."
       },
-      { 
-        "type": "textarea",  
-        "id": "discount_code", 
+      {
+        "type": "paragraph",
+        "content": "Set a discount code and their related custom message."
+      },
+      {
+        "type": "checkbox",
+        "id": "display_discount_msg",
+        "label": "Show discount code custom message on checkout.",
+        "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "discount_code",
         "label": "Employee discount code",
         "info": "Multiple code separate by comma (,)"
       },
-      { 
-        "type": "textarea",  
-        "id": "discount_msg", 
+      {
+        "type": "textarea",
+        "id": "discount_msg",
         "label": "Custom message",
         "info": "Multiple code message separate by comma (,)"
-      } 
+      }
     ]
   },
   {
@@ -1216,7 +1231,7 @@
         "type": "checkbox",
         "id": "google_optimize_antiflicker_enabled",
         "label": "Enable Google Optimize - Antiflicker Code"
-      },      
+      },
       {
         "type": "range",
         "id": "google_optimize_antiflicker_amount",
@@ -1227,7 +1242,7 @@
         "label": "Delay amount",
         "info": "(in milliseconds)",
         "default": 2000
-      },      
+      },
       {
         "type": "header",
         "content": "Nosto"
