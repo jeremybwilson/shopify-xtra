@@ -2,6 +2,7 @@
   "presets": {},
   "current": {
     "favicon": "shopify://shop_images/favicon_ce985e2e-2ef5-4938-a951-a6eac4f57989.png",
+    "blackout_theme": false,
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
     "announcement_bg_two": "#757575",
@@ -195,7 +196,6 @@
     "checkout_accent_color": "#e41c39",
     "checkout_button_color": "#0a56a4",
     "checkout_error_color": "#ff6d6d",
-    "blackout_theme": false,
     "discount_modal_enable": false,
     "discount_modal_config": "eyJjb29raWVFeHBpcmVJbkRheXMiOiA2MCwidGhyZXNob2xkRGlzY291bnRzIjogW3siZGlzY291bnRJZCI6IDEsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKEJsYWNrKSIsImdpZnRJZCI6IDE1NDU5OTY0MDkyNTEwLCJncmFudFR5cGUiOiAicGljayIsImludmVudG9yeUlkIjogMTU0MDIyMTI5ODI4NzgsIm1pblNwZW5kIjogMjAwLCJwcm9kdWN0SGFuZGxlIjogIndpZ3dhbS13aW50ZXItaGF0In0seyJkaXNjb3VudElkIjogMiwiZGlzcGxheU5hbWUiOiAiV2lnd2FtIEhhdCAoR3JheSkiLCJnaWZ0SWQiOiAxNTQ1OTk2NTM3MDQ2MiwiZ3JhbnRUeXBlIjogInBpY2siLCJpbnZlbnRvcnlJZCI6IDE1NDAyMjEzMDE1NjQ2LCJtaW5TcGVuZCI6IDIwMCwicHJvZHVjdEhhbmRsZSI6ICJ3aWd3YW0td2ludGVyLWhhdCJ9LHsiZGlzY291bnRJZCI6IDMsImRpc3BsYXlOYW1lIjogIldpZ3dhbSBIYXQgKE5hdHVyYWwpIiwiZ2lmdElkIjogMTU0NTk5NjU1MDE1MzQsImdyYW50VHlwZSI6ICJwaWNrIiwiaW52ZW50b3J5SWQiOiAxNTQwMjIxMzA0ODQxNCwibWluU3BlbmQiOiAyMDAsInByb2R1Y3RIYW5kbGUiOiAid2lnd2FtLXdpbnRlci1oYXQifV19",
     "bis_hide_tag": "discontinued",
@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "$5 OFF Select Styles <strong>SHOP NOW</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-six",
+          "announcement_text_two": "<strong>$20 OFF SALMON SISTERS LEGACY BOOTS:</strong> SHOP NOW",
+          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-seven",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -785,11 +785,11 @@
           "1575432325125": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/xtuf-day-6-desktop.gif",
+              "image": "shopify://shop_images/xtuf-day-7-desktop.gif",
               "mobile_image": "shopify://shop_images/xtuf-sale-blank-mobile.jpg",
-              "heading": "$5 OFF SELECT STYLES",
-              "subheading": "THE FEAST OF THE SEVEN DEALS",
-              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-six",
+              "heading": "$20 OFF <br>SALMON SISTERS <br>LEGACY BOOTS<br>",
+              "subheading": "select styles <br>THE FEAST OF THE SEVEN DEALS<br>",
+              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-seven",
               "cta_one_button_text": "SHOP TODAY’S DEAL",
               "cta_two_link": "",
               "cta_two_button_text": "",
@@ -872,7 +872,7 @@
         "settings": {
           "full_width": true,
           "slider_speed": 8,
-          "holiday_theme": false
+          "holiday_theme": true
         }
       },
       "1558651562615": {
