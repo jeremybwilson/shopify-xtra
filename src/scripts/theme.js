@@ -970,7 +970,9 @@ theme.Header = (function() {
       mobileSitesPicker: $( '#nav-sites-picker-mobile' ),
       mobileSubHeaders: $('#accordion').find('.accordion-sub-header'),
       swapRate: $container.attr('data-swap-rate'),
-      promoWrap: $( '#double-promo-wrapper' )
+      promoWrap: $( '#double-promo-wrapper' ),
+      headernav: $('.nav-sub-sub-item a,.nav-primary-link a'),
+      footerNav: $('.footer-nav nav ul li a')
     }
     const self = this;
 
@@ -989,7 +991,22 @@ theme.Header = (function() {
         ui.mobileSitesPicker.toggleClass( 'open' );
       })
     }
-
+    ui.headernav.click(function(event){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Top Navigation',
+        eventAction: 'Click',
+        eventLabel: this.text
+      });
+    });
+    ui.footerNav.click(function(event){
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Bottom Navigation',
+        eventAction: 'Click',
+        eventLabel: this.text
+      });
+    });
 
     // MOBILE NAV : LEVEL 1 HEADER ACCORDION : Accordion Functionality
     ui.mobileHeaders.click( function(){
