@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "<strong>$20 OFF SALMON SISTERS LEGACY BOOTS:</strong> SHOP NOW",
-          "announcement_link_two": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-seven",
+          "announcement_text_two": "8 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
+          "announcement_link_two": "shopify://collections/new-arrivals",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -782,66 +782,6 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
-          "1575432325125": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/xtuf-day-7-desktop.gif",
-              "mobile_image": "shopify://shop_images/xtuf-sale-blank-mobile.jpg",
-              "heading": "$20 OFF <br>SALMON SISTERS <br>LEGACY BOOTS<br>",
-              "subheading": "select styles <br>THE FEAST OF THE SEVEN DEALS<br>",
-              "cta_one_link": "https://www.xtratuf.com/collections/feast-of-the-seven-deals-deal-seven",
-              "cta_one_button_text": "SHOP TODAY’S DEAL",
-              "cta_two_link": "",
-              "cta_two_button_text": "",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "left",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
-          "1573392558286": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/190816_SEAlaska_17850_DT.jpg",
-              "mobile_image": "shopify://shop_images/190816_SEAlaska_17850_Mobile.jpg",
-              "heading": "A NEW TAKE ON <br>THE LEGACY",
-              "subheading": "LIMITED RUN ONLINE EXCLUSIVE!",
-              "cta_one_link": "https://www.xtratuf.com/collections/online-exclusives/audience_women",
-              "cta_one_button_text": "SHOP WOMEN'S LEGACY LACE",
-              "cta_two_link": "",
-              "cta_two_button_text": "",
-              "caption_color_scheme": "custom",
-              "custom_slide_main_color": "#383837",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "#e5e5e5",
-              "caption_opacity": "0.5"
-            }
-          },
-          "1556040259163-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-desktop_47955e8c-9cf5-47c2-9580-44803a9f128d.jpg",
-              "mobile_image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-mobile_7057be51-daab-467a-8d4e-26134708d494.jpg",
-              "heading": "FISHE®WEAR LEGACY BOOT<br>",
-              "subheading": "NEW PRINT FROM ANCHORAGE",
-              "cta_one_link": "/collections/women-feature-new-arrivals/products/womens-fishewear-15-in-legacy-boot-black",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.1"
-            }
-          },
           "1568396007250": {
             "type": "image",
             "settings": {
@@ -861,13 +801,31 @@
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "1.0"
             }
+          },
+          "1556040259163-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-desktop_47955e8c-9cf5-47c2-9580-44803a9f128d.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-mobile_7057be51-daab-467a-8d4e-26134708d494.jpg",
+              "heading": "FISHE®WEAR LEGACY BOOT<br>",
+              "subheading": "GROOVY GRAYLING PRINT FROM ANCHORAGE",
+              "cta_one_link": "/collections/women-feature-new-arrivals/products/womens-fishewear-15-in-legacy-boot-black",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.1"
+            }
           }
         },
         "block_order": [
-          "1575432325125",
-          "1573392558286",
-          "1556040259163-1",
-          "1568396007250"
+          "1568396007250",
+          "1556040259163-1"
         ],
         "settings": {
           "full_width": true,
