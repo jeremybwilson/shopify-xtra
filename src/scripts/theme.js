@@ -3343,3 +3343,21 @@ container[0].appendChild(canvas)
 //animation loop
 setInterval(draw, 33);
 };
+
+//Anchor Tag
+function goToSection(){
+    var target = window.location.hash;
+    setTimeout(function(){ 
+      if(target != '' && $(target).length > 0){
+          var targetOffset = $(target).offset().top;
+          if($(window).width() < 768){
+            targetOffset -= 150;
+          }
+          $('html, body').animate({
+            scrollTop: targetOffset + 'px'}, 'slow');
+      }
+    }, 2000);
+}
+$(window).load(function(){
+  goToSection();
+});
