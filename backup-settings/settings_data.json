@@ -278,7 +278,7 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "7 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
+          "announcement_text_two": "6 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
           "announcement_link_two": "shopify://collections/new-arrivals",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
@@ -512,8 +512,8 @@
           }
         },
         "block_order": [
-          "1536251685211-1",
-          "1536251685211-0"
+          "1536251685211-0",
+          "1536251685211-1"
         ],
         "settings": {
           "full_width": true
