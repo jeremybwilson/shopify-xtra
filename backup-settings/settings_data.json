@@ -278,7 +278,7 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "6 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
+          "announcement_text_two": "5 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
           "announcement_link_two": "shopify://collections/new-arrivals",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
@@ -488,17 +488,6 @@
       "1536251685211": {
         "type": "twin-promos",
         "blocks": {
-          "1536251685211-1": {
-            "type": "text_block",
-            "settings": {
-              "image": "shopify://shop_images/xtuf-an-alaskan-icon-mobile_038c3e85-ce17-431e-b16d-355c388608c1.jpg",
-              "mobile_image": "shopify://shop_images/xtuf-an-alaskan-icon-desktop_faec9ef6-f924-4663-83cd-630824a87553.jpg",
-              "link": "shopify://collections/clothing",
-              "heading_text": "AN ALASKAN ICON",
-              "text": "<p>NEW HOODIES &amp; TEES</p>",
-              "cta_text": "SHOP NOW"
-            }
-          },
           "1536251685211-0": {
             "type": "text_block",
             "settings": {
@@ -507,6 +496,17 @@
               "link": "https://www.xtratuf.com/products/womens-salmon-sisters-15-in-legacy-boot-brown",
               "heading_text": "THE MERMAID LIFE LEGACY BOOT",
               "text": "<p>BY THE SALMON SISTERS</p>",
+              "cta_text": "SHOP NOW"
+            }
+          },
+          "1536251685211-1": {
+            "type": "text_block",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-an-alaskan-icon-mobile_038c3e85-ce17-431e-b16d-355c388608c1.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-an-alaskan-icon-desktop_faec9ef6-f924-4663-83cd-630824a87553.jpg",
+              "link": "shopify://collections/clothing",
+              "heading_text": "AN ALASKAN ICON",
+              "text": "<p>NEW HOODIES &amp; TEES</p>",
               "cta_text": "SHOP NOW"
             }
           }
