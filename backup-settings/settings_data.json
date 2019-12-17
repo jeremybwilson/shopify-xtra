@@ -2,7 +2,7 @@
   "presets": {},
   "current": {
     "favicon": "shopify://shop_images/favicon_ce985e2e-2ef5-4938-a951-a6eac4f57989.png",
-    "blackout_theme": false,
+    "blackout_theme": true,
     "announcement_text_color": "#ffffff",
     "announcement_bg_one": "#0153a6",
     "announcement_bg_two": "#757575",
@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "4 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
-          "announcement_link_two": "shopify://collections/new-arrivals",
+          "announcement_text_two": "WINTER SOLSTICE LEGACY BOOTS: <strong>SHOP NOW</strong>",
+          "announcement_link_two": "https://www.xtratuf.com/collections/winter-solstice-legacy-boots",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -565,8 +565,8 @@
       "1536353642475": {
         "type": "featured-collection",
         "settings": {
-          "heading": "NEW ARRIVALS",
-          "homepage_collection": "new-arrivals",
+          "heading": "GO DARK",
+          "homepage_collection": "winter-solstice",
           "homepage_product_limit": 14,
           "homepage_product_display": "carousel",
           "products_per_row": 3
@@ -782,12 +782,32 @@
       "1556040259163": {
         "type": "slideshow",
         "blocks": {
-          "1568396007250": {
+          "1576483506872": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-northern-lights-desktop.jpg",
+              "mobile_image": "shopify://shop_images/20191205_HPhero-mobile-1.jpg",
+              "heading": "THE BLACK LEGACY BOOT",
+              "subheading": "GET A LIMITED EDITION WINTER SOLSTICE COOLIE FREE WITH YOUR BLACK LEGACY BOOT ORDER",
+              "cta_one_link": "https://www.xtratuf.com/collections/winter-solstice-legacy-boots",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.5"
+            }
+          },
+          "1576520510427": {
             "type": "image",
             "settings": {
               "image": "shopify://shop_images/Our_Proving_Ground_DT.jpg",
               "mobile_image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
-              "heading": "Our Proving Ground",
+              "heading": "OUR PROVING GROUND",
               "subheading": "",
               "cta_one_link": "shopify://collections/new-arrivals",
               "cta_one_button_text": "SHOP NEW ARRIVALS",
@@ -798,39 +818,19 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "1.0"
-            }
-          },
-          "1556040259163-1": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-desktop_47955e8c-9cf5-47c2-9580-44803a9f128d.jpg",
-              "mobile_image": "shopify://shop_images/xtuf-fishe-wear-legacy-boot-mobile_7057be51-daab-467a-8d4e-26134708d494.jpg",
-              "heading": "FISHE®WEAR LEGACY BOOT<br>",
-              "subheading": "GROOVY GRAYLING PRINT FROM ANCHORAGE",
-              "cta_one_link": "/collections/women-feature-new-arrivals/products/womens-fishewear-15-in-legacy-boot-black",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
+              "caption_background": "transparent",
               "caption_opacity": "0.1"
             }
           }
         },
         "block_order": [
-          "1568396007250",
-          "1556040259163-1"
+          "1576483506872",
+          "1576520510427"
         ],
         "settings": {
           "full_width": true,
-          "slider_speed": 8,
-          "holiday_theme": true
+          "slider_speed": 10,
+          "holiday_theme": false
         }
       },
       "1558651562615": {
@@ -883,12 +883,27 @@
               "inventory_id": "18481301094498",
               "product_handle": "unisex-kryptek-trucker-cap-kryptek-r-highlander"
             }
+          },
+          "1576515991637": {
+            "type": "discount_object",
+            "settings": {
+              "display_name": "Limited Edition Winter Soltice Coolie",
+              "min_spend": 145,
+              "time_start": "14 Dec 2019 01:00 GMT-7",
+              "time_end": "13 Dec 2020 01:00 GMT-7",
+              "grant_type": "all",
+              "auto_add_to_cart": true,
+              "gift_id": "29545804300386",
+              "inventory_id": "29545804300386",
+              "product_handle": "winter-solstice-coolie"
+            }
           }
         },
         "block_order": [
           "1569349869798",
           "1571430770545",
-          "1575735496871"
+          "1575735496871",
+          "1576515991637"
         ],
         "settings": {
           "discount_modal_enable": true,
@@ -934,10 +949,10 @@
     },
     "content_for_index": [
       "1556040259163",
-      "1558651562615",
-      "1536251685211",
-      "1554225193358",
       "1536353642475",
+      "1536251685211",
+      "1558651562615",
+      "1554225193358",
       "1536068961071",
       "1536252750894",
       "1536266098177"
