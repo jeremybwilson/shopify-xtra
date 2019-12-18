@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "WINTER SOLSTICE LEGACY BOOTS: <strong>SHOP NOW</strong>",
-          "announcement_link_two": "https://www.xtratuf.com/collections/winter-solstice-legacy-boots",
+          "announcement_text_two": "2 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
+          "announcement_link_two": "shopify://collections/new-arrivals",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -495,7 +495,7 @@
               "mobile_image": "shopify://shop_images/XWSL-9BM_mobile.jpg",
               "link": "https://www.xtratuf.com/products/womens-salmon-sisters-15-in-legacy-boot-brown",
               "heading_text": "THE MERMAID LIFE LEGACY BOOT",
-              "text": "<p>BY THE SALMON SISTERS</p>",
+              "text": "",
               "cta_text": "SHOP NOW"
             }
           },
@@ -506,7 +506,7 @@
               "mobile_image": "shopify://shop_images/xtuf-an-alaskan-icon-desktop_faec9ef6-f924-4663-83cd-630824a87553.jpg",
               "link": "shopify://collections/clothing",
               "heading_text": "AN ALASKAN ICON",
-              "text": "<p>NEW HOODIES &amp; TEES</p>",
+              "text": "",
               "cta_text": "SHOP NOW"
             }
           }
@@ -788,7 +788,7 @@
               "image": "shopify://shop_images/xtuf-northern-lights-desktop.jpg",
               "mobile_image": "shopify://shop_images/20191205_HPhero-mobile-1.jpg",
               "heading": "THE BLACK LEGACY BOOT",
-              "subheading": "GET A LIMITED EDITION WINTER SOLSTICE COOLIE FREE WITH YOUR BLACK LEGACY BOOT ORDER",
+              "subheading": "",
               "cta_one_link": "https://www.xtratuf.com/collections/winter-solstice-legacy-boots",
               "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
@@ -830,7 +830,7 @@
         "settings": {
           "full_width": true,
           "slider_speed": 10,
-          "holiday_theme": false
+          "holiday_theme": true
         }
       },
       "1558651562615": {
@@ -906,7 +906,7 @@
           "1576515991637"
         ],
         "settings": {
-          "discount_modal_enable": true,
+          "discount_modal_enable": false,
           "cookie_expire_in_days": 60,
           "currency_symbol": "$"
         }
