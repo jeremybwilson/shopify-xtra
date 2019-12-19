@@ -278,7 +278,7 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "2 DAYS LEFT FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
+          "announcement_text_two": "LAST DAY FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
           "announcement_link_two": "shopify://collections/new-arrivals",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
@@ -502,12 +502,12 @@
           "1536251685211-1": {
             "type": "text_block",
             "settings": {
-              "image": "shopify://shop_images/xtuf-an-alaskan-icon-mobile_038c3e85-ce17-431e-b16d-355c388608c1.jpg",
-              "mobile_image": "shopify://shop_images/xtuf-an-alaskan-icon-desktop_faec9ef6-f924-4663-83cd-630824a87553.jpg",
-              "link": "shopify://collections/clothing",
-              "heading_text": "AN ALASKAN ICON",
+              "image": "shopify://shop_images/20191217_HP-blockblock-desktop.jpg",
+              "mobile_image": "shopify://shop_images/20191217_HP-blockblock-mobile.jpg",
+              "link": "https://www.xtratuf.com/collections/kids/audience_kids",
+              "heading_text": "ENCOURAGE ADVENTURE",
               "text": "",
-              "cta_text": "SHOP NOW"
+              "cta_text": "SHOP KIDS"
             }
           }
         },
@@ -788,7 +788,7 @@
               "image": "shopify://shop_images/xtuf-northern-lights-desktop.jpg",
               "mobile_image": "shopify://shop_images/20191205_HPhero-mobile-1.jpg",
               "heading": "THE BLACK LEGACY BOOT",
-              "subheading": "",
+              "subheading": "CELEBRATE WINTER SOLSTICE",
               "cta_one_link": "https://www.xtratuf.com/collections/winter-solstice-legacy-boots",
               "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
@@ -805,12 +805,12 @@
           "1576520510427": {
             "type": "image",
             "settings": {
-              "image": "shopify://shop_images/Our_Proving_Ground_DT.jpg",
-              "mobile_image": "shopify://shop_images/Our_Proving_Ground_Mobile_1a4d9a84-0d0d-444b-9a90-66bdc25e8441.jpg",
-              "heading": "OUR PROVING GROUND",
-              "subheading": "",
-              "cta_one_link": "shopify://collections/new-arrivals",
-              "cta_one_button_text": "SHOP NEW ARRIVALS",
+              "image": "shopify://shop_images/xtuf-bristol-bay-desktop.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-bristol-bay-mobile.jpg",
+              "heading": "THE BRISTOL BAY BOOT",
+              "subheading": "100% WATERPROOF LEATHER COLLECTION",
+              "cta_one_link": "https://www.xtratuf.com/collections/bristol-bay-collection",
+              "cta_one_button_text": "SHOP NOW",
               "cta_two_link": "",
               "cta_two_button_text": "Add a button",
               "caption_color_scheme": "white",
@@ -818,13 +818,34 @@
               "custom_slide_alt_color": "#e41c39",
               "caption_horizontal": "right",
               "caption_vertical": 50,
-              "caption_background": "transparent",
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.4"
+            }
+          },
+          "1576639969571": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-insulation-desktop.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-insulation-mobile.jpg",
+              "heading": "DO MORE",
+              "subheading": "NO NEED TO HIBERNATE THIS WINTER",
+              "cta_one_link": "shopify://collections/insulated",
+              "cta_one_button_text": "SHOP INSULATED BOOTS",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "center",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
             }
           }
         },
         "block_order": [
           "1576483506872",
+          "1576639969571",
           "1576520510427"
         ],
         "settings": {
