@@ -278,8 +278,8 @@
           "num_of_promo_banners": "2",
           "announcement_text_one": "FREE SHIPPING & <strong>EXTENDED</strong> RETURNS",
           "announcement_link_one": "shopify://pages/shipping-returns",
-          "announcement_text_two": "LAST DAY FOR CHRISTMAS DELIVERY! <strong>SHOP NEW ARRIVALS</strong>",
-          "announcement_link_two": "shopify://collections/new-arrivals",
+          "announcement_text_two": "GET 10% OFF your first Order! <strong>SIGN UP</strong>",
+          "announcement_link_two": "https://www.xtratuf.com/#newsletter-social",
           "announcement_height": 60,
           "announcement_swap_rate": 5,
           "logo_size": 24,
@@ -802,26 +802,6 @@
               "caption_opacity": "0.5"
             }
           },
-          "1576520510427": {
-            "type": "image",
-            "settings": {
-              "image": "shopify://shop_images/xtuf-bristol-bay-desktop.jpg",
-              "mobile_image": "shopify://shop_images/xtuf-bristol-bay-mobile.jpg",
-              "heading": "THE BRISTOL BAY BOOT",
-              "subheading": "100% WATERPROOF LEATHER COLLECTION",
-              "cta_one_link": "https://www.xtratuf.com/collections/bristol-bay-collection",
-              "cta_one_button_text": "SHOP NOW",
-              "cta_two_link": "",
-              "cta_two_button_text": "Add a button",
-              "caption_color_scheme": "white",
-              "custom_slide_main_color": "#ffffff",
-              "custom_slide_alt_color": "#e41c39",
-              "caption_horizontal": "right",
-              "caption_vertical": 50,
-              "caption_background": "rgba(0,0,0,0)",
-              "caption_opacity": "0.4"
-            }
-          },
           "1576639969571": {
             "type": "image",
             "settings": {
@@ -840,6 +820,26 @@
               "caption_vertical": 50,
               "caption_background": "rgba(0,0,0,0)",
               "caption_opacity": "0.1"
+            }
+          },
+          "1576520510427": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/xtuf-bristol-bay-desktop.jpg",
+              "mobile_image": "shopify://shop_images/xtuf-bristol-bay-mobile.jpg",
+              "heading": "THE BRISTOL BAY BOOT",
+              "subheading": "100% WATERPROOF LEATHER COLLECTION",
+              "cta_one_link": "https://www.xtratuf.com/collections/bristol-bay-collection",
+              "cta_one_button_text": "SHOP NOW",
+              "cta_two_link": "",
+              "cta_two_button_text": "Add a button",
+              "caption_color_scheme": "white",
+              "custom_slide_main_color": "#ffffff",
+              "custom_slide_alt_color": "#e41c39",
+              "caption_horizontal": "right",
+              "caption_vertical": 50,
+              "caption_background": "rgba(0,0,0,0)",
+              "caption_opacity": "0.4"
             }
           }
         },
