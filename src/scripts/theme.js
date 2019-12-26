@@ -3342,4 +3342,29 @@ container[0].appendChild(canvas)
  }
 //animation loop
 setInterval(draw, 33);
+
+  //Anchor Tag
+  function goToSection(){
+    var msie = navigator.userAgent.indexOf('MSIE '); // IE 10 or older
+    var trident = navigator.userAgent.indexOf('Trident/'); //IE 11
+    var iphone = (navigator.userAgent.match(/(iPod|iPhone|iPad)/) ? true : false); // IOS Device
+    var ie = ((msie > -1 || trident > -1) ? true : false);
+    if (ie || iphone) {
+        var target = window.location.hash;
+        setTimeout(function(){ 
+          if(target != '' && $(target).length > 0){
+              var targetOffset = $(target).offset().top;
+              if($(window).width() < 768){
+                targetOffset -= 150;
+              }
+              $('html, body').animate({
+                scrollTop: targetOffset + 'px'}, 'slow');
+          }
+        }, 2000);
+      }
+  }
+  $(window).load(function(){
+    goToSection();
+  });
+
 };
