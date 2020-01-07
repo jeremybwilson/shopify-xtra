@@ -22,7 +22,7 @@
       <div class="flexslider index_Slider {{ solo_class }}" id="Slideshow-{{ section.id }}" data-speed="{{ slider_speed }}">
         <ul class="slides slides-{{ section.id }}">
           {% for block in section.blocks %}
-
+          {% if block.settings.slide_enable %}
           <li id="slide--{{ block.id }}"
             data-block-id="{{ block.id }}"
             class="slide--{{ block.id }} slide_image"
@@ -191,6 +191,7 @@
             }
 
           </style>
+          {% endif %}
           {% endfor %}
         </ul>
       </div><!-- .flexslider -->
@@ -249,6 +250,12 @@ $(document).ready(function(){
         {
           "type": "header",
           "content": "Images"
+        },
+        {
+          "type": "checkbox",
+          "id": "slide_enable",
+          "label": "Enable",
+          "default":true
         },
         {
           "type": "image_picker",
