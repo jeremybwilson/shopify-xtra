@@ -43,8 +43,8 @@ var bcSfFilterTemplate = {
                                         '{{itemVendor}}' +
                                         '<h3 class="product-title">{{itemTitle}}</h3>' +
                                     '</a>' +
-                                    '<div class="yotpo bottomLine" data-product-id="{{itemProductId}}"></div>'+
                                     '<div class="product-price-wrap">{{itemPrice}}</div>' +
+                                    '<div class="yotpo bottomLine" data-product-id="{{itemProductId}}"></div>'+
                                 '</div>' +
                                 '{{itemQuickview}}' +
                             '</div>',
